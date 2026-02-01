@@ -1,0 +1,31 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ade80"/>
+      <stop offset="100%" style="stop-color:#22c55e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="240" fill="#1a3a1a"/>
+
+  <!-- Stylized leaves -->
+  <g transform="translate(256, 256)">
+    <!-- Center stem -->
+    <rect x="-6" y="40" width="12" height="120" fill="#166534" rx="3"/>
+
+    <!-- Left leaf -->
+    <ellipse cx="-50" cy="-20" rx="55" ry="90" fill="url(#leafGrad)" transform="rotate(-20, -50, -20)"/>
+
+    <!-- Right leaf -->
+    <ellipse cx="50" cy="-20" rx="55" ry="90" fill="url(#leafGrad)" transform="rotate(20, 50, -20)"/>
+
+    <!-- Top small leaf -->
+    <ellipse cx="0" cy="-100" rx="35" ry="50" fill="url(#leafGrad)"/>
+  </g>
+
+  <!-- Text at bottom (optional abbreviation) -->
+  <text x="256" y="470" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#ffffff" text-anchor="middle">
+    ITA
+  </text>
+</svg>
