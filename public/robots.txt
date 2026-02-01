@@ -1,0 +1,7 @@
+# Robots.txt for Indo Tropical Agriculture
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://indotropicalagriculture.com/sitemap.xml
