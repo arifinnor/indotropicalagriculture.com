@@ -56,7 +56,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="px-5 py-2.5 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 shadow-md hover:scale-105 active:scale-100 transition-transform duration-200"
+                className="px-5 py-2.5 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 shadow-md hover:scale-105 active:scale-100 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-transform duration-200"
               >
                 {link.label}
               </a>
@@ -64,7 +64,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-stone-600 hover:text-emerald-600 transition-colors font-medium"
+                className="text-stone-600 hover:text-emerald-600 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded-md transition-colors font-medium"
               >
                 {link.label}
               </a>
@@ -82,7 +82,7 @@ export default function Navigation() {
             e.stopPropagation();
             setIsOpen(!isOpen);
           }}
-          className="md:hidden p-2 rounded-lg hover:bg-stone-100 transition-colors"
+          className="md:hidden p-2 rounded-lg hover:bg-stone-100 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-colors"
         >
           <svg
             className="w-6 h-6 text-stone-700"
@@ -114,7 +114,7 @@ export default function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-5 py-3 bg-emerald-600 text-white font-medium rounded-xl hover:bg-emerald-700 shadow-md text-center transition-colors"
+                  className="px-5 py-3 bg-emerald-600 text-white font-medium rounded-xl hover:bg-emerald-700 shadow-md text-center focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -123,7 +123,7 @@ export default function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-3 text-stone-700 hover:text-emerald-600 hover:bg-stone-50 rounded-lg transition-colors font-medium"
+                  className="px-4 py-3 text-stone-700 hover:text-emerald-600 hover:bg-stone-50 rounded-lg focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 transition-colors font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

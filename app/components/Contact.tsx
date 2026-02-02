@@ -99,6 +99,7 @@ export default function Contact() {
                       type="text"
                       id="name"
                       name="name"
+                      autoComplete="name"
                       required
                       className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-stone-300 bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-[border-color,box-shadow] text-sm"
                       placeholder="Your name"
@@ -113,6 +114,8 @@ export default function Contact() {
                       type="email"
                       id="email"
                       name="email"
+                      autoComplete="email"
+                      spellCheck={false}
                       required
                       className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-stone-300 bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-[border-color,box-shadow] text-sm"
                       placeholder="your@email.com"
@@ -128,6 +131,7 @@ export default function Contact() {
                     type="text"
                     id="company"
                     name="company"
+                    autoComplete="organization"
                     className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-stone-300 bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-[border-color,box-shadow] text-sm"
                     placeholder="Your company"
                   />
@@ -162,7 +166,7 @@ export default function Contact() {
                     required
                     rows={4}
                     className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-stone-300 bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-[border-color,box-shadow] resize-none text-sm"
-                    placeholder="Tell us about your requirements..."
+                    placeholder="Tell us about your requirements…"
                   />
                 </div>
 
@@ -170,9 +174,9 @@ export default function Contact() {
                   type="submit"
                   disabled={formStatus === "submitting"}
                   aria-disabled={formStatus === "submitting"}
-                  className="w-full px-5 sm:px-6 py-3 sm:py-4 bg-emerald-600 text-white font-semibold rounded-lg sm:rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-100 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all text-sm sm:text-base"
+                  className="w-full px-5 sm:px-6 py-3 sm:py-4 bg-emerald-600 text-white font-semibold rounded-lg sm:rounded-xl shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-100 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 transition-all text-sm sm:text-base"
                 >
-                  {formStatus === "submitting" ? "Sending..." : "Send Message"}
+                  {formStatus === "submitting" ? "Sending…" : "Send Message"}
                 </button>
               </form>
             </div>
