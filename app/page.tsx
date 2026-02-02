@@ -35,7 +35,7 @@ export default function Home() {
                 Indo Tropical Agriculture
               </h3>
               <p className="text-stone-300 text-xs sm:text-sm leading-relaxed">
-                Your trusted partner for premium Indonesian agriculture products. Sourcing directly from farmers, delivering quality worldwide.
+                Bringing Fresh Tropical Agriculture Products Around the World.
               </p>
             </div>
             <div>
