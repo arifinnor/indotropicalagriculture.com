@@ -2,9 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { getFeaturedProducts } from "../lib/products-data";
 
 export default function Products() {
   const sectionRef = useRef<HTMLDivElement>(null);
+  const products = getFeaturedProducts(6);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -25,37 +27,6 @@ export default function Products() {
     return () => observer.disconnect();
   }, []);
 
-  const products = [
-    {
-      slug: "planting-media",
-      name: "Planting Media",
-      description: "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture.",
-      bgColor: "bg-emerald-500",
-      keywords: ["Coconut Coir", "Peat Moss", "Growing Substrate"],
-    },
-    {
-      slug: "cocoa",
-      name: "Cocoa",
-      description: "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
-      bgColor: "bg-amber-500",
-      keywords: ["Cocoa Beans", "Fermented", "Premium Grade"],
-    },
-    {
-      slug: "cloves",
-      name: "Cloves",
-      description: "Aromatic whole cloves and powder from Indonesian spice islands. Perfect for food, pharmaceutical, and essential oil industries.",
-      bgColor: "bg-red-500",
-      keywords: ["Whole Cloves", "Clove Powder", "Spices"],
-    },
-    {
-      slug: "ginger",
-      name: "Ginger",
-      description: "Fresh and dried ginger with high oil content. Sourced from prime growing regions in Indonesia for international markets.",
-      bgColor: "bg-yellow-500",
-      keywords: ["Fresh Ginger", "Dried Ginger", "High Oil Content"],
-    },
-  ];
-
   return (
     <section id="products" ref={sectionRef} className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 bg-stone-100">
       <div className="max-w-6xl mx-auto">
@@ -74,9 +45,9 @@ export default function Products() {
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {products.map((product, index) => (
+          {products.map((product) => (
             <Link
-              key={index}
+              key={product.id}
               href={`/products/${product.slug}`}
               className="group reveal-on-scroll opacity-0 flex flex-col h-full"
             >
@@ -93,8 +64,15 @@ export default function Products() {
                 {/* Content */}
                 <div className="p-4 sm:p-5 flex flex-col flex-grow">
                   <p className="text-stone-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed line-clamp-3">
-                    {product.description}
+                    {product.shortDescription}
                   </p>
+
+                  {/* Price */}
+                  <div className="mb-3">
+                    <span className="text-emerald-700 font-bold text-xs sm:text-sm">
+                      ${product.price.toLocaleString()}
+                    </span>
+                  </div>
 
                   {/* Keywords/tags */}
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 mt-auto">
@@ -125,20 +103,38 @@ export default function Products() {
           ))}
         </div>
 
-        {/* And more CTA */}
+        {/* Pricing Terms */}
+        <div className="mt-8 pt-6 border-t border-stone-200 text-center reveal-on-scroll opacity-0">
+          <p className="text-stone-500 text-xs">
+            * Prices per TON, FOB Surabaya, Indonesia. Contact us for volume pricing and shipping options.
+          </p>
+        </div>
+
+        {/* View All Products CTA */}
         <div className="mt-10 md:mt-14 lg:mt-16 text-center reveal-on-scroll opacity-0">
           <p className="text-stone-600 mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg">
-            Looking for other Indonesian agriculture products?
+            Browse our complete catalog of 50+ products
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-amber-500 text-stone-900 font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
-          >
-            Contact Us for More Products
-            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link
+              href="/products"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-emerald-600 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
+            >
+              View All Products
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-amber-500 text-stone-900 font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
+            >
+              Contact Us
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
