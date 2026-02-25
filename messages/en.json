@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "title": "Indo Tropical Agriculture | Indonesian Agriculture Exporter",
+    "description": "Indonesian agriculture supplier, trader and exporter. Premium planting media, cocoa, cloves, ginger, and more. Supplying across the world.",
+    "keywords": [
+      "indonesian agriculture export",
+      "cocoa beans indonesia",
+      "cloves export",
+      "planting media",
+      "ginger export indonesia",
+      "agriculture supplier indonesia",
+      "tropical agriculture",
+      "coconut coir exporter"
+    ]
+  },
+  "navigation": {
+    "brand": "Indo Tropical Agriculture",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact Us",
+    "closeMenu": "Close navigation menu",
+    "openMenu": "Open navigation menu",
+    "mobileNav": "Mobile navigation"
+  },
+  "hero": {
+    "badge": "Indonesian Agriculture Exporter",
+    "title": "Supplying across",
+    "titleHighlight": "the world.",
+    "subtitle": "Indonesian agriculture supplier, trader and exporter.",
+    "ctaQuote": "Request a Quote",
+    "ctaProducts": "View Products",
+    "stat1": {
+      "value": "100%",
+      "label": "Direct from Farmers"
+    },
+    "stat2": {
+      "value": "Worldwide",
+      "label": "Global Shipping"
+    },
+    "stat3": {
+      "value": "15+",
+      "label": "Years Experience"
+    },
+    "stat4": {
+      "value": "24/7",
+      "label": "Support"
+    },
+    "scroll": "Scroll"
+  },
+  "visionMission": {
+    "badge": "Our Purpose",
+    "title": "Vision & Mission",
+    "subtitle": "Guided by purpose, driven by impact",
+    "visionTitle": "Our Vision",
+    "vision": "Providing fresh and high-quality Indonesian agricultural products to the world.",
+    "missionTitle": "Our Mission",
+    "mission": "To realize our vision, we are committed to supporting Indonesian farmers to improve their well-being and quality of life through education and training."
+  },
+  "products": {
+    "badge": "What We Offer",
+    "title": "Our Premium Products",
+    "subtitle": "Sourced directly from Indonesian farmers and processed to meet quality standards.",
+    "plantingMedia": {
+      "name": "Planting Media",
+      "description": "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture.",
+      "keywords": ["Coconut Coir", "Peat Moss", "Growing Substrate"]
+    },
+    "cocoa": {
+      "name": "Cocoa",
+      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
+      "keywords": ["Cocoa Beans", "Fermented", "Premium Grade"]
+    },
+    "cloves": {
+      "name": "Cloves",
+      "description": "Aromatic whole cloves and powder from Indonesian spice islands. Perfect for food, pharmaceutical, and essential oil industries.",
+      "keywords": ["Whole Cloves", "Clove Powder", "Spices"]
+    },
+    "ginger": {
+      "name": "Ginger",
+      "description": "Fresh and dried ginger with high oil content. Sourced from prime growing regions in Indonesia for international markets.",
+      "keywords": ["Fresh Ginger", "Dried Ginger", "High Oil Content"]
+    },
+    "viewDetails": "View Details",
+    "moreProducts": "Looking for other Indonesian agriculture products?",
+    "contactMore": "Contact Us for More Products"
+  },
+  "about": {
+    "badge": "About Us",
+    "title": "Your Trusted Partner for Indonesian Agriculture",
+    "intro1": "Indo Tropical Agriculture connects buyers worldwide with the finest agricultural products from Indonesia. Our deep roots in Indonesian farming communities combined with international trade expertise make us your ideal partner.",
+    "intro2": "We believe in sustainable practices, fair trade, and building long-term relationships with both our farmers and customers.",
+    "quote": "Every product we export carries our commitment to quality and our dedication to the farmers who make it possible.",
+    "value1": {
+      "title": "Direct from Farmers",
+      "description": "We work directly with Indonesian farmers, ensuring fair trade and eliminating middlemen for better pricing."
+    },
+    "value2": {
+      "title": "Quality Focus",
+      "description": "Rigorous quality control at every stage ensures our products meet the highest standards."
+    },
+    "value3": {
+      "title": "Reliable Logistics",
+      "description": "Our established shipping network ensures timely delivery worldwide with full tracking."
+    },
+    "value4": {
+      "title": "Competitive Pricing",
+      "description": "Direct sourcing and efficient operations allow us to offer competitive prices without compromising quality."
+    },
+    "sustainableSourcing": "Sustainable Sourcing",
+    "fairTrade": "Fair Trade Practices",
+    "qualityAssured": "Quality Assured"
+  },
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Let's Start a Conversation",
+    "subtitle": "Interested in our products? Contact us for quotes, product details, or partnership inquiries.",
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Your name",
+      "emailLabel": "Email",
+      "emailPlaceholder": "your@email.com",
+      "companyLabel": "Company Name",
+      "companyPlaceholder": "Your company",
+      "productLabel": "Product Interest",
+      "productPlaceholder": "Select a product",
+      "plantingMedia": "Planting Media",
+      "cocoa": "Cocoa",
+      "cloves": "Cloves",
+      "ginger": "Ginger",
+      "other": "Other Products",
+      "messageLabel": "Message",
+      "messagePlaceholder": "Tell us about your requirements...",
+      "sending": "Sending...",
+      "send": "Send Message",
+      "success": "Thank you for your message! We'll get back to you within 24 hours.",
+      "required": "*"
+    },
+    "info": {
+      "department": "International Exports and Sales Department",
+      "exportSales": "Export Customer Sales",
+      "whatsapp": "WhatsApp",
+      "english": "(English)",
+      "german": "(German)",
+      "quickResponse": "Quick Response",
+      "quickResponseText": "We typically respond within 24 hours. For urgent matters, please contact us directly via phone or WhatsApp."
+    }
+  },
+  "footer": {
+    "companyName": "Indo Tropical Agriculture",
+    "tagline": "Your trusted partner for premium Indonesian agriculture products. Sourcing directly from farmers, delivering quality worldwide.",
+    "quickLinks": "Quick Links",
+    "products": "Products",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "contactLabel": "Contact",
+    "location": "Jakarta, Indonesia",
+    "copyright": "Indo Tropical Agriculture. All rights reserved."
+  },
+  "productPage": {
+    "backToProducts": "Back to Products",
+    "description": "Description",
+    "specifications": "Specifications",
+    "requestQuote": "Request a Quote",
+    "viewAllProducts": "View All Products",
+    "plantingMedia": {
+      "name": "Planting Media",
+      "description": "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture. Our planting media is eco-friendly, renewable, and provides excellent water retention while maintaining proper aeration for healthy root development.",
+      "fullDescription": "Sustainable coconut coir planting media from Indonesia. Our eco-friendly growing substrates offer excellent water retention, optimal aeration, and pH balance for horticulture and agriculture. Perfect alternative to peat moss for greenhouse, nursery, and hydroponic applications.",
+      "specifications": [
+        { "label": "EC", "value": "0.5 - 0.8 mS/cm" },
+        { "label": "pH", "value": "5.5 - 6.5" },
+        { "label": "Moisture", "value": "50% - 60%" },
+        { "label": "Impurities", "value": "≤ 5%" }
+      ]
+    },
+    "cocoa": {
+      "name": "Cocoa Beans",
+      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Our cocoa beans are sourced from prime growing regions in Sulawesi and Sumatra, ideal for chocolate manufacturers seeking premium raw materials.",
+      "fullDescription": "Premium fermented Indonesian cocoa beans sourced from Sulawesi and Sumatra. Our beans meet international quality standards with optimal fermentation and moisture content. Perfect for chocolate manufacturers, cocoa processors, and bulk buyers seeking reliable supply from Indonesia.",
+      "specifications": [
+        { "label": "Bean Count", "value": "90-110 beans/100g" },
+        { "label": "Moisture", "value": "6% - 7%" },
+        { "label": "Foreign Matter", "value": "≤ 0.5%" },
+        { "label": "Mouldy Beans", "value": "≤ 3%" }
+      ]
+    },
+    "cloves": {
+      "name": "Cloves",
+      "description": "Cloves come from the flower buds of an evergreen tree that is native to the North Moluccas Islands in Indonesia. Strong of aroma and hot and pungent in taste, cloves are used to flavour many foods, particularly meats and bakery products.",
+      "fullDescription": "Premium Indonesian cloves exported directly from spice islands. High-quality whole cloves and powder suitable for food, pharmaceutical, and essential oil industries. Our cloves are carefully selected, dried, and processed to preserve their intense aroma and pungent flavor.",
+      "specifications": [
+        { "label": "Stems", "value": "2.5%" },
+        { "label": "Inferior Cloves", "value": "2.25%" },
+        { "label": "Admixture", "value": "≤ 1%" },
+        { "label": "Moisture", "value": "6% - 12%" }
+      ]
+    },
+    "ginger": {
+      "name": "Fresh Ginger",
+      "description": "Ginger, (Zingiber officinale), herbaceous perennial plant of the family Zingiberaceae, probably native to southeastern Asia, or its aromatic, pungent rhizome (underground stem) used as a spice, flavouring, food, and medicine. Ginger has anti-inflammatory and anti-oxidative properties which can control the aging process.",
+      "fullDescription": "Premium Grade A fresh ginger from East Java, Indonesia. Our ginger offers high oil content and characteristic pungent flavor, ideal for culinary, pharmaceutical, and beverage industries. Sourced from farms with minimum 8 months age for optimal potency and aroma.",
+      "specifications": [
+        { "label": "Grade", "value": "Grade A" },
+        { "label": "Origin", "value": "East Java, Indonesia" },
+        { "label": "Size", "value": "Mixed" },
+        { "label": "Age", "value": "Min. 8 months" },
+        { "label": "Container Capacity", "value": "8MT 20FT FCL" }
+      ]
+    }
+  },
+  "common": {
+    "skipToContent": "Skip to main content",
+    "availableNow": "Available now"
+  }
+}

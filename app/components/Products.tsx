@@ -2,8 +2,11 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Products() {
+  const t = useTranslations("products");
+  const locale = useLocale();
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,33 +31,53 @@ export default function Products() {
   const products = [
     {
       slug: "planting-media",
-      name: "Planting Media",
-      description: "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture.",
+      name: t("plantingMedia.name"),
+      description: t("plantingMedia.description"),
       bgColor: "bg-emerald-500",
-      keywords: ["Coconut Coir", "Peat Moss", "Growing Substrate"],
+      keywords: [
+        t("plantingMedia.keywords.0"),
+        t("plantingMedia.keywords.1"),
+        t("plantingMedia.keywords.2"),
+      ],
     },
     {
       slug: "cocoa",
-      name: "Cocoa",
-      description: "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
+      name: t("cocoa.name"),
+      description: t("cocoa.description"),
       bgColor: "bg-amber-500",
-      keywords: ["Cocoa Beans", "Fermented", "Premium Grade"],
+      keywords: [
+        t("cocoa.keywords.0"),
+        t("cocoa.keywords.1"),
+        t("cocoa.keywords.2"),
+      ],
     },
     {
       slug: "cloves",
-      name: "Cloves",
-      description: "Aromatic whole cloves and powder from Indonesian spice islands. Perfect for food, pharmaceutical, and essential oil industries.",
+      name: t("cloves.name"),
+      description: t("cloves.description"),
       bgColor: "bg-red-500",
-      keywords: ["Whole Cloves", "Clove Powder", "Spices"],
+      keywords: [
+        t("cloves.keywords.0"),
+        t("cloves.keywords.1"),
+        t("cloves.keywords.2"),
+      ],
     },
     {
       slug: "ginger",
-      name: "Ginger",
-      description: "Fresh and dried ginger with high oil content. Sourced from prime growing regions in Indonesia for international markets.",
+      name: t("ginger.name"),
+      description: t("ginger.description"),
       bgColor: "bg-yellow-500",
-      keywords: ["Fresh Ginger", "Dried Ginger", "High Oil Content"],
+      keywords: [
+        t("ginger.keywords.0"),
+        t("ginger.keywords.1"),
+        t("ginger.keywords.2"),
+      ],
     },
   ];
+
+  const getLocalePath = (slug: string) => {
+    return locale === "en" ? `/products/${slug}` : `/${locale}/products/${slug}`;
+  };
 
   return (
     <section id="products" ref={sectionRef} className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 bg-stone-100">
@@ -62,13 +85,13 @@ export default function Products() {
         {/* Header */}
         <div className="text-center mb-10 md:mb-14 lg:mb-16 reveal-on-scroll opacity-0">
           <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-amber-100 text-amber-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
-            What We Offer
+            {t("badge")}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
-            Our Premium Products
+            {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty">
-            Sourced directly from Indonesian farmers and processed to meet quality standards.
+            {t("subtitle")}
           </p>
         </div>
 
@@ -77,7 +100,7 @@ export default function Products() {
           {products.map((product, index) => (
             <Link
               key={index}
-              href={`/products/${product.slug}`}
+              href={getLocalePath(product.slug)}
               className="group reveal-on-scroll opacity-0 flex flex-col h-full"
             >
               <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
@@ -114,7 +137,7 @@ export default function Products() {
                   </div>
 
                   <span className="inline-flex items-center gap-1.5 sm:gap-2 text-emerald-600 font-semibold text-xs sm:text-sm group-hover:gap-2 sm:group-hover:gap-3 transition-all">
-                    View Details
+                    {t("viewDetails")}
                     <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
@@ -128,13 +151,13 @@ export default function Products() {
         {/* And more CTA */}
         <div className="mt-10 md:mt-14 lg:mt-16 text-center reveal-on-scroll opacity-0">
           <p className="text-stone-600 mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg">
-            Looking for other Indonesian agriculture products?
+            {t("moreProducts")}
           </p>
           <a
             href="#contact"
             className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-amber-500 text-stone-900 font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
           >
-            Contact Us for More Products
+            {t("contactMore")}
             <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
