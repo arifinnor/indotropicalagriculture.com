@@ -139,18 +139,10 @@ export default async function ProductPage({
                 </div>
                 <h1
                   id="product-title"
-                  className="text-2xl md:text-3xl font-bold text-stone-900 mb-2"
+                  className="text-2xl md:text-3xl font-bold text-stone-900 mb-4"
                 >
                   {product.name}
                 </h1>
-                <div className="mb-4">
-                  <p className="text-emerald-700 font-bold text-lg">
-                    ${product.price.toLocaleString()} / {product.unit}
-                  </p>
-                  <p className="text-stone-500 text-xs mt-1">
-                    FOB Surabaya, Indonesia
-                  </p>
-                </div>
 
                 {/* Description */}
                 <div className="mb-6">
