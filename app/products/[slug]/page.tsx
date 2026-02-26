@@ -108,7 +108,7 @@ export default async function ProductPage({
       {/* Product Content */}
       <section
         aria-labelledby="product-title"
-        className="min-h-[calc(100dvh-80px)] mt-20 flex flex-col items-center justify-center px-6 py-6 bg-stone-50 gap-6"
+        className="min-h-[calc(100dvh-80px)] mt-20 flex flex-col items-center justify-center px-6 py-6 bg-stone-100 gap-6"
       >
         <div className="max-w-5xl w-full flex-1 flex items-center">
           <article
@@ -160,7 +160,7 @@ export default async function ProductPage({
                     Specifications
                   </h2>
                   <dl
-                    className="bg-stone-50 rounded-xl divide-y divide-stone-200"
+                    className="bg-stone-100 rounded-xl divide-y divide-stone-200"
                     aria-label={`${product.name} specifications`}
                   >
                     {product.specifications.map((spec, index) => (

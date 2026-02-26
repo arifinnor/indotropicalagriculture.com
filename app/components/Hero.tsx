@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden bg-stone-50 pt-16">
+    <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden bg-stone-100 pt-16">
       {/* Static background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] rounded-full bg-emerald-200/20" />

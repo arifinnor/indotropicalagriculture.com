@@ -49,7 +49,7 @@ export default function ProductsPage({
   const categories = getCategories();
 
   return (
-    <main id="main-content" className="min-h-dvh bg-stone-50">
+    <main id="main-content" className="min-h-dvh bg-stone-100">
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"

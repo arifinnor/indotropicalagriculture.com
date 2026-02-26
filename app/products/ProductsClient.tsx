@@ -39,7 +39,7 @@ export default function ProductsClient({
   return (
     <>
       {/* Category Filter */}
-      <section className="sticky top-16 z-40 bg-stone-50/95 backdrop-blur-sm border-b border-stone-200 py-4 px-6">
+      <section className="sticky top-16 z-40 bg-stone-100/95 backdrop-blur-sm border-b border-stone-200 py-4 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-hide">
             <button
