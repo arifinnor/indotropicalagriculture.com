@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { Product } from "../lib/products-data";
 
@@ -27,6 +28,11 @@ export default function ProductsClient({
   categories,
 }: ProductsClientProps) {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
+
+  const handleImageError = (slug: string) => {
+    setImageErrors(prev => new Set(prev).add(slug));
+  };
 
   const filteredProducts = useMemo(
     () =>
@@ -81,15 +87,32 @@ export default function ProductsClient({
                 className="group flex flex-col h-full"
               >
                 <div className="relative overflow-hidden rounded-xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                  {/* Image placeholder with solid color */}
-                  <div
-                    className={`h-40 ${product.bgColor} relative overflow-hidden`}
-                  >
-                    <div className="absolute inset-0 bg-black/10" />
+                  {/* Product image */}
+                  <div className="h-40 relative overflow-hidden bg-stone-100">
+                    {imageErrors.has(product.slug) ? (
+                      // Fallback when image fails to load
+                      <div className={`w-full h-full ${product.bgColor} flex items-center justify-center`}>
+                        <span className="text-white/80 text-4xl font-bold">
+                          {product.name.charAt(0)}
+                        </span>
+                      </div>
+                    ) : (
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                        onError={() => handleImageError(product.slug)}
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
                     <div className="absolute bottom-3 left-4 text-white">
-                      <h3 className="text-lg font-bold text-balance">{product.name}</h3>
+                      <h3 className="text-lg font-bold text-balance drop-shadow-sm">{product.name}</h3>
                     </div>
-                    <span className="absolute top-3 right-3 px-2 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs font-medium text-white">
+                    <span className={`absolute top-3 right-3 px-2.5 py-1 rounded-full text-xs font-semibold ${
+                      CATEGORY_COLORS[product.category] || "bg-stone-100 text-stone-800"
+                    }`}>
                       {product.category}
                     </span>
                   </div>
