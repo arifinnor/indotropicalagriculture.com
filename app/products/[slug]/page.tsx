@@ -61,7 +61,7 @@ export default async function ProductPage({
   };
 
   return (
-    <main id="main-content" lang="en" className="min-h-dvh bg-stone-50">
+    <main id="main-content" lang="en" className="min-h-dvh bg-stone-100">
       {/* Skip Navigation Link for Keyboard Users */}
       <a
         href="#main-content"

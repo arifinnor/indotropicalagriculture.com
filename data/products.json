@@ -18,7 +18,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/clove.webp",
     "bgColor": "bg-amber-600",
     "category": "Spices"
   },
@@ -41,7 +41,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/clove.webp",
     "bgColor": "bg-amber-600",
     "category": "Spices"
   },
@@ -922,7 +922,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/clove.webp",
     "bgColor": "bg-amber-600",
     "category": "Spices"
   },
