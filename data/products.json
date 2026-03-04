@@ -41,7 +41,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/clove.webp",
+    "image": "/products/clove-stem.webp",
     "bgColor": "bg-amber-600",
     "category": "Spices"
   },
@@ -159,7 +159,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/dried-slice-turmeric.webp",
     "bgColor": "bg-amber-600",
     "category": "Spices"
   },
@@ -182,7 +182,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/dried-slice-curcuma.webp",
     "bgColor": "bg-amber-600",
     "category": "Spices"
   },
@@ -807,7 +807,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/velvet-tamarind.webp",
     "bgColor": "bg-orange-500",
     "category": "Fruits"
   },
@@ -876,7 +876,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/raw-cashew-nut.webp",
     "bgColor": "bg-amber-500",
     "category": "Nuts"
   },
@@ -946,7 +946,7 @@
       { "label": "Incoterms", "value": "FOB Surabaya, Indonesia" },
       { "label": "Origin", "value": "Indonesia" }
     ],
-    "image": "/products/default.svg",
+    "image": "/products/coffee-bean-robusta-grade-2.webp",
     "bgColor": "bg-stone-700",
     "category": "Coffee"
   }
