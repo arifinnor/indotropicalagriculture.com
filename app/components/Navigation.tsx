@@ -172,7 +172,7 @@ export default function Navigation() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-4 py-3 text-stone-700 hover:text-emerald-600 hover:bg-stone-50 rounded-lg focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 transition-colors font-medium"
+                  className="px-4 py-3 text-stone-700 hover:text-emerald-600 hover:bg-stone-100 rounded-lg focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 transition-colors font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

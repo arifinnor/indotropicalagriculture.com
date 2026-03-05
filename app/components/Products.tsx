@@ -148,7 +148,14 @@ export default function Products() {
           ))}
         </div>
 
-        {/* And more CTA */}
+        {/* Pricing Terms */}
+        <div className="mt-8 pt-6 border-t border-stone-200 text-center reveal-on-scroll opacity-0">
+          <p className="text-stone-500 text-xs">
+            * Prices per TON, FOB Surabaya, Indonesia. Contact us for volume pricing and shipping options.
+          </p>
+        </div>
+
+        {/* View All Products CTA */}
         <div className="mt-10 md:mt-14 lg:mt-16 text-center reveal-on-scroll opacity-0">
           <p className="text-stone-600 mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg">
             {t("moreProducts")}
