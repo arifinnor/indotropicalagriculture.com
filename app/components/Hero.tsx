@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 
 export default function Hero() {
   const t = useTranslations("hero");
+  const tCommon = useTranslations("common");
 
   const stats = [
     { key: "stat1", value: t("stat1.value"), label: t("stat1.label") },
@@ -27,7 +28,7 @@ export default function Hero() {
           <span className="relative flex h-2 w-2">
             <span className="animate-status-pulse absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" aria-hidden="true"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" aria-hidden="true"></span>
-            <span className="sr-only">{t("availableNow")}</span>
+            <span className="sr-only">{tCommon("availableNow")}</span>
           </span>
           <span className="text-xs sm:text-sm font-medium text-stone-600">
             {t("badge")}

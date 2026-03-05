@@ -50,9 +50,28 @@ export default function Navigation() {
   ];
 
   const switchLocale = (newLocale: string) => {
-    const currentPath = pathname.replace(`/${locale}`, "").replace(/^\//, "") || "";
-    const newPath = newLocale === "en" ? `/${currentPath}` : `/${newLocale}${currentPath ? "/" + currentPath : ""}`;
-    router.push(newPath);
+    // Set the next-intl cookie with the new locale
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=lax`;
+
+    // Remove the current locale prefix from pathname
+    let pathWithoutLocale = pathname;
+    if (pathname.startsWith(`/${locale}/`)) {
+      pathWithoutLocale = pathname.slice(`/${locale}`.length);
+    } else if (pathname === `/${locale}`) {
+      pathWithoutLocale = "/";
+    } else if (pathname.startsWith(`/${locale}`)) {
+      pathWithoutLocale = pathname.slice(`/${locale}`.length) || "/";
+    }
+
+    // Add new locale prefix (or none for default English locale)
+    let newPath: string;
+    if (newLocale === "en") {
+      newPath = pathWithoutLocale === "/" ? "/" : pathWithoutLocale;
+    } else {
+      newPath = pathWithoutLocale === "/" ? `/${newLocale}` : `/${newLocale}${pathWithoutLocale}`;
+    }
+
+    window.location.href = newPath;
   };
 
   return (
