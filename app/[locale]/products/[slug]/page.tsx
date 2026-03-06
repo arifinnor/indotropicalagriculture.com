@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
-import { getTranslations } from "next-intl/server";
 import { getProductBySlug, products } from "../../../lib/products-data";
 
 export async function generateStaticParams() {
@@ -16,7 +15,6 @@ export async function generateMetadata({
   params: Promise<{ locale: string; slug: string }>;
 }): Promise<Metadata> {
   const { locale, slug } = await params;
-  const t = await getTranslations({ locale, namespace: "productPage" });
 
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
@@ -114,14 +112,6 @@ function ProductContent({ slug }: { slug: string }) {
 
   return (
     <main id="main-content" lang={locale} className="min-h-dvh bg-stone-50">
-      {/* Skip Navigation Link for Keyboard Users */}
-      <a
-        href="#main-content"
-        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-emerald-600 focus:text-white focus:rounded-lg focus:font-medium"
-      >
-        {t("backToProducts")}
-      </a>
-
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -154,6 +144,7 @@ function ProductContent({ slug }: { slug: string }) {
         <div className="max-w-5xl w-full flex-1 flex items-center">
           <article
             aria-labelledby="product-title"
+            lang={locale}
             className="bg-white rounded-3xl shadow-lg overflow-hidden w-full"
           >
             <div className="flex md:grid md:grid-cols-2 flex-col md:flex-row">

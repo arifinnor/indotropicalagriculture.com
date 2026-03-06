@@ -93,8 +93,6 @@ export async function generateMetadata({
 
 // JSON-LD Structured Data for SEO
 async function getJsonLd(locale: string) {
-  const t = await getTranslations({ locale, namespace: "metadata" });
-
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -140,7 +138,7 @@ export default async function LocaleLayout({
   const { locale } = await params;
 
   // Validate locale
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale as (typeof locales)[number])) {
     notFound();
   }
 

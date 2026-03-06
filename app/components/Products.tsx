@@ -2,8 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { getFeaturedProducts } from "../lib/products-data";
+import { getFeaturedProducts, getLocalizedDescription } from "../lib/products-data";
+import { getLocalizedPath } from "../lib/i18n-utils";
 
 export default function Products() {
   const t = useTranslations("products");
@@ -30,22 +32,6 @@ export default function Products() {
     return () => observer.disconnect();
   }, []);
 
-  const getLocalePath = (slug: string) => {
-    return locale === "en" ? `/products/${slug}` : `/${locale}/products/${slug}`;
-  };
-
-  const getAllLocalePath = () => {
-    return locale === "en" ? `/products` : `/${locale}/products`;
-  };
-
-  // Get localized description based on locale
-  const getLocalizedDescription = (product: any) => {
-    if (locale === "de" && product.descriptionDe) {
-      return product.descriptionDe;
-    }
-    return product.shortDescription;
-  };
-
   return (
     <section id="products" ref={sectionRef} className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 bg-stone-100">
       <div className="max-w-6xl mx-auto">
@@ -67,17 +53,19 @@ export default function Products() {
           {products.map((product) => (
             <Link
               key={product.id}
-              href={getLocalePath(product.slug)}
+              href={getLocalizedPath(`/products/${product.slug}`, locale)}
               className="group reveal-on-scroll opacity-0 flex flex-col h-full"
             >
               <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
                 {/* Image placeholder with solid color or actual image */}
                 {product.image ? (
                   <div className="h-36 sm:h-40 md:h-44 relative overflow-hidden bg-stone-100">
-                    <img
+                    <Image
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover"
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                      className="object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-5 text-white">
@@ -97,7 +85,7 @@ export default function Products() {
                 {/* Content */}
                 <div className="p-4 sm:p-5 flex flex-col flex-grow">
                   <p className="text-stone-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed line-clamp-3">
-                    {getLocalizedDescription(product)}
+                    {getLocalizedDescription(product, locale)}
                   </p>
 
                   {/* Price */}
@@ -152,7 +140,7 @@ export default function Products() {
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
             <Link
-              href={getAllLocalePath()}
+              href={getLocalizedPath("/products", locale)}
               className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-emerald-600 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
             >
               {t("viewAll")}

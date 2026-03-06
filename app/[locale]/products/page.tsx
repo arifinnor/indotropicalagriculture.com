@@ -40,11 +40,7 @@ const jsonLd = {
   },
 };
 
-export default function ProductsPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ category?: string }>;
-}) {
+export default function ProductsPage() {
   const products = getAllProducts();
   const categories = getCategories();
 
@@ -96,7 +92,7 @@ export default function ProductsPage({
       <section className="py-16 px-6 bg-emerald-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Can't Find What You're Looking For?
+            Can&apos;t Find What You&apos;re Looking For?
           </h2>
           <p className="text-emerald-100 mb-6 text-lg">
             We offer many more products beyond our catalog. Contact us to discuss your

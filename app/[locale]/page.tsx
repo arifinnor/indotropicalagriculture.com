@@ -1,7 +1,5 @@
 "use client";
 
-export const dynamic = 'force-dynamic';
-
 import Hero from "../components/Hero";
 import VisionMission from "../components/VisionMission";
 import Products from "../components/Products";

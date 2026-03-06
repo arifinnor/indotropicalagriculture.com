@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import rawProductsJson from "@//data/products.json";
+import { type Locale } from "../i18n/config";
 
 export interface Product {
   id: string;
@@ -21,7 +22,7 @@ export interface Product {
 }
 
 // Products data directly from JSON
-const products: Product[] = rawProductsJson as unknown as Product[];
+const products: Product[] = rawProductsJson as Product[];
 
 // Get featured products (first 6 for landing page)
 export function getFeaturedProducts(limit = 6): Product[] {
@@ -94,3 +95,14 @@ export function generateProductMetadata(product: Product): Metadata {
 
 // Export all products for direct access
 export { products };
+
+/**
+ * Get the localized description for a product.
+ * German descriptions are available for some products.
+ */
+export function getLocalizedDescription(product: Product, locale: Locale): string {
+  if (locale === "de" && product.descriptionDe) {
+    return product.descriptionDe;
+  }
+  return product.shortDescription;
+}

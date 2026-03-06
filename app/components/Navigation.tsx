@@ -1,17 +1,17 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { locales } from "../../i18n/config";
+import { Link as IntlLink } from "next-intl/link";
+import { locales, defaultLocale } from "../../i18n/config";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations("navigation");
   const locale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -49,29 +49,25 @@ export default function Navigation() {
     { href: "#contact", label: t("contact"), isButton: true },
   ];
 
-  const switchLocale = (newLocale: string) => {
-    // Set the next-intl cookie with the new locale
-    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=lax`;
-
-    // Remove the current locale prefix from pathname
-    let pathWithoutLocale = pathname;
+  // Memoized path without locale prefix
+  const pathWithoutLocale = useMemo(() => {
     if (pathname.startsWith(`/${locale}/`)) {
-      pathWithoutLocale = pathname.slice(`/${locale}`.length);
-    } else if (pathname === `/${locale}`) {
-      pathWithoutLocale = "/";
-    } else if (pathname.startsWith(`/${locale}`)) {
-      pathWithoutLocale = pathname.slice(`/${locale}`.length) || "/";
+      return pathname.slice(`/${locale}`.length);
     }
-
-    // Add new locale prefix (or none for default English locale)
-    let newPath: string;
-    if (newLocale === "en") {
-      newPath = pathWithoutLocale === "/" ? "/" : pathWithoutLocale;
-    } else {
-      newPath = pathWithoutLocale === "/" ? `/${newLocale}` : `/${newLocale}${pathWithoutLocale}`;
+    if (pathname === `/${locale}`) {
+      return "/";
     }
+    if (pathname.startsWith(`/${locale}`)) {
+      return pathname.slice(`/${locale}`.length) || "/";
+    }
+    return pathname;
+  }, [pathname, locale]);
 
-    window.location.href = newPath;
+  // Build locale-aware href for IntlLink
+  const getLocaleHref = (targetLocale: string) => {
+    const prefix = targetLocale === defaultLocale ? "" : `/${targetLocale}`;
+    const path = pathWithoutLocale === "/" ? "" : pathWithoutLocale;
+    return `${prefix}${path}` || "/";
   };
 
   return (
@@ -106,9 +102,10 @@ export default function Navigation() {
           {/* Language Switcher */}
           <div className="flex items-center gap-1 border border-stone-200 rounded-full p-1">
             {locales.map((loc) => (
-              <button
+              <IntlLink
                 key={loc}
-                onClick={() => switchLocale(loc)}
+                href={getLocaleHref(loc)}
+                locale={loc}
                 className={`px-3 py-1 text-sm font-medium rounded-full transition-colors ${
                   locale === loc
                     ? "bg-emerald-600 text-white"
@@ -116,7 +113,7 @@ export default function Navigation() {
                 }`}
               >
                 {loc.toUpperCase()}
-              </button>
+              </IntlLink>
             ))}
           </div>
         </div>
@@ -183,9 +180,11 @@ export default function Navigation() {
             {/* Mobile Language Switcher */}
             <div className="flex justify-center gap-2 pt-2 border-t border-stone-200">
               {locales.map((loc) => (
-                <button
+                <IntlLink
                   key={loc}
-                  onClick={() => switchLocale(loc)}
+                  href={getLocaleHref(loc)}
+                  locale={loc}
+                  onClick={() => setIsOpen(false)}
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     locale === loc
                       ? "bg-emerald-600 text-white"
@@ -193,7 +192,7 @@ export default function Navigation() {
                   }`}
                 >
                   {loc === "en" ? "English" : "Deutsch"}
-                </button>
+                </IntlLink>
               ))}
             </div>
           </div>
