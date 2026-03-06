@@ -3,11 +3,13 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { useTranslations, useLocale } from "next-intl";
+import { getFeaturedProducts } from "../lib/products-data";
 
 export default function Products() {
   const t = useTranslations("products");
   const locale = useLocale();
   const sectionRef = useRef<HTMLDivElement>(null);
+  const products = getFeaturedProducts(6);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,55 +30,20 @@ export default function Products() {
     return () => observer.disconnect();
   }, []);
 
-  const products = [
-    {
-      slug: "planting-media",
-      name: t("plantingMedia.name"),
-      description: t("plantingMedia.description"),
-      bgColor: "bg-emerald-500",
-      keywords: [
-        t("plantingMedia.keywords.0"),
-        t("plantingMedia.keywords.1"),
-        t("plantingMedia.keywords.2"),
-      ],
-    },
-    {
-      slug: "cocoa",
-      name: t("cocoa.name"),
-      description: t("cocoa.description"),
-      bgColor: "bg-amber-500",
-      keywords: [
-        t("cocoa.keywords.0"),
-        t("cocoa.keywords.1"),
-        t("cocoa.keywords.2"),
-      ],
-    },
-    {
-      slug: "cloves",
-      name: t("cloves.name"),
-      description: t("cloves.description"),
-      bgColor: "bg-red-500",
-      keywords: [
-        t("cloves.keywords.0"),
-        t("cloves.keywords.1"),
-        t("cloves.keywords.2"),
-      ],
-    },
-    {
-      slug: "ginger",
-      name: t("ginger.name"),
-      description: t("ginger.description"),
-      bgColor: "bg-yellow-500",
-      keywords: [
-        t("ginger.keywords.0"),
-        t("ginger.keywords.1"),
-        t("ginger.keywords.2"),
-      ],
-    },
-  ];
-
   const getLocalePath = (slug: string) => {
     return locale === "en" ? `/products/${slug}` : `/${locale}/products/${slug}`;
+  };
+
+  const getAllLocalePath = () => {
+    return locale === "en" ? `/products` : `/${locale}/products`;
+  };
+
+  // Get localized description based on locale
+  const getLocalizedDescription = (product: any) => {
+    if (locale === "de" && product.descriptionDe) {
+      return product.descriptionDe;
+    }
+    return product.shortDescription;
   };
 
   return (
@@ -97,27 +64,50 @@ export default function Products() {
 
         {/* Product Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {products.map((product, index) => (
+          {products.map((product) => (
             <Link
-              key={index}
+              key={product.id}
               href={getLocalePath(product.slug)}
               className="group reveal-on-scroll opacity-0 flex flex-col h-full"
             >
               <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                {/* Image placeholder with solid color */}
-                <div className={`h-36 sm:h-40 md:h-44 ${product.bgColor} relative overflow-hidden`}>
-                  <div className="absolute inset-0 bg-black/10" />
-                  <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-5 text-white">
-                    <h3 className="text-lg sm:text-xl font-bold text-balance">{product.name}</h3>
+                {/* Image placeholder with solid color or actual image */}
+                {product.image ? (
+                  <div className="h-36 sm:h-40 md:h-44 relative overflow-hidden bg-stone-100">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-5 text-white">
+                      <h3 className="text-lg sm:text-xl font-bold text-balance">{product.name}</h3>
+                    </div>
                   </div>
-                  <div className="absolute top-3 sm:top-4 right-3 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20" />
-                </div>
+                ) : (
+                  <div className={`h-36 sm:h-40 md:h-44 ${product.bgColor} relative overflow-hidden`}>
+                    <div className="absolute inset-0 bg-black/10" />
+                    <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-5 text-white">
+                      <h3 className="text-lg sm:text-xl font-bold text-balance">{product.name}</h3>
+                    </div>
+                    <div className="absolute top-3 sm:top-4 right-3 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20" />
+                  </div>
+                )}
 
                 {/* Content */}
                 <div className="p-4 sm:p-5 flex flex-col flex-grow">
                   <p className="text-stone-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed line-clamp-3">
-                    {product.description}
+                    {getLocalizedDescription(product)}
                   </p>
+
+                  {/* Price */}
+                  {product.price && (
+                    <div className="mb-3">
+                      <span className="text-emerald-700 font-bold text-xs sm:text-sm">
+                        {product.currency === "USD" ? "$" : product.currency}{product.price.toLocaleString()}/{product.unit}
+                      </span>
+                    </div>
+                  )}
 
                   {/* Keywords/tags */}
                   <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 mt-auto">
@@ -151,7 +141,7 @@ export default function Products() {
         {/* Pricing Terms */}
         <div className="mt-8 pt-6 border-t border-stone-200 text-center reveal-on-scroll opacity-0">
           <p className="text-stone-500 text-xs">
-            * Prices per TON, FOB Surabaya, Indonesia. Contact us for volume pricing and shipping options.
+            {t("pricingTerms")}
           </p>
         </div>
 
@@ -160,15 +150,26 @@ export default function Products() {
           <p className="text-stone-600 mb-4 sm:mb-5 md:mb-6 text-sm sm:text-base md:text-lg">
             {t("moreProducts")}
           </p>
-          <a
-            href="#contact"
-            className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-amber-500 text-stone-900 font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
-          >
-            {t("contactMore")}
-            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link
+              href={getAllLocalePath()}
+              className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-emerald-600 text-white font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
+            >
+              {t("viewAll")}
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-amber-500 text-stone-900 font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 active:scale-100 transition-transform duration-200 text-sm sm:text-base"
+            >
+              {t("contactMore")}
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
