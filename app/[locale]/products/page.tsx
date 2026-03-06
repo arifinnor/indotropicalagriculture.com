@@ -1,4 +1,4 @@
-import { getAllProducts, getCategories } from "../lib/products-data";
+import { getAllProducts, getCategories } from "../../lib/products-data";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ProductsClient from "./ProductsClient";

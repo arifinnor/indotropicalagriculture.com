@@ -4,34 +4,10 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
-
-const products = {
-  cloves: {
-    slug: "cloves",
-    key: "cloves",
-    bgColor: "bg-red-500",
-  },
-  cocoa: {
-    slug: "cocoa",
-    key: "cocoa",
-    bgColor: "bg-amber-500",
-  },
-  ginger: {
-    slug: "ginger",
-    key: "ginger",
-    bgColor: "bg-yellow-500",
-  },
-  "planting-media": {
-    slug: "planting-media",
-    key: "plantingMedia",
-    bgColor: "bg-emerald-500",
-  },
-};
-
-type ProductSlug = keyof typeof products;
+import { getProductBySlug, products } from "../../../lib/products-data";
 
 export async function generateStaticParams() {
-  return Object.values(products).map((product) => ({ slug: product.slug }));
+  return products.map((product) => ({ slug: product.slug }));
 }
 
 export async function generateMetadata({
@@ -42,11 +18,11 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: "productPage" });
 
-  const product = products[slug as ProductSlug];
+  const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
 
-  const name = t(`${product.key}.name`);
-  const description = t(`${product.key}.fullDescription`);
+  const name = product.name;
+  const description = product.fullDescription;
 
   const url = `https://indotropicalagriculture.com/products/${slug}`;
   const localeMap: Record<string, string> = {
@@ -57,6 +33,7 @@ export async function generateMetadata({
   return {
     title: `${name} | Indo Tropical Agriculture - Indonesian Exporter`,
     description: description,
+    keywords: product.keywords,
     authors: [{ name: "Indo Tropical Agriculture" }],
     creator: "Indo Tropical Agriculture",
     publisher: "Indo Tropical Agriculture",
@@ -101,28 +78,31 @@ function ProductContent({ slug }: { slug: string }) {
   const t = useTranslations("productPage");
   const locale = useLocale();
 
-  const product = products[slug as ProductSlug];
+  const product = getProductBySlug(slug);
   if (!product) notFound();
 
-  const name = t(`${product.key}.name`);
-  const description = t(`${product.key}.description`);
-  const fullDescription = t(`${product.key}.fullDescription`);
+  // Use German description if locale is de and it's available
+  const description = locale === "de" && product.descriptionDe
+    ? product.descriptionDe
+    : product.description;
 
-  const specs = t.raw(`${product.key}.specifications`) as Array<{ label: string; value: string }>;
+  const fullDescription = product.fullDescription;
+  const specs = product.specifications;
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
-  const getProductsPath = () => locale === "en" ? "/#products" : `/${locale}/#products`;
+  const getProductsPath = () => locale === "en" ? "/products" : `/${locale}/products`;
 
   // JSON-LD Structured Data for Product
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
     inLanguage: locale,
-    name: name,
+    name: product.name,
     description: fullDescription,
     offers: {
       "@type": "AggregateOffer",
-      priceCurrency: "USD",
+      price: product.price,
+      priceCurrency: product.currency,
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
@@ -182,8 +162,8 @@ function ProductContent({ slug }: { slug: string }) {
                 className={`${product.bgColor} relative overflow-hidden flex-1 min-h-56 sm:min-h-64 md:min-h-0`}
               >
                 <Image
-                  src={`/products/${slug}.svg`}
-                  alt={name}
+                  src={product.image}
+                  alt={product.name}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
@@ -193,7 +173,34 @@ function ProductContent({ slug }: { slug: string }) {
 
               {/* Right: Product Info */}
               <div className="p-6 md:p-10 flex flex-col justify-center flex-1 min-h-56 sm:min-h-64 md:min-h-0">
-                <h1 id="product-title" className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">{name}</h1>
+                <h1 id="product-title" className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">{product.name}</h1>
+
+                {/* Category Badge */}
+                <div className="mb-4">
+                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                    product.category === "Spices"
+                      ? "bg-amber-100 text-amber-800"
+                      : product.category === "Cocoa"
+                      ? "bg-amber-100 text-amber-800"
+                      : product.category === "Coffee"
+                      ? "bg-stone-200 text-stone-800"
+                      : product.category === "Nuts"
+                      ? "bg-orange-100 text-orange-800"
+                      : product.category === "Beans"
+                      ? "bg-green-100 text-green-800"
+                      : product.category === "Fruits"
+                      ? "bg-yellow-100 text-yellow-800"
+                      : product.category === "Herbs"
+                      ? "bg-emerald-100 text-emerald-800"
+                      : product.category === "Extracts"
+                      ? "bg-red-100 text-red-800"
+                      : product.category === "Powders"
+                      ? "bg-stone-200 text-stone-800"
+                      : "bg-stone-100 text-stone-800"
+                  }`}>
+                    {product.category}
+                  </span>
+                </div>
 
                 {/* Description */}
                 <div className="mb-6">
@@ -204,7 +211,7 @@ function ProductContent({ slug }: { slug: string }) {
                 {/* Specifications */}
                 <div>
                   <h2 className="text-sm font-bold text-stone-900 mb-3">{t("specifications")}</h2>
-                  <dl className="bg-stone-50 rounded-xl divide-y divide-stone-200" aria-label={`${name} specifications`}>
+                  <dl className="bg-stone-50 rounded-xl divide-y divide-stone-200" aria-label={`${product.name} specifications`}>
                     {specs.map((spec, index) => (
                       <div
                         key={index}
@@ -273,7 +280,7 @@ export default async function ProductPage({
 }) {
   const { slug } = await params;
 
-  const product = products[slug as ProductSlug];
+  const product = getProductBySlug(slug);
   if (!product) {
     notFound();
   }

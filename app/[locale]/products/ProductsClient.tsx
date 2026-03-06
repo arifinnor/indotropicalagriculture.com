@@ -3,7 +3,7 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import type { Product } from "../lib/products-data";
+import type { Product } from "../../lib/products-data";
 
 const CATEGORY_COLORS: Record<string, string> = {
   Spices: "bg-amber-100 text-amber-800 hover:bg-amber-200",
