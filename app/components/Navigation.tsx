@@ -4,8 +4,7 @@ import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
-import { Link as IntlLink } from "next-intl/link";
-import { locales, defaultLocale } from "../../i18n/config";
+import { locales, defaultLocale } from "@/i18n/config";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -102,10 +101,9 @@ export default function Navigation() {
           {/* Language Switcher */}
           <div className="flex items-center gap-1 border border-stone-200 rounded-full p-1">
             {locales.map((loc) => (
-              <IntlLink
+              <Link
                 key={loc}
                 href={getLocaleHref(loc)}
-                locale={loc}
                 className={`px-3 py-1 text-sm font-medium rounded-full transition-colors ${
                   locale === loc
                     ? "bg-emerald-600 text-white"
@@ -113,7 +111,7 @@ export default function Navigation() {
                 }`}
               >
                 {loc.toUpperCase()}
-              </IntlLink>
+              </Link>
             ))}
           </div>
         </div>
@@ -180,10 +178,9 @@ export default function Navigation() {
             {/* Mobile Language Switcher */}
             <div className="flex justify-center gap-2 pt-2 border-t border-stone-200">
               {locales.map((loc) => (
-                <IntlLink
+                <Link
                   key={loc}
                   href={getLocaleHref(loc)}
-                  locale={loc}
                   onClick={() => setIsOpen(false)}
                   className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                     locale === loc
@@ -192,7 +189,7 @@ export default function Navigation() {
                   }`}
                 >
                   {loc === "en" ? "English" : "Deutsch"}
-                </IntlLink>
+                </Link>
               ))}
             </div>
           </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import rawProductsJson from "@//data/products.json";
-import { type Locale } from "../i18n/config";
+import { type Locale } from "@/i18n/config";
 
 export interface Product {
   id: string;

@@ -1,4 +1,4 @@
-import { defaultLocale, type Locale } from "../i18n/config";
+import { defaultLocale, type Locale } from "@/i18n/config";
 
 /**
  * Build a locale-aware path. For the default locale, no prefix is added.
