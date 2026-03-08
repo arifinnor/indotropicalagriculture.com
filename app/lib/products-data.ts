@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import rawProductsJson from "@//data/products.json";
-import { type Locale } from "@/i18n/config";
 
 export interface Product {
   id: string;
@@ -24,9 +23,24 @@ export interface Product {
 // Products data directly from JSON
 const products: Product[] = rawProductsJson as Product[];
 
-// Get featured products (first 6 for landing page)
+/**
+ * Hand-picked product slugs to show on the landing page (max 6).
+ * Edit this list to change which products are featured.
+ */
+const FEATURED_PRODUCT_SLUGS: string[] = [
+  "clove",
+  "nutmeg-ab",
+  "blackpepper-500-gl",
+  "vanilla-bean",
+  "dried-slice-turmeric",
+  "cashew-nut-w320",
+];
+
+// Get featured products for landing page (order follows FEATURED_PRODUCT_SLUGS)
 export function getFeaturedProducts(limit = 6): Product[] {
-  return products.slice(0, limit);
+  const slugs = FEATURED_PRODUCT_SLUGS.slice(0, limit);
+  const bySlug = new Map(products.map((p) => [p.slug, p]));
+  return slugs.map((slug) => bySlug.get(slug)).filter((p): p is Product => p != null);
 }
 
 // Get all products
@@ -100,7 +114,7 @@ export { products };
  * Get the localized description for a product.
  * German descriptions are available for some products.
  */
-export function getLocalizedDescription(product: Product, locale: Locale): string {
+export function getLocalizedDescription(product: Product, locale: string): string {
   if (locale === "de" && product.descriptionDe) {
     return product.descriptionDe;
   }

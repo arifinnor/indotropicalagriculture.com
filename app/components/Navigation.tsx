@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import { locales, defaultLocale } from "@/i18n/config";
+import { getLocalizedPath } from "../lib/i18n-utils";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,7 @@ export default function Navigation() {
   return (
     <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-emerald-600">
+        <Link href={getLocalizedPath("/", locale)} className="text-xl font-bold text-emerald-600">
           {t("brand")}
         </Link>
 

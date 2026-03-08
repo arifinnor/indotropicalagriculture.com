@@ -82,7 +82,6 @@
     },
     "viewDetails": "Details anzeigen",
     "viewAll": "Alle Produkte anzeigen",
-    "pricingTerms": "* Preise pro TONNE, FOB Surabaya, Indonesien. Kontaktieren Sie uns für Mengenpreise und Versandoptionen.",
     "moreProducts": "Suchen Sie andere indonesische Landwirtschaftsprodukte?",
     "contactMore": "Kontaktieren Sie uns für mehr Produkte"
   },
@@ -135,6 +134,7 @@
       "sending": "Wird gesendet...",
       "send": "Nachricht senden",
       "success": "Vielen Dank für Ihre Nachricht! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per E-Mail oder Telefon.",
       "required": "*"
     },
     "info": {

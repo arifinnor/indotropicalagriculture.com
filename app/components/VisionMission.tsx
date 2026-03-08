@@ -1,30 +1,13 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useTranslations } from "next-intl";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function VisionMission() {
   const t = useTranslations("visionMission");
   const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    const elements = sectionRef.current?.querySelectorAll(".reveal-on-scroll");
-    elements?.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
+  useScrollReveal(sectionRef, 0.2);
 
   return (
     <section ref={sectionRef} className="py-16 md:py-24 lg:py-32 px-4 sm:px-6">
@@ -34,7 +17,7 @@ export default function VisionMission() {
           <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-emerald-600 text-white text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             {t("badge")}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
             {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-stone-600 max-w-xl mx-auto text-pretty">

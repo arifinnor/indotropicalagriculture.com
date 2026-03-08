@@ -1,30 +1,15 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef, cloneElement, type ReactElement } from "react";
 import { useTranslations } from "next-intl";
+import { useScrollReveal } from "../hooks/useScrollReveal";
+
+const iconClassName = "w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8";
 
 export default function About() {
   const t = useTranslations("about");
   const sectionRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = sectionRef.current?.querySelectorAll(".reveal-on-scroll");
-    elements?.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
+  useScrollReveal(sectionRef, 0.1);
 
   const values = [
     {
@@ -76,7 +61,7 @@ export default function About() {
             <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-emerald-600 text-white text-xs sm:text-sm font-medium mb-4 sm:mb-6">
               {t("badge")}
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-stone-900 text-balance">
+            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-stone-900 text-balance">
               {t("title")}
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-stone-600 mb-4 sm:mb-6 leading-relaxed text-pretty">
@@ -113,9 +98,7 @@ export default function About() {
               >
                 <div className="p-4 sm:p-5 md:p-6 lg:p-7 rounded-xl sm:rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-200 h-full border border-stone-200">
                   <div className="w-11 h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl sm:rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-600 mb-3 sm:mb-4 md:mb-5 group-hover:scale-110 transition-transform">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      {value.icon.props.children}
-                    </svg>
+                    {cloneElement(value.icon as ReactElement<{ className?: string }>, { className: iconClassName })}
                   </div>
                   <h3 className="text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-3 text-stone-900">{value.title}</h3>
                   <p className="text-stone-600 text-xs sm:text-sm leading-relaxed">

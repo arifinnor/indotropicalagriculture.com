@@ -1,36 +1,19 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { getFeaturedProducts, getLocalizedDescription } from "../lib/products-data";
+import { getFeaturedProducts } from "../lib/products-data";
 import { getLocalizedPath } from "../lib/i18n-utils";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function Products() {
   const t = useTranslations("products");
   const locale = useLocale();
   const sectionRef = useRef<HTMLDivElement>(null);
   const products = getFeaturedProducts(6);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = sectionRef.current?.querySelectorAll(".reveal-on-scroll");
-    elements?.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
+  useScrollReveal(sectionRef, 0.1);
 
   return (
     <section id="products" ref={sectionRef} className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 bg-stone-100">
@@ -40,7 +23,7 @@ export default function Products() {
           <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-amber-100 text-amber-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             {t("badge")}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
             {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty">
@@ -48,89 +31,40 @@ export default function Products() {
           </p>
         </div>
 
-        {/* Product Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+        {/* Gallery grid: image-first, minimal caption */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
           {products.map((product) => (
             <Link
               key={product.id}
               href={getLocalizedPath(`/products/${product.slug}`, locale)}
-              className="group reveal-on-scroll opacity-0 flex flex-col h-full"
+              className="group reveal-on-scroll opacity-0 block focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-100 rounded-xl outline-none"
             >
-              <div className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-white shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                {/* Image placeholder with solid color or actual image */}
+              <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-stone-200">
                 {product.image ? (
-                  <div className="h-36 sm:h-40 md:h-44 relative overflow-hidden bg-stone-100">
+                  <>
                     <Image
                       src={product.image}
                       alt={product.name}
                       fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                      className="object-cover"
+                      sizes="(max-width: 768px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                    <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-5 text-white">
-                      <h3 className="text-lg sm:text-xl font-bold text-balance">{product.name}</h3>
-                    </div>
-                  </div>
+                    <div className="absolute inset-0 bg-stone-900/0 transition-colors duration-300 group-hover:bg-stone-900/20" aria-hidden />
+                  </>
                 ) : (
-                  <div className={`h-36 sm:h-40 md:h-44 ${product.bgColor} relative overflow-hidden`}>
-                    <div className="absolute inset-0 bg-black/10" />
-                    <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-5 text-white">
-                      <h3 className="text-lg sm:text-xl font-bold text-balance">{product.name}</h3>
-                    </div>
-                    <div className="absolute top-3 sm:top-4 right-3 sm:right-4 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/20" />
+                  <div className={`absolute inset-0 ${product.bgColor}`}>
+                    <div className="absolute inset-0 bg-stone-900/10 group-hover:bg-stone-900/20 transition-colors duration-300" aria-hidden />
                   </div>
                 )}
-
-                {/* Content */}
-                <div className="p-4 sm:p-5 flex flex-col flex-grow">
-                  <p className="text-stone-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed line-clamp-3">
-                    {getLocalizedDescription(product, locale)}
-                  </p>
-
-                  {/* Price */}
-                  {product.price && (
-                    <div className="mb-3">
-                      <span className="text-emerald-700 font-bold text-xs sm:text-sm">
-                        {product.currency === "USD" ? "$" : product.currency}{product.price.toLocaleString()}/{product.unit}
-                      </span>
-                    </div>
-                  )}
-
-                  {/* Keywords/tags */}
-                  <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4 mt-auto">
-                    {product.keywords.slice(0, 2).map((keyword, i) => (
-                      <span
-                        key={i}
-                        className="px-2 py-0.5 sm:px-2.5 sm:py-1 text-[10px] sm:text-xs font-medium rounded-full bg-stone-200 text-stone-700"
-                      >
-                        {keyword}
-                      </span>
-                    ))}
-                    {product.keywords.length > 2 && (
-                      <span className="px-2 py-0.5 sm:px-2.5 sm:py-1 text-[10px] sm:text-xs font-medium rounded-full bg-stone-100 text-stone-500">
-                        +{product.keywords.length - 2}
-                      </span>
-                    )}
-                  </div>
-
-                  <span className="inline-flex items-center gap-1.5 sm:gap-2 text-emerald-600 font-semibold text-xs sm:text-sm group-hover:gap-2 sm:group-hover:gap-3 transition-all">
-                    {t("viewDetails")}
-                    <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                </div>
+                <span className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                  <span className="text-white font-medium text-sm sm:text-base">{t("viewDetails")}</span>
+                </span>
               </div>
+              <p className="mt-2 sm:mt-3 text-stone-800 font-medium text-sm sm:text-base text-center group-hover:text-emerald-600 transition-colors">
+                {product.name}
+              </p>
             </Link>
           ))}
-        </div>
-
-        {/* Pricing Terms */}
-        <div className="mt-8 pt-6 border-t border-stone-200 text-center reveal-on-scroll opacity-0">
-          <p className="text-stone-500 text-xs">
-            {t("pricingTerms")}
-          </p>
         </div>
 
         {/* View All Products CTA */}

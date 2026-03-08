@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState, FormEvent } from "react";
+import { useRef, useState, FormEvent } from "react";
 import { useTranslations } from "next-intl";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 export default function Contact() {
   const t = useTranslations("contact");
@@ -30,31 +31,12 @@ export default function Contact() {
       setStatusMessage(t("form.success"));
       e.currentTarget.reset();
     } catch {
-      // For demo purposes, show success even without API
-      setFormStatus("success");
-      setStatusMessage(t("form.success"));
-      e.currentTarget.reset();
+      setFormStatus("error");
+      setStatusMessage(t("form.error"));
     }
   };
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fade-up");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    const elements = sectionRef.current?.querySelectorAll(".reveal-on-scroll");
-    elements?.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
+  useScrollReveal(sectionRef, 0.1);
 
   return (
     <section id="contact" ref={sectionRef} className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 bg-stone-100">
@@ -64,7 +46,7 @@ export default function Contact() {
           <span className="inline-block px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-amber-100 text-amber-700 text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             {t("badge")}
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
+          <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-stone-900 text-balance">
             {t("title")}
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty">

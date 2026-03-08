@@ -82,7 +82,6 @@
     },
     "viewDetails": "View Details",
     "viewAll": "View All Products",
-    "pricingTerms": "* Prices per TON, FOB Surabaya, Indonesia. Contact us for volume pricing and shipping options.",
     "moreProducts": "Looking for other Indonesian agriculture products?",
     "contactMore": "Contact Us for More Products"
   },
@@ -135,6 +134,7 @@
       "sending": "Sending...",
       "send": "Send Message",
       "success": "Thank you for your message! We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again or contact us by email or phone.",
       "required": "*"
     },
     "info": {

@@ -19,6 +19,14 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] rounded-full bg-emerald-200/20" />
         <div className="absolute bottom-[-10%] left-[-5%] w-[250px] sm:w-[350px] md:w-[400px] h-[250px] sm:h-[350px] md:h-[400px] rounded-full bg-amber-200/20" />
+        <div className="absolute inset-0 opacity-[0.025] mix-blend-multiply">
+          <svg className="size-full" aria-hidden="true">
+            <filter id="hero-noise">
+              <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#hero-noise)" />
+          </svg>
+        </div>
       </div>
 
       {/* Content */}
@@ -36,7 +44,7 @@ export default function Hero() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-stone-900 animate-fade-up delay-100 text-balance">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-stone-900 animate-fade-up delay-100 text-balance">
           {t("title")}
           <br />
           <span className="text-emerald-600">{t("titleHighlight")}</span>
