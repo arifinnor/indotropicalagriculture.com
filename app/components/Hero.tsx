@@ -1,10 +1,32 @@
+"use client";
+
+import { useTranslations } from "next-intl";
+
 export default function Hero() {
+  const t = useTranslations("hero");
+  const tCommon = useTranslations("common");
+
+  const stats = [
+    { key: "stat1", value: t("stat1.value"), label: t("stat1.label") },
+    { key: "stat2", value: t("stat2.value"), label: t("stat2.label") },
+    { key: "stat3", value: t("stat3.value"), label: t("stat3.label") },
+    { key: "stat4", value: t("stat4.value"), label: t("stat4.label") },
+  ];
+
   return (
-    <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden bg-stone-50 pt-16">
+    <section className="relative min-h-[90dvh] flex items-center justify-center overflow-hidden bg-stone-100 pt-16">
       {/* Static background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[300px] sm:w-[400px] md:w-[500px] h-[300px] sm:h-[400px] md:h-[500px] rounded-full bg-emerald-200/20" />
         <div className="absolute bottom-[-10%] left-[-5%] w-[250px] sm:w-[350px] md:w-[400px] h-[250px] sm:h-[350px] md:h-[400px] rounded-full bg-amber-200/20" />
+        <div className="absolute inset-0 opacity-[0.025] mix-blend-multiply">
+          <svg className="size-full" aria-hidden="true">
+            <filter id="hero-noise">
+              <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#hero-noise)" />
+          </svg>
+        </div>
       </div>
 
       {/* Content */}
@@ -14,23 +36,23 @@ export default function Hero() {
           <span className="relative flex h-2 w-2">
             <span className="animate-status-pulse absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" aria-hidden="true"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" aria-hidden="true"></span>
-            <span className="sr-only">Available now</span>
+            <span className="sr-only">{tCommon("availableNow")}</span>
           </span>
           <span className="text-xs sm:text-sm font-medium text-stone-600">
-            Indonesian Agriculture Exporter
+            {t("badge")}
           </span>
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-stone-900 animate-fade-up delay-100 text-balance">
-          Supplying across
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 sm:mb-6 text-stone-900 animate-fade-up delay-100 text-balance">
+          {t("title")}
           <br />
-          <span className="text-emerald-600">the world.</span>
+          <span className="text-emerald-600">{t("titleHighlight")}</span>
         </h1>
 
         {/* Subheading */}
         <p className="text-base sm:text-lg md:text-xl text-stone-600 max-w-2xl mx-auto mb-8 sm:mb-10 md:mb-12 leading-relaxed animate-fade-up delay-200 text-pretty">
-          Indonesian agriculture supplier, trader and exporter.
+          {t("subtitle")}
         </p>
 
         {/* CTA Buttons */}
@@ -39,26 +61,21 @@ export default function Hero() {
             href="#contact"
             className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-emerald-600 text-white font-semibold rounded-full shadow-lg hover:bg-emerald-700 hover:scale-105 active:scale-100 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-transform duration-200 text-center text-sm sm:text-base"
           >
-            Request a Quote
+            {t("ctaQuote")}
           </a>
           <a
             href="#products"
             className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-stone-900 font-semibold rounded-full shadow-md border border-stone-200 hover:scale-105 active:scale-100 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-transform duration-200 text-center text-sm sm:text-base"
           >
-            View Products
+            {t("ctaProducts")}
           </a>
         </div>
 
         {/* Trust indicators */}
         <div className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 animate-fade-up delay-400">
-          {[
-            { value: "100%", label: "Direct from Farmers" },
-            { value: "Worldwide", label: "Global Shipping" },
-            { value: "15+", label: "Years Experience" },
-            { value: "24/7", label: "Support" },
-          ].map((stat, i) => (
+          {stats.map((stat) => (
             <div
-              key={i}
+              key={stat.key}
               className="flex flex-col items-center group cursor-default"
             >
               <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-emerald-600 tabular-nums transition-transform group-hover:scale-110">
@@ -73,7 +90,7 @@ export default function Hero() {
       {/* Scroll indicator */}
       <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 animate-fade-in">
         <div className="flex flex-col items-center gap-2 text-stone-400">
-          <span className="text-[10px] sm:text-xs uppercase tracking-wide">Scroll</span>
+          <span className="text-[10px] sm:text-xs uppercase tracking-wide">{t("scroll")}</span>
           <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

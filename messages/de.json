@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "title": "Indo Tropical Agriculture | Indonesischer Landwirtschaftsexporteur",
+    "description": "Indonesischer Landwirtschaftslieferant, Händler und Exporteur. Premium Pflanzsubstrat, Kakaobohnen, Gewürznelken, Ingwer und mehr. Lieferung weltweit.",
+    "keywords": [
+      "indonesischer landwirtschaftsexport",
+      "kakaobohnen indonesien",
+      "gewürznelken export",
+      "pflanzsubstrat",
+      "ingwer export indonesien",
+      "landwirtschaftslieferant indonesien",
+      "tropische landwirtschaft",
+      "kokosfasern exporteur"
+    ]
+  },
+  "navigation": {
+    "brand": "Indo Tropical Agriculture",
+    "products": "Produkte",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "closeMenu": "Navigationsmenü schließen",
+    "openMenu": "Navigationsmenü öffnen",
+    "mobileNav": "Mobile Navigation"
+  },
+  "hero": {
+    "badge": "Indonesischer Landwirtschaftsexporteur",
+    "title": "Lieferung weltweit",
+    "titleHighlight": "überall.",
+    "subtitle": "Indonesischer Landwirtschaftslieferant, Händler und Exporteur.",
+    "ctaQuote": "Angebot anfordern",
+    "ctaProducts": "Produkte anzeigen",
+    "stat1": {
+      "value": "100%",
+      "label": "Direkt von Bauern"
+    },
+    "stat2": {
+      "value": "Weltweit",
+      "label": "Globaler Versand"
+    },
+    "stat3": {
+      "value": "15+",
+      "label": "Jahre Erfahrung"
+    },
+    "stat4": {
+      "value": "24/7",
+      "label": "Support"
+    },
+    "scroll": "Scrollen"
+  },
+  "visionMission": {
+    "badge": "Unser Zweck",
+    "title": "Vision & Mission",
+    "subtitle": "Geleitet von Zweck, angetrieben von Wirkung",
+    "visionTitle": "Unsere Vision",
+    "vision": "Frische und hochwertige indonesische landwirtschaftliche Produkte für die ganze Welt liefern.",
+    "missionTitle": "Unsere Mission",
+    "mission": "Um unsere Vision zu verwirklichen, sind wir committed, indonesische Bauern durch Bildung und Ausbildung zu unterstützen, um ihr Wohlbefinden und ihre Lebensqualität zu verbessern."
+  },
+  "products": {
+    "badge": "Was wir anbieten",
+    "title": "Unsere Premium-Produkte",
+    "subtitle": "Direkt von indonesischen Bauern bezogen und nach Qualitätsstandards verarbeitet.",
+    "plantingMedia": {
+      "name": "Pflanzsubstrat",
+      "description": "Premium Kokosfasern, Torfmoos-Alternativen und organische Wachstumssubstrate für Gartenbau und Landwirtschaft.",
+      "keywords": ["Kokosfasern", "Torfmoos", "Wachstumssubstrat"]
+    },
+    "cocoa": {
+      "name": "Kakao",
+      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Ideal für Schokoladenhersteller.",
+      "keywords": ["Kakaobohnen", "Fermentiert", "Premium-Qualität"]
+    },
+    "cloves": {
+      "name": "Gewürznelken",
+      "description": "Aromatische ganze Gewürznelken und Pulver von den indonesischen Gewürzinseln. Perfekt für Lebensmittel-, Pharma- und ätherische Öl-Industrien.",
+      "keywords": ["Ganze Nelken", "Nelkenpulver", "Gewürze"]
+    },
+    "ginger": {
+      "name": "Ingwer",
+      "description": "Frischer und getrockneter Ingwer mit hohem Ölgehalt. Aus den besten Anbaugebieten Indonesiens für internationale Märkte.",
+      "keywords": ["Frischer Ingwer", "Getrockneter Ingwer", "Hoher Ölgehalt"]
+    },
+    "viewDetails": "Details anzeigen",
+    "viewAll": "Alle Produkte anzeigen",
+    "moreProducts": "Suchen Sie andere indonesische Landwirtschaftsprodukte?",
+    "contactMore": "Kontaktieren Sie uns für mehr Produkte"
+  },
+  "about": {
+    "badge": "Über uns",
+    "title": "Ihr vertrauenswürdiger Partner für indonesische Landwirtschaft",
+    "intro1": "Indo Tropical Agriculture verbindet Käufer weltweit mit den besten landwirtschaftlichen Produkten aus Indonesien. Unsere tiefen Wurzeln in indonesischen Bauerngemeinschaften kombiniert mit internationalem Handelsknow-how machen wir zu Ihrem idealen Partner.",
+    "intro2": "Wir glauben an nachhaltige Praktiken, fairen Handel und den Aufbau langfristiger Beziehungen sowohl mit unseren Bauern als auch mit Kunden.",
+    "quote": "Jedes Produkt, das wir exportieren, trägt unser Engagement für Qualität und unsere Hingabe an die Bauern, die es möglich machen.",
+    "value1": {
+      "title": "Direkt von Bauern",
+      "description": "Wir arbeiten direkt mit indonesischen Bauern zusammen, gewährleisten fairen Handel und eliminieren Zwischenhändler für bessere Preise."
+    },
+    "value2": {
+      "title": "Qualitätsfokus",
+      "description": "Rigorose Qualitätskontrolle in jeder Phase stellt sicher, dass unsere Produkte die höchsten Standards erfüllen."
+    },
+    "value3": {
+      "title": "Zuverlässige Logistik",
+      "description": "Unser etabliertes Versandsnetzwerk gewährleistet pünktliche Lieferung weltweit mit vollständiger Sendungsverfolgung."
+    },
+    "value4": {
+      "title": "Wettbewerbsfähige Preise",
+      "description": "Direkte Beschaffung und effiziente Operationen ermöglichen es uns, wettbewerbsfähige Preise ohne Kompromiss bei der Qualität zu bieten."
+    },
+    "sustainableSourcing": "Nachhaltige Beschaffung",
+    "fairTrade": "Fairer Handel",
+    "qualityAssured": "Qualität gesichert"
+  },
+  "contact": {
+    "badge": "Kontaktieren Sie uns",
+    "title": "Lassen Sie uns ein Gespräch beginnen",
+    "subtitle": "Interessiert an unseren Produkten? Kontaktieren Sie uns für Angebote, Produktdetails oder Partnerschaftsanfragen.",
+    "form": {
+      "nameLabel": "Vollständiger Name",
+      "namePlaceholder": "Ihr Name",
+      "emailLabel": "E-Mail",
+      "emailPlaceholder": "ihre@email.de",
+      "companyLabel": "Firmenname",
+      "companyPlaceholder": "Ihr Unternehmen",
+      "productLabel": "Produktinteresse",
+      "productPlaceholder": "Wählen Sie ein Produkt",
+      "plantingMedia": "Pflanzsubstrat",
+      "cocoa": "Kakao",
+      "cloves": "Gewürznelken",
+      "ginger": "Ingwer",
+      "other": "Andere Produkte",
+      "messageLabel": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihren Anforderungen...",
+      "sending": "Wird gesendet...",
+      "send": "Nachricht senden",
+      "success": "Vielen Dank für Ihre Nachricht! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per E-Mail oder Telefon.",
+      "required": "*"
+    },
+    "info": {
+      "department": "Internationaler Export- und Vertrieb",
+      "exportSales": "Export-Verkauf",
+      "whatsapp": "WhatsApp",
+      "english": "(Englisch)",
+      "german": "(Deutsch)",
+      "quickResponse": "Schnelle Antwort",
+      "quickResponseText": "Wir antworten normalerweise innerhalb von 24 Stunden. Für dringende Angelegenheiten kontaktieren Sie uns bitte direkt per Telefon oder WhatsApp."
+    }
+  },
+  "footer": {
+    "companyName": "Indo Tropical Agriculture",
+    "tagline": "Ihr vertrauenswürdiger Partner für premium indonesische Landwirtschaftsprodukte. Direkt von Bauern bezogen, Qualität weltweit geliefert.",
+    "quickLinks": "Schnelllinks",
+    "products": "Produkte",
+    "aboutUs": "Über uns",
+    "contact": "Kontakt",
+    "contactLabel": "Kontakt",
+    "location": "Jakarta, Indonesien",
+    "copyright": "Indo Tropical Agriculture. Alle Rechte vorbehalten."
+  },
+  "productPage": {
+    "backToProducts": "Zurück zu Produkte",
+    "description": "Beschreibung",
+    "specifications": "Spezifikationen",
+    "requestQuote": "Angebot anfordern",
+    "viewAllProducts": "Alle Produkte anzeigen",
+    "plantingMedia": {
+      "name": "Pflanzsubstrat",
+      "description": "Premium Kokosfasern, Torfmoos-Alternativen und organische Wachstumssubstrate für Gartenbau und Landwirtschaft. Unser Pflanzsubstrat ist umweltfreundlich, erneuerbar und bietet ausgezeichnete Wasserspeicherung bei gleichzeitiger Aufrechterhaltung der richtigen Belüftung für gesunde Wurzelentwicklung.",
+      "fullDescription": "Nachhaltiges Kokosfaser-Pflanzsubstrat aus Indonesien. Unsere umweltfreundlichen Wachstumssubstrate bieten ausgezeichnete Wasserspeicherung, optimale Belüftung und pH-Balance für Gartenbau und Landwirtschaft. Perfekte Alternative zu Torfmoos für Gewächshaus, Baumschul- und Hydrokulturanwendungen.",
+      "specifications": [
+        { "label": "LF", "value": "0,5 - 0,8 mS/cm" },
+        { "label": "pH-Wert", "value": "5,5 - 6,5" },
+        { "label": "Feuchtigkeit", "value": "50% - 60%" },
+        { "label": "Verunreinigungen", "value": "≤ 5%" }
+      ]
+    },
+    "cocoa": {
+      "name": "Kakaobohnen",
+      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Unsere Kakaobohnen stammen aus erstklassigen Anbaugebieten in Sulawesi und Sumatra, ideal für Schokoladenhersteller, die premium Rohstoffe suchen.",
+      "fullDescription": "Premium fermentierte indonesische Kakaobohnen aus Sulawesi und Sumatra. Unsere Bohnen erfüllen internationale Qualitätsstandards mit optimaler Fermentation und Feuchtigkeitsgehalt. Perfekt für Schokoladenhersteller, Kakao-Verarbeiter und Großkäufer, die zuverlässige Lieferung aus Indonesien suchen.",
+      "specifications": [
+        { "label": "Bohnenzahl", "value": "90-110 Bohnen/100g" },
+        { "label": "Feuchtigkeit", "value": "6% - 7%" },
+        { "label": "Fremdstoffe", "value": "≤ 0,5%" },
+        { "label": "Schimmelige Bohnen", "value": "≤ 3%" }
+      ]
+    },
+    "cloves": {
+      "name": "Gewürznelken",
+      "description": "Gewürznelken stammen aus den Knospen eines immergrünen Baumes, der auf den Nord-Molukken-Inseln in Indonesien heimisch ist. Stark im Aroma und heiß und würzig im Geschmack, werden Gewürznelken verwendet, um viele Lebensmittel zu würzen, insbesondere Fleisch und Backwaren.",
+      "fullDescription": "Premium indonesische Gewürznelken direkt von den Gewürzinseln exportiert. Hochwertige ganze Gewürznelken und Pulver geeignet für Lebensmittel-, Pharma- und ätherische Öl-Industrien. Unsere Gewürznelken werden sorgfältig ausgewählt, getrocknet und verarbeitet, um ihr intensives Aroma und ihren würzigen Geschmack zu bewahren.",
+      "specifications": [
+        { "label": "Stiele", "value": "2,5%" },
+        { "label": "Untergeordnete Nelken", "value": "2,25%" },
+        { "label": "Beimischung", "value": "≤ 1%" },
+        { "label": "Feuchtigkeit", "value": "6% - 12%" }
+      ]
+    },
+    "ginger": {
+      "name": "Frischer Ingwer",
+      "description": "Ingwer (Zingiber officinale), eine krautige Staude der Familie Zingiberaceae, wahrscheinlich ursprünglich aus Südostasien, oder sein aromatisches, würziges Rhizom (unterirdischer Stamm), das als Gewürz, Aroma, Lebensmittel und Medizin verwendet wird. Ingwer hat entzündungshemmende und antioxidative Eigenschaften, die den Alterungsprozess kontrollieren können.",
+      "fullDescription": "Premium-Grad A frischer Ingwer aus Ost-Java, Indonesien. Unser Ingwer bietet hohen Ölgehalt und charakteristischen würzigen Geschmack, ideal für kulinarische, pharmazeutische und Getränkeindustrien. Bezogen von Farmen mit mindestens 8 Monaten Alter für optimale Potenz und Aroma.",
+      "specifications": [
+        { "label": "Qualität", "value": "Grad A" },
+        { "label": "Herkunft", "value": "Ost-Java, Indonesien" },
+        { "label": "Größe", "value": "Gemischt" },
+        { "label": "Alter", "value": "Min. 8 Monate" },
+        { "label": "Container-Kapazität", "value": "8MT 20FT FCL" }
+      ]
+    }
+  },
+  "common": {
+    "skipToContent": "Zum Hauptinhalt springen",
+    "availableNow": "Jetzt verfügbar"
+  }
+}

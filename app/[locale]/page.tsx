@@ -1,11 +1,16 @@
-import Hero from "./components/Hero";
-import VisionMission from "./components/VisionMission";
-import Products from "./components/Products";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navigation from "./components/Navigation";
+"use client";
+
+import Hero from "../components/Hero";
+import VisionMission from "../components/VisionMission";
+import Products from "../components/Products";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Navigation from "../components/Navigation";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("footer");
+
   return (
     <main id="main-content" className="min-h-dvh">
       {/* Navigation */}
@@ -32,34 +37,34 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 mb-8 md:mb-10 lg:mb-12">
             <div>
               <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">
-                Indo Tropical Agriculture
+                {t("companyName")}
               </h3>
               <p className="text-stone-300 text-xs sm:text-sm leading-relaxed">
-                Bringing Fresh Tropical Agriculture Products Around the World.
+                {t("tagline")}
               </p>
             </div>
             <div>
-              <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Quick Links</h3>
+              <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">{t("quickLinks")}</h3>
               <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-stone-300">
                 <li>
                   <a href="#products" className="hover:text-white transition-colors">
-                    Products
+                    {t("products")}
                   </a>
                 </li>
                 <li>
                   <a href="#about" className="hover:text-white transition-colors">
-                    About Us
+                    {t("aboutUs")}
                   </a>
                 </li>
                 <li>
                   <a href="#contact" className="hover:text-white transition-colors">
-                    Contact
+                    {t("contact")}
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">Contact</h3>
+              <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4">{t("contactLabel")}</h3>
               <ul className="space-y-2 sm:space-y-3 text-xs sm:text-sm text-stone-300">
                 <li>
                   <a href="mailto:exports@indotropicalagriculture.com" className="hover:text-white transition-colors">
@@ -71,12 +76,12 @@ export default function Home() {
                     +62813 3126 1210
                   </a>
                 </li>
-                <li>Jakarta, Indonesia</li>
+                <li>{t("location")}</li>
               </ul>
             </div>
           </div>
           <div className="pt-6 sm:pt-8 border-t border-stone-800 text-center text-[10px] sm:text-xs text-stone-400">
-            <p>&copy; {new Date().getFullYear()} Indo Tropical Agriculture. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} {t("copyright")}</p>
           </div>
         </div>
       </footer>
