@@ -123,34 +123,7 @@ export default function ProductsClient({
                       {product.shortDescription}
                     </p>
 
-                    {/* Price */}
-                    <div className="mb-3">
-                      <span className="text-emerald-700 font-bold text-sm">
-                        ${product.price.toLocaleString()} / {product.unit}
-                      </span>
-                      <span className="text-stone-400 text-xs block">
-                        FOB Surabaya
-                      </span>
-                    </div>
-
-                    {/* Keywords/tags */}
-                    <div className="flex flex-wrap gap-1.5 mb-3 mt-auto">
-                      {product.keywords.slice(0, 2).map((keyword, i) => (
-                        <span
-                          key={i}
-                          className="px-2 py-0.5 text-xs font-medium rounded-full bg-stone-200 text-stone-700"
-                        >
-                          {keyword}
-                        </span>
-                      ))}
-                      {product.keywords.length > 2 && (
-                        <span className="px-2 py-0.5 text-xs font-medium rounded-full bg-stone-100 text-stone-500">
-                          +{product.keywords.length - 2}
-                        </span>
-                      )}
-                    </div>
-
-                    <span className="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm group-hover:gap-3 transition-all">
+                    <span className="inline-flex items-center gap-2 text-emerald-600 font-semibold text-sm group-hover:gap-3 transition-all mt-auto">
                       View Details
                       <svg
                         className="w-4 h-4"

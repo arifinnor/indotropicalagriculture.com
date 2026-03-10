@@ -9,6 +9,7 @@ export default function Contact() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [formStatus, setFormStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [statusMessage, setStatusMessage] = useState("");
+  const [selectedProduct, setSelectedProduct] = useState("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,6 +30,7 @@ export default function Contact() {
 
       setFormStatus("success");
       setStatusMessage(t("form.success"));
+      setSelectedProduct("");
       e.currentTarget.reset();
     } catch {
       setFormStatus("error");
@@ -129,13 +131,16 @@ export default function Contact() {
                     id="product"
                     name="product"
                     required
-                    className="w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-stone-300 bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none transition-[border-color,box-shadow] text-sm"
+                    value={selectedProduct}
+                    onChange={(e) => setSelectedProduct(e.target.value)}
+                    className={`w-full px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg sm:rounded-xl border border-stone-300 bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 outline-none appearance-none transition-[border-color,box-shadow] text-sm cursor-pointer box-border leading-tight ${selectedProduct ? "text-stone-900" : "text-stone-400"}`}
                   >
                     <option value="">{t("form.productPlaceholder")}</option>
-                    <option value="planting-media">{t("form.plantingMedia")}</option>
-                    <option value="cocoa">{t("form.cocoa")}</option>
-                    <option value="cloves">{t("form.cloves")}</option>
-                    <option value="ginger">{t("form.ginger")}</option>
+                    <option value="spices">{t("form.spices")}</option>
+                    <option value="coffee">{t("form.coffee")}</option>
+                    <option value="herbs">{t("form.herbs")}</option>
+                    <option value="nuts">{t("form.nuts")}</option>
+                    <option value="beans">{t("form.beans")}</option>
                     <option value="other">{t("form.other")}</option>
                   </select>
                 </div>

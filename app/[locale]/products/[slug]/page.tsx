@@ -85,7 +85,7 @@ function ProductContent({ slug }: { slug: string }) {
     : product.description;
 
   const fullDescription = product.fullDescription;
-  const specs = product.specifications;
+  const specs = product.specifications.filter(spec => spec.label !== "Price");
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getProductsPath = () => locale === "en" ? "/products" : `/${locale}/products`;
@@ -98,9 +98,7 @@ function ProductContent({ slug }: { slug: string }) {
     name: product.name,
     description: fullDescription,
     offers: {
-      "@type": "AggregateOffer",
-      price: product.price,
-      priceCurrency: product.currency,
+      "@type": "Offer",
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
