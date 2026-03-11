@@ -1,16 +1,25 @@
 {
   "metadata": {
-    "title": "Indo Tropical Agriculture | Indonesian Agriculture Exporter",
-    "description": "Indonesian agriculture supplier, trader and exporter. Premium planting media, cocoa, cloves, ginger, and more. Supplying across the world.",
+    "title": "Indo Tropical Agriculture | Indonesian Agriculture Exporter to EU Markets",
+    "description": "Leading Indonesian agriculture exporter supplying premium cocoa beans, cloves, ginger, nutmeg, vanilla, black pepper, turmeric, and cashew nuts to European and global markets. Direct from farmers, worldwide shipping.",
     "keywords": [
       "indonesian agriculture export",
-      "cocoa beans indonesia",
-      "cloves export",
-      "planting media",
+      "indonesian cocoa beans exporter",
+      "cloves export indonesia",
       "ginger export indonesia",
+      "nutmeg exporter indonesia",
+      "vanilla beans indonesia",
+      "black pepper export",
+      "turmeric exporter",
+      "cashew nuts indonesia",
       "agriculture supplier indonesia",
-      "tropical agriculture",
-      "coconut coir exporter"
+      "tropical agriculture export",
+      "EU agriculture import",
+      "european agriculture supplier",
+      "wholesale spices indonesia",
+      "bulk agricultural products",
+      "indonesian spice exporter",
+      "fair trade agriculture indonesia"
     ]
   },
   "navigation": {
@@ -60,11 +69,6 @@
     "badge": "What We Offer",
     "title": "Our Premium Products",
     "subtitle": "Sourced directly from Indonesian farmers and processed to meet quality standards.",
-    "plantingMedia": {
-      "name": "Planting Media",
-      "description": "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture.",
-      "keywords": ["Coconut Coir", "Peat Moss", "Growing Substrate"]
-    },
     "cocoa": {
       "name": "Cocoa",
       "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
@@ -165,17 +169,6 @@
     "specifications": "Specifications",
     "requestQuote": "Request a Quote",
     "viewAllProducts": "View All Products",
-    "plantingMedia": {
-      "name": "Planting Media",
-      "description": "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture. Our planting media is eco-friendly, renewable, and provides excellent water retention while maintaining proper aeration for healthy root development.",
-      "fullDescription": "Sustainable coconut coir planting media from Indonesia. Our eco-friendly growing substrates offer excellent water retention, optimal aeration, and pH balance for horticulture and agriculture. Perfect alternative to peat moss for greenhouse, nursery, and hydroponic applications.",
-      "specifications": [
-        { "label": "EC", "value": "0.5 - 0.8 mS/cm" },
-        { "label": "pH", "value": "5.5 - 6.5" },
-        { "label": "Moisture", "value": "50% - 60%" },
-        { "label": "Impurities", "value": "≤ 5%" }
-      ]
-    },
     "cocoa": {
       "name": "Cocoa Beans",
       "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Our cocoa beans are sourced from prime growing regions in Sulawesi and Sumatra, ideal for chocolate manufacturers seeking premium raw materials.",

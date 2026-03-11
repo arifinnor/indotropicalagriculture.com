@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Indo Tropical Agriculture - A landing page for an Indonesian agriculture export company targeting European markets. Built with Next.js 16, React 19, TypeScript, and Tailwind CSS v4.
 
-**Business**: Export of planting media, cocoa, cloves, ginger, and more from Indonesia to Europe.
+**Business**: Export of cocoa, cloves, ginger, nutmeg, vanilla, black pepper, turmeric, cashew nuts, and more from Indonesia to Europe.
 **Target Market**: European Union (EU)
 
 ## Development Commands
@@ -36,7 +36,7 @@ app/
 └── components/
     ├── Navigation.tsx   # Client component: mobile hamburger menu, scroll behaviors
     ├── Hero.tsx         # Hero section with CTAs
-    ├── Products.tsx     # Product showcase (planting media, cocoa, cloves, ginger)
+    ├── Products.tsx     # Product showcase (cocoa, cloves, ginger, nutmeg, vanilla, etc.)
     ├── VisionMission.tsx # Company values and mission
     ├── About.tsx        # Company about section with values
     └── Contact.tsx      # Contact form and info
@@ -61,7 +61,7 @@ The site includes comprehensive SEO optimizations:
 - **Structured Data**: JSON-LD Organization schema
 - **SEO Files**: sitemap.xml, robots.txt
 - **Semantic HTML**: Proper heading hierarchy (h1 → h2 → h3)
-- **Keywords**: Indonesian agriculture export, cocoa beans, cloves, ginger, planting media
+- **Keywords**: Indonesian agriculture export, cocoa beans, cloves, ginger, nutmeg, vanilla
 
 ## Configuration Notes
 

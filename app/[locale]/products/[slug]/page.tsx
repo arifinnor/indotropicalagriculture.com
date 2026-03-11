@@ -90,22 +90,69 @@ function ProductContent({ slug }: { slug: string }) {
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getProductsPath = () => locale === "en" ? "/products" : `/${locale}/products`;
 
-  // JSON-LD Structured Data for Product
-  const jsonLd = {
+  // JSON-LD Structured Data - Combined Product + Breadcrumb
+  const productJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    inLanguage: locale,
-    name: product.name,
-    description: fullDescription,
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: "Indo Tropical Agriculture",
-        url: "https://indotropicalagriculture.com",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}/products/${slug}#product`,
+        inLanguage: locale,
+        name: product.name,
+        description: fullDescription,
+        category: product.category,
+        keywords: product.keywords.join(", "),
+        image: product.image,
+        brand: {
+          "@type": "Brand",
+          name: "Indo Tropical Agriculture",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "Indo Tropical Agriculture",
+          url: "https://indotropicalagriculture.com",
+        },
+        countryOfOrigin: "ID",
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "Indo Tropical Agriculture",
+            url: "https://indotropicalagriculture.com",
+          },
+          availableDeliveryMethod: "https://schema.org/ParcelDelivery",
+          deliveryLeadTime: {
+            "@type": "QuantitativeValue",
+            minValue: 7,
+            maxValue: 21,
+            unitCode: "DAY",
+          },
+        },
       },
-    },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Products",
+            item: `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}/products`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: product.name,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -113,7 +160,7 @@ function ProductContent({ slug }: { slug: string }) {
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />
 
       {/* Navigation */}

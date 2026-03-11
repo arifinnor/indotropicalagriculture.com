@@ -1,16 +1,27 @@
 {
   "metadata": {
-    "title": "Indo Tropical Agriculture | Indonesischer Landwirtschaftsexporteur",
-    "description": "Indonesischer Landwirtschaftslieferant, Händler und Exporteur. Premium Pflanzsubstrat, Kakaobohnen, Gewürznelken, Ingwer und mehr. Lieferung weltweit.",
+    "title": "Indo Tropical Agriculture | Indonesischer Landwirtschaftsexporteur für EU-Märkte",
+    "description": "Führender indonesischer Landwirtschaftsexporteur, der Premium-Pflanzsubstrat, Kakaobohnen, Gewürznelken, Ingwer, Muskatnuss, Vanille, schwarzen Pfeffer, Kurkuma und Cashewnüsse an europäische und weltweite Märkte liefert. Direkt von Bauern, weltweiter Versand.",
     "keywords": [
       "indonesischer landwirtschaftsexport",
-      "kakaobohnen indonesien",
-      "gewürznelken export",
-      "pflanzsubstrat",
+      "indonesischer kakaobohnen exporteur",
+      "gewürznelken export indonesien",
+      "pflanzsubstrat lieferant",
       "ingwer export indonesien",
+      "muskatnuss exporteur indonesien",
+      "vanillebohnen indonesien",
+      "schwarzer pfeffer export",
+      "kurkuma exporteur",
+      "cashewnüsse indonesien",
+      "kokosfasern exporteur",
       "landwirtschaftslieferant indonesien",
-      "tropische landwirtschaft",
-      "kokosfasern exporteur"
+      "tropische landwirtschaft export",
+      "eu landwirtschaft import",
+      "europäischer landwirtschaftslieferant",
+      "gewürze großhandel indonesien",
+      "landwirtschaftliche bulkprodukte",
+      "indonesischer gewürzexporteur",
+      "fair trade landwirtschaft indonesien"
     ]
   },
   "navigation": {
@@ -60,11 +71,6 @@
     "badge": "Was wir anbieten",
     "title": "Unsere Premium-Produkte",
     "subtitle": "Direkt von indonesischen Bauern bezogen und nach Qualitätsstandards verarbeitet.",
-    "plantingMedia": {
-      "name": "Pflanzsubstrat",
-      "description": "Premium Kokosfasern, Torfmoos-Alternativen und organische Wachstumssubstrate für Gartenbau und Landwirtschaft.",
-      "keywords": ["Kokosfasern", "Torfmoos", "Wachstumssubstrat"]
-    },
     "cocoa": {
       "name": "Kakao",
       "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Ideal für Schokoladenhersteller.",
@@ -165,17 +171,6 @@
     "specifications": "Spezifikationen",
     "requestQuote": "Angebot anfordern",
     "viewAllProducts": "Alle Produkte anzeigen",
-    "plantingMedia": {
-      "name": "Pflanzsubstrat",
-      "description": "Premium Kokosfasern, Torfmoos-Alternativen und organische Wachstumssubstrate für Gartenbau und Landwirtschaft. Unser Pflanzsubstrat ist umweltfreundlich, erneuerbar und bietet ausgezeichnete Wasserspeicherung bei gleichzeitiger Aufrechterhaltung der richtigen Belüftung für gesunde Wurzelentwicklung.",
-      "fullDescription": "Nachhaltiges Kokosfaser-Pflanzsubstrat aus Indonesien. Unsere umweltfreundlichen Wachstumssubstrate bieten ausgezeichnete Wasserspeicherung, optimale Belüftung und pH-Balance für Gartenbau und Landwirtschaft. Perfekte Alternative zu Torfmoos für Gewächshaus, Baumschul- und Hydrokulturanwendungen.",
-      "specifications": [
-        { "label": "LF", "value": "0,5 - 0,8 mS/cm" },
-        { "label": "pH-Wert", "value": "5,5 - 6,5" },
-        { "label": "Feuchtigkeit", "value": "50% - 60%" },
-        { "label": "Verunreinigungen", "value": "≤ 5%" }
-      ]
-    },
     "cocoa": {
       "name": "Kakaobohnen",
       "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Unsere Kakaobohnen stammen aus erstklassigen Anbaugebieten in Sulawesi und Sumatra, ideal für Schokoladenhersteller, die premium Rohstoffe suchen.",
