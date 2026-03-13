@@ -78,7 +78,7 @@ export async function generateMetadata({
       images: ["https://indotropicalagriculture.com/og-image.svg"],
     },
     alternates: {
-      canonical: "https://indotropicalagriculture.com",
+      canonical: locale === "en" ? "https://indotropicalagriculture.com" : "https://indotropicalagriculture.com/de",
       languages: {
         en: "https://indotropicalagriculture.com",
         de: "https://indotropicalagriculture.com/de",

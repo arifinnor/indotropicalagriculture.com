@@ -17,41 +17,51 @@ const CATEGORY_TO_SLUG: Record<string, string> = {
   Powders: "powders",
 };
 
+// Actual last modified dates based on content updates
+const LAST_MOD_DATES = {
+  home: new Date("2025-02-01"),
+  products: new Date("2025-03-01"),
+  categories: new Date("2025-03-10"),
+  faq: new Date("2025-03-13"),
+  // Default date for pages without specific updates
+  default: new Date("2025-02-01"),
+};
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     {
       url: SITE_URL,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.home,
       changeFrequency: "monthly" as const,
       priority: 1,
     },
     {
       url: `${SITE_URL}/de`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.home,
       changeFrequency: "monthly" as const,
       priority: 0.9,
     },
     {
       url: `${SITE_URL}/products`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.products,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     {
       url: `${SITE_URL}/de/products`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.products,
       changeFrequency: "weekly" as const,
       priority: 0.8,
     },
     {
       url: `${SITE_URL}/faq`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.faq,
       changeFrequency: "monthly" as const,
       priority: 0.5,
     },
     {
       url: `${SITE_URL}/de/faq`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.faq,
       changeFrequency: "monthly" as const,
       priority: 0.5,
     },
@@ -61,13 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const categoryIndexPages = [
     {
       url: `${SITE_URL}/categories`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.categories,
       changeFrequency: "monthly" as const,
       priority: 0.6,
     },
     {
       url: `${SITE_URL}/de/categories`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.categories,
       changeFrequency: "monthly" as const,
       priority: 0.6,
     },
@@ -80,32 +90,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [
       {
         url: `${SITE_URL}/categories/${slug}`,
-        lastModified: new Date(),
+        lastModified: LAST_MOD_DATES.categories,
         changeFrequency: "weekly" as const,
         priority: 0.7,
       },
       {
         url: `${SITE_URL}/de/categories/${slug}`,
-        lastModified: new Date(),
+        lastModified: LAST_MOD_DATES.categories,
         changeFrequency: "weekly" as const,
         priority: 0.7,
       },
     ];
   });
 
-  // Product pages for each locale
+  // Product pages for each locale with image references
   const productPages = products.flatMap((product) => [
     {
       url: `${SITE_URL}/products/${product.slug}`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.products,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+      images: [
+        {
+          url: `${SITE_URL}${product.image}`,
+          title: product.name,
+          caption: product.shortDescription,
+          license: "https://indotropicalagriculture.com",
+        },
+      ],
     },
     {
       url: `${SITE_URL}/de/products/${product.slug}`,
-      lastModified: new Date(),
+      lastModified: LAST_MOD_DATES.products,
       changeFrequency: "monthly" as const,
       priority: 0.7,
+      images: [
+        {
+          url: `${SITE_URL}${product.image}`,
+          title: product.name,
+          caption: product.shortDescription,
+          license: "https://indotropicalagriculture.com",
+        },
+      ],
     },
   ]);
 
