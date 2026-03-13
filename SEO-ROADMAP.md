@@ -1,26 +1,26 @@
 # SEO Roadmap - Indo Tropical Agriculture
 
 > Last updated: 2026-03-13
-> Current indexed pages: ~86 (40 products × 2 locales + catalog pages + homepages)
+> Current indexed pages: ~96 (40 products × 2 locales + 10 category pages × 2 locales + catalog pages + homepages)
 
 ---
 
 ## Phase 1: Quick Wins (Immediate)
 
-### 1.1 Category Pages ⚡ High Priority
+### 1.1 Category Pages ✅ Completed
 
 Create dedicated category pages for better internal linking and SEO targeting.
 
-- [ ] Create `app/[locale]/categories/page.tsx` - Category index
-- [ ] Create `app/[locale]/categories/[category]/page.tsx` - Individual category pages
-- [ ] Add category-specific metadata (title, description, keywords)
-- [ ] Add category descriptions (EN + DE)
-- [ ] Add JSON-LD `CollectionPage` schema for each category
-- [ ] Add to sitemap.ts
-- [ ] Update navigation to link to categories
-- [ ] Add breadcrumbs with structured data
+- [x] Create `app/[locale]/categories/page.tsx` - Category index
+- [x] Create `app/[locale]/categories/[category]/page.tsx` - Individual category pages
+- [x] Add category-specific metadata (title, description, keywords)
+- [x] Add category descriptions (EN + DE)
+- [x] Add JSON-LD `CollectionPage` schema for each category
+- [x] Add to sitemap.ts
+- [x] Update navigation to link to categories
+- [x] Add breadcrumbs with structured data
 
-**Pages to create**: 5 categories × 2 locales = 10 pages
+**Pages created**: 5 categories × 2 locales = 10 pages
 - `/categories/spices`, `/categories/herbs`, `/categories/nuts`, `/categories/coffee`, `/categories/beans`
 - `/de/categories/spices`, `/de/categories/herbs`, etc.
 
