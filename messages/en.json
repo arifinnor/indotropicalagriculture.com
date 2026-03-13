@@ -25,6 +25,7 @@
   "navigation": {
     "brand": "Indo Tropical Agriculture",
     "products": "Products",
+    "faq": "FAQ",
     "about": "About",
     "contact": "Contact Us",
     "closeMenu": "Close navigation menu",
@@ -348,5 +349,46 @@
   "common": {
     "skipToContent": "Skip to main content",
     "availableNow": "Available now"
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "Common Questions",
+    "subtitle": "Find answers to common questions about our products and services",
+    "metaTitle": "FAQ | Indo Tropical Agriculture - Indonesian Exporter",
+    "metaDescription": "Frequently asked questions about Indo Tropical Agriculture's products, shipping, payment terms, and export services. Get answers about ordering Indonesian agricultural products.",
+    "questions": {
+      "moq": {
+        "question": "What is your minimum order quantity?",
+        "answer": "PLACEHOLDER: Answer about MOQ requirements..."
+      },
+      "samples": {
+        "question": "Do you offer samples?",
+        "answer": "PLACEHOLDER: Answer about sample availability..."
+      },
+      "payment": {
+        "question": "What payment methods do you accept?",
+        "answer": "PLACEHOLDER: Answer about payment terms..."
+      },
+      "shipping": {
+        "question": "Do you ship to Europe?",
+        "answer": "PLACEHOLDER: Answer about shipping to EU countries..."
+      },
+      "shippingTime": {
+        "question": "What is your shipping time to Europe?",
+        "answer": "PLACEHOLDER: Answer about transit times..."
+      },
+      "documentation": {
+        "question": "Do you handle export documentation?",
+        "answer": "PLACEHOLDER: Answer about export docs and customs..."
+      },
+      "quality": {
+        "question": "How do you ensure product quality?",
+        "answer": "PLACEHOLDER: Answer about quality control..."
+      },
+      "sourcing": {
+        "question": "Where do you source your products?",
+        "answer": "PLACEHOLDER: Answer about direct sourcing from farmers..."
+      }
+    }
   }
 }

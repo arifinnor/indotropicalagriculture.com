@@ -45,6 +45,7 @@ export default function Navigation() {
 
   const navLinks = [
     { href: "#products", label: t("products") },
+    { href: "/faq", label: t("faq"), isLocaleLink: true },
     { href: "#about", label: t("about") },
     { href: "#contact", label: t("contact"), isButton: true },
   ];
@@ -88,6 +89,14 @@ export default function Navigation() {
               >
                 {link.label}
               </a>
+            ) : link.isLocaleLink ? (
+              <Link
+                key={link.href}
+                href={getLocalizedPath(link.href, locale)}
+                className="text-stone-600 hover:text-emerald-600 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded-md transition-colors font-medium"
+              >
+                {link.label}
+              </Link>
             ) : (
               <a
                 key={link.href}
@@ -164,6 +173,15 @@ export default function Navigation() {
                 >
                   {link.label}
                 </a>
+              ) : link.isLocaleLink ? (
+                <Link
+                  key={link.href}
+                  href={getLocalizedPath(link.href, locale)}
+                  className="px-4 py-3 text-stone-700 hover:text-emerald-600 hover:bg-stone-100 rounded-lg focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 transition-colors font-medium"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                </Link>
               ) : (
                 <a
                   key={link.href}

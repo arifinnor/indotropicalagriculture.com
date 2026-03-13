@@ -27,6 +27,7 @@
   "navigation": {
     "brand": "Indo Tropical Agriculture",
     "products": "Produkte",
+    "faq": "FAQ",
     "about": "Über uns",
     "contact": "Kontakt",
     "closeMenu": "Navigationsmenü schließen",
@@ -350,5 +351,46 @@
   "common": {
     "skipToContent": "Zum Hauptinhalt springen",
     "availableNow": "Jetzt verfügbar"
+  },
+  "faq": {
+    "badge": "Häufig gestellte Fragen",
+    "title": "Häufige Fragen",
+    "subtitle": "Finden Sie Antworten auf häufige Fragen zu unseren Produkten und Dienstleistungen",
+    "metaTitle": "FAQ | Indo Tropical Agriculture - Indonesischer Exporteur",
+    "metaDescription": "Häufig gestellte Fragen zu den Produkten, Versand, Zahlungsbedingungen und Exportdienstleistungen von Indo Tropical Agriculture. Antworten zum Bestellen indonesischer Landwirtschaftsprodukte.",
+    "questions": {
+      "moq": {
+        "question": "Wie hoch ist Ihre Mindestbestellmenge?",
+        "answer": "PLATZHALTER: Antwort zu den Mindestbestellmengen..."
+      },
+      "samples": {
+        "question": "Bieten Sie Muster an?",
+        "answer": "PLATZHALTER: Antwort zur Musterverfügbarkeit..."
+      },
+      "payment": {
+        "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "answer": "PLATZHALTER: Antwort zu Zahlungsbedingungen..."
+      },
+      "shipping": {
+        "question": "Liefern Sie nach Europa?",
+        "answer": "PLATZHALTER: Antwort zum Versand in EU-Länder..."
+      },
+      "shippingTime": {
+        "question": "Wie lange dauert der Versand nach Europa?",
+        "answer": "PLATZHALTER: Antwort zu Transitzeiten..."
+      },
+      "documentation": {
+        "question": "Übernehmen Sie die Exportdokumentation?",
+        "answer": "PLATZHALTER: Antwort zu Exportdokumenten und Zoll..."
+      },
+      "quality": {
+        "question": "Wie stellen Sie die Produktqualität sicher?",
+        "answer": "PLATZHALTER: Antwort zur Qualitätskontrolle..."
+      },
+      "sourcing": {
+        "question": "Wo beziehen Sie Ihre Produkte?",
+        "answer": "PLATZHALTER: Antwort zur direkten Beschaffung von Bauern..."
+      }
+    }
   }
 }
