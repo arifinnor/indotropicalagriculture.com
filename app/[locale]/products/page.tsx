@@ -1,4 +1,4 @@
-import { getAllProducts, getCategories } from "../../lib/products-data";
+import { getAllProducts } from "../../lib/products-data";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
@@ -111,7 +111,6 @@ function getProductCatalogJsonLd(locale: string, products: ReturnType<typeof get
 export default async function ProductsPage({ params }: ProductsPageProps) {
   const { locale } = await params;
   const products = getAllProducts();
-  const categories = getCategories();
   const jsonLd = getProductCatalogJsonLd(locale, products);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
@@ -151,14 +150,26 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4 text-balance">
             Our Products
           </h1>
-          <p className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty">
+          <p className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty mb-6">
             Premium Indonesian agricultural products sourced directly from farmers
             and processed to meet international quality standards.
           </p>
+          <Link
+            href={locale === "en" ? "/categories" : `/${locale}/categories`}
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white text-emerald-700 font-semibold rounded-full border border-emerald-200 hover:bg-emerald-50 hover:border-emerald-300 transition-all shadow-sm hover:shadow focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg>
+            {locale === "en" ? "Browse by Category" : "Nach Kategorie durchsuchen"}
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </Link>
         </div>
       </section>
 
-      <ProductsClient products={products} categories={categories} />
+      <ProductsClient products={products} locale={locale} />
 
       {/* CTA */}
       <section className="py-16 px-6 bg-emerald-600">

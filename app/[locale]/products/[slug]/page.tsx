@@ -211,33 +211,6 @@ function ProductContent({ slug }: { slug: string }) {
               <div className="p-6 md:p-10 flex flex-col justify-center flex-1 min-h-56 sm:min-h-64 md:min-h-0">
                 <h1 id="product-title" className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">{product.name}</h1>
 
-                {/* Category Badge */}
-                <div className="mb-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                    product.category === "Spices"
-                      ? "bg-amber-100 text-amber-800"
-                      : product.category === "Cocoa"
-                      ? "bg-amber-100 text-amber-800"
-                      : product.category === "Coffee"
-                      ? "bg-stone-200 text-stone-800"
-                      : product.category === "Nuts"
-                      ? "bg-orange-100 text-orange-800"
-                      : product.category === "Beans"
-                      ? "bg-green-100 text-green-800"
-                      : product.category === "Fruits"
-                      ? "bg-yellow-100 text-yellow-800"
-                      : product.category === "Herbs"
-                      ? "bg-emerald-100 text-emerald-800"
-                      : product.category === "Extracts"
-                      ? "bg-red-100 text-red-800"
-                      : product.category === "Powders"
-                      ? "bg-stone-200 text-stone-800"
-                      : "bg-stone-100 text-stone-800"
-                  }`}>
-                    {product.category}
-                  </span>
-                </div>
-
                 {/* Description */}
                 <div className="mb-6">
                   <h2 className="text-sm font-bold text-stone-900 mb-2">{t("description")}</h2>

@@ -3,30 +3,54 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import type { Product } from "../../lib/products-data";
+import type { Product } from "../../../lib/products-data";
 
-interface ProductsClientProps {
+interface CategoryProductsClientProps {
   products: Product[];
+  categoryName: string;
   locale: string;
 }
 
-export default function ProductsClient({
+export default function CategoryProductsClient({
   products,
+  categoryName,
   locale,
-}: ProductsClientProps) {
+}: CategoryProductsClientProps) {
   const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());
 
   const handleImageError = (slug: string) => {
     setImageErrors(prev => new Set(prev).add(slug));
   };
 
-  const getProductPath = (slug: string) => {
-    return locale === "en" ? `/products/${slug}` : `/${locale}/products/${slug}`;
-  };
+  const getCategoriesPath = () => locale === "en" ? "/categories" : `/${locale}/categories`;
+  const getProductPath = (slug: string) => locale === "en" ? `/products/${slug}` : `/${locale}/products/${slug}`;
 
   return (
     <section className="py-12 px-6">
       <div className="max-w-6xl mx-auto">
+        {/* Back Link */}
+        <Link
+          href={getCategoriesPath()}
+          className="inline-flex items-center gap-2 text-stone-600 hover:text-emerald-600 font-medium mb-8 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
+        >
+          <svg
+            className="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          {locale === "en" ? "Back to Categories" : "Zurück zu Kategorien"}
+        </Link>
+
+        {/* Products Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {products.map((product) => (
             <Link
@@ -88,6 +112,16 @@ export default function ProductsClient({
             </Link>
           ))}
         </div>
+
+        {products.length === 0 && (
+          <div className="text-center py-16">
+            <p className="text-stone-500 text-lg">
+              {locale === "en"
+                ? "No products found in this category."
+                : "Keine Produkte in dieser Kategorie gefunden."}
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );

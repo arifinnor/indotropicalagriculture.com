@@ -206,6 +206,147 @@
       ]
     }
   },
+  "categories": {
+    "title": "Produktkategorien",
+    "description": "Durchsuchen Sie unseren Katalog nach Kategorie, um die perfekten indonesischen landwirtschaftlichen Produkte für Ihre Bedürfnisse zu finden.",
+    "metaTitle": "Kategorien | Indo Tropical Agriculture - Indonesischer Exporteur",
+    "metaDescription": "Durchsuchen Sie indonesische landwirtschaftliche Produkte nach Kategorie, einschließlich Gewürze, Kräuter, Nüsse, Kaffee, Bohnen und Kakao. Premium-Qualität direkt von Bauern bezogen.",
+    "metaKeywords": [
+      "indonesische produktkategorien",
+      "indonesischer gewürzexport",
+      "indonesischer kräuterexport",
+      "indonesischer nüsse-export",
+      "indonesischer kaffeeexport",
+      "indonesischer bohnenexport",
+      "großhandel landwirtschaft indonesien",
+      "indonesischer kakaoexport"
+    ],
+    "spices": {
+      "name": "Gewürze",
+      "description": "Aromatische Gewürze aus Indonesien, einschließlich Gewürznelken, Muskatnuss, Zimt und Pfeffer. Premium-Qualität direkt von den Gewürzinseln bezogen.",
+      "metaTitle": "Indonesischer Gewürzexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Gewürze für den Export. Großhandel mit Gewürznelken, Muskatnuss, Zimt, Pfeffer und mehr, direkt von Bauern bezogen. Hoher Ätherisches-Öl-Gehalt.",
+      "metaKeywords": [
+        "indonesischer gewürzexport",
+        "gewürznelken export indonesien",
+        "muskatnuss exporteur indonesien",
+        "zimt indonesien",
+        "schwarzer pfeffer export",
+        "gewürze großhandel indonesien",
+        "indonesischer gewürzexporteur"
+      ]
+    },
+    "herbs": {
+      "name": "Kräuter",
+      "description": "Getrocknete Kräuter und Heilpflanzen, einschließlich Ingwer, Kurkuma, Moringa und Galgant. Premium-Qualität für kulinarische und pharmazeutische Verwendung.",
+      "metaTitle": "Indonesischer Kräuterexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Kräuter für den Export. Großhandel mit Ingwer, Kurkuma, Moringa, Galgant und mehr, direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer kräuterexport",
+        "ingwer export indonesien",
+        "kurkuma exporteur",
+        "moringa indonesien",
+        "galgant export",
+        "heilpflanzen indonesien",
+        "getrocknete kräuter indonesien"
+      ]
+    },
+    "nuts": {
+      "name": "Nüsse",
+      "description": "Cashewnüsse und andere Premium-Nüsse von indonesischen Plantagen. Perfekt für Snacks und die Lebensmittelverarbeitung.",
+      "metaTitle": "Indonesischer Nüsse-Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Nüsse für den Export. Großhandel mit Cashewnüssen, direkt von Bauern bezogen. Verschiedene Sorten verfügbar.",
+      "metaKeywords": [
+        "indonesischer nüsse-export",
+        "cashewnüsse indonesien",
+        "cashew exporteur",
+        "cashewnüsse großhandel",
+        "indonesische cashewnüsse",
+        "premium nüsse indonesien"
+      ]
+    },
+    "coffee": {
+      "name": "Kaffee",
+      "description": "Indonesische Kaffeebohnen, einschließlich Robusta- und Arabica-Sorten für internationale Märkte. Reichhaltiger Geschmack aus vulkanischem Boden.",
+      "metaTitle": "Indonesischer Kaffeeexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Kaffeebohnen für den Export. Großhandel mit Robusta- und Arabica-Kaffee, direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer kaffeeexport",
+        "robusta kaffee indonesien",
+        "arabica kaffee indonesien",
+        "kaffeebohnen großhandel",
+        "indonesischer kaffeeexporteur",
+        "sumatra kaffee",
+        "java kaffee"
+      ]
+    },
+    "beans": {
+      "name": "Bohnen",
+      "description": "Verschiedene Bohnen, einschließlich Mungbohnen, rote Bohnen und andere Hülsenfrüchte aus Indonesien. Hoher Proteingehalt für die Lebensmittelindustrie.",
+      "metaTitle": "Indonesischer Bohnenexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Bohnen für den Export. Großhandel mit Mungbohnen, roten Bohnen und mehr, direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer bohnenexport",
+        "mungbohnen indonesien",
+        "rote bohnen exporteur",
+        "hülsenfrüchte indonesien",
+        "bohnen großhandel",
+        "indonesische hülsenfrüchte"
+      ]
+    },
+    "cocoa": {
+      "name": "Kakao",
+      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Ideal für Schokoladenhersteller.",
+      "metaTitle": "Indonesischer Kakaoexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Kakaobohnen für den Export. Großhandel mit fermentiertem Kakao aus Sulawesi und Sumatra.",
+      "metaKeywords": [
+        "indonesischer kakaoexport",
+        "kakaobohnen indonesien",
+        "indonesischer kakaobohnen exporteur",
+        "fermentierter kakao",
+        "kakao großhandel",
+        "sulawesi kakao"
+      ]
+    },
+    "fruits": {
+      "name": "Früchte",
+      "description": "Tropische Früchte aus Indonesien, einschließlich Kokosnussprodukte und andere exotische Früchte für internationale Märkte.",
+      "metaTitle": "Indonesischer Früchteexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Früchte und Fruchtprodukte für den Export. Direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer früchteexport",
+        "tropische früchte indonesien",
+        "kokosnuss produkte",
+        "exotische früchte indonesien"
+      ]
+    },
+    "extracts": {
+      "name": "Extrakte",
+      "description": "Natürliche Extrakte und ätherische Öle aus indonesischen Pflanzen und Gewürzen. Für Lebensmittel-, Kosmetik- und Pharmaindustrie.",
+      "metaTitle": "Indonesischer Extrakteexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Extrakte und ätherische Öle für den Export. Natürliche Extrakte aus lokalen Pflanzen.",
+      "metaKeywords": [
+        "indonesische extrakte",
+        "ätherische öle indonesien",
+        "natürliche extrakte",
+        "nelkenöl indonesien",
+        "ingwer extrakt"
+      ]
+    },
+    "powders": {
+      "name": "Pulver",
+      "description": "Gewürzpulver und Kräuterpulver aus Indonesien. Praktisch für die Lebensmittelverarbeitung und kulinarische Anwendungen.",
+      "metaTitle": "Indonesischer Pulverexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Gewürz- und Kräuterpulver für den Export. Gemahlene Gewürze direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesische pulver",
+        "gewürzpulver indonesien",
+        "kurkuma pulver",
+        "ingwer pulver",
+        "gemahlene gewürze"
+      ]
+    }
+  },
   "common": {
     "skipToContent": "Zum Hauptinhalt springen",
     "availableNow": "Jetzt verfügbar"

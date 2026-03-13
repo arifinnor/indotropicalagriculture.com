@@ -204,6 +204,147 @@
       ]
     }
   },
+  "categories": {
+    "title": "Product Categories",
+    "description": "Browse our catalog by category to find the perfect Indonesian agricultural products for your needs.",
+    "metaTitle": "Categories | Indo Tropical Agriculture - Indonesian Exporter",
+    "metaDescription": "Browse Indonesian agricultural products by category including spices, herbs, nuts, coffee, beans, and cocoa. Premium quality sourced directly from farmers.",
+    "metaKeywords": [
+      "indonesian product categories",
+      "indonesian spices export",
+      "indonesian herbs export",
+      "indonesian nuts export",
+      "indonesian coffee export",
+      "indonesian beans export",
+      "wholesale agriculture indonesia",
+      "indonesian cocoa export"
+    ],
+    "spices": {
+      "name": "Spices",
+      "description": "Aromatic spices from Indonesia including cloves, nutmeg, cinnamon, and pepper. Premium quality sourced directly from spice islands.",
+      "metaTitle": "Indonesian Spices Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian spices for export. Wholesale cloves, nutmeg, cinnamon, pepper, and more sourced directly from farmers. High essential oil content.",
+      "metaKeywords": [
+        "indonesian spices export",
+        "cloves export indonesia",
+        "nutmeg exporter indonesia",
+        "cinnamon indonesia",
+        "black pepper export",
+        "wholesale spices indonesia",
+        "indonesian spice exporter"
+      ]
+    },
+    "herbs": {
+      "name": "Herbs",
+      "description": "Dried herbs and medicinal plants including ginger, turmeric, moringa, and galangal. Premium quality for culinary and pharmaceutical use.",
+      "metaTitle": "Indonesian Herbs Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian herbs for export. Wholesale ginger, turmeric, moringa, galangal, and more sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian herbs export",
+        "ginger export indonesia",
+        "turmeric exporter",
+        "moringa indonesia",
+        "galangal export",
+        "medicinal plants indonesia",
+        "dried herbs indonesia"
+      ]
+    },
+    "nuts": {
+      "name": "Nuts",
+      "description": "Cashew nuts and other premium nuts from Indonesian plantations. Perfect for snacking and food processing industries.",
+      "metaTitle": "Indonesian Nuts Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian nuts for export. Wholesale cashew nuts sourced directly from farmers. Various grades available.",
+      "metaKeywords": [
+        "indonesian nuts export",
+        "cashew nuts indonesia",
+        "cashew exporter",
+        "wholesale cashew nuts",
+        "indonesian cashew",
+        "premium nuts indonesia"
+      ]
+    },
+    "coffee": {
+      "name": "Coffee",
+      "description": "Indonesian coffee beans including Robusta and Arabica grades for international markets. Rich flavor from volcanic soil.",
+      "metaTitle": "Indonesian Coffee Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian coffee beans for export. Wholesale Robusta and Arabica coffee sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian coffee export",
+        "robusta coffee indonesia",
+        "arabica coffee indonesia",
+        "wholesale coffee beans",
+        "indonesian coffee exporter",
+        "sumatra coffee",
+        "java coffee"
+      ]
+    },
+    "beans": {
+      "name": "Beans",
+      "description": "Various beans including mung beans, red beans, and other legumes from Indonesia. High protein content for food industry.",
+      "metaTitle": "Indonesian Beans Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian beans for export. Wholesale mung beans, red beans, and more sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian beans export",
+        "mung beans indonesia",
+        "red beans exporter",
+        "legumes indonesia",
+        "wholesale beans",
+        "indonesian legumes"
+      ]
+    },
+    "cocoa": {
+      "name": "Cocoa",
+      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
+      "metaTitle": "Indonesian Cocoa Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian cocoa beans for export. Wholesale fermented cocoa sourced from Sulawesi and Sumatra.",
+      "metaKeywords": [
+        "indonesian cocoa export",
+        "cocoa beans indonesia",
+        "indonesian cocoa beans exporter",
+        "fermented cocoa",
+        "wholesale cocoa",
+        "sulawesi cocoa"
+      ]
+    },
+    "fruits": {
+      "name": "Fruits",
+      "description": "Tropical fruits from Indonesia including coconut products and other exotic fruits for international markets.",
+      "metaTitle": "Indonesian Fruits Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian fruits and fruit products for export. Sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian fruits export",
+        "tropical fruits indonesia",
+        "coconut products",
+        "exotic fruits indonesia"
+      ]
+    },
+    "extracts": {
+      "name": "Extracts",
+      "description": "Natural extracts and essential oils derived from Indonesian plants and spices. For food, cosmetic, and pharmaceutical industries.",
+      "metaTitle": "Indonesian Extracts Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian extracts and essential oils for export. Natural extracts sourced from local plants.",
+      "metaKeywords": [
+        "indonesian extracts",
+        "essential oils indonesia",
+        "natural extracts",
+        "clove oil indonesia",
+        "ginger extract"
+      ]
+    },
+    "powders": {
+      "name": "Powders",
+      "description": "Ground spice powders and herbal powders from Indonesia. Convenient for food processing and culinary applications.",
+      "metaTitle": "Indonesian Powders Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian spice and herbal powders for export. Ground spices sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian powders",
+        "spice powders indonesia",
+        "turmeric powder",
+        "ginger powder",
+        "ground spices"
+      ]
+    }
+  },
   "common": {
     "skipToContent": "Skip to main content",
     "availableNow": "Available now"
