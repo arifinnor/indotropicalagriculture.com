@@ -22,7 +22,7 @@ const LAST_MOD_DATES = {
   home: new Date("2025-02-01"),
   products: new Date("2025-03-01"),
   categories: new Date("2025-03-10"),
-  faq: new Date("2025-03-13"),
+  faq: new Date("2026-03-13"), // Updated FAQ content implementation
   // Default date for pages without specific updates
   default: new Date("2025-02-01"),
 };
