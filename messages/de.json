@@ -361,35 +361,35 @@
     "questions": {
       "moq": {
         "question": "Wie hoch ist Ihre Mindestbestellmenge?",
-        "answer": "PLATZHALTER: Antwort zu den Mindestbestellmengen..."
+        "answer": "Unsere Mindestbestellmenge variiert je nach Produkttyp und Bestimmungsort. Im Allgemeinen benötigen wir mindestens 1 Tonne für Massenbestellungen und einen 20-Fuß-Container (ca. 15-18 Tonnen) für vollständige Containerladungen. Für kleinere Bestellungen kontaktieren Sie uns bitte, um Optionen und Preise zu besprechen."
       },
       "samples": {
         "question": "Bieten Sie Muster an?",
-        "answer": "PLATZHALTER: Antwort zur Musterverfügbarkeit..."
+        "answer": "Ja, wir bieten Muster zur Qualitätsprüfung an. Mustermengen liegen typischerweise zwischen 500g und 1kg je nach Produkt. Muster können gegen Kostenübernahme sowie Versandkosten erworben werden. Die Musterkosten können von Ihrer ersten Massenbestellung abgezogen werden. Bitte kontaktieren Sie unser Vertriebsteam für Musteranfragen."
       },
       "payment": {
         "question": "Welche Zahlungsmethoden akzeptieren Sie?",
-        "answer": "PLATZHALTER: Antwort zu Zahlungsbedingungen..."
+        "answer": "Wir akzeptieren mehrere Zahlungsmethoden einschließlich T/T (Telegraphic Transfer), L/C (Letter of Credit) bei Sicht und verhandelfähige Zahlungsbedingungen für etablierte Kunden. Für internationale Bestellungen empfehlen wir T/T mit 30% Anzahlung und 70% vor dem Versand oder unwiderrufliches L/C bei Sicht. Alle Zahlungen müssen in USD oder EUR erfolgen."
       },
       "shipping": {
         "question": "Liefern Sie nach Europa?",
-        "answer": "PLATZHALTER: Antwort zum Versand in EU-Länder..."
+        "answer": "Ja, wir liefern weltweit in wichtige Häfen in Europa, Asien, dem Nahen Osten und Amerika. Wir verfügen über umfangreiche Erfahrung im Export nach Deutschland, Niederlande, Großbritannien, Frankreich, USA, VAE, Japan und China. Wir arbeiten mit renommierten Reedereien und können sowohl FOB- als auch CIF-Konditionen arrangieren."
       },
       "shippingTime": {
         "question": "Wie lange dauert der Versand nach Europa?",
-        "answer": "PLATZHALTER: Antwort zu Transitzeiten..."
+        "answer": "Die Versandzeit variiert je nach Bestimmungsort. Zu europäischen Häfen (Rotterdam, Hamburg, Antwerpen) beträgt die Transitzeit typischerweise 25-35 Tage je nach Route. Nach Asien und dem Nahen Osten liegt die Transitzeit zwischen 7-20 Tagen. Nach Amerika (Ostküste) sind 30-40 Tage zu erwarten. Wir stellen Tracking-Informationen für alle Sendungen bereit."
       },
       "documentation": {
         "question": "Übernehmen Sie die Exportdokumentation?",
-        "answer": "PLATZHALTER: Antwort zu Exportdokumenten und Zoll..."
+        "answer": "Ja, wir übernehmen alle für internationale Sendungen erforderlichen Exportdokumente. Dies umfasst Handelsrechnung, Packliste, Konnossement, Ursprungszeugnis, Pflanzengesundheitszeugnis und alle weiteren Zertifikate, die von Zielländern gefordert werden. Wir stellen sicher, dass alle Dokumentationen den Importvorschriften des Ziellandes entsprechen."
       },
       "quality": {
         "question": "Wie stellen Sie die Produktqualität sicher?",
-        "answer": "PLATZHALTER: Antwort zur Qualitätskontrolle..."
+        "answer": "Wir unterhalten strenge Qualitätskontrollen throughout der Lieferkette. Unsere Produkte werden direkt von Partnerbauern bezogen, die unsere landwirtschaftlichen Best Practices befolgen. Jede Charge unterliegt Qualitätsprüfung einschließlich Feuchtigkeitsgehaltstests, Verunreinigungsanalyse und Sortierung vor dem Versand. Wir können Laborberichte auf Anfrage bereitstellen und Produktmuster zur vorherigen Genehmigung anbieten."
       },
       "sourcing": {
         "question": "Wo beziehen Sie Ihre Produkte?",
-        "answer": "PLATZHALTER: Antwort zur direkten Beschaffung von Bauern..."
+        "answer": "Wir beziehen unsere Produkte direkt von Bauern in ganz Indonesiens wichtigsten landwirtschaftlichen Regionen einschließlich Sumatra, Java, Kalimantan, Sulawesi und Papua. Durch die direkte Zusammenarbeit mit Bauern stellen wir faire Handelspraktiken, Rückverfolgbarkeit und konstante Qualität sicher. Unsere langfristigen Partnerschaften mit lokalen landwirtschaftlichen Gemeinschaften ermöglichen es uns, das ganze Jahr über zuverlässige Lieferungen zu sichern."
       }
     }
   }

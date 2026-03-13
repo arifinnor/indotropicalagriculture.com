@@ -359,35 +359,35 @@
     "questions": {
       "moq": {
         "question": "What is your minimum order quantity?",
-        "answer": "PLACEHOLDER: Answer about MOQ requirements..."
+        "answer": "Our minimum order quantity varies by product type and destination. Generally, we require a minimum of 1 metric ton for bulk orders and 20ft container (approximately 15-18 tons) for full container loads. For smaller orders, please contact us to discuss options and pricing."
       },
       "samples": {
         "question": "Do you offer samples?",
-        "answer": "PLACEHOLDER: Answer about sample availability..."
+        "answer": "Yes, we offer samples for quality verification. Sample sizes typically range from 500g to 1kg depending on the product. Samples are available for purchase at cost plus shipping. Sample costs can be deducted from your first bulk order. Please contact our sales team to request samples."
       },
       "payment": {
         "question": "What payment methods do you accept?",
-        "answer": "PLACEHOLDER: Answer about payment terms..."
+        "answer": "We accept multiple payment methods including T/T (Telegraphic Transfer), L/C (Letter of Credit) at sight, and negotiable payment terms for established clients. For international orders, we recommend T/T with 30% deposit and 70% before shipment, or irrevocable L/C at sight. All payments must be made in USD or EUR."
       },
       "shipping": {
         "question": "Do you ship to Europe?",
-        "answer": "PLACEHOLDER: Answer about shipping to EU countries..."
+        "answer": "Yes, we ship worldwide to major ports in Europe, Asia, the Middle East, and the Americas. We have extensive experience exporting to countries including Germany, Netherlands, UK, France, USA, UAE, Japan, and China. We work with reputable shipping lines and can arrange both FOB and CIF terms."
       },
       "shippingTime": {
         "question": "What is your shipping time to Europe?",
-        "answer": "PLACEHOLDER: Answer about transit times..."
+        "answer": "Shipping time varies by destination. To European ports (Rotterdam, Hamburg, Antwerp), transit time is typically 25-35 days depending on the specific route. To Asia and the Middle East, transit ranges from 7-20 days. To the Americas (East Coast), expect 30-40 days. We provide tracking information for all shipments."
       },
       "documentation": {
         "question": "Do you handle export documentation?",
-        "answer": "PLACEHOLDER: Answer about export docs and customs..."
+        "answer": "Yes, we handle all export documentation required for international shipments. This includes commercial invoice, packing list, bill of lading, certificate of origin, phytosanitary certificate, and any additional certificates required by destination countries. We ensure all documentation complies with import regulations of the destination country."
       },
       "quality": {
         "question": "How do you ensure product quality?",
-        "answer": "PLACEHOLDER: Answer about quality control..."
+        "answer": "We maintain strict quality control throughout the supply chain. Our products are sourced directly from partner farmers who follow our agricultural best practices. Each batch undergoes quality inspection including moisture content testing, impurity analysis, and grading before shipment. We can provide laboratory test reports upon request and offer product samples for prior approval."
       },
       "sourcing": {
         "question": "Where do you source your products?",
-        "answer": "PLACEHOLDER: Answer about direct sourcing from farmers..."
+        "answer": "We source our products directly from farmers across Indonesia's main agricultural regions including Sumatra, Java, Kalimantan, Sulawesi, and Papua. By working directly with farmers, we ensure fair trade practices, traceability, and consistent quality. Our long-term partnerships with local farming communities allow us to secure reliable supplies throughout the year."
       }
     }
   }
