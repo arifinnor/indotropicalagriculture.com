@@ -1,7 +1,7 @@
 # SEO Roadmap - Indo Tropical Agriculture
 
-> Last updated: 2026-03-13
-> Current indexed pages: ~96 (40 products × 2 locales + 10 category pages × 2 locales + catalog pages + homepages)
+> Last updated: 2026-03-14
+> Current indexed pages: ~124 (40 products × 2 locales + 10 category pages × 2 locales + 2 FAQ pages + 16 market pages + 12 industry pages + catalog pages + homepages)
 
 ---
 
@@ -12,20 +12,22 @@
 | Phase 1.1: Category Pages | ✅ **Completed** | 100% | 8/8 |
 | Phase 1.2: FAQ Schema | ✅ **Completed** | 100% | 4/4 |
 | Phase 1.3: Technical SEO Fixes | ✅ **Completed** | 100% | 6/6 |
-| Phase 2.1: Market Pages | ⏳ Not Started | 0% | 0/16 |
-| Phase 2.2: Industry Pages | ⏳ Not Started | 0% | 0/12 |
+| Phase 2.1: Market Pages | 🟡 **Implemented** (Review Pending) | 100% | 16/16 |
+| Phase 2.2: Industry Pages | 🟡 **Implemented** (Review Pending) | 100% | 12/12 |
 | Phase 3.1: Comparison Pages | ⏳ Not Started | 0% | 0/6 |
 | Phase 3.2: Glossary/Educational | ⏳ Not Started | 0% | 0/12 |
 | Phase 3.3: Blog/Resources | ⏳ Not Started | 0% | 0/4 |
-| **Overall** | 🟡 **In Progress** | **20%** | **18/92** |
+| **Overall** | 🟡 **In Progress** | **45%** | **46/92** |
 
 ### Pages Added So Far
 - ✅ **10 Category Pages** (5 categories × 2 locales)
 - ✅ **2 FAQ Pages** (`/faq`, `/de/faq`) - complete with JSON-LD schema and content
+- 🟡 **16 Destination Market Pages** (`/export-to/*`, `/de/export-to/*`) - implemented, review pending
+- 🟡 **12 Industry Pages** (`/for-*`, `/de/for-*`) - implemented, review pending
 
 ### Next Immediate Task
-- 🔴 **Phase 2.1: Destination Market Pages** - Create export destination pages for target markets
-  - Germany, Netherlands, UK, France, USA, UAE, Japan, China (16 pages total: 8 markets × 2 locales)
+- 🔴 **Phase 3.1: Comparison Pages** - Create product comparison pages
+  - White Pepper vs Black Pepper, Clove Stem vs Whole Clove, Nutmeg grades, Fresh vs Dried Ginger, Robusta vs Arabica Coffee, Cassia vs Ceylon Cinnamon (6 pages total: 6 comparisons × 2 locales)
 
 ---
 
@@ -93,52 +95,61 @@ Capture "People Also Ask" real estate in Google search results.
 
 ---
 
-## Phase 2: Content Expansion (Medium Term) - ⏳ Not Started (0/2 phases complete)
+## Phase 2: Content Expansion (Medium Term) - 🟡 **Implemented** (2/2 phases complete - Review Pending)
 
-### 2.1 Destination Market Pages
+### 2.1 Destination Market Pages ✅ Implemented (Review Pending)
 
 Target specific export destinations with localized content.
 
-- [ ] Create `app/[locale]/export-to/[country]/page.tsx`
-- [ ] Research import regulations for top 5 markets
-- [ ] Create content templates for market pages
-- [ ] Add country-specific metadata
-- [ ] Add local business schema variations
+- [x] Create `app/[locale]/export-to/[country]/page.tsx`
+- [x] Research import regulations for top 8 markets
+- [x] Create content templates for market pages
+- [x] Add country-specific metadata
+- [x] Add JSON-LD schema for each page
+- [x] Add to sitemap with proper lastmod dates
 
 **Target markets** (priority order):
-1. [ ] Germany (/export-to/germany)
-2. [ ] Netherlands (/export-to/netherlands)
-3. [ ] United Kingdom (/export-to/uk)
-4. [ ] France (/export-to/france)
-5. [ ] United States (/export-to/usa)
-6. [ ] United Arab Emirates (/export-to/uae)
-7. [ ] Japan (/export-to/japan)
-8. [ ] China (/export-to/china)
+1. [x] Germany (/export-to/germany)
+2. [x] Netherlands (/export-to/netherlands)
+3. [x] United Kingdom (/export-to/uk)
+4. [x] France (/export-to/france)
+5. [x] United States (/export-to/usa)
+6. [x] United Arab Emirates (/export-to/uae)
+7. [x] Japan (/export-to/japan)
+8. [x] China (/export-to/china)
 
 **Content per page**:
-- Import regulations for that country
-- Popular products in that market
-- Shipping routes and transit times
-- Payment methods preferred
-- Contact options for that region
+- ✅ Import regulations for that country (EN + DE)
+- ✅ Popular products in that market
+- ✅ Shipping routes and transit times
+- ✅ Payment methods preferred
+- ✅ Contact options for that region
+
+**Pages created**: 8 countries × 2 locales = 16 pages
+- Data file: `data/destinations.ts` with full content
 
 ---
 
-### 2.2 Industry/Application Pages
+### 2.2 Industry/Application Pages ✅ Implemented (Review Pending)
 
 Target specific buyer personas and use cases.
 
-- [ ] Create `app/[locale]/for-[industry]/page.tsx`
-- [ ] Create industry-specific messaging
-- [ ] Add industry-specific product filtering
+- [x] Create `app/[locale]/for-[industry]/page.tsx`
+- [x] Create industry-specific messaging
+- [x] Add industry-specific product filtering
+- [x] Add JSON-LD schema for each page
+- [x] Add to sitemap with proper lastmod dates
 
 **Target industries**:
-1. [ ] `/for-food-manufacturers` - Industrial-scale buyers
-2. [ ] `/for-pharmaceutical` - Medicinal herb buyers
-3. [ ] `/for-essential-oils` - Aromatic product buyers
-4. [ ] `/for-beverage` - Ginger, vanilla for drinks
-5. [ ] `/for-bakery` - Spices for baking
-6. [ ] `/for-distributors` - B2B distributors
+1. [x] `/for-food-manufacturers` - Industrial-scale buyers
+2. [x] `/for-pharmaceutical` - Medicinal herb buyers
+3. [x] `/for-essential-oils` - Aromatic product buyers
+4. [x] `/for-beverage` - Ginger, vanilla for drinks
+5. [x] `/for-bakery` - Spices for baking
+6. [x] `/for-distributors` - B2B distributors
+
+**Pages created**: 6 industries × 2 locales = 12 pages
+- Data file: `data/industries.ts` with full content
 
 ---
 

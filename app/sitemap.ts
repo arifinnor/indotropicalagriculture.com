@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { products, getCategories } from "./lib/products-data";
 import { locales } from "@/i18n/config";
+import { destinations } from "@/data/destinations";
+import { industries } from "@/data/industries";
 
 const SITE_URL = "https://indotropicalagriculture.com";
 
@@ -23,6 +25,8 @@ const LAST_MOD_DATES = {
   products: new Date("2025-03-01"),
   categories: new Date("2025-03-10"),
   faq: new Date("2026-03-13"), // Updated FAQ content implementation
+  destinations: new Date("2026-03-14"), // Destination market pages
+  industries: new Date("2026-03-14"), // Industry pages
   // Default date for pages without specific updates
   default: new Date("2025-02-01"),
 };
@@ -135,5 +139,37 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]);
 
-  return [...staticPages, ...categoryIndexPages, ...categoryPages, ...productPages];
+  // Destination market pages for each locale
+  const destinationPages = destinations.flatMap((destination) => [
+    {
+      url: `${SITE_URL}/export-to/${destination.slug}`,
+      lastModified: LAST_MOD_DATES.destinations,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/de/export-to/${destination.slug}`,
+      lastModified: LAST_MOD_DATES.destinations,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+  ]);
+
+  // Industry pages for each locale
+  const industryPages = industries.flatMap((industry) => [
+    {
+      url: `${SITE_URL}/for/${industry.slug}`,
+      lastModified: LAST_MOD_DATES.industries,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/de/for/${industry.slug}`,
+      lastModified: LAST_MOD_DATES.industries,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    },
+  ]);
+
+  return [...staticPages, ...categoryIndexPages, ...categoryPages, ...productPages, ...destinationPages, ...industryPages];
 }

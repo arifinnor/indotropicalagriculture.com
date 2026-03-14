@@ -393,4 +393,31 @@
       }
     }
   }
+,
+  "destination": {
+    "metaTitle": "Export nach {country} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesische Landwirtschaftsprodukte exportiert nach {country}. Erfahren Sie mehr über Importvorschriften, beliebte Produkte, Versandrouten und Zahlungsmethoden für den Import indonesischer Gewürze, Kakao und anderer Produkte nach {country}.",
+    "heroTitle": "Export nach {country}",
+    "heroSubtitle": "Premium indonesische Landwirtschaftsprodukte mit zuverlässigem Versand und Compliance mit den Importvorschriften von {country}.",
+    "regulationsTitle": "Importvorschriften",
+    "productsTitle": "Beliebte Produkte für {country}",
+    "shippingRouteTitle": "Versandroute",
+    "transitTimeTitle": "Transitzeit",
+    "paymentTitle": "Bevorzugte Zahlungsmethoden",
+    "ctaTitle": "Import nach {country} starten",
+    "ctaSubtitle": "Kontaktieren Sie uns, um Ihre Anforderungen für den Import indonesischer Landwirtschaftsprodukte nach {country} zu besprechen. Wir helfen Ihnen bei der Navigation durch Vorschriften und sorgen für reibungslose Sendungen.",
+    "ctaButton": "Angebot anfordern"
+  },
+  "industry": {
+    "metaTitle": "Für {industry} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesische Landwirtschaftsprodukte für {industry}. Premium-Gewürze, Kräuter, Nüsse und Kakaobohnen speziell beschafft und verarbeitet für {industry}-Anwendungen.",
+    "heroTitle": "Für {industry}",
+    "heroSubtitle": "Spezialisierte Produkte und Dienstleistungen maßgeschneidert für Ihre Industrieanforderungen.",
+    "benefitsTitle": "Warum uns wählen",
+    "useCaseTitle": "Wie unsere Produkte verwendet werden",
+    "productsTitle": "Relevante Produkte",
+    "categoriesTitle": "Relevante Kategorien",
+    "ctaTitle": "Partnerschaft für {industry}",
+    "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen und zu erfahren, wie wir Ihr {industry}-Geschäft mit Premium-indonesischen Landwirtschaftsprodukten unterstützen können."
+  }
 }

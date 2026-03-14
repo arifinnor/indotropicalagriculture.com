@@ -391,4 +391,31 @@
       }
     }
   }
+,
+  "destination": {
+    "metaTitle": "Export to {country} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesian agricultural products exported to {country}. Learn about import regulations, popular products, shipping routes, and payment methods for importing Indonesian spices, cocoa, and other products to {country}.",
+    "heroTitle": "Export to {country}",
+    "heroSubtitle": "Premium Indonesian agricultural products with reliable shipping and compliance with {country} import regulations.",
+    "regulationsTitle": "Import Regulations",
+    "productsTitle": "Popular Products for {country}",
+    "shippingRouteTitle": "Shipping Route",
+    "transitTimeTitle": "Transit Time",
+    "paymentTitle": "Preferred Payment Methods",
+    "ctaTitle": "Start Importing to {country}",
+    "ctaSubtitle": "Contact us to discuss your requirements for importing Indonesian agricultural products to {country}. We'll help you navigate regulations and ensure smooth shipments.",
+    "ctaButton": "Get a Quote"
+  },
+  "industry": {
+    "metaTitle": "For {industry} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesian agricultural products for {industry}. Premium quality spices, herbs, nuts, and cocoa beans specifically sourced and processed for {industry} applications.",
+    "heroTitle": "For {industry}",
+    "heroSubtitle": "Specialized products and services tailored for your industry needs.",
+    "benefitsTitle": "Why Choose Us",
+    "useCaseTitle": "How Our Products Are Used",
+    "productsTitle": "Relevant Products",
+    "categoriesTitle": "Relevant Categories",
+    "ctaTitle": "Partner with Us for {industry}",
+    "ctaSubtitle": "Contact us to discuss your specific requirements and learn how we can support your {industry} business with premium Indonesian agricultural products."
+  }
 }
