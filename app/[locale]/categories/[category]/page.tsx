@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import CategoryProductsClient from "./CategoryProductsClient";
+import { getGlossaryTerms } from "@/data/glossary";
 
 interface CategoryPageProps {
   params: Promise<{ locale: string; category: string }>;
@@ -195,8 +196,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const categoryName = t.raw(`${categoryKey}.name`) as string || category;
   const categoryDescription = t.raw(`${categoryKey}.description`) as string || `${category} products from Indonesia`;
 
+  // Get relevant glossary terms
+  const allGlossaryTerms = getGlossaryTerms();
+
   const jsonLd = getCategoryJsonLd(locale, categorySlug, categoryName, products);
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
+  const getGlossaryPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
 
   return (
     <main id="main-content" className="min-h-dvh bg-stone-100">
@@ -261,6 +266,43 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         categoryName={categoryName}
         locale={locale}
       />
+
+      {/* Learn More - Glossary Links */}
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-stone-900 mb-3">
+            {locale === "en" ? "Learn About Indonesian Exports" : "Erfahren Sie mehr über indonesische Exporte"}
+          </h2>
+          <p className="text-stone-600 mb-6">
+            {locale === "en"
+              ? "Understanding the terminology and standards helps you make informed purchasing decisions."
+              : "Das Verständnis der Terminologie und Standards hilft Ihnen, fundierte Kaufentscheidungen zu treffen."}
+          </p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {allGlossaryTerms.slice(0, 4).map((term) => {
+              const termTitle = locale === "en" ? term.title.en : term.title.de;
+              return (
+                <Link
+                  key={term.id}
+                  href={getGlossaryPath(term.slug)}
+                  className="inline-flex items-center px-4 py-2 bg-emerald-50 text-emerald-700 text-sm font-medium rounded-full border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 transition-colors"
+                >
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {termTitle}
+                </Link>
+              );
+            })}
+            <Link
+              href={locale === "en" ? "/glossary" : `/${locale}/glossary`}
+              className="inline-flex items-center px-4 py-2 bg-stone-100 text-stone-700 text-sm font-medium rounded-full border border-stone-200 hover:bg-stone-200 hover:border-stone-300 transition-colors"
+            >
+              {locale === "en" ? "View All Terms →" : "Alle Begriffe anzeigen →"}
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-16 px-6 bg-emerald-600">

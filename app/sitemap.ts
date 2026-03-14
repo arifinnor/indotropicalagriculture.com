@@ -3,6 +3,7 @@ import { products, getCategories } from "./lib/products-data";
 import { locales } from "@/i18n/config";
 import { destinations } from "@/data/destinations";
 import { industries } from "@/data/industries";
+import { getGlossaryTerms } from "@/data/glossary";
 
 const SITE_URL = "https://indotropicalagriculture.com";
 
@@ -27,6 +28,7 @@ const LAST_MOD_DATES = {
   faq: new Date("2026-03-13"), // Updated FAQ content implementation
   destinations: new Date("2026-03-14"), // Destination market pages
   industries: new Date("2026-03-14"), // Industry pages
+  glossary: new Date("2026-03-14"), // Glossary/educational content pages
   // Default date for pages without specific updates
   default: new Date("2025-02-01"),
 };
@@ -171,5 +173,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]);
 
-  return [...staticPages, ...categoryIndexPages, ...categoryPages, ...productPages, ...destinationPages, ...industryPages];
+  // Glossary index pages for each locale
+  const glossaryIndexPages = [
+    {
+      url: `${SITE_URL}/glossary`,
+      lastModified: LAST_MOD_DATES.glossary,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/de/glossary`,
+      lastModified: LAST_MOD_DATES.glossary,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+  ];
+
+  // Individual glossary term pages for each locale
+  const glossaryTerms = getGlossaryTerms();
+  const glossaryTermPages = glossaryTerms.flatMap((term) => [
+    {
+      url: `${SITE_URL}/what-is/${term.slug}`,
+      lastModified: LAST_MOD_DATES.glossary,
+      changeFrequency: "monthly" as const,
+      priority: 0.4,
+    },
+    {
+      url: `${SITE_URL}/de/what-is/${term.slug}`,
+      lastModified: LAST_MOD_DATES.glossary,
+      changeFrequency: "monthly" as const,
+      priority: 0.4,
+    },
+  ]);
+
+  return [
+    ...staticPages,
+    ...categoryIndexPages,
+    ...categoryPages,
+    ...productPages,
+    ...destinationPages,
+    ...industryPages,
+    ...glossaryIndexPages,
+    ...glossaryTermPages,
+  ];
 }
