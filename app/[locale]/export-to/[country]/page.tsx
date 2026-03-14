@@ -161,7 +161,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             {t("heroTitle", { country: countryName })}
           </h1>
           <p className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto">
-            {t("heroSubtitle")}
+            {t("heroSubtitle", { country: countryName })}
           </p>
         </div>
       </section>
@@ -184,7 +184,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
       <section className="py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-stone-900 mb-12 text-center">
-            {t("productsTitle")}
+            {t("productsTitle", { country: countryName })}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {relevantProducts.map((product) => (
@@ -282,7 +282,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
             {t("ctaTitle", { country: countryName })}
           </h2>
           <p className="text-lg text-stone-600 mb-8">
-            {t("ctaSubtitle")}
+            {t("ctaSubtitle", { country: countryName })}
           </p>
           <Link
             href={`mailto:exports@indotropicalagriculture.com?subject=Export to ${countryName}`}
