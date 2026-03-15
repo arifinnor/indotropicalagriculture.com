@@ -4,6 +4,7 @@ import { locales } from "@/i18n/config";
 import { destinations } from "@/data/destinations";
 import { industries } from "@/data/industries";
 import { getGlossaryTerms } from "@/data/glossary";
+import { getHSCodes } from "@/data/hs-codes";
 
 const SITE_URL = "https://indotropicalagriculture.com";
 
@@ -25,6 +26,7 @@ const LAST_MOD_DATES = {
   destinations: new Date("2026-03-14"), // Destination market pages
   industries: new Date("2026-03-14"), // Industry pages
   glossary: new Date("2026-03-14"), // Glossary/educational content pages
+  hsCodes: new Date("2026-03-15"), // HS code landing pages
   // Default date for pages without specific updates
   default: new Date("2025-02-01"),
 };
@@ -202,6 +204,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]);
 
+  // HS Code pages for each locale
+  const hsCodesList = getHSCodes();
+  const hsCodePages = hsCodesList.flatMap((hsCode) => [
+    {
+      url: `${SITE_URL}/hs-code-${hsCode.slug}`,
+      lastModified: LAST_MOD_DATES.hsCodes,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/de/hs-code-${hsCode.slug}`,
+      lastModified: LAST_MOD_DATES.hsCodes,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+  ]);
+
   return [
     ...staticPages,
     ...categoryIndexPages,
@@ -211,5 +230,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...industryPages,
     ...glossaryIndexPages,
     ...glossaryTermPages,
+    ...hsCodePages,
   ];
 }

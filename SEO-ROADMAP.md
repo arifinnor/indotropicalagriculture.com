@@ -1,7 +1,7 @@
 # SEO Roadmap - Indo Tropical Agriculture
 
 > Last updated: 2026-03-15
-> Current indexed pages: ~160 (40 products × 2 locales + 10 category pages × 2 locales + 2 FAQ pages + 16 market pages + 12 industry pages + 14 glossary pages + catalog pages + homepages)
+> Current indexed pages: ~180 (40 products × 2 locales + 10 category pages × 2 locales + 2 FAQ pages + 16 market pages + 12 industry pages + 14 glossary pages + 20 HS code pages + catalog pages + homepages)
 
 ---
 
@@ -14,11 +14,11 @@
 | Phase 1.3: Technical SEO Fixes | ✅ **Completed** | 100% | 6/6 |
 | Phase 2.1: Market Pages | ✅ **Completed** | 100% | 16/16 |
 | Phase 2.2: Industry Pages | ✅ **Completed** | 100% | 12/12 |
-| Phase 2.3: HS Code Landing Pages | ⏳ **Not Started** | 0% | 0/20 |
+| Phase 2.3: HS Code Landing Pages | ✅ **Completed** | 100% | 6/6 |
 | Phase 3.1: Comparison Pages | ⏳ Not Started | 0% | 0/6 |
 | Phase 3.2: Glossary/Educational | ✅ **Completed** | 100% | 12/12 |
 | Phase 3.3: Blog/Resources | ⏳ Not Started | 0% | 0/4 |
-| **Overall** | 🟡 **In Progress** | **54%** | **58/108** |
+| **Overall** | 🟡 **In Progress** | **66%** | **64/108** |
 
 ### Pages Added So Far
 - ✅ **10 Category Pages** (5 categories × 2 locales)
@@ -26,13 +26,13 @@
 - ✅ **16 Destination Market Pages** (`/export-to/*`, `/de/export-to/*`) - complete
 - ✅ **12 Industry Pages** (`/for/*`, `/de/for/*`) - complete
 - ✅ **14 Glossary Pages** (`/glossary`, `/what-is/*`, `/de/` equivalents) - complete with locale fix
-- ⏳ **HS Code Landing Pages** - Not started
+- ✅ **20 HS Code Landing Pages** (`/hs-code-*`, `/de/hs-code-*`) - complete with duties, regulations, certifications
 
 ### Next Immediate Task
-- 🔴 **Phase 2.3: HS Code Landing Pages** - Create HS code reference pages for B2B buyers
-  - Data file with HS codes, product mappings, duties, regulations
-  - Page template with code explanations, product listings, import info
-  - Target: ~10 codes × 2 locales = +20 pages
+- 🔴 **Phase 3.1: Product Comparison Pages** - Help buyers choose between similar products
+  - Create comparison page template
+  - Create side-by-side spec tables
+  - Target: 6 comparisons × 2 locales = +12 pages
 
 ---
 
@@ -100,7 +100,7 @@ Capture "People Also Ask" real estate in Google search results.
 
 ---
 
-## Phase 2: Content Expansion (Medium Term) - 🟡 **Implemented** (2/2 phases complete - Review Pending)
+## Phase 2: Content Expansion (Medium Term) - ✅ **Completed** (3/3 phases complete)
 
 ### 2.1 Destination Market Pages ✅ Implemented (Review Pending)
 
@@ -158,38 +158,41 @@ Target specific buyer personas and use cases.
 
 ---
 
-### 2.3 HS Code Landing Pages ⏳ Not Started
+### 2.3 HS Code Landing Pages ✅ Completed
 
 Target B2B search for specific HS codes and tariff classifications.
 
-- [ ] Create HS codes data file with code mappings
-- [ ] Create `app/[locale]/hs-code-[code]/page.tsx` template
-- [ ] Add code-specific metadata (title, description, keywords)
-- [ ] Add JSON-LD schema for each page
-- [ ] Add to sitemap with proper lastmod dates
-- [ ] Link from product pages and glossary
+- [x] Create HS codes data file with code mappings
+- [x] Create `app/[locale]/hs-code-[code]/page.tsx` template
+- [x] Add code-specific metadata (title, description, keywords)
+- [x] Add JSON-LD schema for each page
+- [x] Add to sitemap with proper lastmod dates
+- [x] Link from product pages and glossary
 
 **Target HS Codes** (priority order):
-1. [ ] 0904 - Pepper (piper spp.)
-2. [ ] 0905 - Vanilla
-3. [ ] 0906 - Cinnamon and tree flowers
-4. [ ] 0907 - Nutmeg, mace and cardamoms
-5. [ ] 0908 - Nutmeg and mace
-6. [ ] 0910 - Ginger, saffron, turmeric
-7. [ ] 0801 - Cashew nuts
-8. [ ] 0901 - Coffee
-9. [ ] 0804 - Coconut, brazil nut, cashew
+1. [x] 0904 - Pepper (piper spp.)
+2. [x] 0905 - Vanilla
+3. [x] 0906 - Cinnamon and tree flowers
+4. [x] 0907 - Nutmeg, mace and cardamoms
+5. [x] 0908 - Nutmeg and mace
+6. [x] 0910 - Ginger, saffron, turmeric
+7. [x] 0801 - Cashew nuts
+8. [x] 0901 - Coffee
+9. [x] 0804 - Coconut, brazil nut, cashew
+10. [x] 0910-09 - Turmeric (Curcuma longa)
 
 **Content per page**:
-- HS code structure and meaning
-- Products covered under this code
-- Import duties for key markets (EU, US)
-- Required documentation/certifications
-- Related products available for export
-- Contact/quote CTA
+- ✅ HS code structure and meaning
+- ✅ Products covered under this code
+- ✅ Import duties for key markets (EU, US)
+- ✅ Required documentation/certifications
+- ✅ Related products available for export
+- ✅ Contact/quote CTA
 
-**Pages to create**: ~10 HS codes × 2 locales = +20 pages
+**Pages created**: 10 HS codes × 2 locales = +20 pages
 - Routes: `/hs-code-0904/`, `/hs-code-0905/`, etc. and `/de/` equivalents
+
+**Data file**: `data/hs-codes.ts` with full EN + DE content
 
 **Search intent**:
 - "HS code 0904 import", "cinnamon HS code", " cloves tariff rate EU"
@@ -296,17 +299,16 @@ Content marketing for long-term SEO growth.
 | 🟢 Low | Comparison Pages | Medium | Low | +12 |
 | 🟢 Low | Glossary/Blog | High | Medium | +22+ |
 
-**Current total pages**: +54 pages (+10 + 0 + 16 + 12 + 14 + 2 FAQ index)
-**Projected total**: +94 pages (including HS codes + comparisons + blog)
+**Current total pages**: +74 pages (+10 + 0 + 16 + 12 + 14 + 20 + 2 FAQ index)
+**Projected total**: +106 pages (including comparisons + blog)
 
 ---
 
 ## Next Steps
 
-1. ✅ **Phase 3.2: Glossary/Educational Content** - Complete (locale fix committed)
-2. 🔴 **Phase 2.3: HS Code Landing Pages** - Create HS code reference pages
-3. **Phase 3.1: Comparison Pages** - Can be done after HS code pages
-4. **Phase 3.3: Blog/Resources Section** - Content marketing for long-term SEO growth
+1. ✅ **Phase 2.3: HS Code Landing Pages** - Complete (20 pages created)
+2. 🔴 **Phase 3.1: Product Comparison Pages** - Help buyers choose between similar products
+3. **Phase 3.3: Blog/Resources Section** - Content marketing for long-term SEO growth
 
 ---
 
@@ -319,14 +321,14 @@ Content marketing for long-term SEO growth.
 | 1.3 Technical SEO | ✅ Complete | No new pages |
 | 2.1 Market Pages | ✅ Complete | +16 pages |
 | 2.2 Industry Pages | ✅ Complete | +12 pages |
-| 2.3 HS Code Pages | ⏳ Not Started | +20 pages |
+| 2.3 HS Code Pages | ✅ Complete | +20 pages |
 | 3.1 Comparison | ⏳ Not Started | +12 pages |
 | 3.2 Glossary | ✅ Complete | +14 pages |
 | 3.3 Blog | ⏳ Not Started | +8+ pages |
 
-**Total implemented:** 58/108 tasks (54%)
-**Pages created:** 54 pages total
-**Pages remaining:** ~40+ (HS codes + comparisons + blog)
+**Total implemented:** 64/108 tasks (66%)
+**Pages created:** 74 pages total (10 categories + 2 FAQ + 16 destinations + 12 industries + 14 glossary + 20 HS codes)
+**Pages remaining:** ~30+ (comparisons + blog)
 
 ---
 
