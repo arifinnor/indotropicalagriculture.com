@@ -205,6 +205,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]);
 
   // HS Code pages for each locale
+  // Note: URLs use /hs-code-XXXX pattern which rewrites to /hs-codes/XXXX via middleware
   const hsCodesList = getHSCodes();
   const hsCodePages = hsCodesList.flatMap((hsCode) => [
     {

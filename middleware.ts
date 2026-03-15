@@ -1,6 +1,7 @@
 import type { NextRequest } from "next/server";
 import createMiddleware from "next-intl/middleware";
 import { locales, defaultLocale } from "./i18n/config";
+import { NextResponse } from "next/server";
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -10,6 +11,19 @@ const intlMiddleware = createMiddleware({
 });
 
 export default function proxy(request: NextRequest) {
+  const url = request.nextUrl.clone();
+
+  // Rewrite /hs-code-0904 to /hs-codes/0904
+  // Matches: /hs-code-XXXX or /de/hs-code-XXXX
+  const hsCodeMatch = url.pathname.match(/^\/([a-z]{2}\/)?hs-code-(.+)$/);
+
+  if (hsCodeMatch) {
+    const [, locale, code] = hsCodeMatch;
+    const newLocale = locale || `${defaultLocale}/`;
+    url.pathname = `/${newLocale}hs-codes/${code}`;
+    return NextResponse.rewrite(url);
+  }
+
   return intlMiddleware(request);
 }
 
