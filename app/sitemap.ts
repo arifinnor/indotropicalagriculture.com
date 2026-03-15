@@ -6,6 +6,7 @@ import { industries } from "@/data/industries";
 import { getGlossaryTerms } from "@/data/glossary";
 import { getHSCodes } from "@/data/hs-codes";
 import { getComparisons } from "@/data/comparisons";
+import { getBlogPosts } from "@/data/blog-posts";
 
 const SITE_URL = "https://indotropicalagriculture.com";
 
@@ -29,6 +30,7 @@ const LAST_MOD_DATES = {
   glossary: new Date("2026-03-14"), // Glossary/educational content pages
   hsCodes: new Date("2026-03-15"), // HS code landing pages
   comparisons: new Date("2026-03-15"), // Product comparison pages
+  blog: new Date("2026-03-15"), // Blog/resources section
   // Default date for pages without specific updates
   default: new Date("2025-02-01"),
 };
@@ -242,6 +244,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]);
 
+  // Blog index pages for each locale
+  const blogIndexPages = [
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: LAST_MOD_DATES.blog,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/de/blog`,
+      lastModified: LAST_MOD_DATES.blog,
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    },
+  ];
+
+  // Individual blog post pages for each locale
+  const blogPosts = getBlogPosts();
+  const blogPostPages = blogPosts.flatMap((post) => [
+    {
+      url: `${SITE_URL}/blog/${post.slug}`,
+      lastModified: LAST_MOD_DATES.blog,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/de/blog/${post.slug}`,
+      lastModified: LAST_MOD_DATES.blog,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+  ]);
+
   return [
     ...staticPages,
     ...categoryIndexPages,
@@ -253,5 +288,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...glossaryTermPages,
     ...hsCodePages,
     ...comparisonPages,
+    ...blogIndexPages,
+    ...blogPostPages,
   ];
 }
