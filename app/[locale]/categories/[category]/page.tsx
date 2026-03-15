@@ -17,10 +17,6 @@ const SLUG_TO_CATEGORY: Record<string, string> = {
   nuts: "Nuts",
   coffee: "Coffee",
   beans: "Beans",
-  cocoa: "Cocoa",
-  fruits: "Fruits",
-  extracts: "Extracts",
-  powders: "Powders",
 };
 
 // Reverse mapping for generateStaticParams

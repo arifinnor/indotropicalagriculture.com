@@ -14,10 +14,6 @@ const CATEGORY_TO_SLUG: Record<string, string> = {
   Nuts: "nuts",
   Coffee: "coffee",
   Beans: "beans",
-  Cocoa: "cocoa",
-  Fruits: "fruits",
-  Extracts: "extracts",
-  Powders: "powders",
 };
 
 // Actual last modified dates based on content updates

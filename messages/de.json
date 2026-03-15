@@ -1,10 +1,9 @@
 {
   "metadata": {
     "title": "Indo Tropical Agriculture | Indonesischer Landwirtschaftsexporteur für EU-Märkte",
-    "description": "Führender indonesischer Landwirtschaftsexporteur, der Premium-Pflanzsubstrat, Kakaobohnen, Gewürznelken, Ingwer, Muskatnuss, Vanille, schwarzen Pfeffer, Kurkuma und Cashewnüsse an europäische und weltweite Märkte liefert. Direkt von Bauern, weltweiter Versand.",
+    "description": "Führender indonesischer Landwirtschaftsexporteur, der Premium-Gewürznelken, Ingwer, Muskatnuss, Vanille, schwarzen Pfeffer, Kurkuma, Cashewnüsse und mehr an europäische und weltweite Märkte liefert. Direkt von Bauern, weltweiter Versand.",
     "keywords": [
       "indonesischer landwirtschaftsexport",
-      "indonesischer kakaobohnen exporteur",
       "gewürznelken export indonesien",
       "pflanzsubstrat lieferant",
       "ingwer export indonesien",
@@ -72,11 +71,6 @@
     "badge": "Was wir anbieten",
     "title": "Unsere Premium-Produkte",
     "subtitle": "Direkt von indonesischen Bauern bezogen und nach Qualitätsstandards verarbeitet.",
-    "cocoa": {
-      "name": "Kakao",
-      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Ideal für Schokoladenhersteller.",
-      "keywords": ["Kakaobohnen", "Fermentiert", "Premium-Qualität"]
-    },
     "cloves": {
       "name": "Gewürznelken",
       "description": "Aromatische ganze Gewürznelken und Pulver von den indonesischen Gewürzinseln. Perfekt für Lebensmittel-, Pharma- und ätherische Öl-Industrien.",
@@ -172,17 +166,6 @@
     "specifications": "Spezifikationen",
     "requestQuote": "Angebot anfordern",
     "viewAllProducts": "Alle Produkte anzeigen",
-    "cocoa": {
-      "name": "Kakaobohnen",
-      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Unsere Kakaobohnen stammen aus erstklassigen Anbaugebieten in Sulawesi und Sumatra, ideal für Schokoladenhersteller, die premium Rohstoffe suchen.",
-      "fullDescription": "Premium fermentierte indonesische Kakaobohnen aus Sulawesi und Sumatra. Unsere Bohnen erfüllen internationale Qualitätsstandards mit optimaler Fermentation und Feuchtigkeitsgehalt. Perfekt für Schokoladenhersteller, Kakao-Verarbeiter und Großkäufer, die zuverlässige Lieferung aus Indonesien suchen.",
-      "specifications": [
-        { "label": "Bohnenzahl", "value": "90-110 Bohnen/100g" },
-        { "label": "Feuchtigkeit", "value": "6% - 7%" },
-        { "label": "Fremdstoffe", "value": "≤ 0,5%" },
-        { "label": "Schimmelige Bohnen", "value": "≤ 3%" }
-      ]
-    },
     "cloves": {
       "name": "Gewürznelken",
       "description": "Gewürznelken stammen aus den Knospen eines immergrünen Baumes, der auf den Nord-Molukken-Inseln in Indonesien heimisch ist. Stark im Aroma und heiß und würzig im Geschmack, werden Gewürznelken verwendet, um viele Lebensmittel zu würzen, insbesondere Fleisch und Backwaren.",
@@ -211,7 +194,7 @@
     "title": "Produktkategorien",
     "description": "Durchsuchen Sie unseren Katalog nach Kategorie, um die perfekten indonesischen landwirtschaftlichen Produkte für Ihre Bedürfnisse zu finden.",
     "metaTitle": "Kategorien | Indo Tropical Agriculture - Indonesischer Exporteur",
-    "metaDescription": "Durchsuchen Sie indonesische landwirtschaftliche Produkte nach Kategorie, einschließlich Gewürze, Kräuter, Nüsse, Kaffee, Bohnen und Kakao. Premium-Qualität direkt von Bauern bezogen.",
+    "metaDescription": "Durchsuchen Sie indonesische landwirtschaftliche Produkte nach Kategorie, einschließlich Gewürze, Kräuter, Nüsse, Kaffee und Bohnen. Premium-Qualität direkt von Bauern bezogen.",
     "metaKeywords": [
       "indonesische produktkategorien",
       "indonesischer gewürzexport",
@@ -219,8 +202,7 @@
       "indonesischer nüsse-export",
       "indonesischer kaffeeexport",
       "indonesischer bohnenexport",
-      "großhandel landwirtschaft indonesien",
-      "indonesischer kakaoexport"
+      "großhandel landwirtschaft indonesien"
     ],
     "spices": {
       "name": "Gewürze",
@@ -294,58 +276,6 @@
         "bohnen großhandel",
         "indonesische hülsenfrüchte"
       ]
-    },
-    "cocoa": {
-      "name": "Kakao",
-      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Ideal für Schokoladenhersteller.",
-      "metaTitle": "Indonesischer Kakaoexport | Indo Tropical Agriculture",
-      "metaDescription": "Premium indonesische Kakaobohnen für den Export. Großhandel mit fermentiertem Kakao aus Sulawesi und Sumatra.",
-      "metaKeywords": [
-        "indonesischer kakaoexport",
-        "kakaobohnen indonesien",
-        "indonesischer kakaobohnen exporteur",
-        "fermentierter kakao",
-        "kakao großhandel",
-        "sulawesi kakao"
-      ]
-    },
-    "fruits": {
-      "name": "Früchte",
-      "description": "Tropische Früchte aus Indonesien, einschließlich Kokosnussprodukte und andere exotische Früchte für internationale Märkte.",
-      "metaTitle": "Indonesischer Früchteexport | Indo Tropical Agriculture",
-      "metaDescription": "Premium indonesische Früchte und Fruchtprodukte für den Export. Direkt von Bauern bezogen.",
-      "metaKeywords": [
-        "indonesischer früchteexport",
-        "tropische früchte indonesien",
-        "kokosnuss produkte",
-        "exotische früchte indonesien"
-      ]
-    },
-    "extracts": {
-      "name": "Extrakte",
-      "description": "Natürliche Extrakte und ätherische Öle aus indonesischen Pflanzen und Gewürzen. Für Lebensmittel-, Kosmetik- und Pharmaindustrie.",
-      "metaTitle": "Indonesischer Extrakteexport | Indo Tropical Agriculture",
-      "metaDescription": "Premium indonesische Extrakte und ätherische Öle für den Export. Natürliche Extrakte aus lokalen Pflanzen.",
-      "metaKeywords": [
-        "indonesische extrakte",
-        "ätherische öle indonesien",
-        "natürliche extrakte",
-        "nelkenöl indonesien",
-        "ingwer extrakt"
-      ]
-    },
-    "powders": {
-      "name": "Pulver",
-      "description": "Gewürzpulver und Kräuterpulver aus Indonesien. Praktisch für die Lebensmittelverarbeitung und kulinarische Anwendungen.",
-      "metaTitle": "Indonesischer Pulverexport | Indo Tropical Agriculture",
-      "metaDescription": "Premium indonesische Gewürz- und Kräuterpulver für den Export. Gemahlene Gewürze direkt von Bauern bezogen.",
-      "metaKeywords": [
-        "indonesische pulver",
-        "gewürzpulver indonesien",
-        "kurkuma pulver",
-        "ingwer pulver",
-        "gemahlene gewürze"
-      ]
     }
   },
   "common": {
@@ -396,7 +326,7 @@
 ,
   "destination": {
     "metaTitle": "Export nach {country} | Indo Tropical Agriculture",
-    "metaDescription": "Indonesische Landwirtschaftsprodukte exportiert nach {country}. Erfahren Sie mehr über Importvorschriften, beliebte Produkte, Versandrouten und Zahlungsmethoden für den Import indonesischer Gewürze, Kakao und anderer Produkte nach {country}.",
+    "metaDescription": "Indonesische Landwirtschaftsprodukte exportiert nach {country}. Erfahren Sie mehr über Importvorschriften, beliebte Produkte, Versandrouten und Zahlungsmethoden für den Import indonesischer Gewürze und anderer Produkte nach {country}.",
     "heroTitle": "Export nach {country}",
     "heroSubtitle": "Premium indonesische Landwirtschaftsprodukte mit zuverlässigem Versand und Compliance mit den Importvorschriften von {country}.",
     "regulationsTitle": "Importvorschriften",
@@ -410,7 +340,7 @@
   },
   "industry": {
     "metaTitle": "Für {industry} | Indo Tropical Agriculture",
-    "metaDescription": "Indonesische Landwirtschaftsprodukte für {industry}. Premium-Gewürze, Kräuter, Nüsse und Kakaobohnen speziell beschafft und verarbeitet für {industry}-Anwendungen.",
+    "metaDescription": "Indonesische Landwirtschaftsprodukte für {industry}. Premium-Gewürze, Kräuter, Nüsse und Bohnen speziell beschafft und verarbeitet für {industry}-Anwendungen.",
     "heroTitle": "Für {industry}",
     "heroSubtitle": "Spezialisierte Produkte und Dienstleistungen maßgeschneidert für Ihre Industrieanforderungen.",
     "benefitsTitle": "Warum uns wählen",

@@ -8,10 +8,6 @@ const CATEGORY_COLORS: Record<string, string> = {
   nuts: "bg-orange-100 text-orange-800 border-orange-200 hover:border-orange-300 hover:bg-orange-200",
   coffee: "bg-stone-200 text-stone-800 border-stone-300 hover:border-stone-400 hover:bg-stone-300",
   beans: "bg-green-100 text-green-800 border-green-200 hover:border-green-300 hover:bg-green-200",
-  cocoa: "bg-amber-100 text-amber-800 border-amber-200 hover:border-amber-300 hover:bg-amber-200",
-  fruits: "bg-yellow-100 text-yellow-800 border-yellow-200 hover:border-yellow-300 hover:bg-yellow-200",
-  extracts: "bg-red-100 text-red-800 border-red-200 hover:border-red-300 hover:bg-red-200",
-  powders: "bg-stone-200 text-stone-800 border-stone-300 hover:border-stone-400 hover:bg-stone-300",
   other: "bg-stone-100 text-stone-800 border-stone-200 hover:border-stone-300 hover:bg-stone-200",
 };
 
@@ -34,10 +30,6 @@ const CATEGORY_ICONS: Record<string, string> = {
   nuts: "🥜",
   coffee: "☕",
   beans: "🫘",
-  cocoa: "🍫",
-  fruits: "🍋",
-  extracts: "🧴",
-  powders: "✨",
   other: "🌾",
 };
 

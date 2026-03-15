@@ -114,7 +114,7 @@ async function getJsonLd(locale: string) {
         inLanguage: locale,
         name: "Indo Tropical Agriculture",
         legalName: "Indo Tropical Agriculture",
-        description: "Leading Indonesian agriculture exporter. Premium cocoa, cloves, ginger, nutmeg, vanilla, and more.",
+        description: "Leading Indonesian agriculture exporter. Premium cloves, ginger, nutmeg, vanilla, black pepper, and more.",
         url: "https://indotropicalagriculture.com",
         logo: {
           "@type": "ImageObject",
@@ -131,7 +131,6 @@ async function getJsonLd(locale: string) {
         areaServed: ["EU", "US", "AS", "WW"],
         knowsAbout: [
           "Indonesian agriculture export",
-          "Cocoa beans",
           "Cloves",
           "Ginger",
           "Nutmeg",
@@ -139,6 +138,8 @@ async function getJsonLd(locale: string) {
           "Black pepper",
           "Turmeric",
           "Cashew nuts",
+          "Cinnamon",
+          "Coffee",
         ],
         contactPoint: {
           "@type": "ContactPoint",
@@ -156,7 +157,7 @@ async function getJsonLd(locale: string) {
         "@id": "https://indotropicalagriculture.com#website",
         url: "https://indotropicalagriculture.com",
         name: "Indo Tropical Agriculture",
-        description: "Indonesian agriculture supplier, trader and exporter. Premium cocoa, cloves, ginger, nutmeg, vanilla, and more.",
+        description: "Indonesian agriculture supplier, trader and exporter. Premium cloves, ginger, nutmeg, vanilla, and more.",
         inLanguage: locale,
         potentialAction: {
           "@type": "SearchAction",

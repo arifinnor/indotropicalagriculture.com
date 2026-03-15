@@ -70,7 +70,7 @@ export const glossaryTerms: GlossaryTerm[] = [
           },
           {
             heading: "Common HS Codes for Indonesian Products",
-            content: "Cocoa Beans (0901): 0901 10 for raw/roasted, 0901 20 for cocoa powder. Cloves (0904): 0904 11 for whole cloves, 0904 12 for crushed/ground. Ginger (0910): 0910 11 for ginger, fresh or dried. Nutmeg (0908): 0908 11 for nutmeg, 0908 12 for mace. Vanilla (0905): 0905 00 for vanilla. Black Pepper (0904): 0904 21 for black pepper, whole or crushed."
+            content: "Cloves (0904): 0904 11 for whole cloves, 0904 12 for crushed/ground. Ginger (0910): 0910 11 for ginger, fresh or dried. Nutmeg (0908): 0908 11 for nutmeg, 0908 12 for mace. Vanilla (0905): 0905 00 for vanilla. Black Pepper (0904): 0904 21 for black pepper, whole or crushed. Cinnamon (0906): 0906 11 for whole cinnamon, 0906 20 for crushed cinnamon."
           },
           {
             heading: "Working with Indo Tropical Agriculture",
@@ -92,7 +92,7 @@ export const glossaryTerms: GlossaryTerm[] = [
           },
           {
             heading: "Gängige HS-Codes für indonesische Produkte",
-            content: "Kakaobohnen (0901): 0901 10 für roh/geröstet, 0901 20 für Kakaopulver. Gewürznelken (0904): 0904 11 für ganze Nelken, 0904 12 für zerkleinert/gemahlen. Ingwer (0910): 0910 11 für Ingwer, frisch oder getrocknet. Muskatnuss (0908): 0908 11 für Muskatnuss, 0908 12 für Macis. Vanille (0905): 0905 00 für Vanille. Schwarzer Pfeffer (0904): 0904 21 für schwarzen Pfeffer, ganz oder zerkleinert."
+            content: "Gewürznelken (0904): 0904 11 für ganze Nelken, 0904 12 für zerkleinert/gemahlen. Ingwer (0910): 0910 11 für Ingwer, frisch oder getrocknet. Muskatnuss (0908): 0908 11 für Muskatnuss, 0908 12 für Macis. Vanille (0905): 0905 00 für Vanille. Schwarzer Pfeffer (0904): 0904 21 für schwarzen Pfeffer, ganz oder zerkleinert. Zimt (0906): 0906 11 für ganzen Zimt, 0906 20 für zerbrochenen Zimt."
           },
           {
             heading: "Zusammenarbeit mit Indo Tropical Agriculture",
@@ -107,8 +107,8 @@ export const glossaryTerms: GlossaryTerm[] = [
       de: "HS-Code-Leitfaden für Importe indonesischer Landwirtschaftsprodukte"
     },
     metaDescription: {
-      en: "Learn about HS Codes (Harmonized System Codes) for importing Indonesian agricultural products. Understanding customs classification, duty rates, and compliance for cocoa, spices, and more from Indonesia.",
-      de: "Erfahren Sie mehr über HS-Codes (Harmonisierte Systeme) für den Import indonesischer Landwirtschaftsprodukte. Verständnis der Zollklassifizierung, Zollsätze und Compliance für Kakao, Gewürze und mehr aus Indonesien."
+      en: "Learn about HS Codes (Harmonized System Codes) for importing Indonesian agricultural products. Understanding customs classification, duty rates, and compliance for spices, herbs, and more from Indonesia.",
+      de: "Erfahren Sie mehr über HS-Codes (Harmonisierte Systeme) für den Import indonesischer Landwirtschaftsprodukte. Verständnis der Zollklassifizierung, Zollsätze und Compliance für Gewürze, Kräuter und mehr aus Indonesien."
     },
     keywords: {
       en: [
@@ -116,7 +116,6 @@ export const glossaryTerms: GlossaryTerm[] = [
         "harmonized system code",
         "indonesian import hs codes",
         "customs classification indonesia",
-        "hs code cocoa beans",
         "hs code cloves",
         "indonesia export hs code",
         "eu import hs codes"
@@ -126,7 +125,6 @@ export const glossaryTerms: GlossaryTerm[] = [
         "harmonisiertes system",
         "indonesische import hs-codes",
         "zollklassifizierung indonesien",
-        "hs-code kakaobohnen",
         "hs-code gewürznelken",
         "indonesien export hs-code",
         "eu-import hs-codes"
@@ -611,6 +609,135 @@ export const glossaryTerms: GlossaryTerm[] = [
     category: "Product Quality",
     publishedAt: "2026-03-14",
     updatedAt: "2026-03-14"
+  },
+  {
+    id: "bulk-vs-container-shipping",
+    slug: "bulk-vs-container-shipping",
+    title: {
+      en: "Bulk vs Container Shipping for Agricultural Products",
+      de: "Großmengen vs. Container-Versand für Landwirtschaftsprodukte"
+    },
+    definition: {
+      en: "A comparison of shipping methods for agricultural exports: bulk shipping involves unpackaged commodities loaded directly into ship holds, while container shipping uses standardized containers (typically 20ft or 40ft) for bagged or packaged products. The choice affects cost, product quality, handling requirements, and suitability for different markets.",
+      de: "Ein Vergleich von Versandmethoden für Landwirtschaftsexporte: Massenversand beinhaltet unverpackte Waren, die direkt in Schiffsladeräume geladen werden, während Container-Versand standardisierte Container (typischerweise 20ft oder 40ft) für gesackte oder verpackte Produkte verwendet. Die Wahl beeinflusst Kosten, Produktqualität, Handhabungsanforderungen und Eignung für verschiedene Märkte."
+    },
+    content: {
+      en: {
+        summary: "Choosing between bulk and container shipping is a critical decision for Indonesian agricultural exporters. The right shipping method depends on product type, volume, destination infrastructure, buyer requirements, and cost considerations. Understanding the pros and cons of each method helps ensure products arrive safely while optimizing logistics costs.",
+        sections: [
+          {
+            heading: "Bulk Shipping: Overview and Applications",
+            content: "Bulk shipping involves loading loose, unpackaged agricultural commodities directly into the cargo hold of a vessel. Common bulk-shipped Indonesian products include: Cashew nuts (in-shell or shelled, bulk quantities), Coffee beans (large volumes to roasters), Pepper and spices (lower-grade or for industrial processing). Bulk shipping requires specialized port facilities with mechanical loading equipment and is typically most economical for volumes exceeding 500 tons."
+          },
+          {
+            heading: "Container Shipping: FCL and LCL Options",
+            content: "Container shipping uses standard ISO containers for product transport: FCL (Full Container Load): A single 20ft container (~21 tons) or 40ft container (~26 tons) dedicated to one shipment. FCL offers product security, easier handling, and protection from contamination. LCL (Less than Container Load): Multiple shipments consolidated in one container. LCL is cost-effective for smaller orders but increases handling risk and potential for contamination. Container shipping is ideal for packaged, bagged, or value-added products."
+          },
+          {
+            heading: "Cost Comparison: Bulk vs Container",
+            content: "Shipping costs vary significantly between methods: Bulk shipping: Lower per-ton cost for large volumes (typically 15-25% cheaper than containers). Minimal packaging costs (no bags or pallets required). Higher port handling charges at specialized bulk terminals. Container shipping: Higher freight cost per ton but predictable pricing. Additional costs for bags, pallets, and container stuffing/destuffing. Lower handling fees at most ports. For orders of 1-3 containers, container shipping is often more cost-effective when factoring in total logistics costs."
+          },
+          {
+            heading: "Product Quality and Preservation",
+            content: "Container shipping generally offers better protection for agricultural products: Protection from moisture: Containers can be lined and provide better humidity control. Reduced contamination risk: Sealed containers prevent exposure to other cargos. Easier quality inspection: Products can be inspected upon container packing and unpacking. Traceability: Individual containers are easier to track than bulk holds. Bulk shipping is suitable for robust commodities like coffee beans destined for industrial processing but may not be ideal for premium-grade spices requiring careful handling."
+          },
+          {
+            heading: "Container Types for Agricultural Products",
+            content: "Different container types serve different agricultural products: Standard dry containers: Most common for bagged spices, nuts, and beans. Refrigerated containers (reefers): For temperature-sensitive products like certain grated coconut products. Ventilated containers: For products requiring airflow to prevent moisture buildup (some coffee). Lined containers: Inner plastic liners provide additional moisture protection. Indo Tropical Agriculture typically recommends lined 20ft containers for most spice and nut exports."
+          },
+          {
+            heading: "Port Infrastructure Considerations",
+            content: "Destination port capabilities influence shipping method choice: Bulk terminals: Limited to major ports with specialized equipment (Rotterdam, Hamburg, Santos). Container terminals: Available at most ports worldwide. Inland access: Containers can be easily transferred to trucks or rail for inland delivery. For buyers located far from major bulk ports, container shipping often proves more practical despite potentially higher ocean freight costs."
+          },
+          {
+            heading: "Insurance and Risk Management",
+            content: "Insurance considerations differ between shipping methods: Container shipping: Easier to insure due to clear container sealing numbers and documentation. Damage is easier to attribute and claim. Lower risk of contamination from other cargo. Bulk shipping: More complex insurance claims due to commingled cargo. Higher risk of contamination or quality issues from holds. Requires more rigorous pre-shipment inspection and sampling. Most international buyers prefer container shipping for ease of risk management."
+          },
+          {
+            heading: "Recommended Applications by Product",
+            content: "Indo Tropical Agriculture shipping recommendations by product: Premium spices (vanilla, cloves, nutmeg): Container shipping only—protect quality and value. Coffee beans: Container shipping preferred for specialty grades. Cashew nuts: Container shipping for kernel grades, bulk possible for in-shell. Pepper and turmeric: Either method depending on volume and buyer preference. Ginger: Container shipping recommended due to moisture sensitivity."
+          },
+          {
+            heading: "Sourcing from Indo Tropical Agriculture",
+            content: "We offer flexible shipping options tailored to your needs: Both bulk and container shipping capabilities depending on product and volume. Container loading supervision and photography. Lined containers with moisture barriers for sensitive products. Documentation for all shipping methods including bills of lading, certificates of origin, and phytosanitary certificates. Contact us to discuss the optimal shipping method for your specific order requirements."
+          }
+        ],
+        relatedTerms: ["export-documentation", "hs-code"]
+      },
+      de: {
+        summary: "Die Wahl zwischen Massen- und Container-Versand ist eine kritische Entscheidung für indonesische Landwirtschaftsexporteure. Die richtige Versandmethode hängt von Produktart, Volumen, Zielinfrastruktur, Käuferanforderungen und Kostenüberlegungen ab. Das Verständnis der Vor- und Nachteile jeder Methode hilft sicherzustellen, dass Produkte sicher ankommen und gleichzeitig die Logistikkosten optimiert werden.",
+        sections: [
+          {
+            heading: "Massenversand: Überblick und Anwendungen",
+            content: "Massenversand beinhaltet das Laden von losen, unverpackten Landwirtschaftswaren direkt in den Laderaum eines Schiffes. Häufig im Massenversand verschiffte indonesische Produkte sind: Cashewnüsse (in der Schale oder geschält, Massenmengen), Kaffeebohnen (große Volumina an Röster), Pfeffer und Gewürze (niedrigere Grade oder für industrielle Verarbeitung). Massenversand erfordert spezialisierte Hafeneinrichtungen mit mechanischer Ladeausrüstung und ist typischerweise am wirtschaftlichsten für Volumen über 500 Tonnen."
+          },
+          {
+            heading: "Container-Versand: FCL- und LCL-Optionen",
+            content: "Container-Versand verwendet standardisierte ISO-Container für Produkttransport: FCL (Full Container Load): Ein einzelner 20ft-Container (~21 Tonnen) oder 40ft-Container (~26 Tonnen) für eine Sendung. FCL bietet Produktsicherheit, einfachere Handhabung und Schutz vor Kontamination. LCL (Less than Container Load): Mehrere Sendungen konsolidiert in einem Container. LCL ist kosteneffektiv für kleinere Bestellungen, erhöht aber das Handhabungsrisiko und das Potenzial für Kontamination. Container-Versand ist ideal für verpackte, gesackte oder wertaddierte Produkte."
+          },
+          {
+            heading: "Kostenvergleich: Massen- vs Container-Versand",
+            content: "Die Versandkosten variieren erheblich zwischen Methoden: Massenversand: Niedrigere Kosten pro Tonne für große Volumina (typischerweise 15-25% günstiger als Container). Minimale Verpackungskosten (keine Säcke oder Paletten erforderlich). Höhere Hafenhandhabungsgebühren an spezialisierten Massenterminals. Container-Versand: Höhere Frachtkosten pro Tonne aber vorhersehbare Preisgestaltung. Zusatzkosten für Säcke, Paletten und Container-Be- und Entladen. Niedrigere Handhabungsgebühren an den meisten Häfen. Für Bestellungen von 1-3 Containern ist Container-Versand oft kosteneffektiver, wenn Gesamtlogistikkosten berücksichtigt werden."
+          },
+          {
+            heading: "Produktqualität und -erhaltung",
+            content: "Container-Versand bietet allgemein besseren Schutz für Landwirtschaftsprodukte: Schutz vor Feuchtigkeit: Container können ausgekleidet werden und bieten bessere Feuchtigkeitskontrolle. Reduziertes Kontaminationsrisiko: Versiegelte Container verhindern die Exposition gegenüber anderen Frachten. Einfachere Qualitätsinspektion: Produkte können beim Container-Be- und Entladen inspiziert werden. Rückverfolgbarkeit: Einzelne Container sind einfacher zu verfolgen als Massenladeräume. Massenversand ist geeignet für robuste Waren wie Kaffeebohnen für die industrielle Verarbeitung, aber möglicherweise nicht ideal für Premium-Gewürze, die sorgfältige Handhabung erfordern."
+          },
+          {
+            heading: "Containertypen für Landwirtschaftsprodukte",
+            content: "Verschiedene Containertypen dienen verschiedene Landwirtschaftsprodukte: Standard-Trockencontainer: Am häufigsten für gesackte Gewürze, Nüsse und Bohnen. Kühlcontainer (Reefer): Für temperaturempfindliche Produkte wie bestimmte geriebene Kokosnussprodukte. Belüftete Container: Für Produkte, die Luftstrom benötigen, um Feuchtigkeitsbildung zu verhindern (einiger Kaffee). Ausgekleidete Container: Innenplastikauskleidungen bieten zusätzlichen Feuchtigkeitsschutz. Indo Tropical Agriculture empfiehlt typischerweise ausgekleidete 20ft-Container für die meisten Gewürz- und Nussexporte."
+          },
+          {
+            heading: "Hafeninfrastruktur-Überlegungen",
+            content: "Die Fähigkeiten des Zielhafens beeinflussen die Wahl der Versandmethode: Massenterminals: Beschränkt auf große Häfen mit spezialisierter Ausrüstung (Rotterdam, Hamburg, Santos). Containerterminals: In den meisten Häfen weltweit verfügbar. Inlandzugang: Container können leicht auf Lkw oder Bahn für Inlandlieferung umgeladen werden. Für Käufer, die weit von großen Massenhäfen entfernt sind, erweist sich Container-Versand oft praktischer trotz potenziell höherer Seefrachtkosten."
+          },
+          {
+            heading: "Versicherung und Risikomanagement",
+            content: "Versicherungsüberlegungen unterscheiden sich zwischen Versandmethoden: Container-Versand: Einfacher zu versichern aufgrund klarer Container-Versiegelungsnummern und Dokumentation. Schäden sind einfacher zuzuordnen und zu beanspruchen. Niedrigeres Risiko der Kontamination aus anderen Frachten. Massenversand: Komplexere Versicherungsansprüche aufgrund vermischter Fracht. Höheres Risiko der Kontamination oder Qualitätsprobleme aus Laderäumen. Erfordert strengere Vorversandinspektion und -probenahme. Die meisten internationalen Käufer bevorzugen Container-Versand für einfacheres Risikomanagement."
+          },
+          {
+            heading: "Empfohlene Anwendungen nach Produkt",
+            content: "Indo Tropical Agriculture-Versandempfehlungen nach Produkt: Premium-Gewürze (Vanille, Nelken, Muskatnuss): Nur Container-Versand—schützt Qualität und Wert. Kaffeebohnen: Container-Versand bevorzugt für Spezialitäten. Cashewnüsse: Container-Versand für Kerngrade, Massenversand möglich für in der Schale. Pfeffer und Kurkuma: Je nach Methode Volumen und Käuferpräferenz. Ingwer: Container-Versand empfohlen aufgrund von Feuchtigkeitsempfindlichkeit."
+          },
+          {
+            heading: "Bezug von Indo Tropical Agriculture",
+            content: "Wir bieten flexible Versandoptionen, die auf Ihre Bedürfnisse zugeschnitten sind: Sowohl Massen- als auch Container-Versandfähigkeiten je nach Produkt und Volumen. Container-Be- und Entladungsaufsicht und -fotografie. Ausgekleidete Container mit Feuchtigkeitsbarrieren für empfindliche Produkte. Dokumentation für alle Versandmethoden einschließlich Konnossemente, Ursprungszeugnisse und Pflanzengesundheitszeugnisse. Kontaktieren Sie uns, um die optimale Versandmethode für Ihre spezifischen Bestellanforderungen zu besprechen."
+          }
+        ],
+        relatedTerms: ["export-dokumentation", "hs-code"]
+      }
+    },
+    metaTitle: {
+      en: "Bulk vs Container Shipping Guide | Indonesian Agricultural Export Logistics",
+      de: "Großmengen vs. Container-Versand-Leitfaden | Indonesische Landwirtschaftsexport-Logistik"
+    },
+    metaDescription: {
+      en: "Compare bulk vs container shipping for Indonesian agricultural exports. Learn about FCL, LCL, shipping costs, container types, and which method is best for spices, coffee, nuts, and herbs.",
+      de: "Vergleichen Sie Massen- und Container-Versand für indonesische Landwirtschaftsexporte. Erfahren Sie mehr über FCL, LCL, Versandkosten, Containertypen und welche Methode am besten für Gewürze, Kaffee, Nüsse und Kräuter ist."
+    },
+    keywords: {
+      en: [
+        "bulk shipping vs container",
+        "fcl lcl shipping indonesia",
+        "container shipping agricultural products",
+        "indonesian export logistics",
+        "spices shipping containers",
+        "20ft container capacity",
+        "sea freight indonesia to europe"
+      ],
+      de: [
+        "massenversand vs container",
+        "fcl lcl versand indonesien",
+        "container-versand landwirtschaftsprodukte",
+        "indonesische exportlogistik",
+        "gewürze versand container",
+        "20ft-container-kapazität",
+        "seefracht indonesien nach europa"
+      ]
+    },
+    category: "Shipping & Logistics",
+    publishedAt: "2026-03-15",
+    updatedAt: "2026-03-15"
   }
 ];
 

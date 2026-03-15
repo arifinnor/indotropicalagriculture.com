@@ -35,8 +35,8 @@ export const industries: Industry[] = [
     slug: "food-manufacturers",
     icon: "🏭",
     description: {
-      en: "Indo Tropical Agriculture is your trusted partner for bulk Indonesian agricultural products. We supply industrial-scale quantities of premium spices, herbs, nuts, and cocoa beans to food manufacturers worldwide.",
-      de: "Indo Tropical Agriculture ist Ihr vertrauenswürdiger Partner für großtechnische indonesische Landwirtschaftsprodukte. Wir liefern industrielle Mengen an Premium-Gewürzen, Kräutern, Nüssen und Kakaobohnen an Lebensmittelhersteller weltweit."
+      en: "Indo Tropical Agriculture is your trusted partner for bulk Indonesian agricultural products. We supply industrial-scale quantities of premium spices, herbs, nuts, and coffee beans to food manufacturers worldwide.",
+      de: "Indo Tropical Agriculture ist Ihr vertrauenswürdiger Partner für großtechnische indonesische Landwirtschaftsprodukte. Wir liefern industrielle Mengen an Premium-Gewürzen, Kräutern, Nüssen und Kaffeebohnen an Lebensmittelhersteller weltweit."
     },
     benefits: [
       {
@@ -60,7 +60,7 @@ export const industries: Industry[] = [
         de: "Lebensmittelsicherheits-Compliance (HACCP, GMP-Standards)"
       }
     ],
-    relevantCategories: ["Spices", "Herbs", "Nuts", "Cocoa", "Powders"],
+    relevantCategories: ["Spices", "Herbs", "Nuts", "Coffee", "Beans"],
     useCase: {
       en: "Our products are used by food manufacturers in processed foods, ready-to-eat meals, bakery products, confectionery, and beverage industries. We ensure consistent flavor profiles and quality specifications for your production needs.",
       de: "Unsere Produkte werden von Lebensmittelherstellern in verarbeiteten Lebensmitteln, Fertiggerichten, Backwaren, Süßwaren und Getränkeindustrien verwendet. Wir gewährleisten konsistente Geschmacksprofile und Qualitätsspezifikationen für Ihre Produktionsanforderungen."
@@ -73,14 +73,12 @@ export const industries: Industry[] = [
       en: [
         "indonesian agriculture for food manufacturers",
         "bulk spices for food industry",
-        "wholesale cocoa beans for chocolate manufacturers",
         "industrial spice suppliers indonesia",
         "b2b food ingredients indonesia"
       ],
       de: [
         "indonesische landwirtschaft für lebensmittelhersteller",
         "gewürze großhandel lebensmittelindustrie",
-        "kakaobohnen großhandel schokoladenhersteller",
         "industrielle gewürzlieferanten indonesien",
         "b2b lebensmittelzutaten indonesien"
       ]
@@ -118,7 +116,7 @@ export const industries: Industry[] = [
         de: "Einhaltung der pharmazeutischen GMP-Anforderungen"
       }
     ],
-    relevantCategories: ["Herbs", "Extracts", "Powders"],
+    relevantCategories: ["Herbs", "Spices"],
     useCase: {
       en: "Our herbs and extracts are used in pharmaceutical formulations, traditional medicine, nutraceuticals, and dietary supplements. We provide detailed specifications for active compound content and ensure batch-to-batch consistency.",
       de: "Unsere Kräuter und Extrakte werden in pharmazeutischen Formulierungen, traditioneller Medizin, Nahrungsergänzungsmitteln und Nahrungsergänzungsmitteln verwendet. Wir liefern detaillierte Spezifikationen für Wirkstoffgehalt und gewährleisten Chargen-zu-Chargen-Konsistenz."
@@ -176,7 +174,7 @@ export const industries: Industry[] = [
         de: "In Großmengen für kommerzielle Extraktion verfügbar"
       }
     ],
-    relevantCategories: ["Spices", "Extracts", "Herbs"],
+    relevantCategories: ["Spices", "Herbs"],
     useCase: {
       en: "Our high-oil-content spices are used for essential oil production in aromatherapy, perfumes, cosmetics, and personal care products. Cloves, nutmeg, cinnamon, and ginger are particularly prized for their aromatic compounds.",
       de: "Unsere gewürze mit hohem Ölgehalt werden für ätherische Ölproduktion in Aromatherapie, Parfüms, Kosmetik und Körperpflegeprodukte verwendet. Gewürznelken, Muskatnuss, Zimt und Ingwer sind besonders geschätzt für ihre aromatischen Verbindungen."
@@ -234,7 +232,7 @@ export const industries: Industry[] = [
         de: "Lösliche und extrahierbare Formen für verschiedene Verarbeitungsanforderungen"
       }
     ],
-    relevantCategories: ["Spices", "Herbs", "Extracts", "Powders"],
+    relevantCategories: ["Spices", "Herbs", "Coffee"],
     useCase: {
       en: "Our products are used in teas, coffees, energy drinks, ginger beer, vanilla-flavored beverages, and alcoholic beverages like gin and rum. We ensure consistent flavor and quality for large-scale beverage production.",
       de: "Unsere Produkte werden in Tees, Kaffees, Energy-Drinks, Ingwerbier, Vanille-getränkte Getränke und alkoholische Getränke wie Gin und Rum verwendet. Wir gewährleisten konsistenten Geschmack und Qualität für großtechnische Getränkeproduktion."
@@ -292,7 +290,7 @@ export const industries: Industry[] = [
         de: "Premium-Vanillebohnen für Spezialitäten-Süßwaren"
       }
     ],
-    relevantCategories: ["Spices", "Powders", "Beans", "Fruits"],
+    relevantCategories: ["Spices", "Beans"],
     useCase: {
       en: "Our baking spices are used in artisanal and industrial bakeries for breads, rolls, cakes, cookies, pastries, and confectionery. Ceylon cinnamon for delicate flavors, Indonesian cloves for depth, and premium vanilla for luxury chocolates.",
       de: "Unsere Backgewürze werden in handwerklichen und industriellen Bäckereien für Brot, Brötchen, Kuchen, Kekse, Gebäck und Süßwaren verwendet. Ceylon-Zimt für feine Aromen, indonesische Gewürznelken für Tiefe und Premium-Vanille für Luxus-Schokoladen."
@@ -350,7 +348,7 @@ export const industries: Industry[] = [
         de: "Schulungen zu Produktwissen und Handhabung"
       }
     ],
-    relevantCategories: ["Spices", "Herbs", "Nuts", "Coffee", "Cocoa"],
+    relevantCategories: ["Spices", "Herbs", "Nuts", "Coffee", "Beans"],
     useCase: {
       en: "We partner with food distributors, spice merchants, and agricultural product wholesalers across Europe, Asia, and the Americas. Distributors benefit from our direct sourcing, quality assurance, and comprehensive product range.",
       de: "Wir arbeiten mit Lebensmitteldistributoren, Gewürzhändlern und Landwirtschaftsprodukte-Großhändlern in Europa, Asien und Amerika zusammen. Distributoren profitieren von unserer direkten Beschaffung, Qualitätssicherung und umfassenden Produktpalette."

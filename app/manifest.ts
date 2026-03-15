@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Indo Tropical Agriculture - Indonesian Agriculture Exporter",
     short_name: "Indo Tropical",
-    description: "Indonesian agriculture supplier, trader and exporter. Premium cocoa, cloves, ginger, nutmeg, vanilla, and more.",
+    description: "Indonesian agriculture supplier, trader and exporter. Premium cloves, ginger, nutmeg, vanilla, and more.",
     start_url: "/",
     display: "standalone",
     background_color: "#fafaf9",

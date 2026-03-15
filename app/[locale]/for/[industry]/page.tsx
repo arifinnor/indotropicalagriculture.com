@@ -130,10 +130,6 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
     Nuts: "nuts",
     Coffee: "coffee",
     Beans: "beans",
-    Cocoa: "cocoa",
-    Fruits: "fruits",
-    Extracts: "extracts",
-    Powders: "powders",
   };
 
   return (

@@ -42,8 +42,8 @@ export const destinations: Destination[] = [
       de: "Deutschland verlangt Pflanzengesundheitszeugnisse für landwirtschaftliche Produkte. Produkte müssen EU-Standards (Verordnung EG 178/2002) erfüllen. HS-Codes für den Zoll erforderlich. MwSt. wird auf Importe angewendet."
     },
     popularProducts: {
-      en: ["Cloves", "Nutmeg", "Cinnamon", "Black Pepper", "Cocoa Beans"],
-      de: ["Gewürznelken", "Muskatnuss", "Zimt", "Schwarzer Pfeffer", "Kakaobohnen"]
+      en: ["Cloves", "Nutmeg", "Cinnamon", "Black Pepper", "Vanilla"],
+      de: ["Gewürznelken", "Muskatnuss", "Zimt", "Schwarzer Pfeffer", "Vanille"]
     },
     shippingRoute: {
       en: "Shipments to Germany typically route through Port of Hamburg or Rotterdam (Netherlands) for overland transport.",
@@ -60,14 +60,12 @@ export const destinations: Destination[] = [
     keywords: {
       en: [
         "indonesian spice export to germany",
-        "indonesian cocoa beans germany",
         "import from indonesia to germany",
         "wholesale spices germany",
         "indonesian agriculture supplier germany"
       ],
       de: [
         "indonesischer gewürzexport nach deutschland",
-        "indonesische kakaobohnen deutschland",
         "import aus indonesien nach deutschland",
         "gewürze großhandel deutschland",
         "indonesischer landwirtschaftslieferant deutschland"
@@ -85,8 +83,8 @@ export const destinations: Destination[] = [
       de: "Die Niederlande verlangen EU-konforme Pflanzengesundheitszeugnisse. Rotterdam ist ein wichtiger Eingangshafen mit vereinfachten Zollverfahren. Produkte müssen den Standards der niederländischen Lebensmittel- und Verbraucherproduktbehörde (NVWA) entsprechen."
     },
     popularProducts: {
-      en: ["Cocoa Beans", "Cloves", "Ginger", "Nutmeg", "Cashew Nuts"],
-      de: ["Kakaobohnen", "Gewürznelken", "Ingwer", "Muskatnuss", "Cashewnüsse"]
+      en: ["Vanilla Beans", "Cloves", "Ginger", "Nutmeg", "Cashew Nuts"],
+      de: ["Vanillebohnen", "Gewürznelken", "Ingwer", "Muskatnuss", "Cashewnüsse"]
     },
     shippingRoute: {
       en: "Direct shipments to Port of Rotterdam, Europe's largest seaport.",
@@ -103,14 +101,12 @@ export const destinations: Destination[] = [
     keywords: {
       en: [
         "indonesian spice export to netherlands",
-        "indonesian cocoa beans rotterdam",
         "import from indonesia to netherlands",
         "wholesale spices netherlands",
         "indonesian agriculture supplier netherlands"
       ],
       de: [
         "indonesischer gewürzexport in die niederlande",
-        "indonesische kakaobohnen rotterdam",
         "import aus indonesien in die niederlande",
         "gewürze großhandel niederlande",
         "indonesischer landwirtschaftslieferant niederlande"
@@ -146,14 +142,12 @@ export const destinations: Destination[] = [
     keywords: {
       en: [
         "indonesian spice export to uk",
-        "indonesian cocoa beans uk",
         "import from indonesia to uk",
         "wholesale spices united kingdom",
         "indonesian agriculture supplier uk"
       ],
       de: [
         "indonesischer gewürzexport nach großbritannien",
-        "indonesische kakaobohnen uk",
         "import aus indonesien nach großbritannien",
         "gewürze großhandel vereinigtes königreich",
         "indonesischer landwirtschaftslieferant uk"
@@ -214,8 +208,8 @@ export const destinations: Destination[] = [
       de: "Die USA verlangen FDA-Registrierung, Pflanzengesundheitszeugnisse und Zollerklärungen. Produkte müssen USDA- und FDA-Vorschriften entsprechen. Importzölle und Zollbürgschaften erforderlich."
     },
     popularProducts: {
-      en: ["Cocoa Beans", "Cloves", "Nutmeg", "Cashew Nuts", "Ginger"],
-      de: ["Kakaobohnen", "Gewürznelken", "Muskatnuss", "Cashewnüsse", "Ingwer"]
+      en: ["Coffee Beans", "Cloves", "Nutmeg", "Cashew Nuts", "Ginger"],
+      de: ["Kaffeebohnen", "Gewürznelken", "Muskatnuss", "Cashewnüsse", "Ingwer"]
     },
     shippingRoute: {
       en: "Shipments to East Coast ports (New York, Savannah, Norfolk) or West Coast ports (Los Angeles, Long Beach).",
@@ -232,14 +226,12 @@ export const destinations: Destination[] = [
     keywords: {
       en: [
         "indonesian spice export to usa",
-        "indonesian cocoa beans united states",
         "import from indonesia to usa",
         "wholesale spices america",
         "indonesian agriculture supplier usa"
       ],
       de: [
         "indonesischer gewürzexport in die usa",
-        "indonesische kakaobohnen vereinigte staaten",
         "import aus indonesien in die usa",
         "gewürze großhandel amerika",
         "indonesischer landwirtschaftslieferant usa"
@@ -343,8 +335,8 @@ export const destinations: Destination[] = [
       de: "China verlangt Pflanzengesundheitszeugnisse und Importgenehmigungen. Produkte müssen den Standards der GACC (General Administration of Customs of China) entsprechen. CIQ-Inspektion (China Inspection and Quarantine) erforderlich. HS-Codes für den Zoll wesentlich."
     },
     popularProducts: {
-      en: ["Clove Stem", "Nutmeg", "Cinnamon", "Cashew Nuts", "Cocoa Beans"],
-      de: ["Nelkenstiele", "Muskatnuss", "Zimt", "Cashewnüsse", "Kakaobohnen"]
+      en: ["Clove Stem", "Nutmeg", "Cinnamon", "Cashew Nuts", "Coffee"],
+      de: ["Nelkenstiele", "Muskatnuss", "Zimt", "Cashewnüsse", "Kaffee"]
     },
     shippingRoute: {
       en: "Shipments to Shanghai, Shenzhen, Ningbo, or Guangzhou ports.",

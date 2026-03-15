@@ -1,10 +1,9 @@
 {
   "metadata": {
     "title": "Indo Tropical Agriculture | Indonesian Agriculture Exporter to EU Markets",
-    "description": "Leading Indonesian agriculture exporter supplying premium cocoa beans, cloves, ginger, nutmeg, vanilla, black pepper, turmeric, and cashew nuts to European and global markets. Direct from farmers, worldwide shipping.",
+    "description": "Leading Indonesian agriculture exporter supplying premium cloves, ginger, nutmeg, vanilla, black pepper, turmeric, cashew nuts, and more to European and global markets. Direct from farmers, worldwide shipping.",
     "keywords": [
       "indonesian agriculture export",
-      "indonesian cocoa beans exporter",
       "cloves export indonesia",
       "ginger export indonesia",
       "nutmeg exporter indonesia",
@@ -70,11 +69,6 @@
     "badge": "What We Offer",
     "title": "Our Premium Products",
     "subtitle": "Sourced directly from Indonesian farmers and processed to meet quality standards.",
-    "cocoa": {
-      "name": "Cocoa",
-      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
-      "keywords": ["Cocoa Beans", "Fermented", "Premium Grade"]
-    },
     "cloves": {
       "name": "Cloves",
       "description": "Aromatic whole cloves and powder from Indonesian spice islands. Perfect for food, pharmaceutical, and essential oil industries.",
@@ -170,17 +164,6 @@
     "specifications": "Specifications",
     "requestQuote": "Request a Quote",
     "viewAllProducts": "View All Products",
-    "cocoa": {
-      "name": "Cocoa Beans",
-      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Our cocoa beans are sourced from prime growing regions in Sulawesi and Sumatra, ideal for chocolate manufacturers seeking premium raw materials.",
-      "fullDescription": "Premium fermented Indonesian cocoa beans sourced from Sulawesi and Sumatra. Our beans meet international quality standards with optimal fermentation and moisture content. Perfect for chocolate manufacturers, cocoa processors, and bulk buyers seeking reliable supply from Indonesia.",
-      "specifications": [
-        { "label": "Bean Count", "value": "90-110 beans/100g" },
-        { "label": "Moisture", "value": "6% - 7%" },
-        { "label": "Foreign Matter", "value": "≤ 0.5%" },
-        { "label": "Mouldy Beans", "value": "≤ 3%" }
-      ]
-    },
     "cloves": {
       "name": "Cloves",
       "description": "Cloves come from the flower buds of an evergreen tree that is native to the North Moluccas Islands in Indonesia. Strong of aroma and hot and pungent in taste, cloves are used to flavour many foods, particularly meats and bakery products.",
@@ -209,7 +192,7 @@
     "title": "Product Categories",
     "description": "Browse our catalog by category to find the perfect Indonesian agricultural products for your needs.",
     "metaTitle": "Categories | Indo Tropical Agriculture - Indonesian Exporter",
-    "metaDescription": "Browse Indonesian agricultural products by category including spices, herbs, nuts, coffee, beans, and cocoa. Premium quality sourced directly from farmers.",
+    "metaDescription": "Browse Indonesian agricultural products by category including spices, herbs, nuts, coffee, and beans. Premium quality sourced directly from farmers.",
     "metaKeywords": [
       "indonesian product categories",
       "indonesian spices export",
@@ -217,8 +200,7 @@
       "indonesian nuts export",
       "indonesian coffee export",
       "indonesian beans export",
-      "wholesale agriculture indonesia",
-      "indonesian cocoa export"
+      "wholesale agriculture indonesia"
     ],
     "spices": {
       "name": "Spices",
@@ -292,58 +274,6 @@
         "wholesale beans",
         "indonesian legumes"
       ]
-    },
-    "cocoa": {
-      "name": "Cocoa",
-      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
-      "metaTitle": "Indonesian Cocoa Export | Indo Tropical Agriculture",
-      "metaDescription": "Premium Indonesian cocoa beans for export. Wholesale fermented cocoa sourced from Sulawesi and Sumatra.",
-      "metaKeywords": [
-        "indonesian cocoa export",
-        "cocoa beans indonesia",
-        "indonesian cocoa beans exporter",
-        "fermented cocoa",
-        "wholesale cocoa",
-        "sulawesi cocoa"
-      ]
-    },
-    "fruits": {
-      "name": "Fruits",
-      "description": "Tropical fruits from Indonesia including coconut products and other exotic fruits for international markets.",
-      "metaTitle": "Indonesian Fruits Export | Indo Tropical Agriculture",
-      "metaDescription": "Premium Indonesian fruits and fruit products for export. Sourced directly from farmers.",
-      "metaKeywords": [
-        "indonesian fruits export",
-        "tropical fruits indonesia",
-        "coconut products",
-        "exotic fruits indonesia"
-      ]
-    },
-    "extracts": {
-      "name": "Extracts",
-      "description": "Natural extracts and essential oils derived from Indonesian plants and spices. For food, cosmetic, and pharmaceutical industries.",
-      "metaTitle": "Indonesian Extracts Export | Indo Tropical Agriculture",
-      "metaDescription": "Premium Indonesian extracts and essential oils for export. Natural extracts sourced from local plants.",
-      "metaKeywords": [
-        "indonesian extracts",
-        "essential oils indonesia",
-        "natural extracts",
-        "clove oil indonesia",
-        "ginger extract"
-      ]
-    },
-    "powders": {
-      "name": "Powders",
-      "description": "Ground spice powders and herbal powders from Indonesia. Convenient for food processing and culinary applications.",
-      "metaTitle": "Indonesian Powders Export | Indo Tropical Agriculture",
-      "metaDescription": "Premium Indonesian spice and herbal powders for export. Ground spices sourced directly from farmers.",
-      "metaKeywords": [
-        "indonesian powders",
-        "spice powders indonesia",
-        "turmeric powder",
-        "ginger powder",
-        "ground spices"
-      ]
     }
   },
   "common": {
@@ -394,7 +324,7 @@
 ,
   "destination": {
     "metaTitle": "Export to {country} | Indo Tropical Agriculture",
-    "metaDescription": "Indonesian agricultural products exported to {country}. Learn about import regulations, popular products, shipping routes, and payment methods for importing Indonesian spices, cocoa, and other products to {country}.",
+    "metaDescription": "Indonesian agricultural products exported to {country}. Learn about import regulations, popular products, shipping routes, and payment methods for importing Indonesian spices and other products to {country}.",
     "heroTitle": "Export to {country}",
     "heroSubtitle": "Premium Indonesian agricultural products with reliable shipping and compliance with {country} import regulations.",
     "regulationsTitle": "Import Regulations",
@@ -408,7 +338,7 @@
   },
   "industry": {
     "metaTitle": "For {industry} | Indo Tropical Agriculture",
-    "metaDescription": "Indonesian agricultural products for {industry}. Premium quality spices, herbs, nuts, and cocoa beans specifically sourced and processed for {industry} applications.",
+    "metaDescription": "Indonesian agricultural products for {industry}. Premium quality spices, herbs, nuts, and beans specifically sourced and processed for {industry} applications.",
     "heroTitle": "For {industry}",
     "heroSubtitle": "Specialized products and services tailored for your industry needs.",
     "benefitsTitle": "Why Choose Us",
