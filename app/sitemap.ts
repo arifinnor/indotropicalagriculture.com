@@ -5,6 +5,7 @@ import { destinations } from "@/data/destinations";
 import { industries } from "@/data/industries";
 import { getGlossaryTerms } from "@/data/glossary";
 import { getHSCodes } from "@/data/hs-codes";
+import { getComparisons } from "@/data/comparisons";
 
 const SITE_URL = "https://indotropicalagriculture.com";
 
@@ -27,6 +28,7 @@ const LAST_MOD_DATES = {
   industries: new Date("2026-03-14"), // Industry pages
   glossary: new Date("2026-03-14"), // Glossary/educational content pages
   hsCodes: new Date("2026-03-15"), // HS code landing pages
+  comparisons: new Date("2026-03-15"), // Product comparison pages
   // Default date for pages without specific updates
   default: new Date("2025-02-01"),
 };
@@ -222,6 +224,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]);
 
+  // Comparison pages for each locale
+  // Note: URLs use /vs/XXXX pattern which rewrites to /compare/XXXX via middleware
+  const comparisons = getComparisons();
+  const comparisonPages = comparisons.flatMap((comparison) => [
+    {
+      url: `${SITE_URL}/vs/${comparison.slug}`,
+      lastModified: LAST_MOD_DATES.comparisons,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/de/vs/${comparison.slug}`,
+      lastModified: LAST_MOD_DATES.comparisons,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    },
+  ]);
+
   return [
     ...staticPages,
     ...categoryIndexPages,
@@ -232,5 +252,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...glossaryIndexPages,
     ...glossaryTermPages,
     ...hsCodePages,
+    ...comparisonPages,
   ];
 }

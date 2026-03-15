@@ -24,6 +24,17 @@ export default function proxy(request: NextRequest) {
     return NextResponse.rewrite(url);
   }
 
+  // Rewrite /vs/white-pepper-vs-black-pepper to /compare/white-pepper-vs-black-pepper
+  // Matches: /vs/XXXX or /de/vs/XXXX
+  const comparisonMatch = url.pathname.match(/^\/([a-z]{2}\/)?vs\/(.+)$/);
+
+  if (comparisonMatch) {
+    const [, locale, slug] = comparisonMatch;
+    const newLocale = locale || `${defaultLocale}/`;
+    url.pathname = `/${newLocale}compare/${slug}`;
+    return NextResponse.rewrite(url);
+  }
+
   return intlMiddleware(request);
 }
 

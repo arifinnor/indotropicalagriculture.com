@@ -1,7 +1,7 @@
 # SEO Roadmap - Indo Tropical Agriculture
 
 > Last updated: 2026-03-15
-> Current indexed pages: ~180 (40 products × 2 locales + 10 category pages × 2 locales + 2 FAQ pages + 16 market pages + 12 industry pages + 14 glossary pages + 20 HS code pages + catalog pages + homepages)
+> Current indexed pages: ~196 (40 products × 2 locales + 10 category pages × 2 locales + 2 FAQ pages + 16 market pages + 12 industry pages + 14 glossary pages + 20 HS code pages + 12 comparison pages + catalog pages + homepages)
 
 ---
 
@@ -15,10 +15,10 @@
 | Phase 2.1: Market Pages | ✅ **Completed** | 100% | 16/16 |
 | Phase 2.2: Industry Pages | ✅ **Completed** | 100% | 12/12 |
 | Phase 2.3: HS Code Landing Pages | ✅ **Completed** | 100% | 6/6 |
-| Phase 3.1: Comparison Pages | ⏳ Not Started | 0% | 0/6 |
+| Phase 3.1: Comparison Pages | ✅ **Completed** | 100% | 6/6 |
 | Phase 3.2: Glossary/Educational | ✅ **Completed** | 100% | 12/12 |
 | Phase 3.3: Blog/Resources | ⏳ Not Started | 0% | 0/4 |
-| **Overall** | 🟡 **In Progress** | **66%** | **64/108** |
+| **Overall** | 🟡 **In Progress** | **72%** | **70/108** |
 
 ### Pages Added So Far
 - ✅ **10 Category Pages** (5 categories × 2 locales)
@@ -27,12 +27,13 @@
 - ✅ **12 Industry Pages** (`/for/*`, `/de/for/*`) - complete
 - ✅ **14 Glossary Pages** (`/glossary`, `/what-is/*`, `/de/` equivalents) - complete with locale fix
 - ✅ **20 HS Code Landing Pages** (`/hs-code-*`, `/de/hs-code-*`) - complete with duties, regulations, certifications
+- ✅ **12 Product Comparison Pages** (`/vs/*`, `/de/vs/*`) - complete with side-by-side spec tables
 
 ### Next Immediate Task
-- 🔴 **Phase 3.1: Product Comparison Pages** - Help buyers choose between similar products
-  - Create comparison page template
-  - Create side-by-side spec tables
-  - Target: 6 comparisons × 2 locales = +12 pages
+- 🔴 **Phase 3.3: Blog/Resources Section** - Content marketing for long-term SEO growth
+  - Create `/blog` or `/resources` section
+  - Set up blog post template with proper schema
+  - Target: 4+ blog posts × 2 locales = +8+ pages
 
 ---
 
@@ -201,21 +202,25 @@ Target B2B search for specific HS codes and tariff classifications.
 
 ## Phase 3: Comparison & Educational (Long Term) - 🟡 **In Progress** (1/3 phases complete)
 
-### 3.1 Product Comparison Pages
+### 3.1 Product Comparison Pages ✅ Completed
 
 Help buyers choose between similar products.
 
-- [ ] Create comparison page template
-- [ ] Create side-by-side spec tables
-- [ ] Add "Which should you choose?" guidance
+- [x] Create comparison page template
+- [x] Create side-by-side spec tables
+- [x] Add "Which should you choose?" guidance
 
 **Potential comparisons**:
-- [ ] White Pepper vs Black Pepper
-- [ ] Clove Stem vs Whole Clove
-- [ ] Nutmeg ABC vs BWP vs Dust
-- [ ] Fresh Ginger vs Dried Ginger
-- [ ] Robusta vs Arabica Coffee
-- [ ] Cassia vs Ceylon Cinnamon
+- [x] White Pepper vs Black Pepper
+- [x] Clove Stem vs Whole Clove
+- [x] Nutmeg ABC vs BWP vs Dust
+- [x] Fresh Ginger vs Dried Ginger
+- [x] Robusta vs Arabica Coffee
+- [x] Cassia vs Ceylon Cinnamon
+
+**Pages created**: 6 comparisons × 2 locales = +12 pages
+- Routes: `/vs/white-pepper-vs-black-pepper/`, `/vs/clove-stem-vs-whole-clove/`, etc. and `/de/` equivalents
+- Data file: `data/comparisons.ts` with full EN + DE content
 
 ---
 
@@ -307,8 +312,8 @@ Content marketing for long-term SEO growth.
 ## Next Steps
 
 1. ✅ **Phase 2.3: HS Code Landing Pages** - Complete (20 pages created)
-2. 🔴 **Phase 3.1: Product Comparison Pages** - Help buyers choose between similar products
-3. **Phase 3.3: Blog/Resources Section** - Content marketing for long-term SEO growth
+2. ✅ **Phase 3.1: Product Comparison Pages** - Complete (12 pages created)
+3. 🔴 **Phase 3.3: Blog/Resources Section** - Content marketing for long-term SEO growth
 
 ---
 
@@ -322,13 +327,13 @@ Content marketing for long-term SEO growth.
 | 2.1 Market Pages | ✅ Complete | +16 pages |
 | 2.2 Industry Pages | ✅ Complete | +12 pages |
 | 2.3 HS Code Pages | ✅ Complete | +20 pages |
-| 3.1 Comparison | ⏳ Not Started | +12 pages |
+| 3.1 Comparison | ✅ Complete | +12 pages |
 | 3.2 Glossary | ✅ Complete | +14 pages |
 | 3.3 Blog | ⏳ Not Started | +8+ pages |
 
-**Total implemented:** 64/108 tasks (66%)
-**Pages created:** 74 pages total (10 categories + 2 FAQ + 16 destinations + 12 industries + 14 glossary + 20 HS codes)
-**Pages remaining:** ~30+ (comparisons + blog)
+**Total implemented:** 70/108 tasks (72%)
+**Pages created:** 86 pages total (10 categories + 2 FAQ + 16 destinations + 12 industries + 14 glossary + 20 HS codes + 12 comparisons)
+**Pages remaining:** ~20+ (blog)
 
 ---
 
