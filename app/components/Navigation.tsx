@@ -15,6 +15,9 @@ export default function Navigation() {
 
   // Close menu when clicking outside
   useEffect(() => {
+    // Only run on client to prevent hydration mismatch
+    if (typeof window === "undefined") return;
+
     if (!isOpen) return;
 
     const handleClickOutside = () => setIsOpen(false);
@@ -33,6 +36,9 @@ export default function Navigation() {
 
   // Prevent body scroll when menu is open
   useEffect(() => {
+    // Only run on client to prevent hydration mismatch
+    if (typeof window === "undefined") return;
+
     if (isOpen) {
       document.body.style.overflow = "hidden";
     } else {

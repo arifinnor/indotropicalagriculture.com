@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
 import { getProductBySlug, products } from "../../../lib/products-data";
+import { getGlossaryTerms } from "@/data/glossary";
 
 export async function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -89,6 +90,11 @@ function ProductContent({ slug }: { slug: string }) {
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getProductsPath = () => locale === "en" ? "/products" : `/${locale}/products`;
+  const getGlossaryPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
+
+  // Get relevant glossary terms for this product
+  const allGlossaryTerms = getGlossaryTerms();
+  const relevantTerms = allGlossaryTerms.slice(0, 3); // Show first 3 terms on all products
 
   // JSON-LD Structured Data - Combined Product + Breadcrumb
   const productJsonLd = {
@@ -268,6 +274,36 @@ function ProductContent({ slug }: { slug: string }) {
           >
             {t("viewAllProducts")}
           </Link>
+        </div>
+
+        {/* Learn More - Glossary Links */}
+        <div className="w-full max-w-3xl">
+          <h3 className="text-center text-sm font-semibold text-stone-700 mb-3">
+            {locale === "en" ? "Learn more about Indonesian exports" : "Erfahren Sie mehr über indonesische Exporte"}
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2">
+            {relevantTerms.map((term) => {
+              const termTitle = locale === "en" ? term.title.en : term.title.de;
+              return (
+                <Link
+                  key={term.id}
+                  href={getGlossaryPath(term.slug)}
+                  className="inline-flex items-center px-3 py-1.5 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 transition-colors"
+                >
+                  <svg className="w-3 h-3 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {termTitle}
+                </Link>
+              );
+            })}
+            <Link
+              href={locale === "en" ? "/glossary" : `/${locale}/glossary`}
+              className="inline-flex items-center px-3 py-1.5 bg-stone-100 text-stone-600 text-xs font-medium rounded-full border border-stone-200 hover:bg-stone-200 hover:border-stone-300 transition-colors"
+            >
+              {locale === "en" ? "View all terms →" : "Alle Begriffe anzeigen →"}
+            </Link>
+          </div>
         </div>
 
         {/* Footer */}
