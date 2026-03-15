@@ -2,17 +2,20 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
 import { getGlossaryTermBySlug, getGlossaryTerms, getRelatedTerms } from "@/data/glossary";
+import { locales } from "@/i18n/config";
 
 interface GlossaryTermPageProps {
   params: Promise<{ locale: string; term: string }>;
 }
 
-// Generate static params for all glossary terms
+// Generate static params for all glossary terms across all locales
 export async function generateStaticParams() {
-  const terms = getGlossaryTerms();
-  return terms.map((term) => ({
-    term: term.slug,
-  }));
+  return locales.flatMap((locale) =>
+    getGlossaryTerms().map((term) => ({
+      locale,
+      term: term.slug,
+    }))
+  );
 }
 
 export async function generateMetadata({ params }: GlossaryTermPageProps): Promise<Metadata> {
