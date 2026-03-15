@@ -1,21 +1,30 @@
 {
   "metadata": {
-    "title": "Indo Tropical Agriculture | Indonesian Agriculture Exporter",
-    "description": "Indonesian agriculture supplier, trader and exporter. Premium planting media, cocoa, cloves, ginger, and more. Supplying across the world.",
+    "title": "Indo Tropical Agriculture | Indonesian Agriculture Exporter to EU Markets",
+    "description": "Leading Indonesian agriculture exporter supplying premium cloves, ginger, nutmeg, vanilla, black pepper, turmeric, cashew nuts, and more to European and global markets. Direct from farmers, worldwide shipping.",
     "keywords": [
       "indonesian agriculture export",
-      "cocoa beans indonesia",
-      "cloves export",
-      "planting media",
+      "cloves export indonesia",
       "ginger export indonesia",
+      "nutmeg exporter indonesia",
+      "vanilla beans indonesia",
+      "black pepper export",
+      "turmeric exporter",
+      "cashew nuts indonesia",
       "agriculture supplier indonesia",
-      "tropical agriculture",
-      "coconut coir exporter"
+      "tropical agriculture export",
+      "EU agriculture import",
+      "european agriculture supplier",
+      "wholesale spices indonesia",
+      "bulk agricultural products",
+      "indonesian spice exporter",
+      "fair trade agriculture indonesia"
     ]
   },
   "navigation": {
     "brand": "Indo Tropical Agriculture",
     "products": "Products",
+    "faq": "FAQ",
     "about": "About",
     "contact": "Contact Us",
     "closeMenu": "Close navigation menu",
@@ -60,16 +69,6 @@
     "badge": "What We Offer",
     "title": "Our Premium Products",
     "subtitle": "Sourced directly from Indonesian farmers and processed to meet quality standards.",
-    "plantingMedia": {
-      "name": "Planting Media",
-      "description": "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture.",
-      "keywords": ["Coconut Coir", "Peat Moss", "Growing Substrate"]
-    },
-    "cocoa": {
-      "name": "Cocoa",
-      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Ideal for chocolate manufacturers.",
-      "keywords": ["Cocoa Beans", "Fermented", "Premium Grade"]
-    },
     "cloves": {
       "name": "Cloves",
       "description": "Aromatic whole cloves and powder from Indonesian spice islands. Perfect for food, pharmaceutical, and essential oil industries.",
@@ -165,28 +164,6 @@
     "specifications": "Specifications",
     "requestQuote": "Request a Quote",
     "viewAllProducts": "View All Products",
-    "plantingMedia": {
-      "name": "Planting Media",
-      "description": "Premium coconut coir, peat moss alternatives, and organic growing substrates suitable for horticulture and agriculture. Our planting media is eco-friendly, renewable, and provides excellent water retention while maintaining proper aeration for healthy root development.",
-      "fullDescription": "Sustainable coconut coir planting media from Indonesia. Our eco-friendly growing substrates offer excellent water retention, optimal aeration, and pH balance for horticulture and agriculture. Perfect alternative to peat moss for greenhouse, nursery, and hydroponic applications.",
-      "specifications": [
-        { "label": "EC", "value": "0.5 - 0.8 mS/cm" },
-        { "label": "pH", "value": "5.5 - 6.5" },
-        { "label": "Moisture", "value": "50% - 60%" },
-        { "label": "Impurities", "value": "≤ 5%" }
-      ]
-    },
-    "cocoa": {
-      "name": "Cocoa Beans",
-      "description": "High-quality Indonesian cocoa beans, fermented and dried to perfection. Our cocoa beans are sourced from prime growing regions in Sulawesi and Sumatra, ideal for chocolate manufacturers seeking premium raw materials.",
-      "fullDescription": "Premium fermented Indonesian cocoa beans sourced from Sulawesi and Sumatra. Our beans meet international quality standards with optimal fermentation and moisture content. Perfect for chocolate manufacturers, cocoa processors, and bulk buyers seeking reliable supply from Indonesia.",
-      "specifications": [
-        { "label": "Bean Count", "value": "90-110 beans/100g" },
-        { "label": "Moisture", "value": "6% - 7%" },
-        { "label": "Foreign Matter", "value": "≤ 0.5%" },
-        { "label": "Mouldy Beans", "value": "≤ 3%" }
-      ]
-    },
     "cloves": {
       "name": "Cloves",
       "description": "Cloves come from the flower buds of an evergreen tree that is native to the North Moluccas Islands in Indonesia. Strong of aroma and hot and pungent in taste, cloves are used to flavour many foods, particularly meats and bakery products.",
@@ -211,8 +188,164 @@
       ]
     }
   },
+  "categories": {
+    "title": "Product Categories",
+    "description": "Browse our catalog by category to find the perfect Indonesian agricultural products for your needs.",
+    "metaTitle": "Categories | Indo Tropical Agriculture - Indonesian Exporter",
+    "metaDescription": "Browse Indonesian agricultural products by category including spices, herbs, nuts, coffee, and beans. Premium quality sourced directly from farmers.",
+    "metaKeywords": [
+      "indonesian product categories",
+      "indonesian spices export",
+      "indonesian herbs export",
+      "indonesian nuts export",
+      "indonesian coffee export",
+      "indonesian beans export",
+      "wholesale agriculture indonesia"
+    ],
+    "spices": {
+      "name": "Spices",
+      "description": "Aromatic spices from Indonesia including cloves, nutmeg, cinnamon, and pepper. Premium quality sourced directly from spice islands.",
+      "metaTitle": "Indonesian Spices Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian spices for export. Wholesale cloves, nutmeg, cinnamon, pepper, and more sourced directly from farmers. High essential oil content.",
+      "metaKeywords": [
+        "indonesian spices export",
+        "cloves export indonesia",
+        "nutmeg exporter indonesia",
+        "cinnamon indonesia",
+        "black pepper export",
+        "wholesale spices indonesia",
+        "indonesian spice exporter"
+      ]
+    },
+    "herbs": {
+      "name": "Herbs",
+      "description": "Dried herbs and medicinal plants including ginger, turmeric, moringa, and galangal. Premium quality for culinary and pharmaceutical use.",
+      "metaTitle": "Indonesian Herbs Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian herbs for export. Wholesale ginger, turmeric, moringa, galangal, and more sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian herbs export",
+        "ginger export indonesia",
+        "turmeric exporter",
+        "moringa indonesia",
+        "galangal export",
+        "medicinal plants indonesia",
+        "dried herbs indonesia"
+      ]
+    },
+    "nuts": {
+      "name": "Nuts",
+      "description": "Cashew nuts and other premium nuts from Indonesian plantations. Perfect for snacking and food processing industries.",
+      "metaTitle": "Indonesian Nuts Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian nuts for export. Wholesale cashew nuts sourced directly from farmers. Various grades available.",
+      "metaKeywords": [
+        "indonesian nuts export",
+        "cashew nuts indonesia",
+        "cashew exporter",
+        "wholesale cashew nuts",
+        "indonesian cashew",
+        "premium nuts indonesia"
+      ]
+    },
+    "coffee": {
+      "name": "Coffee",
+      "description": "Indonesian coffee beans including Robusta and Arabica grades for international markets. Rich flavor from volcanic soil.",
+      "metaTitle": "Indonesian Coffee Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian coffee beans for export. Wholesale Robusta and Arabica coffee sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian coffee export",
+        "robusta coffee indonesia",
+        "arabica coffee indonesia",
+        "wholesale coffee beans",
+        "indonesian coffee exporter",
+        "sumatra coffee",
+        "java coffee"
+      ]
+    },
+    "beans": {
+      "name": "Beans",
+      "description": "Various beans including mung beans, red beans, and other legumes from Indonesia. High protein content for food industry.",
+      "metaTitle": "Indonesian Beans Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium Indonesian beans for export. Wholesale mung beans, red beans, and more sourced directly from farmers.",
+      "metaKeywords": [
+        "indonesian beans export",
+        "mung beans indonesia",
+        "red beans exporter",
+        "legumes indonesia",
+        "wholesale beans",
+        "indonesian legumes"
+      ]
+    }
+  },
   "common": {
     "skipToContent": "Skip to main content",
     "availableNow": "Available now"
+  },
+  "faq": {
+    "badge": "Frequently Asked Questions",
+    "title": "Common Questions",
+    "subtitle": "Find answers to common questions about our products and services",
+    "metaTitle": "FAQ | Indo Tropical Agriculture - Indonesian Exporter",
+    "metaDescription": "Frequently asked questions about Indo Tropical Agriculture's products, shipping, payment terms, and export services. Get answers about ordering Indonesian agricultural products.",
+    "questions": {
+      "moq": {
+        "question": "What is your minimum order quantity?",
+        "answer": "Our minimum order quantity varies by product type and destination. Generally, we require a minimum of 1 metric ton for bulk orders and 20ft container (approximately 15-18 tons) for full container loads. For smaller orders, please contact us to discuss options and pricing."
+      },
+      "samples": {
+        "question": "Do you offer samples?",
+        "answer": "Yes, we offer samples for quality verification. Sample sizes typically range from 500g to 1kg depending on the product. Samples are available for purchase at cost plus shipping. Sample costs can be deducted from your first bulk order. Please contact our sales team to request samples."
+      },
+      "payment": {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept multiple payment methods including T/T (Telegraphic Transfer), L/C (Letter of Credit) at sight, and negotiable payment terms for established clients. For international orders, we recommend T/T with 30% deposit and 70% before shipment, or irrevocable L/C at sight. All payments must be made in USD or EUR."
+      },
+      "shipping": {
+        "question": "Do you ship to Europe?",
+        "answer": "Yes, we ship worldwide to major ports in Europe, Asia, the Middle East, and the Americas. We have extensive experience exporting to countries including Germany, Netherlands, UK, France, USA, UAE, Japan, and China. We work with reputable shipping lines and can arrange both FOB and CIF terms."
+      },
+      "shippingTime": {
+        "question": "What is your shipping time to Europe?",
+        "answer": "Shipping time varies by destination. To European ports (Rotterdam, Hamburg, Antwerp), transit time is typically 25-35 days depending on the specific route. To Asia and the Middle East, transit ranges from 7-20 days. To the Americas (East Coast), expect 30-40 days. We provide tracking information for all shipments."
+      },
+      "documentation": {
+        "question": "Do you handle export documentation?",
+        "answer": "Yes, we handle all export documentation required for international shipments. This includes commercial invoice, packing list, bill of lading, certificate of origin, phytosanitary certificate, and any additional certificates required by destination countries. We ensure all documentation complies with import regulations of the destination country."
+      },
+      "quality": {
+        "question": "How do you ensure product quality?",
+        "answer": "We maintain strict quality control throughout the supply chain. Our products are sourced directly from partner farmers who follow our agricultural best practices. Each batch undergoes quality inspection including moisture content testing, impurity analysis, and grading before shipment. We can provide laboratory test reports upon request and offer product samples for prior approval."
+      },
+      "sourcing": {
+        "question": "Where do you source your products?",
+        "answer": "We source our products directly from farmers across Indonesia's main agricultural regions including Sumatra, Java, Kalimantan, Sulawesi, and Papua. By working directly with farmers, we ensure fair trade practices, traceability, and consistent quality. Our long-term partnerships with local farming communities allow us to secure reliable supplies throughout the year."
+      }
+    }
+  }
+,
+  "destination": {
+    "metaTitle": "Export to {country} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesian agricultural products exported to {country}. Learn about import regulations, popular products, shipping routes, and payment methods for importing Indonesian spices and other products to {country}.",
+    "heroTitle": "Export to {country}",
+    "heroSubtitle": "Premium Indonesian agricultural products with reliable shipping and compliance with {country} import regulations.",
+    "regulationsTitle": "Import Regulations",
+    "productsTitle": "Popular Products for {country}",
+    "shippingRouteTitle": "Shipping Route",
+    "transitTimeTitle": "Transit Time",
+    "paymentTitle": "Preferred Payment Methods",
+    "ctaTitle": "Start Importing to {country}",
+    "ctaSubtitle": "Contact us to discuss your requirements for importing Indonesian agricultural products to {country}. We'll help you navigate regulations and ensure smooth shipments.",
+    "ctaButton": "Get a Quote"
+  },
+  "industry": {
+    "metaTitle": "For {industry} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesian agricultural products for {industry}. Premium quality spices, herbs, nuts, and beans specifically sourced and processed for {industry} applications.",
+    "heroTitle": "For {industry}",
+    "heroSubtitle": "Specialized products and services tailored for your industry needs.",
+    "benefitsTitle": "Why Choose Us",
+    "useCaseTitle": "How Our Products Are Used",
+    "productsTitle": "Relevant Products",
+    "categoriesTitle": "Relevant Categories",
+    "ctaTitle": "Partner with Us for {industry}",
+    "ctaSubtitle": "Contact us to discuss your specific requirements and learn how we can support your {industry} business with premium Indonesian agricultural products."
   }
 }

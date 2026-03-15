@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, type RefObject } from "react";
 
 /**
@@ -9,6 +11,9 @@ export function useScrollReveal(
   threshold = 0.1
 ): void {
   useEffect(() => {
+    // Only run on client to prevent SSR/client mismatch
+    if (typeof window === "undefined") return;
+
     const el = sectionRef.current;
     if (!el) return;
 

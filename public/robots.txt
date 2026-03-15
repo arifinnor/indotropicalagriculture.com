@@ -2,6 +2,10 @@
 
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# Disallow admin/private routes if any
+Disallow: /api/
 
 # Sitemap
 Sitemap: https://indotropicalagriculture.com/sitemap.xml

@@ -4,6 +4,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { useTranslations, useLocale } from "next-intl";
 import { getProductBySlug, products } from "../../../lib/products-data";
+import { getGlossaryTerms } from "@/data/glossary";
 
 export async function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -89,23 +90,75 @@ function ProductContent({ slug }: { slug: string }) {
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getProductsPath = () => locale === "en" ? "/products" : `/${locale}/products`;
+  const getGlossaryPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
 
-  // JSON-LD Structured Data for Product
-  const jsonLd = {
+  // Get relevant glossary terms for this product
+  const allGlossaryTerms = getGlossaryTerms();
+  const relevantTerms = allGlossaryTerms.slice(0, 3); // Show first 3 terms on all products
+
+  // JSON-LD Structured Data - Combined Product + Breadcrumb
+  const productJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
-    inLanguage: locale,
-    name: product.name,
-    description: fullDescription,
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/InStock",
-      seller: {
-        "@type": "Organization",
-        name: "Indo Tropical Agriculture",
-        url: "https://indotropicalagriculture.com",
+    "@graph": [
+      {
+        "@type": "Product",
+        "@id": `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}/products/${slug}#product`,
+        inLanguage: locale,
+        name: product.name,
+        description: fullDescription,
+        category: product.category,
+        keywords: product.keywords.join(", "),
+        image: product.image,
+        brand: {
+          "@type": "Brand",
+          name: "Indo Tropical Agriculture",
+        },
+        manufacturer: {
+          "@type": "Organization",
+          name: "Indo Tropical Agriculture",
+          url: "https://indotropicalagriculture.com",
+        },
+        countryOfOrigin: "ID",
+        offers: {
+          "@type": "Offer",
+          availability: "https://schema.org/InStock",
+          seller: {
+            "@type": "Organization",
+            name: "Indo Tropical Agriculture",
+            url: "https://indotropicalagriculture.com",
+          },
+          availableDeliveryMethod: "https://schema.org/ParcelDelivery",
+          deliveryLeadTime: {
+            "@type": "QuantitativeValue",
+            minValue: 7,
+            maxValue: 21,
+            unitCode: "DAY",
+          },
+        },
       },
-    },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Products",
+            item: `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}/products`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: product.name,
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -113,7 +166,7 @@ function ProductContent({ slug }: { slug: string }) {
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />
 
       {/* Navigation */}
@@ -163,33 +216,6 @@ function ProductContent({ slug }: { slug: string }) {
               {/* Right: Product Info */}
               <div className="p-6 md:p-10 flex flex-col justify-center flex-1 min-h-56 sm:min-h-64 md:min-h-0">
                 <h1 id="product-title" className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">{product.name}</h1>
-
-                {/* Category Badge */}
-                <div className="mb-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                    product.category === "Spices"
-                      ? "bg-amber-100 text-amber-800"
-                      : product.category === "Cocoa"
-                      ? "bg-amber-100 text-amber-800"
-                      : product.category === "Coffee"
-                      ? "bg-stone-200 text-stone-800"
-                      : product.category === "Nuts"
-                      ? "bg-orange-100 text-orange-800"
-                      : product.category === "Beans"
-                      ? "bg-green-100 text-green-800"
-                      : product.category === "Fruits"
-                      ? "bg-yellow-100 text-yellow-800"
-                      : product.category === "Herbs"
-                      ? "bg-emerald-100 text-emerald-800"
-                      : product.category === "Extracts"
-                      ? "bg-red-100 text-red-800"
-                      : product.category === "Powders"
-                      ? "bg-stone-200 text-stone-800"
-                      : "bg-stone-100 text-stone-800"
-                  }`}>
-                    {product.category}
-                  </span>
-                </div>
 
                 {/* Description */}
                 <div className="mb-6">
@@ -248,6 +274,36 @@ function ProductContent({ slug }: { slug: string }) {
           >
             {t("viewAllProducts")}
           </Link>
+        </div>
+
+        {/* Learn More - Glossary Links */}
+        <div className="w-full max-w-3xl">
+          <h3 className="text-center text-sm font-semibold text-stone-700 mb-3">
+            {locale === "en" ? "Learn more about Indonesian exports" : "Erfahren Sie mehr über indonesische Exporte"}
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2">
+            {relevantTerms.map((term) => {
+              const termTitle = locale === "en" ? term.title.en : term.title.de;
+              return (
+                <Link
+                  key={term.id}
+                  href={getGlossaryPath(term.slug)}
+                  className="inline-flex items-center px-3 py-1.5 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 transition-colors"
+                >
+                  <svg className="w-3 h-3 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  {termTitle}
+                </Link>
+              );
+            })}
+            <Link
+              href={locale === "en" ? "/glossary" : `/${locale}/glossary`}
+              className="inline-flex items-center px-3 py-1.5 bg-stone-100 text-stone-600 text-xs font-medium rounded-full border border-stone-200 hover:bg-stone-200 hover:border-stone-300 transition-colors"
+            >
+              {locale === "en" ? "View all terms →" : "Alle Begriffe anzeigen →"}
+            </Link>
+          </div>
         </div>
 
         {/* Footer */}

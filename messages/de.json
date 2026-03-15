@@ -1,21 +1,32 @@
 {
   "metadata": {
-    "title": "Indo Tropical Agriculture | Indonesischer Landwirtschaftsexporteur",
-    "description": "Indonesischer Landwirtschaftslieferant, Händler und Exporteur. Premium Pflanzsubstrat, Kakaobohnen, Gewürznelken, Ingwer und mehr. Lieferung weltweit.",
+    "title": "Indo Tropical Agriculture | Indonesischer Landwirtschaftsexporteur für EU-Märkte",
+    "description": "Führender indonesischer Landwirtschaftsexporteur, der Premium-Gewürznelken, Ingwer, Muskatnuss, Vanille, schwarzen Pfeffer, Kurkuma, Cashewnüsse und mehr an europäische und weltweite Märkte liefert. Direkt von Bauern, weltweiter Versand.",
     "keywords": [
       "indonesischer landwirtschaftsexport",
-      "kakaobohnen indonesien",
-      "gewürznelken export",
-      "pflanzsubstrat",
+      "gewürznelken export indonesien",
+      "pflanzsubstrat lieferant",
       "ingwer export indonesien",
+      "muskatnuss exporteur indonesien",
+      "vanillebohnen indonesien",
+      "schwarzer pfeffer export",
+      "kurkuma exporteur",
+      "cashewnüsse indonesien",
+      "kokosfasern exporteur",
       "landwirtschaftslieferant indonesien",
-      "tropische landwirtschaft",
-      "kokosfasern exporteur"
+      "tropische landwirtschaft export",
+      "eu landwirtschaft import",
+      "europäischer landwirtschaftslieferant",
+      "gewürze großhandel indonesien",
+      "landwirtschaftliche bulkprodukte",
+      "indonesischer gewürzexporteur",
+      "fair trade landwirtschaft indonesien"
     ]
   },
   "navigation": {
     "brand": "Indo Tropical Agriculture",
     "products": "Produkte",
+    "faq": "FAQ",
     "about": "Über uns",
     "contact": "Kontakt",
     "closeMenu": "Navigationsmenü schließen",
@@ -60,16 +71,6 @@
     "badge": "Was wir anbieten",
     "title": "Unsere Premium-Produkte",
     "subtitle": "Direkt von indonesischen Bauern bezogen und nach Qualitätsstandards verarbeitet.",
-    "plantingMedia": {
-      "name": "Pflanzsubstrat",
-      "description": "Premium Kokosfasern, Torfmoos-Alternativen und organische Wachstumssubstrate für Gartenbau und Landwirtschaft.",
-      "keywords": ["Kokosfasern", "Torfmoos", "Wachstumssubstrat"]
-    },
-    "cocoa": {
-      "name": "Kakao",
-      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Ideal für Schokoladenhersteller.",
-      "keywords": ["Kakaobohnen", "Fermentiert", "Premium-Qualität"]
-    },
     "cloves": {
       "name": "Gewürznelken",
       "description": "Aromatische ganze Gewürznelken und Pulver von den indonesischen Gewürzinseln. Perfekt für Lebensmittel-, Pharma- und ätherische Öl-Industrien.",
@@ -165,28 +166,6 @@
     "specifications": "Spezifikationen",
     "requestQuote": "Angebot anfordern",
     "viewAllProducts": "Alle Produkte anzeigen",
-    "plantingMedia": {
-      "name": "Pflanzsubstrat",
-      "description": "Premium Kokosfasern, Torfmoos-Alternativen und organische Wachstumssubstrate für Gartenbau und Landwirtschaft. Unser Pflanzsubstrat ist umweltfreundlich, erneuerbar und bietet ausgezeichnete Wasserspeicherung bei gleichzeitiger Aufrechterhaltung der richtigen Belüftung für gesunde Wurzelentwicklung.",
-      "fullDescription": "Nachhaltiges Kokosfaser-Pflanzsubstrat aus Indonesien. Unsere umweltfreundlichen Wachstumssubstrate bieten ausgezeichnete Wasserspeicherung, optimale Belüftung und pH-Balance für Gartenbau und Landwirtschaft. Perfekte Alternative zu Torfmoos für Gewächshaus, Baumschul- und Hydrokulturanwendungen.",
-      "specifications": [
-        { "label": "LF", "value": "0,5 - 0,8 mS/cm" },
-        { "label": "pH-Wert", "value": "5,5 - 6,5" },
-        { "label": "Feuchtigkeit", "value": "50% - 60%" },
-        { "label": "Verunreinigungen", "value": "≤ 5%" }
-      ]
-    },
-    "cocoa": {
-      "name": "Kakaobohnen",
-      "description": "Hochwertige indonesische Kakaobohnen, perfekt fermentiert und getrocknet. Unsere Kakaobohnen stammen aus erstklassigen Anbaugebieten in Sulawesi und Sumatra, ideal für Schokoladenhersteller, die premium Rohstoffe suchen.",
-      "fullDescription": "Premium fermentierte indonesische Kakaobohnen aus Sulawesi und Sumatra. Unsere Bohnen erfüllen internationale Qualitätsstandards mit optimaler Fermentation und Feuchtigkeitsgehalt. Perfekt für Schokoladenhersteller, Kakao-Verarbeiter und Großkäufer, die zuverlässige Lieferung aus Indonesien suchen.",
-      "specifications": [
-        { "label": "Bohnenzahl", "value": "90-110 Bohnen/100g" },
-        { "label": "Feuchtigkeit", "value": "6% - 7%" },
-        { "label": "Fremdstoffe", "value": "≤ 0,5%" },
-        { "label": "Schimmelige Bohnen", "value": "≤ 3%" }
-      ]
-    },
     "cloves": {
       "name": "Gewürznelken",
       "description": "Gewürznelken stammen aus den Knospen eines immergrünen Baumes, der auf den Nord-Molukken-Inseln in Indonesien heimisch ist. Stark im Aroma und heiß und würzig im Geschmack, werden Gewürznelken verwendet, um viele Lebensmittel zu würzen, insbesondere Fleisch und Backwaren.",
@@ -211,8 +190,164 @@
       ]
     }
   },
+  "categories": {
+    "title": "Produktkategorien",
+    "description": "Durchsuchen Sie unseren Katalog nach Kategorie, um die perfekten indonesischen landwirtschaftlichen Produkte für Ihre Bedürfnisse zu finden.",
+    "metaTitle": "Kategorien | Indo Tropical Agriculture - Indonesischer Exporteur",
+    "metaDescription": "Durchsuchen Sie indonesische landwirtschaftliche Produkte nach Kategorie, einschließlich Gewürze, Kräuter, Nüsse, Kaffee und Bohnen. Premium-Qualität direkt von Bauern bezogen.",
+    "metaKeywords": [
+      "indonesische produktkategorien",
+      "indonesischer gewürzexport",
+      "indonesischer kräuterexport",
+      "indonesischer nüsse-export",
+      "indonesischer kaffeeexport",
+      "indonesischer bohnenexport",
+      "großhandel landwirtschaft indonesien"
+    ],
+    "spices": {
+      "name": "Gewürze",
+      "description": "Aromatische Gewürze aus Indonesien, einschließlich Gewürznelken, Muskatnuss, Zimt und Pfeffer. Premium-Qualität direkt von den Gewürzinseln bezogen.",
+      "metaTitle": "Indonesischer Gewürzexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Gewürze für den Export. Großhandel mit Gewürznelken, Muskatnuss, Zimt, Pfeffer und mehr, direkt von Bauern bezogen. Hoher Ätherisches-Öl-Gehalt.",
+      "metaKeywords": [
+        "indonesischer gewürzexport",
+        "gewürznelken export indonesien",
+        "muskatnuss exporteur indonesien",
+        "zimt indonesien",
+        "schwarzer pfeffer export",
+        "gewürze großhandel indonesien",
+        "indonesischer gewürzexporteur"
+      ]
+    },
+    "herbs": {
+      "name": "Kräuter",
+      "description": "Getrocknete Kräuter und Heilpflanzen, einschließlich Ingwer, Kurkuma, Moringa und Galgant. Premium-Qualität für kulinarische und pharmazeutische Verwendung.",
+      "metaTitle": "Indonesischer Kräuterexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Kräuter für den Export. Großhandel mit Ingwer, Kurkuma, Moringa, Galgant und mehr, direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer kräuterexport",
+        "ingwer export indonesien",
+        "kurkuma exporteur",
+        "moringa indonesien",
+        "galgant export",
+        "heilpflanzen indonesien",
+        "getrocknete kräuter indonesien"
+      ]
+    },
+    "nuts": {
+      "name": "Nüsse",
+      "description": "Cashewnüsse und andere Premium-Nüsse von indonesischen Plantagen. Perfekt für Snacks und die Lebensmittelverarbeitung.",
+      "metaTitle": "Indonesischer Nüsse-Export | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Nüsse für den Export. Großhandel mit Cashewnüssen, direkt von Bauern bezogen. Verschiedene Sorten verfügbar.",
+      "metaKeywords": [
+        "indonesischer nüsse-export",
+        "cashewnüsse indonesien",
+        "cashew exporteur",
+        "cashewnüsse großhandel",
+        "indonesische cashewnüsse",
+        "premium nüsse indonesien"
+      ]
+    },
+    "coffee": {
+      "name": "Kaffee",
+      "description": "Indonesische Kaffeebohnen, einschließlich Robusta- und Arabica-Sorten für internationale Märkte. Reichhaltiger Geschmack aus vulkanischem Boden.",
+      "metaTitle": "Indonesischer Kaffeeexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Kaffeebohnen für den Export. Großhandel mit Robusta- und Arabica-Kaffee, direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer kaffeeexport",
+        "robusta kaffee indonesien",
+        "arabica kaffee indonesien",
+        "kaffeebohnen großhandel",
+        "indonesischer kaffeeexporteur",
+        "sumatra kaffee",
+        "java kaffee"
+      ]
+    },
+    "beans": {
+      "name": "Bohnen",
+      "description": "Verschiedene Bohnen, einschließlich Mungbohnen, rote Bohnen und andere Hülsenfrüchte aus Indonesien. Hoher Proteingehalt für die Lebensmittelindustrie.",
+      "metaTitle": "Indonesischer Bohnenexport | Indo Tropical Agriculture",
+      "metaDescription": "Premium indonesische Bohnen für den Export. Großhandel mit Mungbohnen, roten Bohnen und mehr, direkt von Bauern bezogen.",
+      "metaKeywords": [
+        "indonesischer bohnenexport",
+        "mungbohnen indonesien",
+        "rote bohnen exporteur",
+        "hülsenfrüchte indonesien",
+        "bohnen großhandel",
+        "indonesische hülsenfrüchte"
+      ]
+    }
+  },
   "common": {
     "skipToContent": "Zum Hauptinhalt springen",
     "availableNow": "Jetzt verfügbar"
+  },
+  "faq": {
+    "badge": "Häufig gestellte Fragen",
+    "title": "Häufige Fragen",
+    "subtitle": "Finden Sie Antworten auf häufige Fragen zu unseren Produkten und Dienstleistungen",
+    "metaTitle": "FAQ | Indo Tropical Agriculture - Indonesischer Exporteur",
+    "metaDescription": "Häufig gestellte Fragen zu den Produkten, Versand, Zahlungsbedingungen und Exportdienstleistungen von Indo Tropical Agriculture. Antworten zum Bestellen indonesischer Landwirtschaftsprodukte.",
+    "questions": {
+      "moq": {
+        "question": "Wie hoch ist Ihre Mindestbestellmenge?",
+        "answer": "Unsere Mindestbestellmenge variiert je nach Produkttyp und Bestimmungsort. Im Allgemeinen benötigen wir mindestens 1 Tonne für Massenbestellungen und einen 20-Fuß-Container (ca. 15-18 Tonnen) für vollständige Containerladungen. Für kleinere Bestellungen kontaktieren Sie uns bitte, um Optionen und Preise zu besprechen."
+      },
+      "samples": {
+        "question": "Bieten Sie Muster an?",
+        "answer": "Ja, wir bieten Muster zur Qualitätsprüfung an. Mustermengen liegen typischerweise zwischen 500g und 1kg je nach Produkt. Muster können gegen Kostenübernahme sowie Versandkosten erworben werden. Die Musterkosten können von Ihrer ersten Massenbestellung abgezogen werden. Bitte kontaktieren Sie unser Vertriebsteam für Musteranfragen."
+      },
+      "payment": {
+        "question": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "answer": "Wir akzeptieren mehrere Zahlungsmethoden einschließlich T/T (Telegraphic Transfer), L/C (Letter of Credit) bei Sicht und verhandelfähige Zahlungsbedingungen für etablierte Kunden. Für internationale Bestellungen empfehlen wir T/T mit 30% Anzahlung und 70% vor dem Versand oder unwiderrufliches L/C bei Sicht. Alle Zahlungen müssen in USD oder EUR erfolgen."
+      },
+      "shipping": {
+        "question": "Liefern Sie nach Europa?",
+        "answer": "Ja, wir liefern weltweit in wichtige Häfen in Europa, Asien, dem Nahen Osten und Amerika. Wir verfügen über umfangreiche Erfahrung im Export nach Deutschland, Niederlande, Großbritannien, Frankreich, USA, VAE, Japan und China. Wir arbeiten mit renommierten Reedereien und können sowohl FOB- als auch CIF-Konditionen arrangieren."
+      },
+      "shippingTime": {
+        "question": "Wie lange dauert der Versand nach Europa?",
+        "answer": "Die Versandzeit variiert je nach Bestimmungsort. Zu europäischen Häfen (Rotterdam, Hamburg, Antwerpen) beträgt die Transitzeit typischerweise 25-35 Tage je nach Route. Nach Asien und dem Nahen Osten liegt die Transitzeit zwischen 7-20 Tagen. Nach Amerika (Ostküste) sind 30-40 Tage zu erwarten. Wir stellen Tracking-Informationen für alle Sendungen bereit."
+      },
+      "documentation": {
+        "question": "Übernehmen Sie die Exportdokumentation?",
+        "answer": "Ja, wir übernehmen alle für internationale Sendungen erforderlichen Exportdokumente. Dies umfasst Handelsrechnung, Packliste, Konnossement, Ursprungszeugnis, Pflanzengesundheitszeugnis und alle weiteren Zertifikate, die von Zielländern gefordert werden. Wir stellen sicher, dass alle Dokumentationen den Importvorschriften des Ziellandes entsprechen."
+      },
+      "quality": {
+        "question": "Wie stellen Sie die Produktqualität sicher?",
+        "answer": "Wir unterhalten strenge Qualitätskontrollen throughout der Lieferkette. Unsere Produkte werden direkt von Partnerbauern bezogen, die unsere landwirtschaftlichen Best Practices befolgen. Jede Charge unterliegt Qualitätsprüfung einschließlich Feuchtigkeitsgehaltstests, Verunreinigungsanalyse und Sortierung vor dem Versand. Wir können Laborberichte auf Anfrage bereitstellen und Produktmuster zur vorherigen Genehmigung anbieten."
+      },
+      "sourcing": {
+        "question": "Wo beziehen Sie Ihre Produkte?",
+        "answer": "Wir beziehen unsere Produkte direkt von Bauern in ganz Indonesiens wichtigsten landwirtschaftlichen Regionen einschließlich Sumatra, Java, Kalimantan, Sulawesi und Papua. Durch die direkte Zusammenarbeit mit Bauern stellen wir faire Handelspraktiken, Rückverfolgbarkeit und konstante Qualität sicher. Unsere langfristigen Partnerschaften mit lokalen landwirtschaftlichen Gemeinschaften ermöglichen es uns, das ganze Jahr über zuverlässige Lieferungen zu sichern."
+      }
+    }
+  }
+,
+  "destination": {
+    "metaTitle": "Export nach {country} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesische Landwirtschaftsprodukte exportiert nach {country}. Erfahren Sie mehr über Importvorschriften, beliebte Produkte, Versandrouten und Zahlungsmethoden für den Import indonesischer Gewürze und anderer Produkte nach {country}.",
+    "heroTitle": "Export nach {country}",
+    "heroSubtitle": "Premium indonesische Landwirtschaftsprodukte mit zuverlässigem Versand und Compliance mit den Importvorschriften von {country}.",
+    "regulationsTitle": "Importvorschriften",
+    "productsTitle": "Beliebte Produkte für {country}",
+    "shippingRouteTitle": "Versandroute",
+    "transitTimeTitle": "Transitzeit",
+    "paymentTitle": "Bevorzugte Zahlungsmethoden",
+    "ctaTitle": "Import nach {country} starten",
+    "ctaSubtitle": "Kontaktieren Sie uns, um Ihre Anforderungen für den Import indonesischer Landwirtschaftsprodukte nach {country} zu besprechen. Wir helfen Ihnen bei der Navigation durch Vorschriften und sorgen für reibungslose Sendungen.",
+    "ctaButton": "Angebot anfordern"
+  },
+  "industry": {
+    "metaTitle": "Für {industry} | Indo Tropical Agriculture",
+    "metaDescription": "Indonesische Landwirtschaftsprodukte für {industry}. Premium-Gewürze, Kräuter, Nüsse und Bohnen speziell beschafft und verarbeitet für {industry}-Anwendungen.",
+    "heroTitle": "Für {industry}",
+    "heroSubtitle": "Spezialisierte Produkte und Dienstleistungen maßgeschneidert für Ihre Industrieanforderungen.",
+    "benefitsTitle": "Warum uns wählen",
+    "useCaseTitle": "Wie unsere Produkte verwendet werden",
+    "productsTitle": "Relevante Produkte",
+    "categoriesTitle": "Relevante Kategorien",
+    "ctaTitle": "Partnerschaft für {industry}",
+    "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen und zu erfahren, wie wir Ihr {industry}-Geschäft mit Premium-indonesischen Landwirtschaftsprodukten unterstützen können."
   }
 }
