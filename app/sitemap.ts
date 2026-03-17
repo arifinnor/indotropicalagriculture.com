@@ -111,35 +111,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ];
   });
 
-  // Product pages for each locale with image references
+  // Product pages for each locale
   const productPages = products.flatMap((product) => [
     {
       url: `${SITE_URL}/en/products/${product.slug}`,
       lastModified: LAST_MOD_DATES.products,
       changeFrequency: "monthly" as const,
       priority: 0.7,
-      images: [
-        {
-          url: `${SITE_URL}${product.image}`,
-          title: product.name,
-          caption: product.shortDescription,
-          license: "https://indotropicalagriculture.com",
-        },
-      ],
     },
     {
       url: `${SITE_URL}/de/products/${product.slug}`,
       lastModified: LAST_MOD_DATES.products,
       changeFrequency: "monthly" as const,
       priority: 0.7,
-      images: [
-        {
-          url: `${SITE_URL}${product.image}`,
-          title: product.name,
-          caption: product.shortDescription,
-          license: "https://indotropicalagriculture.com",
-        },
-      ],
     },
   ]);
 
