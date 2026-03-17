@@ -6,7 +6,7 @@
     "price": 8000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0907",
+    "hsCode": "0907.00",
     "description": "Premium quality dried flower buds harvested from the clove tree (Syzygium aromaticum). These whole cloves feature a strong, aromatic, and slightly sweet flavor profile with intense pungency. Perfect for whole spice applications, traditional medicine, and as a key ingredient in spice blends. Each bud contains high essential oil content for maximum flavor impact.",
     "descriptionDe": "Hochwertige getrocknete Blütenknospen des Gewürznelkenbaums (Syzygium aromaticum). Diese ganzen Nelken zeichnen sich durch ein starkes, aromatisches und leicht süßliches Geschmacksprofil mit intensiver Schärfe aus. Ideal für die Verwendung als ganzes Gewürz, in der traditionellen Medizin und als Schlüsselzutat in Gewürzmischungen. Jede Knospe enthält einen hohen Anteil an ätherischen Ölen für maximale Geschmacksentfaltung.",
     "shortDescription": "Premium quality dried flower buds harvested from the clove tree (Syzygium aromaticum)",
@@ -48,7 +48,7 @@
     "price": 1200,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0907",
+    "hsCode": "0907.00",
     "description": "Dried stems of clove flowers, offering a milder but still distinctly clove-like flavor profile at a more economical price point. These stems contain the same aromatic compounds as clove buds but in lower concentration. Perfect for industrial processing, essential oil extraction, and applications where whole bud appearance is not required.",
     "descriptionDe": "Getrocknete Stiele der Nelkenblüten mit einem milderen, aber immer noch deutlich nelkenartigen Geschmacksprofil zu einem günstigeren Preis. Diese Stiele enthalten die gleichen aromatischen Verbindungen wie Nelkenknospen, jedoch in geringerer Konzentration. Ideal für die industrielle Verarbeitung, die Gewinnung ätherischer Öle und Anwendungen, bei denen das Erscheinungsbild ganzer Knospen nicht erforderlich ist.",
     "shortDescription": "Dried stems of clove flowers, offering a milder but still distinctly clove-like flavor profile at a more economical price point",
@@ -90,7 +90,7 @@
     "price": 2000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "090620",
+    "hsCode": "0906.20",
     "description": "Broken pieces of premium cinnamon bark (Cinnamomum burmannii), carefully processed to retain the sweet, warm, and delicate flavor characteristic of quality cinnamon. These uniform pieces are ideal for tea infusions, spice blends, and as a cost-effective alternative to whole sticks for grinding. Each piece contains the natural essential oils that give cinnamon its distinctive aroma.",
     "descriptionDe": "Zerbrochene Stücke hochwertiger Zimtrinde (Cinnamomum burmannii), schonend verarbeitet, um den süßen, warmen und delikaten Geschmack zu erhalten, der für Qualitätszimt charakteristisch ist. Diese gleichmäßigen Stücke eignen sich ideal für Teeaufgüsse, Gewürzmischungen und als kostengünstige Alternative zu ganzen Stangen zum Mahlen. Jedes Stück enthält die natürlichen ätherischen Öle, die Zimt sein unverwechselbares Aroma verleihen.",
     "shortDescription": "Broken pieces of premium cinnamon bark (Cinnamomum burmannii), carefully processed to retain the sweet, warm, and delicate flavor characteristic of quality cinnamon",
@@ -105,7 +105,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "090620"
+        "value": "0906.20"
       },
       {
         "label": "Price",
@@ -132,7 +132,7 @@
     "price": 4000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0906.11.3",
+    "hsCode": "0906.11",
     "description": "Premium grade A whole cinnamon sticks (Cinnamomum verum), hand-selected for superior quality and appearance. These carefully rolled sticks feature multiple thin layers of inner bark, delivering an exceptionally sweet, delicate, and complex flavor with subtle floral notes. Perfect for gourmet culinary applications, mulled beverages, and elegant presentation. Each stick is uniform in color and thickness.",
     "descriptionDe": "Ganze Zimtstangen der Premium-Klasse A (Cinnamomum verum), handverlesen für überlegene Qualität und Optik. Diese sorgfältig gerollten Stangen bestehen aus mehreren dünnen Schichten der Innenrinde und bieten einen außergewöhnlich süßen, delikaten und komplexen Geschmack mit subtilen blumigen Noten. Ideal für gourmet-kulinarische Anwendungen, Glühgetränke und elegante Präsentation. Jede Stange ist einheitlich in Farbe und Dicke.",
     "shortDescription": "Premium grade A whole cinnamon sticks (Cinnamomum verum), hand-selected for superior quality and appearance",
@@ -147,7 +147,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0906.11.3"
+        "value": "0906.11"
       },
       {
         "label": "Price",
@@ -216,7 +216,7 @@
     "price": 3000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "09061900",
+    "hsCode": "0906.19.00",
     "description": "Fine broken pieces of high-grade cinnamon (Cinnamomum burmannii), carefully sifted to ensure consistent particle size. These small pieces offer concentrated flavor and are perfect for industrial applications, spice grinding operations, and the production of cinnamon-based extracts. The pieces release their aromatic oils quickly, making them ideal for rapid infusion processes.",
     "descriptionDe": "Fein zerbrochene Stücke von hochwertigem Zimt (Cinnamomum burmannii), sorgfältig gesiebt für gleichbleibende Partikelgröße. Diese kleinen Stücke bieten konzentrierten Geschmack und sind ideal für industrielle Anwendungen, Gewürzmahlprozesse und die Herstellung von zimtbasierten Extrakten. Die Stücke geben ihre aromatischen Öle schnell frei und sind daher ideal für schnelle Aufgussprozesse.",
     "shortDescription": "Fine broken pieces of high-grade cinnamon (Cinnamomum burmannii), carefully sifted to ensure consistent particle size",
@@ -231,7 +231,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "09061900"
+        "value": "0906.19.00"
       },
       {
         "label": "Price",
@@ -300,7 +300,7 @@
     "price": 1000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0910.30.00",
+    "hsCode": "0910.30",
     "description": "Dried slices of white turmeric (Curcuma zedoaria), also known as zedoary or temu putih. These slices have a milder, more subtle flavor compared to yellow turmeric with pleasant camphor-like undertones and a light beige interior color. Highly valued in traditional Asian medicine and specialty culinary applications for their unique aromatic properties and digestive benefits.",
     "descriptionDe": "Getrocknete Scheiben von weißer Kurkuma (Curcuma zedoaria), auch bekannt als Zedoary oder Temu Putih. Diese Scheiben haben im Vergleich zu gelber Kurkuma einen milderen, subtileren Geschmack mit angenehmen kampferartigen Untertönen und einer hellbeigen Innenfarbe. In der traditionellen asiatischen Medizin und in speziellen kulinarischen Anwendungen wegen ihrer einzigartigen aromatischen Eigenschaften und verdauungsfördernden Wirkung sehr geschätzt.",
     "shortDescription": "Dried slices of white turmeric (Curcuma zedoaria), also known as zedoary or temu putih",
@@ -315,7 +315,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0910.30.00"
+        "value": "0910.30"
       },
       {
         "label": "Price",
@@ -342,7 +342,7 @@
     "price": 1150,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "091009",
+    "hsCode": "0910.99.00",
     "description": "Premium dried slices of greater galangal (Alpinia galanga), a rhizome essential to Southeast Asian cuisine. These slices preserve the distinctive pine-like, citrusy aroma with subtle earthy undertones. Each slice is carefully dried to maintain the essential oils that give galangal its unique flavor profile. Perfect for Thai soups (Tom Yum, Tom Kha), curry pastes, and traditional remedies.",
     "descriptionDe": "Hochwertige getrocknete Scheiben von großem Galgant (Alpinia galanga), ein für die südostasiatische Küche essentielles Rhizom. Diese Scheiben bewahren das charakteristische pinienartige, zitrusartige Aroma mit subtilen erdigen Untertönen. Jede Scheibe wird schonend getrocknet, um die ätherischen Öle zu erhalten, die Galgant sein einzigartiges Geschmacksprofil verleihen. Ideal für thailändische Suppen (Tom Yum, Tom Kha), Currypasten und traditionelle Heilmittel.",
     "shortDescription": "Premium dried slices of greater galangal (Alpinia galanga), a rhizome essential to Southeast Asian cuisine",
@@ -357,7 +357,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "091009"
+        "value": "0910.99.00"
       },
       {
         "label": "Price",
@@ -384,7 +384,7 @@
     "price": 17000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "09082100",
+    "hsCode": "0908.20.00",
     "description": "Premium whole mace blades - the delicate, lacy aril that surrounds the nutmeg seed. Hand-separated and carefully dried to preserve the intricate web-like structure and vibrant orange-red to amber color. Mace offers a more refined, subtle version of nutmeg's warmth with added floral and peppery notes. Highly valued in European cuisine for flavoring sauces, baked goods, and meat dishes.",
     "descriptionDe": "Hochwertige ganze Macis-Blüten - der zarte, netzartige Samenmantel, der die Muskatnuss umgibt. Handverlesen und schonend getrocknet, um die komplizierte netzartige Struktur und die lebendige orangerote bis bernsteinfarbene Farbe zu erhalten. Macis bietet eine raffiniertere, subtilere Version der Wärme von Muskatnuss mit zusätzlichen blumigen und pfeffrigen Noten. In der europäischen Küche sehr geschätzt zum Würzen von Saucen, Backwaren und Fleischgerichten.",
     "shortDescription": "Premium whole mace blades - the delicate, lacy aril that surrounds the nutmeg seed",
@@ -399,7 +399,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "09082100"
+        "value": "0908.20.00"
       },
       {
         "label": "Price",
@@ -426,7 +426,7 @@
     "price": 8000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0908.40.00.00",
+    "hsCode": "0908.11.00",
     "description": "Premium whole nutmeg seeds (Myristica fragrans), Grade AB quality. These carefully selected seeds are uniform in size, dense, and heavy, indicating high essential oil content. The seeds feature a rich, warm, and slightly sweet aroma with complex woody undertones. Perfect for grating fresh over dishes, incorporation into spice blends, and use in baked goods, custards, and savory sauces.",
     "descriptionDe": "Ganze Muskatnüsse der Premium-Klasse AB (Myristica fragrans). Diese sorgfältig ausgewählten Samen sind einheitlich in der Größe, dicht und schwer, was auf einen hohen Gehalt an ätherischen Ölen hinweist. Die Samen haben ein reichhaltiges, warmes und leicht süßliches Aroma mit komplexen holzigen Untertönen. Ideal zum frischen Reiben über Gerichte, zur Verwendung in Gewürzmischungen und für Backwaren, Puddings und herzhafte Saucen.",
     "shortDescription": "Premium whole nutmeg seeds (Myristica fragrans), Grade AB quality",
@@ -441,7 +441,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0908.40.00.00"
+        "value": "0908.11.00"
       },
       {
         "label": "Price",
@@ -468,7 +468,7 @@
     "price": 4200,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "090811",
+    "hsCode": "0908.12.00",
     "description": "Broken nutmeg pieces (Myristica fragrans) - whole nutmeg seeds that have been naturally broken during handling or processing. These pieces retain the same exceptional warm, aromatic flavor profile as whole nutmeg but at a more economical price point. Perfect for industrial grinding operations, essential oil extraction, and applications where visual appearance is not the primary concern.",
     "descriptionDe": "Zerbrochene Muskatnussstücke (Myristica fragrans) - ganze Muskatnüsse, die bei der Handhabung oder Verarbeitung natürlich zerbrochen sind. Diese Stücke behalten das gleiche außergewöhnliche warme, aromatische Geschmacksprofil wie ganze Muskatnüsse, jedoch zu einem günstigeren Preis. Ideal für industrielle Mahlprozesse, die Gewinnung ätherischer Öle und Anwendungen, bei denen das visuelle Erscheinungsbild nicht im Vordergrund steht.",
     "shortDescription": "Broken nutmeg pieces (Myristica fragrans) - whole nutmeg seeds that have been naturally broken during handling or processing",
@@ -483,7 +483,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "090811"
+        "value": "0908.12.00"
       },
       {
         "label": "Price",
@@ -510,7 +510,7 @@
     "price": 4000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0908.10.00.10",
+    "hsCode": "0908.10.00",
     "description": "Whole nutmeg seeds (Myristica fragrans) preserved within their natural hard shell. This traditional preservation method ensures maximum freshness and protection of the essential oils inside. The shell must be cracked open to reveal the aromatic seed within. These in-shell nutmegs are ideal for long-term storage and are highly valued in markets where traditional presentation is appreciated.",
     "descriptionDe": "Ganze Muskatnüsse (Myristica fragrans) in ihrer natürlichen harten Schale. Diese traditionelle Konservierungsmethode gewährleistet maximale Frische und Schutz der ätherischen Öle im Inneren. Die Schale muss aufgebrochen werden, um den aromatischen Samen freizulegen. Diese Muskatnüsse in der Schale sind ideal für die Langzeitlagerung und werden auf Märkten, die traditionelle Präsentation schätzen, sehr geschätzt.",
     "shortDescription": "Whole nutmeg seeds (Myristica fragrans) preserved within their natural hard shell",
@@ -525,7 +525,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0908.10.00.10"
+        "value": "0908.10.00"
       },
       {
         "label": "Price",
@@ -552,7 +552,7 @@
     "price": 2500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "090812",
+    "hsCode": "0908.12.00",
     "description": "Fine particles of nutmeg (Myristica fragrans) produced during the handling and processing of whole nutmegs. This product offers the same warm, aromatic flavor profile as whole nutmeg in a ready-to-use powdered form. Perfect for immediate incorporation into spice blends, food products, and applications where fine texture is desired. An economical option for industrial users.",
     "descriptionDe": "Feine Partikel von Muskatnuss (Myristica fragrans), die bei der Handhabung und Verarbeitung ganzer Muskatnüsse anfallen. Dieses Produkt bietet das gleiche warme, aromatische Geschmacksprofil wie ganze Muskatnuss in gebrauchsfertiger Pulverform. Ideal für die sofortige Verwendung in Gewürzmischungen, Lebensmitteln und Anwendungen, bei denen eine feine Textur gewünscht wird. Eine wirtschaftliche Option für industrielle Anwender.",
     "shortDescription": "Fine particles of nutmeg (Myristica fragrans) produced during the handling and processing of whole nutmegs",
@@ -567,7 +567,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "090812"
+        "value": "0908.12.00"
       },
       {
         "label": "Price",
@@ -594,7 +594,7 @@
     "price": 9000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "09041190",
+    "hsCode": "0904.11.90",
     "description": "Dried flower spikes of Piper longum, a close relative of black pepper with a more complex and intense flavor profile. These slender, catkin-like spikes deliver a slow-building heat that is both pungent and slightly sweet, with subtle floral and earthy undertones. Prized in Indian and Southeast Asian cuisines, as well as in traditional Ayurvedic medicine for its therapeutic properties.",
     "descriptionDe": "Getrocknete Blütenstände von Piper longum, einem engen Verwandten des schwarzen Pfeffers mit einem komplexeren und intensiveren Geschmacksprofil. Diese schlanken, kätzchenartigen Stängel bieten eine langsam aufbauende Schärfe, die sowohl scharf als auch leicht süßlich ist, mit subtilen blumigen und erdigen Untertönen. Geschätzt in der indischen und südostasiatischen Küche sowie in der traditionellen ayurvedischen Medizin für ihre therapeutischen Eigenschaften.",
     "shortDescription": "Dried flower spikes of Piper longum, a close relative of black pepper with a more complex and intense flavor profile",
@@ -609,7 +609,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "09041190"
+        "value": "0904.11.90"
       },
       {
         "label": "Price",
@@ -636,7 +636,7 @@
     "price": 1800,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0802.80",
+    "hsCode": "0802.80.00",
     "description": "Mixture of split and whole areca nuts (Areca catechu) with approximately 70% good quality kernels. These nuts are harvested at optimal maturity, carefully dried, and sorted. The product contains both whole nuts and naturally split halves. Widely used in traditional betel quid preparations and as a raw material for various industrial applications including pharmaceutical and dental products.",
     "descriptionDe": "Mischung aus gespaltenen und ganzen Betelnüssen (Areca catechu) mit etwa 70% guten Kernen. Diese Nüsse werden bei optimaler Reife geerntet, schonend getrocknet und sortiert. Das Produkt enthält sowohl ganze Nüsse als auch natürlich gespaltene Hälften. Weit verbreitet in traditionellen Betelkau-Zubereitungen und als Rohstoff für verschiedene industrielle Anwendungen, einschließlich pharmazeutischer und dentaler Produkte.",
     "shortDescription": "Mixture of split and whole areca nuts (Areca catechu) with approximately 70% good quality kernels",
@@ -651,7 +651,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0802.80"
+        "value": "0802.80.00"
       },
       {
         "label": "Price",
@@ -678,7 +678,7 @@
     "price": 7500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "09041120",
+    "hsCode": "0904.11.20",
     "description": "Premium quality black peppercorns (Piper nigrum) with a density of 500 grams per liter, indicating excellent quality and proper drying. These berries are harvested at peak ripeness and sun-dried to develop the characteristic wrinkled black exterior and pungent aroma. Features bold, sharp heat with complex citrus and pine undertones. Perfect for whole-pepper applications, gourmet grinding, and premium spice blends.",
     "descriptionDe": "Hochwertige schwarze Pfefferkörner (Piper nigrum) mit einer Dichte von 500 Gramm pro Liter, was auf ausgezeichnete Qualität und richtige Trocknung hinweist. Diese Beeren werden bei optimaler Reife geerntet und sonnengetrocknet, um die charakteristische runzelige schwarze Außenseite und das scharfe Aroma zu entwickeln. Bietet kräftige, scharfe Schärfe mit komplexen Zitrus- und Pinienuntertönen. Ideal für Anwendungen mit ganzen Pfefferkörnern, zum gourmet Mahlen und für Premium-Gewürzmischungen.",
     "shortDescription": "Premium quality black peppercorns (Piper nigrum) with a density of 500 grams per liter, indicating excellent quality and proper drying",
@@ -693,7 +693,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "09041120"
+        "value": "0904.11.20"
       },
       {
         "label": "Price",
@@ -720,7 +720,7 @@
     "price": 3500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0904.11",
+    "hsCode": "0904.12",
     "description": "Small broken pieces of black pepper (Piper nigrum) approximately 2mm in size with a density of 300g/l. These uniformly sized pieces offer concentrated pepper heat and flavor that releases more quickly than whole peppercorns. Perfect for use in pepper mills, spice blends, meat processing, and applications where rapid flavor infusion is desired. An economical option with no compromise on taste.",
     "descriptionDe": "Kleine Bruchstücke von schwarzem Pfeffer (Piper nigrum) von etwa 2 mm Größe mit einer Dichte von 300 g/l. Diese gleichmäßig großen Stücke bieten konzentrierte Pfefferschärfe und -geschmack, die sich schneller freisetzt als bei ganzen Pfefferkörnern. Ideal für Pfeffermühlen, Gewürzmischungen, Fleischverarbeitung und Anwendungen, bei denen eine schnelle Geschmacksentfaltung erwünscht ist. Eine wirtschaftliche Option ohne Kompromisse beim Geschmack.",
     "shortDescription": "Small broken pieces of black pepper (Piper nigrum) approximately 2mm in size with a density of 300g/l",
@@ -735,7 +735,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0904.11"
+        "value": "0904.12"
       },
       {
         "label": "Price",
@@ -804,7 +804,7 @@
     "price": 9000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0904.11",
+    "hsCode": "0904.11.10",
     "description": "Premium white peppercorns (Piper nigrum) produced from fully ripe berries that have been soaked and the outer skin removed before drying. This process results in a smoother, cream-colored peppercorn with a milder yet more complex flavor profile than black pepper. Features earthy, musty notes with a refined heat that doesn't overpower dishes. Perfect for light-colored sauces, cream-based dishes, and where black specks would be visually undesirable.",
     "descriptionDe": "Hochwertige weiße Pfefferkörner (Piper nigrum) aus vollreifen Beeren, die vor dem Trocknen eingeweicht und von der Außenhaut befreit werden. Dieser Prozess ergibt glattere, cremefarbene Pfefferkörner mit einem milderen, aber komplexeren Geschmacksprofil als schwarzer Pfeffer. Bietet erdige, muffige Noten mit einer raffinierten Schärfe, die Gerichte nicht überdeckt. Ideal für helle Saucen, cremige Gerichte und dort, wo schwarze Punkte visuell unerwünscht wären.",
     "shortDescription": "Premium white peppercorns (Piper nigrum) produced from fully ripe berries that have been soaked and the outer skin removed before drying",
@@ -819,7 +819,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0904.11"
+        "value": "0904.11.10"
       },
       {
         "label": "Price",
@@ -846,7 +846,7 @@
     "price": 12000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "8013220",
+    "hsCode": "0801.32.20",
     "description": "Premium whole cashew kernels (Anacardium occidentale) graded W320, indicating approximately 320 kernels per pound - the most popular and versatile size grade. These carefully processed kernels are whole, white to light ivory in color, with a sweet, buttery flavor and characteristic curved shape. Free from defects and perfectly dried to ensure freshness. Ideal for snacking, confectionery, bakery applications, and premium nut mixes.",
     "descriptionDe": "Ganze Cashewkerne der Premiumklasse W320 (Anacardium occidentale), was etwa 320 Kerne pro Pfund bedeutet - die beliebteste und vielseitigste Größenklasse. Diese sorgfältig verarbeiteten Kerne sind ganz, weiß bis hellelfenbeinfarben, mit süßem, buttrigem Geschmack und charakteristischer gebogener Form. Frei von Mängeln und perfekt getrocknet für optimale Frische. Ideal zum Snacken, für Süßwaren, Backanwendungen und Premium-Nussmischungen.",
     "shortDescription": "Premium whole cashew kernels (Anacardium occidentale) graded W320, indicating approximately 320 kernels per pound - the most popular and versatile size grade",
@@ -861,7 +861,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "8013220"
+        "value": "0801.32.20"
       },
       {
         "label": "Price",
@@ -888,7 +888,7 @@
     "price": 7500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0901.11",
+    "hsCode": "0901.11.00",
     "description": "Robusta coffee beans (Coffea canephora), Grade 3 quality. These beans are characterized by their high caffeine content, full body, and strong, bold flavor profile with earthy and nutty undertones. The beans are uniformly sized with minimal defects, properly dried and hulled. Perfect for espresso blends, instant coffee production, and applications requiring a robust coffee character with excellent crema formation.",
     "descriptionDe": "Robusta-Kaffeebohnen (Coffea canephora), Qualitätsklasse 3. Diese Bohnen zeichnen sich durch ihren hohen Koffeingehalt, vollen Körper und starkes, kräftiges Geschmacksprofil mit erdigen und nussigen Untertönen aus. Die Bohnen sind gleichmäßig groß mit minimalen Fehlern, richtig getrocknet und geschält. Ideal für Espressomischungen, Instantkaffee-Produktion und Anwendungen, die einen robusten Kaffeecharakter mit ausgezeichneter Crema-Bildung erfordern.",
     "shortDescription": "Robusta coffee beans (Coffea canephora), Grade 3 quality",
@@ -930,7 +930,7 @@
     "price": 9000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "32019010",
+    "hsCode": "3201.90.10",
     "description": "Natural extract derived from the leaves and twigs of Uncaria gambir, processed into uniform cubes or blocks. This traditional product has been used for centuries in betel quid preparations, textile dyeing, and leather tanning. Contains high levels of catechins and tannins with astringent properties. In modern applications, valued for its natural preservative qualities and as a source of bioactive compounds for various industries.",
     "descriptionDe": "Natürliches Extrakt aus Blättern und Zweigen von Uncaria gambir, verarbeitet zu gleichmäßigen Würfeln oder Blöcken. Dieses traditionelle Produkt wird seit Jahrhunderten in Betelkau-Zubereitungen, Textilfärbung und Lederverarbeitung verwendet. Enthält hohe Anteile an Catechinen und Tanninen mit adstringierenden Eigenschaften. In modernen Anwendungen geschätzt für seine natürlichen konservierenden Eigenschaften und als Quelle bioaktiver Verbindungen für verschiedene Industrien.",
     "shortDescription": "Natural extract derived from the leaves and twigs of Uncaria gambir, processed into uniform cubes or blocks",
@@ -945,7 +945,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "32019010"
+        "value": "3201.90.10"
       },
       {
         "label": "Price",
@@ -972,7 +972,7 @@
     "price": 150,
     "currency": "USD",
     "unit": "KG",
-    "hsCode": "0905.10",
+    "hsCode": "0905.00",
     "description": "Premium cured vanilla beans (Vanilla planifolia) from Indonesia, known for their exceptional quality and rich flavor profile. These beans undergo a traditional curing process lasting several months to develop the characteristic dark brown to black color, supple texture, and intense aroma. Features sweet, creamy, and floral notes with the classic vanilla bouquet. Each bean is grade A quality, oily, and aromatic.",
     "descriptionDe": "Hochwertig fermentierte Vanilleschoten (Vanilla planifolia) aus Indonesien, bekannt für ihre außergewöhnliche Qualität und ihr reichhaltiges Geschmacksprofil. Diese Schoten durchlaufen einen traditionellen, mehrere Monate dauernden Fermentationsprozess, um die charakteristische dunkelbraune bis schwarze Farbe, geschmeidige Textur und intensives Aroma zu entwickeln. Bietet süße, cremige und blumige Noten mit dem klassischen Vanille-Bouquet. Jede Schote ist Klasse A Qualität, ölig und aromatisch.",
     "shortDescription": "Premium cured vanilla beans (Vanilla planifolia) from Indonesia, known for their exceptional quality and rich flavor profile",
@@ -987,7 +987,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0905.10"
+        "value": "0905.00"
       },
       {
         "label": "Price",
@@ -1014,7 +1014,7 @@
     "price": 1800,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "091011",
+    "hsCode": "0910.11",
     "description": "Freshly harvested ginger rhizomes (Zingiber officinale) from Indonesia's prime growing regions. These firm, plump rhizomes feature thin, light-brown skin with pale yellow to light green flesh inside. Delivers the characteristic pungent, spicy kick with fresh citrusy undertones that fresh ginger is prized for. Perfect for culinary applications, beverage production, fresh juice extraction, and processing into preserved or candied ginger products.",
     "descriptionDe": "Frisch geerntete Ingwer-Rhizome (Zingiber officinale) aus Indonesiens besten Anbaugebieten. Diese festen, prallen Rhizome haben eine dünne, hellbraune Schale mit blassgelbem bis hellgrünem Fruchtfleisch im Inneren. Bietet den charakteristischen scharfen, würzigen Kick mit frischen zitrusartigen Untertönen, für den frischer Ingwer geschätzt wird. Ideal für kulinarische Anwendungen, Getränkeherstellung, frische Saftgewinnung und Verarbeitung zu konservierten oder kandierten Ingwerprodukten.",
     "shortDescription": "Freshly harvested ginger rhizomes (Zingiber officinale) from Indonesia's prime growing regions",
@@ -1029,7 +1029,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "091011"
+        "value": "0910.11"
       },
       {
         "label": "Price",
@@ -1056,7 +1056,7 @@
     "price": 400,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "08134020",
+    "hsCode": "1207.99.00",
     "description": "Dried seeds extracted from tamarind fruit (Tamarindus indica). These hard, dark brown, glossy seeds are a byproduct of tamarind pulp processing but have significant commercial value. Widely used in the food industry as a source of stabilizers and thickeners, particularly tamarind kernel powder (TKP). Also valued in traditional medicine, textile processing, and as a raw material for various industrial applications.",
     "descriptionDe": "Getrocknete Samen aus der Tamarindenfrucht (Tamarindus indica). Diese harten, dunkelbraunen, glänzenden Samen sind ein Nebenprodukt der Tamarindenmarkverarbeitung, haben aber einen bedeutenden kommerziellen Wert. Weit verbreitet in der Lebensmittelindustrie als Quelle für Stabilisatoren und Verdickungsmittel, insbesondere Tamarindenkernpulver (TKP). Auch geschätzt in der traditionellen Medizin, Textilverarbeitung und als Rohstoff für verschiedene industrielle Anwendungen.",
     "shortDescription": "Dried seeds extracted from tamarind fruit (Tamarindus indica)",
@@ -1071,7 +1071,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "08134020"
+        "value": "1207.99.00"
       },
       {
         "label": "Price",
@@ -1098,7 +1098,7 @@
     "price": 4000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "1209.91",
+    "hsCode": "1209.91.00",
     "description": "Small, black seeds from sweet basil (Ocimum basilicum), known for their remarkable ability to swell and form a gelatinous coating when soaked in water. When hydrated, they expand significantly and develop a tapioca-like texture, making them popular in beverages and desserts across Asia. Rich in dietary fiber, minerals, and antioxidants. Used in refreshing drinks, puddings, and as a natural thickening agent in various preparations.",
     "descriptionDe": "Kleine, schwarze Samen des süßen Basilikums (Ocimum basilicum), bekannt für ihre bemerkenswerte Fähigkeit, in Wasser zu quellen und eine gelartige Hülle zu bilden. Bei Hydratation vergrößern sie sich erheblich und entwickeln eine tapiokaähnliche Textur, was sie in Getränken und Desserts in ganz Asien beliebt macht. Reich an Ballaststoffen, Mineralien und Antioxidantien. Verwendung in erfrischenden Getränken, Puddings und als natürliches Verdickungsmittel in verschiedenen Zubereitungen.",
     "shortDescription": "Small, black seeds from sweet basil (Ocimum basilicum), known for their remarkable ability to swell and form a gelatinous coating when soaked in water",
@@ -1113,7 +1113,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "1209.91"
+        "value": "1209.91.00"
       },
       {
         "label": "Price",
@@ -1140,7 +1140,7 @@
     "price": 550,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "08109020",
+    "hsCode": "0813.40.00",
     "description": "The fruit pulp of Tamarindus indica from Java, Indonesia, processed into a dark, sticky paste containing the sweet-sour flesh, fibers, and seeds. This traditional product offers a complex sweet-tart flavor profile with notes of citrus and dried fruit. Essential in Indonesian and Southeast Asian cuisine for adding sourness to dishes, soups, and sauces. Also used in beverages, candies, and as a natural acidulant in various food preparations.",
     "descriptionDe": "Das Fruchtfleisch von Tamarindus indica aus Java, Indonesien, verarbeitet zu einer dunklen, klebrigen Paste, die das süß-saure Fruchtfleisch, Fasern und Samen enthält. Dieses traditionelle Produkt bietet ein komplexes süß-saures Geschmacksprofil mit Noten von Zitrusfrüchten und Trockenfrüchten. Unverzichtbar in der indonesischen und südostasiatischen Küche, um Gerichten, Suppen und Saucen Säure zu verleihen. Auch in Getränken, Süßigkeiten und als natürliches Säuerungsmittel in verschiedenen Lebensmittelzubereitungen verwendet.",
     "shortDescription": "The fruit pulp of Tamarindus indica from Java, Indonesia, processed into a dark, sticky paste containing the sweet-sour flesh, fibers, and seeds",
@@ -1155,7 +1155,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "08109020"
+        "value": "0813.40.00"
       },
       {
         "label": "Price",
@@ -1182,7 +1182,7 @@
     "price": 3500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0910.10",
+    "hsCode": "0910.12",
     "description": "Dehydrated ginger rhizomes (Zingiber officinale) processed to preserve the essential oils and pungent compounds while removing moisture for extended shelf life. Dried ginger has a more concentrated, slightly different flavor profile than fresh - more pungent and less citrusy, with warm, spicy notes. Available in whole pieces or slices. Perfect for tea blends, spice grinding, traditional medicine preparations, and as a shelf-stable ginger option.",
     "descriptionDe": "Dehydrierte Ingwer-Rhizome (Zingiber officinale), verarbeitet zur Erhaltung der ätherischen Öle und scharfen Verbindungen bei gleichzeitiger Entfernung der Feuchtigkeit für längere Haltbarkeit. Getrockneter Ingwer hat ein konzentrierteres, etwas anderes Geschmacksprofil als frischer - schärfer und weniger zitrusartig, mit warmen, würzigen Noten. Erhältlich als ganze Stücke oder Scheiben. Ideal für Teemischungen, Gewürzmahlungen, traditionelle Medizinzubreitungen und als lagerfähige Ingwer-Option.",
     "shortDescription": "Dehydrated ginger rhizomes (Zingiber officinale) processed to preserve the essential oils and pungent compounds while removing moisture for extended shelf life",
@@ -1197,7 +1197,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0910.10"
+        "value": "0910.12"
       },
       {
         "label": "Price",
@@ -1224,7 +1224,7 @@
     "price": 3000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0910991000",
+    "hsCode": "0910.99.00",
     "description": "Dried aromatic leaves from the Indonesian bay leaf tree (Syzygium polyanthum), also known as Indonesian laurel or salam leaf. These leaves have a distinctive flavor profile different from Mediterranean bay leaves - milder with subtle hints of nutmeg and clove. An essential herb in Indonesian cooking, added to soups, stews, and rice dishes to impart a subtle aromatic depth. Used fresh or dried, typically removed before serving.",
     "descriptionDe": "Getrocknete aromatische Blätter des indonesischen Lorbeerbaums (Syzygium polyanthum), auch bekannt als Indonesischer Lorbeer oder Salam-Blatt. Diese Blätter haben ein charakteristisches Geschmacksprofil, das sich von mediterranen Lorbeerblättern unterscheidet - milder mit subtilen Anklängen von Muskat und Nelke. Ein unverzichtbares Kraut in der indonesischen Küche, das Suppen, Eintöpfen und Reisgerichten eine subtile aromatische Tiefe verleiht. Frisch oder getrocknet verwendet, typischerweise vor dem Servieren entfernt.",
     "shortDescription": "Dried aromatic leaves from the Indonesian bay leaf tree (Syzygium polyanthum), also known as Indonesian laurel or salam leaf",
@@ -1239,7 +1239,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0910991000"
+        "value": "0910.99.00"
       },
       {
         "label": "Price",
@@ -1266,7 +1266,7 @@
     "price": 2500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "1211.90.99",
+    "hsCode": "1211.90.39",
     "description": "Dried leaves of Moringa oleifera, often called the \"miracle tree\" for its exceptional nutritional profile. These vibrant green leaves are carefully harvested and dried at low temperatures to preserve their high content of vitamins, minerals, and antioxidants. Rich in protein, calcium, iron, and vitamin C. The leaves have a mild, earthy flavor similar to spinach with a slightly peppery note. Used in teas, soups, and as a nutritional supplement.",
     "descriptionDe": "Getrocknete Blätter von Moringa oleifera, oft als \"Baum des Lebens\" bezeichnet aufgrund seines außergewöhnlichen Nährstoffprofils. Diese lebhaft grünen Blätter werden schonend geerntet und bei niedrigen Temperaturen getrocknet, um ihren hohen Gehalt an Vitaminen, Mineralien und Antioxidantien zu erhalten. Reich an Protein, Kalzium, Eisen und Vitamin C. Die Blätter haben einen milden, erdigen Geschmack ähnlich wie Spinat mit einer leicht pfeffrigen Note. Verwendung in Tees, Suppen und als Nahrungsergänzungsmittel.",
     "shortDescription": "Dried leaves of Moringa oleifera, often called the \"miracle tree\" for its exceptional nutritional profile",
@@ -1281,7 +1281,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "1211.90.99"
+        "value": "1211.90.39"
       },
       {
         "label": "Price",
@@ -1308,7 +1308,7 @@
     "price": 3500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "12119099",
+    "hsCode": "1211.90.39",
     "description": "Finely ground powder made from premium dried Moringa oleifera leaves. This vibrant green powder concentrates the exceptional nutritional benefits of fresh moringa leaves into an easy-to-use form. Exceptionally rich in protein, vitamins A, C, and E, calcium, potassium, and iron. Has a mild, earthy, slightly grassy flavor. Perfect for adding to smoothies, juices, soups, baked goods, and as a natural green food coloring and nutritional supplement.",
     "descriptionDe": "Feingemahlenes Pulver aus hochwertigen getrockneten Moringa oleifera Blättern. Dieses lebhaft grüne Pulver konzentriert die außergewöhnlichen Nährstoffvorteile frischer Moringablätter in eine einfach zu verwendende Form. Außergewöhnlich reich an Protein, Vitaminen A, C und E, Kalzium, Kalium und Eisen. Hat einen milden, erdigen, leicht grasigen Geschmack. Ideal zum Hinzufügen zu Smoothies, Säften, Suppen, Backwaren und als natürliche grüne Lebensmittelfarbe und Nahrungsergänzungsmittel.",
     "shortDescription": "Finely ground powder made from premium dried Moringa oleifera leaves",
@@ -1323,7 +1323,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "12119099"
+        "value": "1211.90.39"
       },
       {
         "label": "Price",
@@ -1350,7 +1350,7 @@
     "price": 1600,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0713321000",
+    "hsCode": "0713.32.00",
     "description": "Dried red kidney beans (Phaseolus vulgaris), carefully sorted and cleaned for uniform size and quality. These classic beans feature a deep red color, smooth texture, and mild, slightly sweet flavor that absorbs surrounding flavors beautifully. An excellent source of plant-based protein, complex carbohydrates, and dietary fiber. Perfect for chili, rice and beans, soups, stews, and traditional bean dishes across many cuisines.",
     "descriptionDe": "Getrocknete rote Kidneybohnen (Phaseolus vulgaris), sorgfältig sortiert und gereinigt für gleichmäßige Größe und Qualität. Diese klassischen Bohnen haben eine tiefrote Farbe, glatte Textur und milden, leicht süßlichen Geschmack, der umgebende Aromen schön aufnimmt. Eine ausgezeichnete Quelle für pflanzliches Protein, komplexe Kohlenhydrate und Ballaststoffe. Ideal für Chili, Reis und Bohnen, Suppen, Eintöpfe und traditionelle Bohnengerichte vieler Küchen.",
     "shortDescription": "Dried red kidney beans (Phaseolus vulgaris), carefully sorted and cleaned for uniform size and quality",
@@ -1364,7 +1364,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0713321000"
+        "value": "0713.32.00"
       },
       {
         "label": "Price",
@@ -1391,7 +1391,7 @@
     "price": 5500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "08109020",
+    "hsCode": "0813.40.00",
     "description": "Dried fruit of Dialium indum, also known as velvet tamarind or keranji. These small, round fruits have a hard, velvety brown shell that cracks open to reveal a sticky, sweet-sour orange pulp inside. The flavor is uniquely complex - sweet, tangy, and slightly smoky with notes of raisins and apricots. Popular as a snack in Southeast Asia and used in traditional preparations, sauces, and as a flavoring agent in various culinary applications.",
     "descriptionDe": "Getrocknete Frucht von Dialium indum, auch bekannt als Samtfrucht oder Keranji. Diese kleinen, runden Früchte haben eine harte, samtige braune Schale, die aufbricht und ein klebriges, süß-saures oranges Fruchtfleisch freigibt. Der Geschmack ist einzigartig komplex - süß, würzig und leicht rauchig mit Noten von Rosinen und Aprikosen. In Südostasien als Snack beliebt und in traditionellen Zubereitungen, Saucen und als Aromastoff in verschiedenen kulinarischen Anwendungen verwendet.",
     "shortDescription": "Dried fruit of Dialium indum, also known as velvet tamarind or keranji",
@@ -1406,7 +1406,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "08109020"
+        "value": "0813.40.00"
       },
       {
         "label": "Price",
@@ -1433,7 +1433,7 @@
     "price": 6250,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "090930",
+    "hsCode": "0909.30.00",
     "description": "Premium cumin seeds (Cuminum cyminum), hand-selected for their characteristic elongated shape, uniform size, and distinctive warm, earthy aroma. These seeds release their full flavor when lightly toasted, offering a nutty, slightly peppery profile with subtle citrus undertones. An essential spice in cuisines worldwide, from Indian curries to Middle Eastern dishes, Mexican preparations, and European cheeses and breads.",
     "descriptionDe": "Hochwertige Kreuzkümmelsamen (Cuminum cyminum), handverlesen für ihre charakteristische längliche Form, gleichmäßige Größe und ihr unverwechselbares warmes, erdiges Aroma. Diese Samen entfalten ihr volles Aroma beim leichten Rösten und bieten ein nussiges, leicht pfeffriges Profil mit subtilen Zitrusuntertönen. Ein essentielles Gewürz in Küchen weltweit, von indischen Currys über nahöstliche Gerichte, mexikanische Zubereitungen bis hin zu europäischen Käsesorten und Broten.",
     "shortDescription": "Premium cumin seeds (Cuminum cyminum), hand-selected for their characteristic elongated shape, uniform size, and distinctive warm, earthy aroma",
@@ -1448,7 +1448,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "090930"
+        "value": "0909.30.00"
       },
       {
         "label": "Price",
@@ -1475,7 +1475,7 @@
     "price": 17000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0908",
+    "hsCode": "0908.20.00",
     "description": "Premium long mace blades - the whole, uncut arils that surround the nutmeg seed (Myristica fragrans). These carefully hand-separated blades are longer and more intact than regular mace, representing the highest quality grade. Features a delicate, intricate web-like structure with a vibrant orange to amber color. Offers a refined, subtle version of nutmeg's warmth with additional floral and peppery notes. Highly prized by gourmet chefs and spice connoisseurs.",
     "descriptionDe": "Hochwertige lange Macis-Blüten - die ganzen, ungeschnittenen Samenmäntel, die die Muskatnuss umgeben (Myristica fragrans). Diese sorgfältig handverlesenen Blätter sind länger und intakter als reguläre Macis und repräsentieren die höchste Qualitätsstufe. Hat eine zarte, komplizierte netzartige Struktur mit einer lebhaften orange bis bernsteinfarbenen Farbe. Bietet eine raffinierte, subtile Version der Wärme von Muskatnuss mit zusätzlichen blumigen und pfeffrigen Noten. Sehr geschätzt von Gourmetköchen und Gewürzliebhabern.",
     "shortDescription": "Premium long mace blades - the whole, uncut arils that surround the nutmeg seed (Myristica fragrans)",
@@ -1490,7 +1490,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0908"
+        "value": "0908.20.00"
       },
       {
         "label": "Price",
@@ -1517,7 +1517,7 @@
     "price": 2000,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0801 310000",
+    "hsCode": "0801.31.00",
     "description": "Unprocessed raw cashew nuts (Anacardium occidentale) still in their natural state with the testa (seed coat) intact. These nuts have not been roasted or flavored, preserving their pure, natural flavor and nutritional profile. The raw nuts require processing (roasting or boiling) before consumption to remove toxic compounds found in the raw state. Perfect for processors, roasters, and manufacturers who want to apply their own flavoring and roasting methods.",
     "descriptionDe": "Unverarbeitete rohe Cashewnüsse (Anacardium occidentale) in ihrem natürlichen Zustand mit intakter Samenhaut. Diese Nüsse wurden weder geröstet noch aromatisiert, was ihr reines, natürliches Aroma und Nährstoffprofil bewahrt. Die rohen Nüsse müssen vor dem Verzehr verarbeitet (geröstet oder gekocht) werden, um giftige Verbindungen zu entfernen, die im Rohzustand vorkommen. Ideal für Verarbeiter, Röster und Hersteller, die ihre eigenen Aromatisierungs- und Röstmethoden anwenden möchten.",
     "shortDescription": "Unprocessed raw cashew nuts (Anacardium occidentale) still in their natural state with the testa (seed coat) intact",
@@ -1532,7 +1532,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0801 310000"
+        "value": "0801.31.00"
       },
       {
         "label": "Price",
@@ -1559,7 +1559,7 @@
     "price": 1400,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0713.31",
+    "hsCode": "0713.31.00",
     "description": "Premium dried green mung beans (Vigna radiata), also known as moong beans or green gram. These small, oval beans feature a vibrant green color with a distinctive white hilum. They have a mild, slightly sweet flavor and soft texture when cooked. Exceptionally versatile in Asian cuisines - used whole in soups and curries, split for dals, sprouted for nutritious bean sprouts, and ground for flour in desserts and noodles.",
     "descriptionDe": "Hochwertige getrocknete grüne Mungobohnen (Vigna radiata). Diese kleinen, ovalen Bohnen haben eine lebhafte grüne Farbe mit einem charakteristischen weißen Hilum. Sie haben einen milden, leicht süßlichen Geschmack und eine weiche Textur beim Kochen. Außergewöhnlich vielseitig in der asiatischen Küche - ganz in Suppen und Currys verwendet, gespalten für Dals, gekeimt für nahrhafte Sprossen und gemahlen zu Mehl für Desserts und Nudeln.",
     "shortDescription": "Premium dried green mung beans (Vigna radiata), also known as moong beans or green gram",
@@ -1573,7 +1573,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0713.31"
+        "value": "0713.31.00"
       },
       {
         "label": "Price",
@@ -1600,7 +1600,7 @@
     "price": 2500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0907",
+    "hsCode": "0907.00",
     "description": "Broken clove heads (Syzygium aromaticum) - the rounded bud portions of cloves that have separated during handling. These pieces contain the highest concentration of essential oils in the clove, delivering intense aromatic punch and flavor. While visually less appealing than whole cloves, they offer the same exceptional quality at a more economical price point. Perfect for industrial grinding, essential oil extraction, and applications where appearance is secondary to flavor.",
     "descriptionDe": "Zerbrochene Nelkenköpfe (Syzygium aromaticum) - die runden Knospenteile der Nelken, die sich bei der Handhabung abgetrennt haben. Diese Stücke enthalten die höchste Konzentration an ätherischen Ölen in der Nelke und liefern einen intensiven aromatischen Schlag und Geschmack. Optisch weniger ansprechend als ganze Nelken, bieten sie die gleiche außergewöhnliche Qualität zu einem günstigeren Preis. Ideal für industrielles Mahlen, Gewinnung ätherischer Öle und Anwendungen, bei denen das Aussehen zweitrangig gegenüber dem Geschmack ist.",
     "shortDescription": "Broken clove heads (Syzygium aromaticum) - the rounded bud portions of cloves that have separated during handling",
@@ -1614,7 +1614,7 @@
     "specifications": [
       {
         "label": "HS Code",
-        "value": "0907"
+        "value": "0907.00"
       },
       {
         "label": "Price",
@@ -1641,7 +1641,7 @@
     "price": 7500,
     "currency": "USD",
     "unit": "TON",
-    "hsCode": "0901.11",
+    "hsCode": "0901.11.00",
     "description": "Premium Robusta coffee beans (Coffea canephora), Grade 2 quality - a step above Grade 3 with fewer defects and more consistent sizing. These beans deliver the characteristic Robusta profile: high caffeine content, full body, strong flavor with earthy and nutty undertones, and excellent crema formation. Carefully processed and sorted to ensure quality. Perfect for espresso blends, instant coffee production, and commercial roasting operations seeking reliable quality.",
     "descriptionDe": "Hochwertige Robusta-Kaffeebohnen (Coffea canephora), Qualitätsklasse 2 - eine Stufe über Klasse 3 mit weniger Fehlern und gleichmäßigerer Größe. Diese Bohnen liefern das charakteristische Robusta-Profil: hohen Koffeingehalt, vollen Körper, starken Geschmack mit erdigen und nussigen Untertönen und ausgezeichnete Crema-Bildung. Sorgfältig verarbeitet und sortiert, um Qualität zu gewährleisten. Ideal für Espressomischungen, Instantkaffee-Produktion und gewerbliche Röstereien, die zuverlässige Qualität suchen.",
     "shortDescription": "Premium Robusta coffee beans (Coffea canephora), Grade 2 quality - a step above Grade 3 with fewer defects and more consistent sizing",
