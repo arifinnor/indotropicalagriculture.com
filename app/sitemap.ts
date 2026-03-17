@@ -38,7 +38,7 @@ const LAST_MOD_DATES = {
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     {
-      url: SITE_URL,
+      url: `${SITE_URL}/en`,
       lastModified: LAST_MOD_DATES.home,
       changeFrequency: "monthly" as const,
       priority: 1,
@@ -50,7 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${SITE_URL}/products`,
+      url: `${SITE_URL}/en/products`,
       lastModified: LAST_MOD_DATES.products,
       changeFrequency: "weekly" as const,
       priority: 0.8,
@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${SITE_URL}/faq`,
+      url: `${SITE_URL}/en/faq`,
       lastModified: LAST_MOD_DATES.faq,
       changeFrequency: "monthly" as const,
       priority: 0.5,
@@ -78,7 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Category index pages for each locale
   const categoryIndexPages = [
     {
-      url: `${SITE_URL}/categories`,
+      url: `${SITE_URL}/en/categories`,
       lastModified: LAST_MOD_DATES.categories,
       changeFrequency: "monthly" as const,
       priority: 0.6,
@@ -97,7 +97,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const slug = CATEGORY_TO_SLUG[category] || category.toLowerCase().replace(/\s+/g, "-");
     return [
       {
-        url: `${SITE_URL}/categories/${slug}`,
+        url: `${SITE_URL}/en/categories/${slug}`,
         lastModified: LAST_MOD_DATES.categories,
         changeFrequency: "weekly" as const,
         priority: 0.7,
@@ -114,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Product pages for each locale with image references
   const productPages = products.flatMap((product) => [
     {
-      url: `${SITE_URL}/products/${product.slug}`,
+      url: `${SITE_URL}/en/products/${product.slug}`,
       lastModified: LAST_MOD_DATES.products,
       changeFrequency: "monthly" as const,
       priority: 0.7,
@@ -146,7 +146,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Destination market pages for each locale
   const destinationPages = destinations.flatMap((destination) => [
     {
-      url: `${SITE_URL}/export-to/${destination.slug}`,
+      url: `${SITE_URL}/en/export-to/${destination.slug}`,
       lastModified: LAST_MOD_DATES.destinations,
       changeFrequency: "monthly" as const,
       priority: 0.6,
@@ -162,7 +162,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Industry pages for each locale
   const industryPages = industries.flatMap((industry) => [
     {
-      url: `${SITE_URL}/for/${industry.slug}`,
+      url: `${SITE_URL}/en/for/${industry.slug}`,
       lastModified: LAST_MOD_DATES.industries,
       changeFrequency: "monthly" as const,
       priority: 0.6,
@@ -178,7 +178,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Glossary index pages for each locale
   const glossaryIndexPages = [
     {
-      url: `${SITE_URL}/glossary`,
+      url: `${SITE_URL}/en/glossary`,
       lastModified: LAST_MOD_DATES.glossary,
       changeFrequency: "monthly" as const,
       priority: 0.5,
@@ -195,7 +195,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const glossaryTerms = getGlossaryTerms();
   const glossaryTermPages = glossaryTerms.flatMap((term) => [
     {
-      url: `${SITE_URL}/what-is/${term.slug}`,
+      url: `${SITE_URL}/en/what-is/${term.slug}`,
       lastModified: LAST_MOD_DATES.glossary,
       changeFrequency: "monthly" as const,
       priority: 0.4,
@@ -213,7 +213,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const hsCodesList = getHSCodes();
   const hsCodePages = hsCodesList.flatMap((hsCode) => [
     {
-      url: `${SITE_URL}/hs-code-${hsCode.slug}`,
+      url: `${SITE_URL}/en/hs-code-${hsCode.slug}`,
       lastModified: LAST_MOD_DATES.hsCodes,
       changeFrequency: "monthly" as const,
       priority: 0.5,
@@ -231,7 +231,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const comparisons = getComparisons();
   const comparisonPages = comparisons.flatMap((comparison) => [
     {
-      url: `${SITE_URL}/vs/${comparison.slug}`,
+      url: `${SITE_URL}/en/vs/${comparison.slug}`,
       lastModified: LAST_MOD_DATES.comparisons,
       changeFrequency: "monthly" as const,
       priority: 0.5,
@@ -247,7 +247,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog index pages for each locale
   const blogIndexPages = [
     {
-      url: `${SITE_URL}/blog`,
+      url: `${SITE_URL}/en/blog`,
       lastModified: LAST_MOD_DATES.blog,
       changeFrequency: "weekly" as const,
       priority: 0.6,
@@ -264,7 +264,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const blogPosts = getBlogPosts();
   const blogPostPages = blogPosts.flatMap((post) => [
     {
-      url: `${SITE_URL}/blog/${post.slug}`,
+      url: `${SITE_URL}/en/blog/${post.slug}`,
       lastModified: LAST_MOD_DATES.blog,
       changeFrequency: "monthly" as const,
       priority: 0.5,
