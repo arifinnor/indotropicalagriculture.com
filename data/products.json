@@ -3,7 +3,7 @@
     "id": "product-1",
     "slug": "clove",
     "name": "Clove",
-    "price": 8000.0,
+    "price": 8000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0907",
@@ -38,13 +38,14 @@
     ],
     "image": "/products/clove.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-2",
     "slug": "clove-stem",
     "name": "Clove Stem",
-    "price": 1200.0,
+    "price": 1200,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0907",
@@ -79,13 +80,14 @@
     ],
     "image": "/products/clove-stem.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-3",
     "slug": "broken-cinnamon-kb",
     "name": "Broken Cinnamon kb",
-    "price": 2000.0,
+    "price": 2000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "090620",
@@ -120,13 +122,14 @@
     ],
     "image": "/products/broken-cinnamon-kb.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-4",
     "slug": "cinnamon-whole-stick-grade-a",
     "name": "Cinnamon Whole Stick grade A",
-    "price": 4000.0,
+    "price": 4000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0906.11.3",
@@ -161,13 +164,14 @@
     ],
     "image": "/products/cinnamon-whole-stick-grade-a.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-5",
     "slug": "cinnamon-grade-a-8cm-size-cutting",
     "name": "Cinnamon Grade A 8cm size cutting",
-    "price": 5500.0,
+    "price": 5500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0906.11.00",
@@ -202,13 +206,14 @@
     ],
     "image": "/products/cinnamon-grade-a-8cm-size-cutting.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-6",
     "slug": "cinnamon-aa-small-broken",
     "name": "Cinnamon AA small broken",
-    "price": 3000.0,
+    "price": 3000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "09061900",
@@ -243,13 +248,14 @@
     ],
     "image": "/products/cinnamon-aa-small-broken.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-7",
     "slug": "dried-slice-turmeric",
     "name": "Dried Slice Turmeric",
-    "price": 2000.0,
+    "price": 2000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0910.30",
@@ -284,13 +290,14 @@
     ],
     "image": "/products/dried-slice-turmeric.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-8",
     "slug": "dried-sliced-curcuma",
     "name": "Dried Sliced Curcuma",
-    "price": 1000.0,
+    "price": 1000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0910.30.00",
@@ -325,13 +332,14 @@
     ],
     "image": "/products/dried-sliced-curcuma.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-9",
     "slug": "dried-sliced-galangal",
     "name": "Dried Sliced Galangal",
-    "price": 1150.0,
+    "price": 1150,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "091009",
@@ -366,13 +374,14 @@
     ],
     "image": "/products/dried-sliced-galangal.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-10",
     "slug": "mace",
     "name": "Mace",
-    "price": 17000.0,
+    "price": 17000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "09082100",
@@ -407,13 +416,14 @@
     ],
     "image": "/products/mace.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-11",
     "slug": "nutmeg-ab",
     "name": "Nutmeg AB",
-    "price": 8000.0,
+    "price": 8000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0908.40.00.00",
@@ -448,13 +458,14 @@
     ],
     "image": "/products/nutmeg-ab.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-12",
     "slug": "nutmeg-brokenbwp",
     "name": "Nutmeg broken/bwp",
-    "price": 4200.0,
+    "price": 4200,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "090811",
@@ -489,13 +500,14 @@
     ],
     "image": "/products/nutmeg-brokenbwp.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-13",
     "slug": "nutmeg-in-shell",
     "name": "Nutmeg in shell",
-    "price": 4000.0,
+    "price": 4000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0908.10.00.10",
@@ -530,13 +542,14 @@
     ],
     "image": "/products/nutmeg-in-shell.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-14",
     "slug": "nutmeg-dust",
     "name": "Nutmeg dust",
-    "price": 2500.0,
+    "price": 2500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "090812",
@@ -571,13 +584,14 @@
     ],
     "image": "/products/nutmeg-dust.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-15",
     "slug": "long-pepper",
     "name": "Long Pepper",
-    "price": 9000.0,
+    "price": 9000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "09041190",
@@ -612,13 +626,14 @@
     ],
     "image": "/products/long-pepper.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-16",
     "slug": "betel-nut-70-good-split-and-whole",
     "name": "Betel Nut 70% good Split and whole",
-    "price": 1800.0,
+    "price": 1800,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0802.80",
@@ -653,13 +668,14 @@
     ],
     "image": "/products/betel-nut-70-good-split-and-whole.webp",
     "bgColor": "bg-amber-500",
-    "category": "Nuts"
+    "category": "Nuts",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-17",
     "slug": "blackpepper-500-gl",
     "name": "Blackpepper 500 gl",
-    "price": 7500.0,
+    "price": 7500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "09041120",
@@ -694,13 +710,14 @@
     ],
     "image": "/products/blackpepper-500-gl.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-18",
     "slug": "blackpepper-broken-300-glsmall-2mm",
     "name": "Blackpepper Broken 300 gl/small 2mm",
-    "price": 3500.0,
+    "price": 3500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0904.11",
@@ -735,13 +752,14 @@
     ],
     "image": "/products/blackpepper-broken-300-glsmall-2mm.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-19",
     "slug": "homalomena-sugandhi-root",
     "name": "Homalomena / Sugandhi Root",
-    "price": 2500.0,
+    "price": 2500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0904.12",
@@ -776,13 +794,14 @@
     ],
     "image": "/products/homalomena-sugandhi-root.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-20",
     "slug": "whitepepper",
     "name": "Whitepepper",
-    "price": 9000.0,
+    "price": 9000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0904.11",
@@ -817,13 +836,14 @@
     ],
     "image": "/products/whitepepper.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-21",
     "slug": "cashew-nut-w320",
     "name": "Cashew Nut W320",
-    "price": 12000.0,
+    "price": 12000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "8013220",
@@ -858,13 +878,14 @@
     ],
     "image": "/products/cashew-nut-w320.webp",
     "bgColor": "bg-amber-500",
-    "category": "Nuts"
+    "category": "Nuts",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-22",
     "slug": "coffee-bean-robusta-grade-3",
     "name": "Coffee Bean Robusta grade 3",
-    "price": 7500.0,
+    "price": 7500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0901.11",
@@ -899,13 +920,14 @@
     ],
     "image": "/products/coffee-bean-robusta-grade-3.webp",
     "bgColor": "bg-stone-700",
-    "category": "Coffee"
+    "category": "Coffee",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-23",
     "slug": "gambier",
     "name": "Gambier",
-    "price": 9000.0,
+    "price": 9000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "32019010",
@@ -940,13 +962,14 @@
     ],
     "image": "/products/gambier.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-24",
     "slug": "vanilla-bean",
     "name": "Vanilla Bean",
-    "price": 150.0,
+    "price": 150,
     "currency": "USD",
     "unit": "KG",
     "hsCode": "0905.10",
@@ -981,13 +1004,14 @@
     ],
     "image": "/products/vanilla-bean.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-25",
     "slug": "fresh-ginger",
     "name": "Fresh Ginger",
-    "price": 1800.0,
+    "price": 1800,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "091011",
@@ -1022,13 +1046,14 @@
     ],
     "image": "/products/fresh-ginger.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-26",
     "slug": "tamarind-seeds",
     "name": "Tamarind Seeds",
-    "price": 400.0,
+    "price": 400,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "08134020",
@@ -1063,13 +1088,14 @@
     ],
     "image": "/products/tamarind-seeds.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-27",
     "slug": "basil-seeds",
     "name": "Basil Seeds",
-    "price": 4000.0,
+    "price": 4000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "1209.91",
@@ -1104,13 +1130,14 @@
     ],
     "image": "/products/basil-seeds.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-28",
     "slug": "java-tamarind",
     "name": "Java Tamarind",
-    "price": 550.0,
+    "price": 550,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "08109020",
@@ -1145,13 +1172,14 @@
     ],
     "image": "/products/java-tamarind.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-29",
     "slug": "dried-ginger",
     "name": "Dried Ginger",
-    "price": 3500.0,
+    "price": 3500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0910.10",
@@ -1186,13 +1214,14 @@
     ],
     "image": "/products/dried-ginger.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-30",
     "slug": "bay-leaf",
     "name": "Bay Leaf",
-    "price": 3000.0,
+    "price": 3000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0910991000",
@@ -1227,13 +1256,14 @@
     ],
     "image": "/products/bay-leaf.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-31",
     "slug": "dried-moringa-leaf",
     "name": "Dried Moringa Leaf",
-    "price": 2500.0,
+    "price": 2500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "1211.90.99",
@@ -1268,13 +1298,14 @@
     ],
     "image": "/products/dried-moringa-leaf.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-32",
     "slug": "moringa-leaf-powder",
     "name": "Moringa Leaf Powder",
-    "price": 3500.0,
+    "price": 3500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "12119099",
@@ -1309,13 +1340,14 @@
     ],
     "image": "/products/moringa-leaf-powder.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-33",
     "slug": "red-bean",
     "name": "Red Bean",
-    "price": 1600.0,
+    "price": 1600,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0713321000",
@@ -1349,13 +1381,14 @@
     ],
     "image": "/products/red-bean.webp",
     "bgColor": "bg-amber-600",
-    "category": "Beans"
+    "category": "Beans",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-34",
     "slug": "velvet-tamarind",
     "name": "Velvet Tamarind",
-    "price": 5500.0,
+    "price": 5500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "08109020",
@@ -1390,13 +1423,14 @@
     ],
     "image": "/products/velvet-tamarind.webp",
     "bgColor": "bg-emerald-600",
-    "category": "Herbs"
+    "category": "Herbs",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-35",
     "slug": "cumin-seeds",
     "name": "Cumin seeds",
-    "price": 6250.0,
+    "price": 6250,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "090930",
@@ -1431,13 +1465,14 @@
     ],
     "image": "/products/cumin-seeds.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-36",
     "slug": "long-mace",
     "name": "Long Mace",
-    "price": 17000.0,
+    "price": 17000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0908",
@@ -1472,13 +1507,14 @@
     ],
     "image": "/products/long-mace.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-37",
     "slug": "raw-cashew-nut",
     "name": "Raw Cashew Nut",
-    "price": 2000.0,
+    "price": 2000,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0801 310000",
@@ -1513,13 +1549,14 @@
     ],
     "image": "/products/raw-cashew-nut.webp",
     "bgColor": "bg-amber-500",
-    "category": "Nuts"
+    "category": "Nuts",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-38",
     "slug": "green-mung-beans",
     "name": "Green Mung beans",
-    "price": 1400.0,
+    "price": 1400,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0713.31",
@@ -1553,13 +1590,14 @@
     ],
     "image": "/products/green-mung-beans.webp",
     "bgColor": "bg-orange-500",
-    "category": "Beans"
+    "category": "Beans",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-39",
     "slug": "clove-broken-head",
     "name": "Clove Broken Head",
-    "price": 2500.0,
+    "price": 2500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0907",
@@ -1593,13 +1631,14 @@
     ],
     "image": "/products/clove-broken-head.webp",
     "bgColor": "bg-amber-600",
-    "category": "Spices"
+    "category": "Spices",
+    "lastUpdated": "2025-03-17"
   },
   {
     "id": "product-40",
     "slug": "coffee-bean-robusta-grade-2",
     "name": "Coffee Bean Robusta Grade 2",
-    "price": 7500.0,
+    "price": 7500,
     "currency": "USD",
     "unit": "TON",
     "hsCode": "0901.11",
@@ -1634,6 +1673,7 @@
     ],
     "image": "/products/coffee-bean-robusta-grade-2.webp",
     "bgColor": "bg-stone-700",
-    "category": "Coffee"
+    "category": "Coffee",
+    "lastUpdated": "2025-03-17"
   }
 ]

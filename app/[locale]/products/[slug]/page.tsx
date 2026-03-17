@@ -37,6 +37,9 @@ export async function generateMetadata({
     creator: "Indo Tropical Agriculture",
     publisher: "Indo Tropical Agriculture",
     metadataBase: new URL("https://indotropicalagriculture.com"),
+    ...(product.lastUpdated && {
+      modifiedTime: new Date(product.lastUpdated).toISOString(),
+    }),
     alternates: {
       canonical: url,
       languages: {
@@ -94,7 +97,7 @@ function ProductContent({ slug }: { slug: string }) {
 
   // Get relevant glossary terms for this product
   const allGlossaryTerms = getGlossaryTerms();
-  const relevantTerms = allGlossaryTerms.slice(0, 3); // Show first 3 terms on all products
+  const relevantTerms = allGlossaryTerms.slice(0, 3);
 
   // JSON-LD Structured Data - Combined Product + Breadcrumb
   const productJsonLd = {
@@ -109,6 +112,9 @@ function ProductContent({ slug }: { slug: string }) {
         category: product.category,
         keywords: product.keywords.join(", "),
         image: product.image,
+        ...(product.lastUpdated && {
+          modifiedTime: new Date(product.lastUpdated).toISOString(),
+        }),
         brand: {
           "@type": "Brand",
           name: "Indo Tropical Agriculture",
@@ -216,6 +222,23 @@ function ProductContent({ slug }: { slug: string }) {
               {/* Right: Product Info */}
               <div className="p-6 md:p-10 flex flex-col justify-center flex-1 min-h-56 sm:min-h-64 md:min-h-0">
                 <h1 id="product-title" className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">{product.name}</h1>
+
+                {/* Content Freshness Signal - Last Updated */}
+                {product.lastUpdated && (
+                  <div className="mb-4 flex items-center gap-1.5 text-xs text-stone-500">
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <time dateTime={product.lastUpdated}>
+                      {locale === "en" ? "Last updated: " : "Zuletzt aktualisiert: "}
+                      {new Date(product.lastUpdated).toLocaleDateString(locale === "de" ? "de-DE" : "en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric"
+                      })}
+                    </time>
+                  </div>
+                )}
 
                 {/* Description */}
                 <div className="mb-6">

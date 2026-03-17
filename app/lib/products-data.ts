@@ -18,6 +18,7 @@ export interface Product {
   image: string;
   bgColor: string;
   category: string;
+  lastUpdated?: string; // ISO date string for content freshness signal
 }
 
 // Products data directly from JSON
