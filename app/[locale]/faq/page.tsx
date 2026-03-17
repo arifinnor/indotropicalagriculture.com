@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
   const t = await getTranslations({ locale, namespace: "faq" });
 
   const url = locale === "en"
-    ? "https://indotropicalagriculture.com/faq"
+    ? "https://indotropicalagriculture.com/en/faq"
     : "https://indotropicalagriculture.com/de/faq";
 
   const localeMap: Record<string, string> = {
@@ -42,7 +42,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
     alternates: {
       canonical: url,
       languages: {
-        en: "https://indotropicalagriculture.com/faq",
+        en: "https://indotropicalagriculture.com/en/faq",
         de: "https://indotropicalagriculture.com/de/faq",
       },
     },
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
 // JSON-LD FAQ Schema Generator with Breadcrumb
 function getFAQJsonLd(locale: string, t: any) {
   const baseUrl = locale === "en"
-    ? "https://indotropicalagriculture.com"
+    ? "https://indotropicalagriculture.com/en"
     : "https://indotropicalagriculture.com/de";
 
   const questions = ["moq", "samples", "payment", "shipping", "shippingTime", "documentation", "quality", "sourcing"];
