@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { getGlossaryTermBySlug, getGlossaryTerms, getRelatedTerms } from "@/data/glossary";
 import { locales } from "@/i18n/config";
+import Navigation from "../../../components/Navigation";
+import Breadcrumb from "../../../components/Breadcrumb";
 
 interface GlossaryTermPageProps {
   params: Promise<{ locale: string; term: string }>;
@@ -158,6 +161,7 @@ function getArticleJsonLd(locale: string, term: ReturnType<typeof getGlossaryTer
 export default async function GlossaryTermPage({ params }: GlossaryTermPageProps) {
   const { locale, term: termSlug } = await params;
   const term = getGlossaryTermBySlug(termSlug);
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
 
   if (!term) {
     notFound();
@@ -206,33 +210,17 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
       />
 
       {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              href={getGlossaryPath()}
-              className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-            >
-              {backToGlossary}
-            </Link>
-            <Link
-              href={getHomePath()}
-              className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-            >
-              <span aria-hidden="true">←</span> <span>{backToHome}</span>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("glossary"), href: getGlossaryPath() },
+          { label: title },
+        ]}
+      />
 
       {/* Header */}
       <section className="pb-8 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">

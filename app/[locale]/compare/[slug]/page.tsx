@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { getComparisonBySlug, getComparisons, getRelatedComparisons } from "@/data/comparisons";
 import { locales } from "@/i18n/config";
+import Navigation from "../../../components/Navigation";
+import Breadcrumb from "../../../components/Breadcrumb";
 
 interface ComparisonPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -149,6 +152,7 @@ function getComparisonJsonLd(locale: string, comparison: ReturnType<typeof getCo
 export default async function ComparisonPage({ params }: ComparisonPageProps) {
   const { locale, slug } = await params;
   const comparison = getComparisonBySlug(slug);
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
 
   if (!comparison) {
     notFound();
@@ -205,30 +209,20 @@ export default async function ComparisonPage({ params }: ComparisonPageProps) {
       />
 
       {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              href={getHomePath()}
-              className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-            >
-              <span aria-hidden="true">←</span> <span>{backToHome}</span>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("comparisons") },
+          { label: `${productAName} vs ${productBName}` },
+        ]}
+      />
 
       {/* Header */}
-      <section className="pt-28 pb-8 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-8 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-4">
             <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-sm font-semibold rounded-full">

@@ -349,5 +349,17 @@
     "categoriesTitle": "Relevante Kategorien",
     "ctaTitle": "Partnerschaft für {industry}",
     "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen und zu erfahren, wie wir Ihr {industry}-Geschäft mit Premium-indonesischen Landwirtschaftsprodukten unterstützen können."
+  },
+  "breadcrumbs": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "categories": "Kategorien",
+    "glossary": "Glossar",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "comparisons": "Vergleiche",
+    "hsCodeReference": "HS-Code-Referenz",
+    "exportTo": "Export nach {country}",
+    "for": "Für {industry}"
   }
 }

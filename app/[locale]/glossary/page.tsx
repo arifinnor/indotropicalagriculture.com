@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { getGlossaryTerms, getGlossaryCategories } from "@/data/glossary";
+import Navigation from "../../components/Navigation";
+import Breadcrumb from "../../components/Breadcrumb";
 
 interface GlossaryPageProps {
   params: Promise<{ locale: string }>;
@@ -128,6 +131,7 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
   const terms = getGlossaryTerms();
   const categories = getGlossaryCategories();
   const jsonLd = getGlossaryJsonLd(locale, terms);
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getTermPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
@@ -155,28 +159,19 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
       />
 
       {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <Link
-            href={getHomePath()}
-            className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            <span aria-hidden="true">←</span> <span>{backToHome}</span>
-          </Link>
-        </div>
-      </nav>
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("glossary") },
+        ]}
+      />
 
       {/* Header */}
-      <section className="pt-28 pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-800 text-sm font-semibold rounded-full mb-6">
             {pageTitle}

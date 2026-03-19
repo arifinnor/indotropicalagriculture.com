@@ -5,6 +5,8 @@ import Image from "next/image";
 import { getIndustryBySlug, industries } from "@/data/industries";
 import { locales } from "@/i18n/config";
 import { products } from "@/app/lib/products-data";
+import Navigation from "@/app/components/Navigation";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 interface IndustryPageProps {
   params: Promise<{ locale: string; industry: string }>;
@@ -97,6 +99,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
   const { locale, industry } = await params;
   const industryData = getIndustryBySlug(industry);
   const t = await getTranslations({ locale, namespace: "industry" });
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
 
   if (!industryData) {
     return (
@@ -113,6 +116,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
 
   const industryName = locale === "de" && industryData.nameDe ? industryData.nameDe : industryData.name;
   const jsonLd = getIndustryJsonLd(industryData, locale);
+  const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   // Filter products by relevant categories for this industry
   const relevantProducts = products.filter((product) =>
@@ -136,8 +140,20 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("for", { industry: industryName }) },
+        ]}
+      />
+
       {/* Hero Section */}
-      <section className="pt-28 pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
+      <section className="pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-6xl mb-6" role="img" aria-label={industryName}>
             {industryData.icon}

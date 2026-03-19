@@ -5,7 +5,7 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import CategoryProductsClient from "./CategoryProductsClient";
 import { getGlossaryTerms } from "@/data/glossary";
-import PageHeader from "@/app/components/PageHeader";
+import Navigation from "../../../components/Navigation";
 
 interface CategoryPageProps {
   params: Promise<{ locale: string; category: string }>;
@@ -208,7 +208,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <PageHeader backHref={getHomePath()} backLabel={locale === "en" ? "Back to Home" : "Zurück zur Startseite"} />
+      <Navigation />
 
       {/* Header */}
       <section className="pt-28 pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">

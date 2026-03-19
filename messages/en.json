@@ -347,5 +347,17 @@
     "categoriesTitle": "Relevant Categories",
     "ctaTitle": "Partner with Us for {industry}",
     "ctaSubtitle": "Contact us to discuss your specific requirements and learn how we can support your {industry} business with premium Indonesian agricultural products."
+  },
+  "breadcrumbs": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "glossary": "Glossary",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "comparisons": "Comparisons",
+    "hsCodeReference": "HS Code Reference",
+    "exportTo": "Export to {country}",
+    "for": "For {industry}"
   }
 }

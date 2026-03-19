@@ -1,6 +1,9 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { getBlogPosts, blogCategories } from "@/data/blog-posts";
+import Navigation from "../../components/Navigation";
+import Breadcrumb from "../../components/Breadcrumb";
 
 interface BlogPageProps {
   params: Promise<{ locale: string }>;
@@ -133,6 +136,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const { locale } = await params;
   const posts = getBlogPosts();
   const jsonLd = getBlogIndexJsonLd(locale);
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getBlogPostPath = (slug: string) => locale === "en" ? `/blog/${slug}` : `/${locale}/blog/${slug}`;
@@ -166,30 +170,19 @@ export default async function BlogPage({ params }: BlogPageProps) {
       />
 
       {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              href={getHomePath()}
-              className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-            >
-              <span aria-hidden="true">←</span> <span>{backToHome}</span>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("blog") },
+        ]}
+      />
 
       {/* Header */}
-      <section className="pt-28 pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-stone-900 mb-4">
             {blogTitle}

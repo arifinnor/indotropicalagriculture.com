@@ -5,6 +5,8 @@ import Image from "next/image";
 import { getDestinationBySlug, destinations } from "@/data/destinations";
 import { locales } from "@/i18n/config";
 import { products } from "@/app/lib/products-data";
+import Navigation from "@/app/components/Navigation";
+import Breadcrumb from "@/app/components/Breadcrumb";
 
 interface DestinationPageProps {
   params: Promise<{ locale: string; country: string }>;
@@ -97,6 +99,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   const { locale, country } = await params;
   const destination = getDestinationBySlug(country);
   const t = await getTranslations({ locale, namespace: "destination" });
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
 
   if (!destination) {
     return (
@@ -113,6 +116,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
 
   const countryName = locale === "de" && destination.nameDe ? destination.nameDe : destination.name;
   const jsonLd = getCountryJsonLd(destination, locale);
+  const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   // Filter products based on popular products for this country
   const popularProductSlugs = destination.popularProducts[locale as "en" | "de"] || [];
@@ -130,8 +134,20 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
+      {/* Navigation */}
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("exportTo", { country: countryName }) },
+        ]}
+      />
+
       {/* Hero Section */}
-      <section className="pt-28 pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
+      <section className="pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-6xl mb-6" role="img" aria-label={countryName}>
             {destination.flag}

@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { getBlogPostBySlug, getBlogPosts, getRelatedPosts } from "@/data/blog-posts";
 import { locales } from "@/i18n/config";
+import Navigation from "../../../components/Navigation";
 
 interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -209,36 +210,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       />
 
       {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <div className="flex items-center gap-4">
-            <Link
-              href={getBlogPath()}
-              className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-            >
-              {backToBlog}
-            </Link>
-            <Link
-              href={getHomePath()}
-              className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-            >
-              <span aria-hidden="true">←</span> <span>{backToHome}</span>
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Breadcrumb */}
-      <div className="pt-20 px-6 bg-stone-100">
+      <div className="pt-28 px-6 bg-stone-100">
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-stone-500" aria-label="Breadcrumb">
             <Link href={getHomePath()} className="hover:text-emerald-600">

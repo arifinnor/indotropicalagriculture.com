@@ -70,6 +70,13 @@ export default function Navigation() {
     return pathname;
   }, [pathname, locale]);
 
+  // Build correct href for hash-only links (e.g. #products)
+  // When not on the home page, prefix with the localized home path
+  const getHashHref = (hash: string) => {
+    if (pathWithoutLocale === "/") return hash;
+    return getLocalizedPath("/", locale) + hash;
+  };
+
   // Build locale-aware href for IntlLink
   const getLocaleHref = (targetLocale: string) => {
     const prefix = targetLocale === defaultLocale ? "" : `/${targetLocale}`;
@@ -88,13 +95,13 @@ export default function Navigation() {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) =>
             link.isButton ? (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={getHashHref(link.href)}
                 className="px-5 py-2.5 bg-emerald-600 text-white font-medium rounded-full hover:bg-emerald-700 shadow-md hover:scale-105 active:scale-100 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-transform duration-200"
               >
                 {link.label}
-              </a>
+              </Link>
             ) : link.isLocaleLink ? (
               <Link
                 key={link.href}
@@ -104,13 +111,13 @@ export default function Navigation() {
                 {link.label}
               </Link>
             ) : (
-              <a
+              <Link
                 key={link.href}
-                href={link.href}
+                href={getHashHref(link.href)}
                 className="text-stone-600 hover:text-emerald-600 focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 rounded-md transition-colors font-medium"
               >
                 {link.label}
-              </a>
+              </Link>
             )
           )}
 
@@ -171,14 +178,14 @@ export default function Navigation() {
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) =>
               link.isButton ? (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  href={getHashHref(link.href)}
                   className="px-5 py-3 bg-emerald-600 text-white font-medium rounded-xl hover:bg-emerald-700 shadow-md text-center focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ) : link.isLocaleLink ? (
                 <Link
                   key={link.href}
@@ -189,14 +196,14 @@ export default function Navigation() {
                   {link.label}
                 </Link>
               ) : (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  href={getHashHref(link.href)}
                   className="px-4 py-3 text-stone-700 hover:text-emerald-600 hover:bg-stone-100 rounded-lg focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-1 transition-colors font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               )
             )}
 

@@ -1,7 +1,8 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import FAQ from "../../components/FAQ";
-import PageHeader from "@/app/components/PageHeader";
+import Navigation from "../../components/Navigation";
+import Breadcrumb from "../../components/Breadcrumb";
 
 interface FAQPageProps {
   params: Promise<{ locale: string }>;
@@ -112,6 +113,7 @@ function getFAQJsonLd(locale: string, t: ReturnType<typeof getTranslations>) {
 export default async function FAQPage({ params }: FAQPageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "faq" });
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
   const jsonLd = getFAQJsonLd(locale, t);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
@@ -124,7 +126,16 @@ export default async function FAQPage({ params }: FAQPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <PageHeader backHref={getHomePath()} backLabel={locale === "en" ? "Back to Home" : "Zurück zur Startseite"} />
+      <Navigation />
+
+      {/* Breadcrumb */}
+      <Breadcrumb
+        locale={locale}
+        items={[
+          { label: bt("home"), href: getHomePath() },
+          { label: bt("faq") },
+        ]}
+      />
 
       <FAQ locale={locale} />
 
