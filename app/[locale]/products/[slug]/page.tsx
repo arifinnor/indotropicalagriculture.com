@@ -83,11 +83,6 @@ function ProductContent({ slug }: { slug: string }) {
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
-  // Use German description if locale is de and it's available
-  const description = locale === "de" && product.descriptionDe
-    ? product.descriptionDe
-    : product.description;
-
   const fullDescription = product.fullDescription;
   const specs = product.specifications.filter(spec => spec.label !== "Price");
 

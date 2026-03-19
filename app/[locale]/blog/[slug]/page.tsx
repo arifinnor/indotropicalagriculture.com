@@ -179,7 +179,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   // UI strings
   const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
   const backToBlog = locale === "en" ? "Back to Blog" : "Zurück zum Blog";
-  const categoryLabel = locale === "en" ? "Category" : "Kategorie";
   const readTime = locale === "en" ? "min read" : "Min. Lesezeit";
   const publishedOn = locale === "en" ? "Published" : "Veröffentlicht";
   const updatedOn = locale === "en" ? "Updated" : "Aktualisiert";

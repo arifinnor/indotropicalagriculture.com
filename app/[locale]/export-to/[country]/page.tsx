@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getDestinationBySlug, destinations } from "@/data/destinations";
 import { locales } from "@/i18n/config";
 import { products } from "@/app/lib/products-data";
@@ -73,7 +74,7 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data for Country Page
-function getCountryJsonLd(destination: any, locale: string) {
+function getCountryJsonLd(destination: ReturnType<typeof getDestinationBySlug>, locale: string) {
   const countryName = locale === "de" && destination.nameDe ? destination.nameDe : destination.name;
 
   return {
@@ -112,7 +113,6 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
 
   const countryName = locale === "de" && destination.nameDe ? destination.nameDe : destination.name;
   const jsonLd = getCountryJsonLd(destination, locale);
-  const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   // Filter products based on popular products for this country
   const popularProductSlugs = destination.popularProducts[locale as "en" | "de"] || [];
@@ -130,29 +130,8 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <Link
-            href={getHomePath()}
-            className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            <span aria-hidden="true">←</span> <span>Back to Home</span>
-          </Link>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
+      <section className="pt-28 pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-6xl mb-6" role="img" aria-label={countryName}>
             {destination.flag}
@@ -194,9 +173,11 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
                 className="group bg-stone-50 rounded-xl border border-stone-200 overflow-hidden hover:border-emerald-500 transition-all duration-300"
               >
                 <div className="aspect-square bg-stone-200 overflow-hidden">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

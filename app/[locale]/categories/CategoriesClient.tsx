@@ -34,7 +34,6 @@ const CATEGORY_ICONS: Record<string, string> = {
 };
 
 export default function CategoriesClient({ categories, locale }: CategoriesClientProps) {
-  const getCategoriesPath = () => locale === "en" ? "/categories" : `/${locale}/categories`;
   const getCategoryPath = (slug: string) => locale === "en" ? `/categories/${slug}` : `/${locale}/categories/${slug}`;
 
   return (

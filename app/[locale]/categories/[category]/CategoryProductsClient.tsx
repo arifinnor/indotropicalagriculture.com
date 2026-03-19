@@ -7,13 +7,11 @@ import type { Product } from "../../../lib/products-data";
 
 interface CategoryProductsClientProps {
   products: Product[];
-  categoryName: string;
   locale: string;
 }
 
 export default function CategoryProductsClient({
   products,
-  categoryName,
   locale,
 }: CategoryProductsClientProps) {
   const [imageErrors, setImageErrors] = useState<Set<string>>(new Set());

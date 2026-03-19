@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getBlogPosts, blogCategories } from "@/data/blog-posts";
-import { locales } from "@/i18n/config";
 
 interface BlogPageProps {
   params: Promise<{ locale: string }>;
@@ -147,7 +146,6 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const readMore = locale === "en" ? "Read Article" : "Artikel lesen";
   const readTime = locale === "en" ? "min read" : "Min. Lesezeit";
   const publishedOn = locale === "en" ? "Published" : "Veröffentlicht";
-  const categoryLabel = locale === "en" ? "Category" : "Kategorie";
   const recentArticles = locale === "en" ? "Recent Articles" : "Aktuelle Artikel";
   const allCategories = locale === "en" ? "All Categories" : "Alle Kategorien";
 

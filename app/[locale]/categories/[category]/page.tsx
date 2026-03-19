@@ -5,6 +5,7 @@ import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import CategoryProductsClient from "./CategoryProductsClient";
 import { getGlossaryTerms } from "@/data/glossary";
+import PageHeader from "@/app/components/PageHeader";
 
 interface CategoryPageProps {
   params: Promise<{ locale: string; category: string }>;
@@ -207,26 +208,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <Link
-            href={getHomePath()}
-            className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            <span aria-hidden="true">←</span> <span>{locale === "en" ? "Back to Home" : "Zurück zur Startseite"}</span>
-          </Link>
-        </div>
-      </nav>
+      <PageHeader backHref={getHomePath()} backLabel={locale === "en" ? "Back to Home" : "Zurück zur Startseite"} />
 
       {/* Header */}
       <section className="pt-28 pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">

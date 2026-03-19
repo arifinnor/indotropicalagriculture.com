@@ -179,8 +179,6 @@ export default async function ComparisonPage({ params }: ComparisonPageProps) {
   const comparisonLabel = locale === "en" ? "Product Comparison" : "Produktvergleich";
   const specificationsLabel = locale === "en" ? "Specifications" : "Spezifikationen";
   const keyDifferenceLabel = locale === "en" ? "Key Difference" : "Hauptunterschied";
-  const chooseALabel = locale === "en" ? "Choose This When:" : "Wählen Sie dies, wenn:";
-  const chooseBLabel = locale === "en" ? "Choose This When:" : "Wählen Sie dies, wenn:";
   const conclusionLabel = locale === "en" ? "Conclusion" : "Fazit";
   const relatedComparisonsLabel = locale === "en" ? "Related Comparisons" : "Verwandte Vergleiche";
   const readMore = locale === "en" ? "Read Comparison" : "Vergleich lesen";

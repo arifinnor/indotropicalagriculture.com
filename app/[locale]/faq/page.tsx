@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import Link from "next/link";
 import FAQ from "../../components/FAQ";
+import PageHeader from "@/app/components/PageHeader";
 
 interface FAQPageProps {
   params: Promise<{ locale: string }>;
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
 }
 
 // JSON-LD FAQ Schema Generator with Breadcrumb
-function getFAQJsonLd(locale: string, t: any) {
+function getFAQJsonLd(locale: string, t: ReturnType<typeof getTranslations>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com/en"
     : "https://indotropicalagriculture.com/de";
@@ -124,26 +124,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <Link
-            href={getHomePath()}
-            className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            <span aria-hidden="true">←</span> <span>Back to Home</span>
-          </Link>
-        </div>
-      </nav>
+      <PageHeader backHref={getHomePath()} backLabel={locale === "en" ? "Back to Home" : "Zurück zur Startseite"} />
 
       <FAQ locale={locale} />
 

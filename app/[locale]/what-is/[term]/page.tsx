@@ -235,18 +235,8 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
       </nav>
 
       {/* Header */}
-      <section className="pt-28 pb-8 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-8 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
         <div className="max-w-4xl mx-auto">
-          <Link
-            href={getGlossaryPath()}
-            className="inline-flex items-center text-sm text-emerald-600 hover:text-emerald-700 font-medium mb-6"
-          >
-            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            {backToGlossary}
-          </Link>
-
           <div className="flex flex-wrap items-center gap-3 mb-4">
             <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-xs font-semibold rounded-full">
               {categoryLabel}: {category}

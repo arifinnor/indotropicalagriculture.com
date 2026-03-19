@@ -1,10 +1,10 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { getIndustryBySlug, industries } from "@/data/industries";
 import { locales } from "@/i18n/config";
 import { products } from "@/app/lib/products-data";
-import { getCategories } from "@/app/lib/products-data";
 
 interface IndustryPageProps {
   params: Promise<{ locale: string; industry: string }>;
@@ -74,7 +74,7 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data for Industry Page
-function getIndustryJsonLd(industry: any, locale: string) {
+function getIndustryJsonLd(industry: ReturnType<typeof getIndustryBySlug>, locale: string) {
   const industryName = locale === "de" && industry.nameDe ? industry.nameDe : industry.name;
 
   return {
@@ -113,10 +113,6 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
 
   const industryName = locale === "de" && industryData.nameDe ? industryData.nameDe : industryData.name;
   const jsonLd = getIndustryJsonLd(industryData, locale);
-  const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
-
-  // Get all categories
-  const allCategories = getCategories();
 
   // Filter products by relevant categories for this industry
   const relevantProducts = products.filter((product) =>
@@ -140,29 +136,8 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Navigation */}
-      <nav
-        aria-label="Main navigation"
-        className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-stone-200"
-      >
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link
-            href={getHomePath()}
-            className="text-xl font-bold text-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            Indo Tropical Agriculture
-          </Link>
-          <Link
-            href={getHomePath()}
-            className="text-sm text-stone-600 hover:text-emerald-600 font-medium focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 rounded"
-          >
-            <span aria-hidden="true">←</span> <span>Back to Home</span>
-          </Link>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
+      <section className="pt-28 pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-6xl mb-6" role="img" aria-label={industryName}>
             {industryData.icon}
@@ -183,7 +158,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
             {t("benefitsTitle")}
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {industryData.benefits.map((benefit: any, index: number) => (
+            {industryData.benefits.map((benefit: Record<string, string>, index: number) => (
               <div
                 key={index}
                 className="bg-white rounded-xl shadow-md p-6 border border-stone-200"
@@ -230,9 +205,11 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
                 className="group bg-stone-50 rounded-xl border border-stone-200 overflow-hidden hover:border-emerald-500 transition-all duration-300"
               >
                 <div className="aspect-square bg-stone-200 overflow-hidden">
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>

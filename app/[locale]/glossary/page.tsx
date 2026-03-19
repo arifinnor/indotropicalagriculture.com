@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { getGlossaryTerms, getGlossaryCategories } from "@/data/glossary";
-import { getTranslations } from "next-intl/server";
 
 interface GlossaryPageProps {
   params: Promise<{ locale: string }>;
@@ -131,7 +130,6 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
   const jsonLd = getGlossaryJsonLd(locale, terms);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
-  const getGlossaryPath = () => locale === "en" ? "/glossary" : `/${locale}/glossary`;
   const getTermPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
 
   const pageTitle = locale === "en" ? "Glossary" : "Glossar";

@@ -1,6 +1,5 @@
 import { MetadataRoute } from "next";
 import { products, getCategories } from "./lib/products-data";
-import { locales } from "@/i18n/config";
 import { destinations } from "@/data/destinations";
 import { industries } from "@/data/industries";
 import { getGlossaryTerms } from "@/data/glossary";

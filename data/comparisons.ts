@@ -909,7 +909,8 @@ export function getComparisonById(id: string): ProductComparison | undefined {
   return comparisons.find((c) => c.id === id);
 }
 
-export function getRelatedComparisons(currentId: string, locale: string = "en", limit: number = 3): ProductComparison[] {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function getRelatedComparisons(currentId: string, _locale = "en", limit: number = 3): ProductComparison[] {
   return comparisons
     .filter((c) => c.id !== currentId)
     .slice(0, limit);

@@ -3,11 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
-interface FAQProps {
-  locale?: string;
-}
-
-export default function FAQ({ locale }: FAQProps) {
+export default function FAQ() {
   const t = useTranslations("faq");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 

@@ -59,7 +59,7 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data generator for category index
-function getCategoryIndexJsonLd(locale: string, categories: Array<{name: string; slug: string; productCount: number}>) {
+function getCategoryIndexJsonLd(locale: string) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com"
     : "https://indotropicalagriculture.com/de";
@@ -123,7 +123,7 @@ export default async function CategoriesPage({ params }: CategoriesPageProps) {
     };
   });
 
-  const jsonLd = getCategoryIndexJsonLd(locale, categoryData);
+  const jsonLd = getCategoryIndexJsonLd(locale);
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   return (
