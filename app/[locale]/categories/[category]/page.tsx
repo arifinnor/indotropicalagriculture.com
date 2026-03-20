@@ -205,7 +205,6 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
   const jsonLd = getCategoryJsonLd(locale, categorySlug, categoryName, products, bt);
-  const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getGlossaryPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
 
   return (

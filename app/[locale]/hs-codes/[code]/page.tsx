@@ -183,7 +183,6 @@ export default async function HSCodePage({ params }: HSCodePageProps) {
   const regulations = locale === "en" ? hsCode.regulations.en : hsCode.regulations.de;
 
   // UI strings
-  const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
   const hsCodeLabel = locale === "en" ? "HS Code" : "HS-Code";
   const productsLabel = locale === "en" ? "Products" : "Produkte";
   const structureLabel = locale === "en" ? "HS Code Structure" : "HS-Code-Struktur";

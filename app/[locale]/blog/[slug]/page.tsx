@@ -188,8 +188,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const tags = locale === "en" ? post.tags.en : post.tags.de;
 
   // UI strings
-  const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
-  const backToBlog = locale === "en" ? "Back to Blog" : "Zurück zum Blog";
   const readTime = locale === "en" ? "min read" : "Min. Lesezeit";
   const publishedOn = locale === "en" ? "Published" : "Veröffentlicht";
   const updatedOn = locale === "en" ? "Updated" : "Aktualisiert";

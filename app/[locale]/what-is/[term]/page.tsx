@@ -187,8 +187,6 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
   const category = term.category;
 
   // UI strings
-  const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
-  const backToGlossary = locale === "en" ? "Back to Glossary" : "Zurück zum Glossar";
   const categoryLabel = locale === "en" ? "Category" : "Kategorie";
   const lastUpdated = locale === "en" ? "Last updated" : "Zuletzt aktualisiert";
   const relatedTermsLabel = locale === "en" ? "Related Terms" : "Verwandte Begriffe";

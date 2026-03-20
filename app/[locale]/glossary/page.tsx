@@ -149,7 +149,6 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
   const pageDescription = locale === "en"
     ? "Our comprehensive glossary explains the key terms, concepts, and standards related to exporting agricultural products from Indonesia. Whether you're a buyer, importer, or industry professional, these resources will help you navigate the Indonesian export market with confidence."
     : "Unser umfassendes Glossar erklärt die wichtigsten Begriffe, Konzepte und Standards im Zusammenhang mit dem Export von Landwirtschaftsprodukten aus Indonesien. Ob Käufer, Importeur oder Branchenprofi, diese Ressourcen helfen Ihnen, sich sicher auf dem indonesischen Exportmarkt zurechtzufinden.";
-  const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
   const browseAll = locale === "en" ? "Browse All Terms" : "Alle Begriffe durchsuchen";
   const readMore = locale === "en" ? "Read More" : "Mehr lesen";
   const termsCount = locale === "en"

@@ -148,7 +148,6 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const getBlogPostPath = (slug: string) => locale === "en" ? `/blog/${slug}` : `/${locale}/blog/${slug}`;
 
   // UI strings
-  const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
   const blogTitle = locale === "en" ? "Blog & Resources" : "Blog & Ressourcen";
   const blogSubtitle = locale === "en"
     ? "Insights and guidance for B2B spice importers sourcing from Indonesia"

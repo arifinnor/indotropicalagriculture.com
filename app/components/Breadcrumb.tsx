@@ -7,10 +7,9 @@ export interface BreadcrumbItem {
 
 export interface BreadcrumbProps {
   items: BreadcrumbItem[];
-  locale: string;
 }
 
-export default function Breadcrumb({ items, locale }: BreadcrumbProps) {
+export default function Breadcrumb({ items }: BreadcrumbProps) {
   if (items.length === 0) return null;
 
   return (

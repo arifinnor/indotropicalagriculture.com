@@ -185,7 +185,6 @@ export default async function ComparisonPage({ params }: ComparisonPageProps) {
   const conclusion = locale === "en" ? comparison.conclusion.en : comparison.conclusion.de;
 
   // UI strings
-  const backToHome = locale === "en" ? "Back to Home" : "Zurück zur Startseite";
   const comparisonLabel = locale === "en" ? "Product Comparison" : "Produktvergleich";
   const specificationsLabel = locale === "en" ? "Specifications" : "Spezifikationen";
   const keyDifferenceLabel = locale === "en" ? "Key Difference" : "Hauptunterschied";
