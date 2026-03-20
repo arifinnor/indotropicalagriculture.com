@@ -1,7 +1,8 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const RECIPIENT = "exports@indotropicalagriculture.com";
+const RECIPIENT = process.env.RESEND_TO_EMAIL ?? "exports@indotropicalagriculture.com";
+const SENDER = process.env.RESEND_FROM_EMAIL ?? "Indo Tropical Agriculture <onboarding@resend.dev>";
 
 export async function POST(request: Request) {
   if (!process.env.RESEND_API_KEY) {
@@ -14,7 +15,8 @@ export async function POST(request: Request) {
 
   const resend = new Resend(process.env.RESEND_API_KEY);
   const body = await request.json();
-  const { name, email, company, product, message } = body;
+  const { name, company, product, message } = body;
+  const email = typeof body.email === "string" ? body.email.trim() : body.email;
 
   if (!name || !email || !product || !message) {
     return NextResponse.json(
@@ -23,8 +25,16 @@ export async function POST(request: Request) {
     );
   }
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return NextResponse.json(
+      { error: "Invalid email address" },
+      { status: 400 }
+    );
+  }
+
   const { error } = await resend.emails.send({
-    from: "Indo Tropical Agriculture <onboarding@resend.dev>",
+    from: SENDER,
     to: RECIPIENT,
     replyTo: email,
     subject: `New Quote Request: ${product} — ${name}`,
