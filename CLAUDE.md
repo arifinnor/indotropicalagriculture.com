@@ -43,11 +43,18 @@ app/
 │   ├── faq/page.tsx       # FAQ page
 │   ├── export-to/[country]/page.tsx    # Export destination pages
 │   ├── for/[industry]/page.tsx         # Industry-specific pages
-│   └── what-is/[term]/page.tsx         # Educational term pages
+│   ├── what-is/[term]/page.tsx         # Educational term pages
+│   ├── hs-codes/page.tsx              # HS code reference pages
+│   ├── compare/page.tsx               # Product comparison pages
+│   └── blog/                          # Blog content
+├── api/
+│   └── contact/route.ts   # Contact form email handler (Resend)
 ├── components/            # Shared components
 │   ├── Navigation.tsx     # "use client" - mobile menu, locale switcher
 │   ├── Hero.tsx, Products.tsx, About.tsx, etc.
 │   └── GoogleAnalytics.tsx
+├── hooks/
+│   └── useScrollReveal.ts # Scroll-triggered reveal animations
 ├── lib/
 │   ├── i18n-utils.ts      # i18n utilities
 │   └── products-data.ts   # Product data helpers
@@ -101,6 +108,7 @@ Copy `.env.example` to `.env.local`:
 ```bash
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX              # Google Analytics 4 Measurement ID
 GOOGLE_SITE_VERIFICATION=YOUR_VERIFICATION_CODE  # Search Console verification
+RESEND_API_KEY=re_XXXXXXXXXX               # Resend API key for contact form emails
 ```
 
 ## Key Architecture Details
