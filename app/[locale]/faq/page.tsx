@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import FAQ from "../../components/FAQ";
+import Link from "next/link";
+import FAQClient from "./FAQClient";
 import Navigation from "../../components/Navigation";
 import Breadcrumb from "../../components/Breadcrumb";
 
@@ -58,6 +59,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
 }
 
 // JSON-LD FAQ Schema Generator with Breadcrumb
+// Note: dangerouslySetInnerHTML is used with trusted, server-side translation data only (not user input)
 function getFAQJsonLd(locale: string, t: Awaited<ReturnType<typeof getTranslations>>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com/en"
@@ -127,7 +129,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
 
   return (
     <main id="main-content" className="min-h-dvh bg-stone-100">
-      {/* JSON-LD Structured Data */}
+      {/* JSON-LD Structured Data (trusted server-side translation data only) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -135,16 +137,61 @@ export default async function FAQPage({ params }: FAQPageProps) {
 
       <Navigation />
 
-      {/* Breadcrumb */}
-      <Breadcrumb
-        locale={locale}
-        items={[
-          { label: bt("home"), href: getHomePath() },
-          { label: bt("faq") },
-        ]}
-      />
+      {/* Breadcrumb + Header */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
+        <Breadcrumb
+          locale={locale}
+          items={[
+            { label: bt("home"), href: getHomePath() },
+            { label: bt("faq") },
+          ]}
+        />
 
-      <FAQ />
+        <section className="pb-12 px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4 text-balance">
+              {t("title")}
+            </h1>
+            <p className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty">
+              {t("subtitle")}
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <FAQClient />
+
+      {/* CTA */}
+      <section className="py-16 px-6 bg-emerald-600">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
+            {t("ctaHeading")}
+          </h2>
+          <p className="text-emerald-100 mb-6 text-lg">
+            {t("ctaDescription")}
+          </p>
+          <Link
+            href={locale === "en" ? "/#contact" : `/${locale}/#contact`}
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-700 font-semibold rounded-full hover:bg-emerald-50 transition-colors"
+          >
+            {t("ctaButton")}
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 8l4 4m0 0l-4 4m4-4H3"
+              />
+            </svg>
+          </Link>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-stone-900 text-stone-100 py-12 px-6">

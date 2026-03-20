@@ -164,7 +164,7 @@ function ProductContent({ slug }: { slug: string }) {
   };
 
   return (
-    <main id="main-content" lang={locale} className="min-h-dvh bg-gradient-to-b from-stone-50 via-white to-stone-50">
+    <main id="main-content" lang={locale} className="min-h-dvh bg-stone-100">
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -365,24 +365,11 @@ function ProductContent({ slug }: { slug: string }) {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-stone-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-stone-500">
-              &copy; {new Date().getFullYear()} Indo Tropical Agriculture. All rights reserved.
-            </p>
-            <div className="flex items-center gap-6 text-sm">
-              <Link href={getHomePath()} className="text-stone-500 hover:text-emerald-600 transition-colors">
-                {locale === "en" ? "Home" : "Startseite"}
-              </Link>
-              <Link href={getProductsPath()} className="text-stone-500 hover:text-emerald-600 transition-colors">
-                {locale === "en" ? "Products" : "Produkte"}
-              </Link>
-              <Link href={locale === "en" ? "/#contact" : `/${locale}/#contact`} className="text-stone-500 hover:text-emerald-600 transition-colors">
-                {locale === "en" ? "Contact" : "Kontakt"}
-              </Link>
-            </div>
-          </div>
+      <footer className="bg-stone-900 text-stone-100 py-12 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <p className="text-stone-400 text-sm">
+            &copy; {new Date().getFullYear()} Indo Tropical Agriculture. All rights reserved.
+          </p>
         </div>
       </footer>
     </main>

@@ -172,7 +172,8 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       {/* Navigation */}
       <Navigation />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb + Hero */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
         locale={locale}
         items={[
@@ -181,8 +182,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
         ]}
       />
 
-      {/* Hero Section */}
-      <section className="pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
+      <section className="pb-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-6xl mb-6" role="img" aria-label={industryName}>
             {industryData.icon}
@@ -195,6 +195,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
           </p>
         </div>
       </section>
+      </div>
 
       {/* Benefits */}
       <section className="py-16 px-4 sm:px-6">
@@ -298,19 +299,22 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6 bg-emerald-600">
-        <div className="max-w-4xl mx-auto text-center text-white">
-          <h2 className="text-3xl font-bold mb-6">
+      <section className="py-16 px-6 bg-emerald-600">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">
             {t("ctaTitle", { industry: industryName })}
           </h2>
-          <p className="text-lg opacity-90 mb-8">
-            {t("ctaSubtitle")}
+          <p className="text-emerald-100 mb-6 text-lg">
+            {t("ctaSubtitle", { industry: industryName })}
           </p>
           <Link
             href={`mailto:exports@indotropicalagriculture.com?subject=${encodeURIComponent(industryData.ctaText[locale as "en" | "de"])}`}
-            className="inline-block bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-stone-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600"
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-700 font-semibold rounded-full hover:bg-emerald-50 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600"
           >
             {industryData.ctaText[locale as "en" | "de"]}
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </Link>
         </div>
       </section>

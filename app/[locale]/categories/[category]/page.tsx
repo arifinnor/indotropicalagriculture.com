@@ -219,7 +219,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       <Navigation />
 
       {/* Header */}
-      <section className="pt-28 pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pt-28 pb-12 px-6 bg-gradient-to-b from-emerald-50/60 to-stone-100">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4 text-balance">
             {categoryName}

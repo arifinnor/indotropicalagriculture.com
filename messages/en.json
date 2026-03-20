@@ -274,7 +274,10 @@
         "wholesale beans",
         "indonesian legumes"
       ]
-    }
+    },
+    "ctaHeading": "Looking for something specific?",
+    "ctaDescription": "Can't find the right category? Browse our full product catalog or contact us to discuss your requirements.",
+    "ctaButton": "Contact Us"
   },
   "common": {
     "skipToContent": "Skip to main content",
@@ -320,7 +323,13 @@
         "question": "Where do you source your products?",
         "answer": "We source our products directly from farmers across Indonesia's main agricultural regions including Sumatra, Java, Kalimantan, Sulawesi, and Papua. By working directly with farmers, we ensure fair trade practices, traceability, and consistent quality. Our long-term partnerships with local farming communities allow us to secure reliable supplies throughout the year."
       }
-    }
+    },
+    "searchPlaceholder": "Search questions...",
+    "showingQuestions": "Showing {count} of {total} questions",
+    "noResults": "No questions found. Try a different search term.",
+    "ctaHeading": "Still have questions?",
+    "ctaDescription": "Our team is here to help. Contact us directly and we'll get back to you within 24 hours.",
+    "ctaButton": "Contact Us"
   }
 ,
   "destination": {
@@ -352,7 +361,14 @@
   "productsPage": {
     "heading": "Our Products",
     "subtitle": "Premium Indonesian agricultural products sourced directly from farmers and processed to meet international quality standards.",
-    "browseByCategory": "Browse by Category"
+    "browseByCategory": "Browse by Category",
+    "searchPlaceholder": "Search products...",
+    "showingProducts": "Showing {count} of {total} products",
+    "noResults": "No products found. Try a different search term.",
+    "viewDetails": "View Details",
+    "ctaHeading": "Can't Find What You're Looking For?",
+    "ctaDescription": "We offer many more products beyond our catalog. Contact us to discuss your specific requirements.",
+    "ctaButton": "Contact Us"
   },
   "breadcrumbs": {
     "home": "Home",

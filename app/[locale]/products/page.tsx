@@ -155,7 +155,8 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
       {/* Navigation */}
       <Navigation />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb + Header */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
         locale={locale}
         items={[
@@ -164,8 +165,7 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
         ]}
       />
 
-      {/* Header */}
-      <section className="pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-12 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4 text-balance">
             {pt("heading")}
@@ -187,6 +187,7 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
           </Link>
         </div>
       </section>
+      </div>
 
       <ProductsClient products={products} locale={locale} />
 
@@ -194,22 +195,22 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
       <section className="py-16 px-6 bg-emerald-600">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Can&apos;t Find What You&apos;re Looking For?
+            {pt("ctaHeading")}
           </h2>
           <p className="text-emerald-100 mb-6 text-lg">
-            We offer many more products beyond our catalog. Contact us to discuss your
-            specific requirements.
+            {pt("ctaDescription")}
           </p>
           <Link
             href={locale === "en" ? "/#contact" : `/${locale}/#contact`}
             className="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-700 font-semibold rounded-full hover:bg-emerald-50 transition-colors"
           >
-            Contact Us
+            {pt("ctaButton")}
             <svg
               className="w-4 h-4"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"

@@ -104,7 +104,7 @@ html {
   .animate-scale-in,
   .animate-status-pulse {
     animation: none;
-    opacity: 1;
+    opacity: 1 !important;
     transform: none;
   }
 

@@ -222,8 +222,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Navigation */}
       <Navigation />
 
-      {/* Breadcrumb */}
-      <div className="pt-28 px-6 bg-stone-100">
+      {/* Breadcrumb + Header */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
+      <div className="pt-28 px-6">
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-stone-500" aria-label="Breadcrumb">
             <Link href={getHomePath()} className="hover:text-emerald-600">
@@ -239,8 +240,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </div>
 
-      {/* Header */}
-      <article className="py-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <article className="py-12 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-wrap items-center gap-3 mb-6">
             <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-sm font-semibold rounded-full">
@@ -283,6 +283,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         </div>
       </article>
+      </div>
 
       {/* Content */}
       <article className="py-12 px-6 bg-white">

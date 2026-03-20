@@ -211,7 +211,8 @@ export default async function HSCodePage({ params }: HSCodePageProps) {
       {/* Navigation */}
       <Navigation />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb + Header */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
         locale={locale}
         items={[
@@ -220,8 +221,7 @@ export default async function HSCodePage({ params }: HSCodePageProps) {
         ]}
       />
 
-      {/* Header */}
-      <section className="pb-8 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-8 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-4">
             <span className="inline-block px-3 py-1 bg-emerald-100 text-emerald-800 text-sm font-semibold rounded-full">
@@ -240,6 +240,7 @@ export default async function HSCodePage({ params }: HSCodePageProps) {
           </div>
         </div>
       </section>
+      </div>
 
       {/* Content Sections */}
       <article className="py-12 px-6">

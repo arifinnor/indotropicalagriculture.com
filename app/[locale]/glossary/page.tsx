@@ -167,7 +167,8 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
       {/* Navigation */}
       <Navigation />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb + Header */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
         locale={locale}
         items={[
@@ -176,8 +177,7 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
         ]}
       />
 
-      {/* Header */}
-      <section className="pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
+      <section className="pb-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-800 text-sm font-semibold rounded-full mb-6">
             {pageTitle}
@@ -196,6 +196,7 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
           </p>
         </div>
       </section>
+      </div>
 
       {/* Glossary Terms by Category */}
       <section className="py-12 px-6">

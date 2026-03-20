@@ -166,7 +166,8 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
       {/* Navigation */}
       <Navigation />
 
-      {/* Breadcrumb */}
+      {/* Breadcrumb + Hero */}
+      <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
         locale={locale}
         items={[
@@ -175,8 +176,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
         ]}
       />
 
-      {/* Hero Section */}
-      <section className="pb-16 px-4 sm:px-6 bg-gradient-to-b from-emerald-50 to-stone-100">
+      <section className="pb-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto text-center">
           <div className="text-6xl mb-6" role="img" aria-label={countryName}>
             {destination.flag}
@@ -189,6 +189,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           </p>
         </div>
       </section>
+      </div>
 
       {/* Import Regulations */}
       <section className="py-16 px-4 sm:px-6">
@@ -302,19 +303,22 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 sm:px-6">
+      <section className="py-16 px-6 bg-emerald-600">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-stone-900 mb-6">
+          <h2 className="text-3xl font-bold text-white mb-4">
             {t("ctaTitle", { country: countryName })}
           </h2>
-          <p className="text-lg text-stone-600 mb-8">
+          <p className="text-emerald-100 mb-6 text-lg">
             {t("ctaSubtitle", { country: countryName })}
           </p>
           <Link
-            href={`mailto:exports@indotropicalagriculture.com?subject=Export to ${countryName}`}
-            className="inline-block bg-emerald-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-emerald-700 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+            href={locale === "en" ? "/#contact" : `/${locale}/#contact`}
+            className="inline-flex items-center gap-2 px-8 py-3 bg-white text-emerald-700 font-semibold rounded-full hover:bg-emerald-50 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600"
           >
             {t("ctaButton")}
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </Link>
         </div>
       </section>

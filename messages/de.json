@@ -276,7 +276,10 @@
         "bohnen großhandel",
         "indonesische hülsenfrüchte"
       ]
-    }
+    },
+    "ctaHeading": "Suchen Sie etwas Bestimmtes?",
+    "ctaDescription": "Können Sie die richtige Kategorie nicht finden? Durchsuchen Sie unseren vollständigen Produktkatalog oder kontaktieren Sie uns.",
+    "ctaButton": "Kontaktieren Sie uns"
   },
   "common": {
     "skipToContent": "Zum Hauptinhalt springen",
@@ -322,7 +325,13 @@
         "question": "Wo beziehen Sie Ihre Produkte?",
         "answer": "Wir beziehen unsere Produkte direkt von Bauern in ganz Indonesiens wichtigsten landwirtschaftlichen Regionen einschließlich Sumatra, Java, Kalimantan, Sulawesi und Papua. Durch die direkte Zusammenarbeit mit Bauern stellen wir faire Handelspraktiken, Rückverfolgbarkeit und konstante Qualität sicher. Unsere langfristigen Partnerschaften mit lokalen landwirtschaftlichen Gemeinschaften ermöglichen es uns, das ganze Jahr über zuverlässige Lieferungen zu sichern."
       }
-    }
+    },
+    "searchPlaceholder": "Fragen durchsuchen...",
+    "showingQuestions": "{count} von {total} Fragen",
+    "noResults": "Keine Fragen gefunden. Versuchen Sie einen anderen Suchbegriff.",
+    "ctaHeading": "Noch Fragen?",
+    "ctaDescription": "Unser Team hilft Ihnen gerne weiter. Kontaktieren Sie uns direkt und wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+    "ctaButton": "Kontaktieren Sie uns"
   }
 ,
   "destination": {
@@ -354,7 +363,14 @@
   "productsPage": {
     "heading": "Unsere Produkte",
     "subtitle": "Hochwertige indonesische Agrarprodukte direkt von Landwirten bezogen und nach internationalen Qualitätsstandards verarbeitet.",
-    "browseByCategory": "Nach Kategorie durchsuchen"
+    "browseByCategory": "Nach Kategorie durchsuchen",
+    "searchPlaceholder": "Produkte suchen...",
+    "showingProducts": "{count} von {total} Produkten",
+    "noResults": "Keine Produkte gefunden. Versuchen Sie einen anderen Suchbegriff.",
+    "viewDetails": "Details anzeigen",
+    "ctaHeading": "Nicht gefunden, was Sie suchen?",
+    "ctaDescription": "Wir bieten viele weitere Produkte über unseren Katalog hinaus an. Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen.",
+    "ctaButton": "Kontaktieren Sie uns"
   },
   "breadcrumbs": {
     "home": "Startseite",
