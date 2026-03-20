@@ -175,7 +175,6 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
       {/* Breadcrumb + Hero */}
       <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
-        locale={locale}
         items={[
           { label: bt("home"), href: getHomePath() },
           { label: bt("for", { industry: industryName }) },

@@ -149,7 +149,6 @@ export default async function CategoriesPage({ params }: CategoriesPageProps) {
       {/* Breadcrumb + Header */}
       <div className="bg-gradient-to-b from-emerald-50/60 to-stone-100">
       <Breadcrumb
-        locale={locale}
         items={[
           { label: bt("home"), href: getHomePath() },
           { label: bt("categories") },
