@@ -49,6 +49,14 @@ export async function generateMetadata({
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: locale === "en"
+        ? "Products | Indo Tropical Agriculture"
+        : "Produkte | Indo Tropical Agriculture",
+      description: t("description"),
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -60,7 +68,7 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data generator
-function getProductCatalogJsonLd(locale: string, products: ReturnType<typeof getAllProducts>) {
+function getProductCatalogJsonLd(locale: string, products: ReturnType<typeof getAllProducts>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com"
     : "https://indotropicalagriculture.com/de";
@@ -106,6 +114,23 @@ function getProductCatalogJsonLd(locale: string, products: ReturnType<typeof get
           },
         })),
       },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: bt("home"),
+            item: baseUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: bt("products"),
+            item: `${baseUrl}/products`,
+          },
+        ],
+      },
     ],
   };
 }
@@ -113,8 +138,9 @@ function getProductCatalogJsonLd(locale: string, products: ReturnType<typeof get
 export default async function ProductsPage({ params }: ProductsPageProps) {
   const { locale } = await params;
   const products = getAllProducts();
-  const jsonLd = getProductCatalogJsonLd(locale, products);
   const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
+  const pt = await getTranslations({ locale, namespace: "productsPage" });
+  const jsonLd = getProductCatalogJsonLd(locale, products, bt);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
@@ -142,11 +168,10 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
       <section className="pb-12 px-6 bg-gradient-to-b from-emerald-50 to-stone-50">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-stone-900 mb-4 text-balance">
-            Our Products
+            {pt("heading")}
           </h1>
           <p className="text-lg md:text-xl text-stone-600 max-w-2xl mx-auto text-pretty mb-6">
-            Premium Indonesian agricultural products sourced directly from farmers
-            and processed to meet international quality standards.
+            {pt("subtitle")}
           </p>
           <Link
             href={locale === "en" ? "/categories" : `/${locale}/categories`}
@@ -155,7 +180,7 @@ export default async function ProductsPage({ params }: ProductsPageProps) {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
             </svg>
-            {locale === "en" ? "Browse by Category" : "Nach Kategorie durchsuchen"}
+            {pt("browseByCategory")}
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>

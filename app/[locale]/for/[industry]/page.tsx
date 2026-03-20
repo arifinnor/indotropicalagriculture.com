@@ -65,6 +65,12 @@ export async function generateMetadata({
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metaTitle", { industry: industryName }),
+      description: t("metaDescription", { industry: industryName }),
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -76,22 +82,45 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data for Industry Page
-function getIndustryJsonLd(industry: ReturnType<typeof getIndustryBySlug>, locale: string) {
+function getIndustryJsonLd(industry: NonNullable<ReturnType<typeof getIndustryBySlug>>, locale: string, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const industryName = locale === "de" && industry.nameDe ? industry.nameDe : industry.name;
+  const baseUrl = locale === "en"
+    ? "https://indotropicalagriculture.com"
+    : "https://indotropicalagriculture.com/de";
 
   return {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: `For ${industryName} - Indo Tropical Agriculture`,
-    description: industry.description?.[locale] || industry.description?.en || "",
-    about: {
-      "@type": "Industry",
-      name: industryName,
-    },
-    audience: {
-      "@type": "Audience",
-      audienceType: industryName + " businesses and companies",
-    },
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: `For ${industryName} - Indo Tropical Agriculture`,
+        description: industry.description[locale as "en" | "de"],
+        about: {
+          "@type": "Industry",
+          name: industryName,
+        },
+        audience: {
+          "@type": "Audience",
+          audienceType: industryName + " businesses and companies",
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: bt("home"),
+            item: baseUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: bt("for", { industry: industryName }),
+          },
+        ],
+      },
+    ],
   };
 }
 
@@ -115,7 +144,7 @@ export default async function IndustryPage({ params }: IndustryPageProps) {
   }
 
   const industryName = locale === "de" && industryData.nameDe ? industryData.nameDe : industryData.name;
-  const jsonLd = getIndustryJsonLd(industryData, locale);
+  const jsonLd = getIndustryJsonLd(industryData, locale, bt);
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   // Filter products by relevant categories for this industry

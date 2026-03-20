@@ -286,6 +286,7 @@
     "subtitle": "Find answers to common questions about our products and services",
     "metaTitle": "FAQ | Indo Tropical Agriculture - Indonesian Exporter",
     "metaDescription": "Frequently asked questions about Indo Tropical Agriculture's products, shipping, payment terms, and export services. Get answers about ordering Indonesian agricultural products.",
+    "metaKeywords": ["FAQ", "frequently asked questions", "Indonesian agriculture export", "minimum order quantity", "shipping to Europe", "export documentation", "agricultural products", "Indo Tropical Agriculture"],
     "questions": {
       "moq": {
         "question": "What is your minimum order quantity?",
@@ -347,6 +348,11 @@
     "categoriesTitle": "Relevant Categories",
     "ctaTitle": "Partner with Us for {industry}",
     "ctaSubtitle": "Contact us to discuss your specific requirements and learn how we can support your {industry} business with premium Indonesian agricultural products."
+  },
+  "productsPage": {
+    "heading": "Our Products",
+    "subtitle": "Premium Indonesian agricultural products sourced directly from farmers and processed to meet international quality standards.",
+    "browseByCategory": "Browse by Category"
   },
   "breadcrumbs": {
     "home": "Home",

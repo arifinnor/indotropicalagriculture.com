@@ -65,6 +65,12 @@ export async function generateMetadata({
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metaTitle", { country: countryName }),
+      description: t("metaDescription", { country: countryName }),
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -76,22 +82,45 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data for Country Page
-function getCountryJsonLd(destination: ReturnType<typeof getDestinationBySlug>, locale: string) {
+function getCountryJsonLd(destination: NonNullable<ReturnType<typeof getDestinationBySlug>>, locale: string, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const countryName = locale === "de" && destination.nameDe ? destination.nameDe : destination.name;
+  const baseUrl = locale === "en"
+    ? "https://indotropicalagriculture.com"
+    : "https://indotropicalagriculture.com/de";
 
   return {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    name: `Export to ${countryName} - Indo Tropical Agriculture`,
-    description: destination.description?.[locale] || destination.description?.en || "",
-    about: {
-      "@type": "Country",
-      name: countryName,
-    },
-    audience: {
-      "@type": "Audience",
-      audienceType: "Importers, wholesalers, and buyers in " + countryName,
-    },
+    "@graph": [
+      {
+        "@type": "WebPage",
+        name: `Export to ${countryName} - Indo Tropical Agriculture`,
+        description: destination.importRegulations[locale as "en" | "de"] || "",
+        about: {
+          "@type": "Country",
+          name: countryName,
+        },
+        audience: {
+          "@type": "Audience",
+          audienceType: "Importers, wholesalers, and buyers in " + countryName,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: bt("home"),
+            item: baseUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: bt("exportTo", { country: countryName }),
+          },
+        ],
+      },
+    ],
   };
 }
 
@@ -115,7 +144,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   }
 
   const countryName = locale === "de" && destination.nameDe ? destination.nameDe : destination.name;
-  const jsonLd = getCountryJsonLd(destination, locale);
+  const jsonLd = getCountryJsonLd(destination, locale, bt);
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   // Filter products based on popular products for this country

@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
+    keywords: t.raw("metaKeywords") as string[],
     openGraph: {
       title: t("metaTitle"),
       description: t("metaDescription"),
@@ -40,6 +41,12 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -51,7 +58,7 @@ export async function generateMetadata({ params }: FAQPageProps): Promise<Metada
 }
 
 // JSON-LD FAQ Schema Generator with Breadcrumb
-function getFAQJsonLd(locale: string, t: ReturnType<typeof getTranslations>) {
+function getFAQJsonLd(locale: string, t: Awaited<ReturnType<typeof getTranslations>>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com/en"
     : "https://indotropicalagriculture.com/de";
@@ -95,13 +102,13 @@ function getFAQJsonLd(locale: string, t: ReturnType<typeof getTranslations>) {
           {
             "@type": "ListItem",
             "position": 1,
-            "name": "Home",
+            "name": bt("home"),
             "item": baseUrl
           },
           {
             "@type": "ListItem",
             "position": 2,
-            "name": locale === "en" ? "FAQ" : "FAQ",
+            "name": bt("faq"),
             "item": `${baseUrl}/faq`
           }
         ]
@@ -114,7 +121,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "faq" });
   const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
-  const jsonLd = getFAQJsonLd(locale, t);
+  const jsonLd = getFAQJsonLd(locale, t, bt);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
@@ -137,7 +144,7 @@ export default async function FAQPage({ params }: FAQPageProps) {
         ]}
       />
 
-      <FAQ locale={locale} />
+      <FAQ />
 
       {/* Footer */}
       <footer className="bg-stone-900 text-stone-100 py-12 px-6">

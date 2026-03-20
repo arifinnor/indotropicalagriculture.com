@@ -69,6 +69,12 @@ export async function generateMetadata({ params }: GlossaryPageProps): Promise<M
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -80,12 +86,12 @@ export async function generateMetadata({ params }: GlossaryPageProps): Promise<M
 }
 
 // JSON-LD CollectionPage Schema for Glossary Index
-function getGlossaryJsonLd(locale: string, terms: ReturnType<typeof getGlossaryTerms>) {
+function getGlossaryJsonLd(locale: string, terms: ReturnType<typeof getGlossaryTerms>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com"
     : "https://indotropicalagriculture.com/de";
 
-  const title = locale === "en" ? "Glossary" : "Glossar";
+  const title = bt("glossary");
   const description = locale === "en"
     ? "Comprehensive glossary of Indonesian agricultural export terms."
     : "Umfassendes Glossar der Begriffe für indonesische Landwirtschaftsexporte.";
@@ -112,7 +118,7 @@ function getGlossaryJsonLd(locale: string, terms: ReturnType<typeof getGlossaryT
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
@@ -130,8 +136,8 @@ export default async function GlossaryPage({ params }: GlossaryPageProps) {
   const { locale } = await params;
   const terms = getGlossaryTerms();
   const categories = getGlossaryCategories();
-  const jsonLd = getGlossaryJsonLd(locale, terms);
   const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
+  const jsonLd = getGlossaryJsonLd(locale, terms, bt);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getTermPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;

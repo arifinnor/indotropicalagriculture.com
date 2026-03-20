@@ -53,6 +53,12 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -64,7 +70,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
 }
 
 // JSON-LD Schema for blog index
-function getBlogIndexJsonLd(locale: string) {
+function getBlogIndexJsonLd(locale: string, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com"
     : "https://indotropicalagriculture.com/de";
@@ -93,13 +99,13 @@ function getBlogIndexJsonLd(locale: string) {
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: locale === "en" ? "Blog" : "Blog",
+            name: bt("blog"),
             item: `${baseUrl}/blog`,
           },
         ],
@@ -135,8 +141,8 @@ function getBlogIndexJsonLd(locale: string) {
 export default async function BlogPage({ params }: BlogPageProps) {
   const { locale } = await params;
   const posts = getBlogPosts();
-  const jsonLd = getBlogIndexJsonLd(locale);
   const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
+  const jsonLd = getBlogIndexJsonLd(locale, bt);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getBlogPostPath = (slug: string) => locale === "en" ? `/blog/${slug}` : `/${locale}/blog/${slug}`;

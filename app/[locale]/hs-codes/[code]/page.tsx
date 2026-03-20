@@ -55,8 +55,8 @@ export async function generateMetadata({ params }: HSCodePageProps): Promise<Met
       siteName: "Indo Tropical Agriculture",
       locale: localeMap[locale] || "en_US",
       type: "article",
-      publishedTime: "2026-03-15",
-      modifiedTime: new Date().toISOString(),
+      publishedTime: "2026-03-15T00:00:00.000Z",
+      modifiedTime: "2026-03-15T00:00:00.000Z",
       authors: ["Indo Tropical Agriculture"],
       images: [
         {
@@ -66,6 +66,12 @@ export async function generateMetadata({ params }: HSCodePageProps): Promise<Met
           alt: locale === "en" ? hsCode.name.en : hsCode.name.de,
         },
       ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
     },
     alternates: {
       canonical: url,
@@ -125,7 +131,7 @@ function getHSCodeJsonLd(locale: string, hsCode: ReturnType<typeof getHSCodeBySl
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: locale === "en" ? "Home" : "Startseite",
             item: baseUrl,
           },
           {

@@ -67,6 +67,12 @@ export async function generateMetadata({ params }: GlossaryTermPageProps): Promi
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -78,7 +84,7 @@ export async function generateMetadata({ params }: GlossaryTermPageProps): Promi
 }
 
 // JSON-LD Article Schema for individual glossary term
-function getArticleJsonLd(locale: string, term: ReturnType<typeof getGlossaryTermBySlug>) {
+function getArticleJsonLd(locale: string, term: ReturnType<typeof getGlossaryTermBySlug>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   if (!term) return {};
 
   const baseUrl = locale === "en"
@@ -126,13 +132,13 @@ function getArticleJsonLd(locale: string, term: ReturnType<typeof getGlossaryTer
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: locale === "en" ? "Glossary" : "Glossar",
+            name: bt("glossary"),
             item: `${baseUrl}/glossary`,
           },
           {
@@ -167,7 +173,7 @@ export default async function GlossaryTermPage({ params }: GlossaryTermPageProps
     notFound();
   }
 
-  const jsonLd = getArticleJsonLd(locale, term);
+  const jsonLd = getArticleJsonLd(locale, term, bt);
   const relatedTerms = getRelatedTerms(term.id, locale);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;

@@ -90,6 +90,12 @@ export async function generateMetadata({
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -105,7 +111,8 @@ function getCategoryJsonLd(
   locale: string,
   categorySlug: string,
   categoryName: string,
-  products: ReturnType<typeof getProductsByCategory>
+  products: ReturnType<typeof getProductsByCategory>,
+  bt: Awaited<ReturnType<typeof getTranslations>>
 ) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com"
@@ -159,13 +166,13 @@ function getCategoryJsonLd(
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: locale === "en" ? "Categories" : "Kategorien",
+            name: bt("categories"),
             item: `${baseUrl}/categories`,
           },
           {
@@ -196,7 +203,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   // Get relevant glossary terms
   const allGlossaryTerms = getGlossaryTerms();
 
-  const jsonLd = getCategoryJsonLd(locale, categorySlug, categoryName, products);
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
+  const jsonLd = getCategoryJsonLd(locale, categorySlug, categoryName, products, bt);
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
   const getGlossaryPath = (slug: string) => locale === "en" ? `/what-is/${slug}` : `/${locale}/what-is/${slug}`;
 

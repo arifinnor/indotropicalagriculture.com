@@ -69,6 +69,12 @@ export async function generateMetadata({ params }: ComparisonPageProps): Promise
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -80,7 +86,7 @@ export async function generateMetadata({ params }: ComparisonPageProps): Promise
 }
 
 // JSON-LD Schema for comparison pages
-function getComparisonJsonLd(locale: string, comparison: ReturnType<typeof getComparisonBySlug>) {
+function getComparisonJsonLd(locale: string, comparison: ReturnType<typeof getComparisonBySlug>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   if (!comparison) return {};
 
   const baseUrl = locale === "en"
@@ -129,13 +135,13 @@ function getComparisonJsonLd(locale: string, comparison: ReturnType<typeof getCo
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: locale === "en" ? "Comparisons" : "Vergleiche",
+            name: bt("comparisons"),
             item: `${baseUrl}/vs/`,
           },
           {
@@ -158,7 +164,7 @@ export default async function ComparisonPage({ params }: ComparisonPageProps) {
     notFound();
   }
 
-  const jsonLd = getComparisonJsonLd(locale, comparison);
+  const jsonLd = getComparisonJsonLd(locale, comparison, bt);
   const relatedComparisons = getRelatedComparisons(comparison.id, locale, 3);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;

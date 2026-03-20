@@ -7,6 +7,7 @@ import type { Product } from "../../../lib/products-data";
 
 interface CategoryProductsClientProps {
   products: Product[];
+  categoryName: string;
   locale: string;
 }
 

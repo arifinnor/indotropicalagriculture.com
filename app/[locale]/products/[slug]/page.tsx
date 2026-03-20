@@ -144,13 +144,13 @@ function ProductContent({ slug }: { slug: string }) {
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: locale === "en" ? "Home" : "Startseite",
             item: `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}`,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: "Products",
+            name: locale === "en" ? "Products" : "Produkte",
             item: `https://indotropicalagriculture.com${locale === "en" ? "" : `/${locale}`}/products`,
           },
           {

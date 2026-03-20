@@ -50,7 +50,7 @@ export default function Navigation() {
   }, [isOpen]);
 
   const navLinks = [
-    { href: "#products", label: t("products") },
+    { href: "/products", label: t("products"), isLocaleLink: true },
     { href: "/faq", label: t("faq"), isLocaleLink: true },
     { href: "#about", label: t("about") },
     { href: "#contact", label: t("contact"), isButton: true },
@@ -70,7 +70,7 @@ export default function Navigation() {
     return pathname;
   }, [pathname, locale]);
 
-  // Build correct href for hash-only links (e.g. #products)
+  // Build correct href for hash-only links (e.g. #about)
   // When not on the home page, prefix with the localized home path
   const getHashHref = (hash: string) => {
     if (pathWithoutLocale === "/") return hash;

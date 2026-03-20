@@ -288,6 +288,7 @@
     "subtitle": "Finden Sie Antworten auf häufige Fragen zu unseren Produkten und Dienstleistungen",
     "metaTitle": "FAQ | Indo Tropical Agriculture - Indonesischer Exporteur",
     "metaDescription": "Häufig gestellte Fragen zu den Produkten, Versand, Zahlungsbedingungen und Exportdienstleistungen von Indo Tropical Agriculture. Antworten zum Bestellen indonesischer Landwirtschaftsprodukte.",
+    "metaKeywords": ["FAQ", "häufig gestellte Fragen", "indonesischer Agrarexport", "Mindestbestellmenge", "Versand nach Europa", "Exportdokumentation", "landwirtschaftliche Produkte", "Indo Tropical Agriculture"],
     "questions": {
       "moq": {
         "question": "Wie hoch ist Ihre Mindestbestellmenge?",
@@ -349,6 +350,11 @@
     "categoriesTitle": "Relevante Kategorien",
     "ctaTitle": "Partnerschaft für {industry}",
     "ctaSubtitle": "Kontaktieren Sie uns, um Ihre spezifischen Anforderungen zu besprechen und zu erfahren, wie wir Ihr {industry}-Geschäft mit Premium-indonesischen Landwirtschaftsprodukten unterstützen können."
+  },
+  "productsPage": {
+    "heading": "Unsere Produkte",
+    "subtitle": "Hochwertige indonesische Agrarprodukte direkt von Landwirten bezogen und nach internationalen Qualitätsstandards verarbeitet.",
+    "browseByCategory": "Nach Kategorie durchsuchen"
   },
   "breadcrumbs": {
     "home": "Startseite",

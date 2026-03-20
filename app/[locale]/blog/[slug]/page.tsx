@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 import { getBlogPostBySlug, getBlogPosts, getRelatedPosts } from "@/data/blog-posts";
 import { locales } from "@/i18n/config";
 import Navigation from "../../../components/Navigation";
@@ -75,6 +76,14 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: metaTitle,
+      description: metaDescription,
+      images: post.featuredImage
+        ? [`https://indotropicalagriculture.com${post.featuredImage}`]
+        : ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -86,7 +95,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 }
 
 // JSON-LD Schema for blog posts
-function getBlogPostJsonLd(locale: string, post: ReturnType<typeof getBlogPostBySlug>) {
+function getBlogPostJsonLd(locale: string, post: ReturnType<typeof getBlogPostBySlug>, bt: Awaited<ReturnType<typeof getTranslations>>) {
   if (!post) return {};
 
   const baseUrl = locale === "en"
@@ -136,13 +145,13 @@ function getBlogPostJsonLd(locale: string, post: ReturnType<typeof getBlogPostBy
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: locale === "en" ? "Blog" : "Blog",
+            name: bt("blog"),
             item: `${baseUrl}/blog`,
           },
           {
@@ -164,7 +173,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const jsonLd = getBlogPostJsonLd(locale, post);
+  const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
+  const jsonLd = getBlogPostJsonLd(locale, post, bt);
   const relatedPosts = getRelatedPosts(post.id, 3);
 
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
@@ -217,11 +227,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="max-w-4xl mx-auto">
           <nav className="flex items-center gap-2 text-sm text-stone-500" aria-label="Breadcrumb">
             <Link href={getHomePath()} className="hover:text-emerald-600">
-              Home
+              {bt("home")}
             </Link>
             <span aria-hidden="true">/</span>
             <Link href={getBlogPath()} className="hover:text-emerald-600">
-              Blog
+              {bt("blog")}
             </Link>
             <span aria-hidden="true">/</span>
             <span className="text-stone-700">{title}</span>

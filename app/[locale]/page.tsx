@@ -1,15 +1,18 @@
-"use client";
-
 import Hero from "../components/Hero";
 import VisionMission from "../components/VisionMission";
 import Products from "../components/Products";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
-  const t = useTranslations("footer");
+interface HomePageProps {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function Home({ params }: HomePageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "footer" });
 
   return (
     <main id="main-content" className="min-h-dvh">

@@ -50,6 +50,12 @@ export async function generateMetadata({
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
+      images: ["https://indotropicalagriculture.com/og-image.svg"],
+    },
     alternates: {
       canonical: url,
       languages: {
@@ -61,7 +67,7 @@ export async function generateMetadata({
 }
 
 // JSON-LD Structured Data generator for category index
-function getCategoryIndexJsonLd(locale: string) {
+function getCategoryIndexJsonLd(locale: string, bt: Awaited<ReturnType<typeof getTranslations>>) {
   const baseUrl = locale === "en"
     ? "https://indotropicalagriculture.com"
     : "https://indotropicalagriculture.com/de";
@@ -91,13 +97,13 @@ function getCategoryIndexJsonLd(locale: string) {
           {
             "@type": "ListItem",
             position: 1,
-            name: "Home",
+            name: bt("home"),
             item: baseUrl,
           },
           {
             "@type": "ListItem",
             position: 2,
-            name: locale === "en" ? "Categories" : "Kategorien",
+            name: bt("categories"),
             item: `${baseUrl}/categories`,
           },
         ],
@@ -125,8 +131,8 @@ export default async function CategoriesPage({ params }: CategoriesPageProps) {
     };
   });
 
-  const jsonLd = getCategoryIndexJsonLd(locale);
   const bt = await getTranslations({ locale, namespace: "breadcrumbs" });
+  const jsonLd = getCategoryIndexJsonLd(locale, bt);
   const getHomePath = () => locale === "en" ? "/" : `/${locale}`;
 
   return (
