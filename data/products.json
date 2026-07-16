@@ -1675,5 +1675,239 @@
     "bgColor": "bg-stone-700",
     "category": "Coffee",
     "lastUpdated": "2025-03-17"
+  },
+  {
+    "id": "product-41",
+    "slug": "frozen-tuna",
+    "name": "Frozen Tuna",
+    "price": 0,
+    "currency": "USD",
+    "unit": "KG",
+    "hsCode": "0304.86",
+    "description": "Premium quality frozen tuna sourced from Indonesian waters. Our frozen tuna is blast-frozen at sea or immediately after landing to preserve peak freshness, texture, and nutritional value. Processed under strict HACCP and EU import standards, each batch is individually quick-frozen (IQF) or block-frozen to maintain superior quality. Ideal for sashimi-grade markets, steakhouses, and food processing industries across Europe.",
+    "descriptionDe": "Premium eingefrorener Thunfisch aus indonesischen Gewässern. Unser gefrorener Thunfisch wird auf See oder unmittelbar nach dem Landen schockgefroren, um maximale Frische, Textur und Nährwerte zu erhalten. Verarbeitet nach strengen HACCP- und EU-Importstandards, wird jede Charge individuell schockgefroren (IQF) oder als Block eingefroren, um höchste Qualität zu gewährleisten. Ideal für Sashimi-Märkte, Steakhouses und die Lebensmittelverarbeitungsindustrie in ganz Europa.",
+    "shortDescription": "Premium quality frozen tuna blast-frozen at sea to preserve peak freshness and nutritional value",
+    "fullDescription": "Premium quality frozen tuna sourced from Indonesian waters. Our frozen tuna is blast-frozen at sea or immediately after landing to preserve peak freshness, texture, and nutritional value. Processed under strict HACCP and EU import standards, each batch is individually quick-frozen (IQF) or block-frozen to maintain superior quality. Ideal for sashimi-grade markets, steakhouses, and food processing industries across Europe.",
+    "keywords": [
+      "Frozen Tuna",
+      "Indonesian Tuna",
+      "IQF Tuna",
+      "Sashimi Grade",
+      "Seafood",
+      "Thunfisch",
+      "Skipjack",
+      "Yellowfin"
+    ],
+    "specifications": [
+      {
+        "label": "HS Code",
+        "value": "0304.86"
+      },
+      {
+        "label": "Price",
+        "value": "Contact for pricing"
+      },
+      {
+        "label": "Incoterms",
+        "value": "FOB Surabaya, Indonesia"
+      },
+      {
+        "label": "Origin",
+        "value": "Indonesia"
+      },
+      {
+        "label": "Processing",
+        "value": "Blast-frozen / IQF / Block-frozen"
+      }],
+    "image": "/products/frozen-tuna.webp",
+    "bgColor": "bg-blue-600",
+    "category": "Seafood",
+    "lastUpdated": "2025-07-16"
+  },
+  {
+    "id": "product-42",
+    "slug": "canned-tuna",
+    "name": "Canned Tuna",
+    "price": 0,
+    "currency": "USD",
+    "unit": "Carton",
+    "hsCode": "1604.14",
+    "description": "High-quality canned tuna produced in Indonesia from freshly caught skipjack and yellowfin tuna. Each can is packed with premium tuna in various preparations — in brine, sunflower oil, or olive oil — ensuring long shelf life and excellent flavor retention. Manufactured in EU-compliant facilities with full traceability from catch to can. Perfect for retail distribution, food service, and industrial food manufacturing across European markets.",
+    "descriptionDe": "Hochwertiger Thunfisch in Dosen, produziert in Indonesien aus frisch gefangenem Echter Bonito und Gelbflossenthunfisch. Jede Dose enthält Premium-Thunfisch in verschiedenen Zubereitungen — in Lake, Sonnenblumenöl oder Olivenöl — und garantiert eine lange Haltbarkeit und hervorragende Geschmacksbewahrung. Hergestellt in EU-konformen Anlagen mit vollständiger Rückverfolgbarkeit vom Fang bis zur Dose. Ideal für den Einzelhandel, die Gastronomie und die Lebensmittelindustrie in europäischen Märkten.",
+    "shortDescription": "High-quality canned tuna in brine, sunflower oil, or olive oil with full EU-compliant traceability",
+    "fullDescription": "High-quality canned tuna produced in Indonesia from freshly caught skipjack and yellowfin tuna. Each can is packed with premium tuna in various preparations — in brine, sunflower oil, or olive oil — ensuring long shelf life and excellent flavor retention. Manufactured in EU-compliant facilities with full traceability from catch to can. Perfect for retail distribution, food service, and industrial food manufacturing across European markets.",
+    "keywords": [
+      "Canned Tuna",
+      "Tuna in Brine",
+      "Tuna in Oil",
+      "Indonesian Seafood",
+      "Thunfisch in Dose",
+      "Skipjack",
+      "Yellowfin",
+      "Retail Tuna"
+    ],
+    "specifications": [
+      {
+        "label": "HS Code",
+        "value": "1604.14"
+      },
+      {
+        "label": "Price",
+        "value": "Contact for pricing"
+      },
+      {
+        "label": "Incoterms",
+        "value": "FOB Surabaya, Indonesia"
+      },
+      {
+        "label": "Origin",
+        "value": "Indonesia"
+      },
+      {
+        "label": "Available Formats",
+        "value": "Brine, Sunflower Oil, Olive Oil"
+      }],
+    "image": "/products/canned-tuna.webp",
+    "bgColor": "bg-blue-600",
+    "category": "Seafood",
+    "lastUpdated": "2025-07-16"
+  },
+  {
+    "id": "product-43",
+    "slug": "precooked-tuna-flakes",
+    "name": "Precooked Tuna Flakes",
+    "price": 0,
+    "currency": "USD",
+    "unit": "KG",
+    "hsCode": "1604.14",
+    "description": "Precooked tuna flakes produced from carefully selected skipjack and bonito. The fish is steam-cooked to perfection, then mechanically separated into light, tender flakes ideal for ready-to-eat meals, salads, sandwiches, and pasta dishes. Processed in HACCP-certified facilities with strict quality control, each batch is frozen immediately after cooking to lock in freshness. A versatile ingredient for food manufacturers and food service operators across Europe.",
+    "descriptionDe": "Vorgekochte Thunfischflocken aus sorgfältig ausgewähltem Echtem Bonito und Bonito. Der Fisch wird perfekt gedämpft und dann mechanisch in leichte, zarte Flocken getrennt — ideal für Fertiggerichte, Salate, Sandwiches und Pastagerichte. Verarbeitet in HACCP-zertifizierten Anlagen mit strenger Qualitätskontrolle, wird jede Charge unmittelbar nach dem Kochen eingefroren, um die Frische zu erhalten. Eine vielseitige Zutat für Lebensmittelhersteller und Gastronomiebetriebe in ganz Europa.",
+    "shortDescription": "Precooked tuna flakes from skipjack and bonito — steam-cooked, mechanically separated, and immediately frozen for food manufacturing",
+    "fullDescription": "Precooked tuna flakes produced from carefully selected skipjack and bonito. The fish is steam-cooked to perfection, then mechanically separated into light, tender flakes ideal for ready-to-eat meals, salads, sandwiches, and pasta dishes. Processed in HACCP-certified facilities with strict quality control, each batch is frozen immediately after cooking to lock in freshness. A versatile ingredient for food manufacturers and food service operators across Europe.",
+    "keywords": [
+      "Precooked Tuna",
+      "Tuna Flakes",
+      "Cooked Tuna",
+      "Ready-to-eat Tuna",
+      "Thunfischflocken",
+      "Seafood Ingredient",
+      "Skipjack",
+      "Bonito",
+      "Food Manufacturing"
+    ],
+    "specifications": [
+      {
+        "label": "HS Code",
+        "value": "1604.14"
+      },
+      {
+        "label": "Price",
+        "value": "Contact for pricing"
+      },
+      {
+        "label": "Incoterms",
+        "value": "FOB Surabaya, Indonesia"
+      },
+      {
+        "label": "Origin",
+        "value": "Indonesia"
+      },
+      {
+        "label": "Fish",
+        "value": "Skipjack and Bonito"
+      },
+      {
+        "label": "Form",
+        "value": "Flakes"
+      },
+      {
+        "label": "Moisture",
+        "value": "65%"
+      },
+      {
+        "label": "Histamine",
+        "value": "<30ppm"
+      },
+      {
+        "label": "Salt",
+        "value": "<1.5%"
+      },
+      {
+        "label": "Shelf Life",
+        "value": "18 months"
+      }],
+    "image": "/products/precooked-tuna-flakes.webp",
+    "bgColor": "bg-blue-600",
+    "category": "Seafood",
+    "lastUpdated": "2025-07-16"
+  },
+  {
+    "id": "product-44",
+    "slug": "precooked-tuna-loin",
+    "name": "Precooked Tuna Loin",
+    "price": 0,
+    "currency": "USD",
+    "unit": "KG",
+    "hsCode": "1604.14",
+    "description": "Premium precooked tuna loin, carefully hand-trimmed from the finest skipjack and bonito. Each loin is steam-cooked under controlled temperature and time to achieve the ideal texture — firm yet tender, with a clean, mild flavor. The loins are vacuum-packed and blast-frozen immediately after cooking to preserve freshness and extend shelf life. Ideal for high-end ready meals, premium salads, sushi and sashimi preparations, and gourmet food service applications across European markets.",
+    "descriptionDe": "Premium vorgekochter Thunfischrücken, sorgfältig von den besten Stücken des Echten Bonitos und Bonitos handgeschnitten. Jeder Rücken wird unter kontrollierter Temperatur und Zeit gedämpft, um die ideale Textur zu erreichen — fest, aber zart, mit einem reinen, milden Geschmack. Die Rücken werden sofort nach dem Kochen vakuumverpackt und schockgefroren, um Frische zu bewahren und die Haltbarkeit zu verlängern. Ideal für hochwertige Fertiggerichte, Premium-Salate, Sushi- und Sashimi-Zubereitungen sowie Gourmet-Gastronomieanwendungen in europäischen Märkten.",
+    "shortDescription": "Premium hand-trimmed precooked tuna loin from skipjack and bonito — vacuum-packed and blast-frozen for high-end food service",
+    "fullDescription": "Premium precooked tuna loin, carefully hand-trimmed from the finest skipjack and bonito. Each loin is steam-cooked under controlled temperature and time to achieve the ideal texture — firm yet tender, with a clean, mild flavor. The loins are vacuum-packed and blast-frozen immediately after cooking to preserve freshness and extend shelf life. Ideal for high-end ready meals, premium salads, sushi and sashimi preparations, and gourmet food service applications across European markets.",
+    "keywords": [
+      "Precooked Tuna",
+      "Tuna Loin",
+      "Tuna Back",
+      "Premium Tuna",
+      "Thunfischrücken",
+      "Sashimi Grade",
+      "Skipjack",
+      "Bonito",
+      "Gourmet Seafood"
+    ],
+    "specifications": [
+      {
+        "label": "HS Code",
+        "value": "1604.14"
+      },
+      {
+        "label": "Price",
+        "value": "Contact for pricing"
+      },
+      {
+        "label": "Incoterms",
+        "value": "FOB Surabaya, Indonesia"
+      },
+      {
+        "label": "Origin",
+        "value": "Indonesia"
+      },
+      {
+        "label": "Fish",
+        "value": "Skipjack and Bonito"
+      },
+      {
+        "label": "Form",
+        "value": "Loin"
+      },
+      {
+        "label": "Moisture",
+        "value": "65%"
+      },
+      {
+        "label": "Histamine",
+        "value": "<30ppm"
+      },
+      {
+        "label": "Salt",
+        "value": "<1.5%"
+      },
+      {
+        "label": "Shelf Life",
+        "value": "18 months"
+      }],
+    "image": "/products/precooked-tuna-loin.webp",
+    "bgColor": "bg-blue-600",
+    "category": "Seafood",
+    "lastUpdated": "2025-07-16"
   }
 ]
