@@ -1716,9 +1716,14 @@
         "value": "Indonesia"
       },
       {
-        "label": "Processing",
-        "value": "Blast-frozen / IQF / Block-frozen"
-      }],
+        "label": "Available to Supply",
+        "value": "Whole Round, Whole Gutted Gilled and Scaled"
+      },
+      {
+        "label": "Size",
+        "value": "Size based on request"
+      }
+    ],
     "image": "/products/frozen-tuna.webp",
     "bgColor": "bg-blue-600",
     "category": "Seafood",
@@ -1762,10 +1767,6 @@
       {
         "label": "Origin",
         "value": "Indonesia"
-      },
-      {
-        "label": "Available Formats",
-        "value": "Brine, Sunflower Oil, Olive Oil"
       }],
     "image": "/products/canned-tuna.webp",
     "bgColor": "bg-blue-600",
