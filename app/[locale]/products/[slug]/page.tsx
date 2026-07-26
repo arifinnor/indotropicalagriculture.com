@@ -271,16 +271,30 @@ function ProductContent({ slug }: { slug: string }) {
                 </h2>
               </div>
               <dl className="divide-y divide-stone-100" aria-label={`${product.name} specifications`}>
-                {specs.map((spec, index) => (
-                  <div key={index} className="group flex hover:bg-stone-50 transition-colors">
-                    <dt className="px-4 py-2 text-left text-xs font-semibold text-stone-500 uppercase tracking-wide w-1/2">
-                      {spec.label}
-                    </dt>
-                    <dd className="px-4 py-2 text-right text-xs font-semibold text-emerald-700">
-                      {spec.value}
-                    </dd>
-                  </div>
-                ))}
+                {specs.map((spec, index) => {
+                  const isList = spec.value.includes("\n");
+                  return (
+                    <div
+                      key={index}
+                      className={`group hover:bg-stone-50 transition-colors ${isList ? "flex flex-col" : "flex"}`}
+                    >
+                      <dt
+                        className={`px-4 text-left text-xs font-semibold text-stone-500 uppercase tracking-wide ${
+                          isList ? "pt-2" : "py-2 w-1/2"
+                        }`}
+                      >
+                        {spec.label}
+                      </dt>
+                      <dd
+                        className={`px-4 py-2 text-xs font-semibold text-emerald-700 whitespace-pre-line ${
+                          isList ? "text-left" : "text-right"
+                        }`}
+                      >
+                        {spec.value}
+                      </dd>
+                    </div>
+                  );
+                })}
               </dl>
             </div>
           </div>
