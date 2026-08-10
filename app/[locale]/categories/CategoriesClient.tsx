@@ -8,6 +8,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   nuts: "bg-orange-100 text-orange-800 border-orange-200 hover:border-orange-300 hover:bg-orange-200",
   coffee: "bg-stone-200 text-stone-800 border-stone-300 hover:border-stone-400 hover:bg-stone-300",
   beans: "bg-green-100 text-green-800 border-green-200 hover:border-green-300 hover:bg-green-200",
+  seafood: "bg-blue-100 text-blue-800 border-blue-200 hover:border-blue-300 hover:bg-blue-200",
   other: "bg-stone-100 text-stone-800 border-stone-200 hover:border-stone-300 hover:bg-stone-200",
 };
 
@@ -30,6 +31,7 @@ const CATEGORY_ICONS: Record<string, string> = {
   nuts: "🥜",
   coffee: "☕",
   beans: "🫘",
+  seafood: "🐟",
   other: "🌾",
 };
 
